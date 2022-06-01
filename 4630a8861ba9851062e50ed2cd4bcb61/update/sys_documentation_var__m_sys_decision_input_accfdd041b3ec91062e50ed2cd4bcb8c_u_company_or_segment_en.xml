@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_company_or_segment" label="Company or Segment" language="en" table="var__m_sys_decision_input_accfdd041b3ec91062e50ed2cd4bcb8c">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_company_or_segment</element>
+            <help/>
+            <hint/>
+            <label>Company or Segment</label>
+            <language>en</language>
+            <name>var__m_sys_decision_input_accfdd041b3ec91062e50ed2cd4bcb8c</name>
+            <plural>Company or Segment</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2022-04-06 19:38:00</sys_created_on>
+            <sys_id>e5a065c41b3ec91062e50ed2cd4bcbc0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Company or Segment</sys_name>
+            <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_decision_input_accfdd041b3ec91062e50ed2cd4bcb8c_u_company_or_segment_en</sys_update_name>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2022-04-06 19:38:00</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

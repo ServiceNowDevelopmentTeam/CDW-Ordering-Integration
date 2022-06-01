@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD512e23bd417ac5108c00addf0c024828</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>4630a8861ba9851062e50ed2cd4bcb61</scope_name>
+        <serialized_content>{"FlowDesigner:FD512e23bd417ac5108c00addf0c024828":{"unitPrice":"String","unitPrice.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"unitPrice\",\"mandatory\":\"true\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"d6b3303d-ca5b-4b56-8d87-1e44416107f4\"}"},"manufacturerPartId":"String","manufacturerPartId.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"manufacturerPartId\",\"mandatory\":\"true\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"7e537a86-b39c-4de7-bbe3-4fc27d1696eb\"}"},"CDWOrderReference":"String","CDWOrderReference.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"CDWOrderReference\",\"mandatory\":\"true\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"a8c7e2eb-2c4b-42e8-9130-de0e43c422cd\"}"},"quantity":"String","quantity.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"quantity\",\"mandatory\":\"true\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"e927b5db-e7f7-4cc5-b306-4147d6f8262c\"}"},"cdwPartNumber":"String","cdwPartNumber.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"cdwPartNumber\",\"mandatory\":\"true\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"d2489058-a1ab-4ae3-9206-8bfd67498aa8\"}"},"itemDescription":"String","itemDescription.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"itemDescription\",\"mandatory\":\"true\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"10eb41ea-1826-4721-9316-d230b1bb994a\"}"},"lineNumber":"String","lineNumber.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"lineNumber\",\"mandatory\":\"true\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"1d7eb0e9-6d16-48fb-8c6f-907c05946019\"}"}},"FlowDesigner:FD512e23bd417ac5108c00addf0c024828.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"orderlines\",\"mandatory\":\"true\",\"uiUniqueId\":\"2e262888-64cd-41cd-8c07-b0d66d7d6514\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD512e23bd417ac5108c00addf0c024828\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"6\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-04-12 16:25:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>152e23bd1b7ac5108c5143f3cc4bcb28</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD512e23bd417ac5108c00addf0c024828</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sys_complex_object_152e23bd1b7ac5108c5143f3cc4bcb28</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-04-12 16:25:34</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

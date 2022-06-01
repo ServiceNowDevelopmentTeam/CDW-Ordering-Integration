@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>global.CDWServiceCatalogApprovalUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>When called returns a yes/no based on if there are group members for the group passed in</description>
+        <name>CDWServiceCatalogApprovalUtils</name>
+        <script><![CDATA[var CDWServiceCatalogApprovalUtils = Class.create();
+CDWServiceCatalogApprovalUtils.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+
+    isGroupValidForApproval: function(ciGroupIn) {
+
+        var ciGroup = ciGroupIn;
+        var mbrsCount = 0;
+        var isValid = '';
+
+        var group = new GlideAggregate('sys_user_grmember');
+        group.addAggregate('COUNT');
+        group.addQuery('group', ciGroup);
+        group.query();
+
+        if (group.next()) {
+            mbrsCount = group.getAggregate('COUNT');
+            if (mbrsCount != 0) {
+                isValid = 'yes';
+            }
+        } else {
+            isValid = 'no';
+        }
+        return isValid;
+    },
+
+    type: 'CDWServiceCatalogApprovalUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>cdw_admin</sys_created_by>
+        <sys_created_on>2020-05-05 16:16:12</sys_created_on>
+        <sys_id>fccfe2d22fa45010ca5dc886f699b66d</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>CDWServiceCatalogApprovalUtils</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sys_script_include_fccfe2d22fa45010ca5dc886f699b66d</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-04-11 20:01:13</sys_updated_on>
+    </sys_script_include>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</claim_owner_scope>
+        <claim_timestamp>1801a374ead0000001</claim_timestamp>
+        <metadata_update_name>sys_script_include_fccfe2d22fa45010ca5dc886f699b66d</metadata_update_name>
+        <previous_claim_app_version>1.0.3</previous_claim_app_version>
+        <previous_claim_name>CDW Ordering Integration</previous_claim_name>
+        <previous_claim_scope>4630a8861ba9851062e50ed2cd4bcb61</previous_claim_scope>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-04-11 20:01:13</sys_created_on>
+        <sys_id>1ee59be11bf2811062e50ed2cd4bcb33</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-04-11 20:01:13</sys_updated_on>
+    </sys_claim>
+</record_update>

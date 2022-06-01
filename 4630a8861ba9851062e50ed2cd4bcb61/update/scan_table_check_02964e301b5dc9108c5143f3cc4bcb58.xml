@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="scan_table_check">
+    <scan_table_check action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>true</advanced>
+        <attributes/>
+        <category>performance</category>
+        <conditions table="sc_cat_item">u_cdw_item=true^EQ<item endquery="false" field="u_cdw_item" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description>Scanning fields that are sent over to CDW via their API. These blank spaces would break the integration process.</description>
+        <documentation_url/>
+        <finding_type>scan_finding</finding_type>
+        <name>CDW Catalog items should not contain bad blank space characters</name>
+        <priority>2</priority>
+        <resolution_details/>
+        <run_condition/>
+        <score_max>100</score_max>
+        <score_min>0</score_min>
+        <score_scale>1</score_scale>
+        <script><![CDATA[(function (finding, current) {
+	var regex = /[\u000B\u000C\u00A0\u0085\u1680\u180E\ufeff\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u200B\u2028\u2029\u202F\u205f\u3000]/g;
+
+	var fields = ["short_description","name","u_cdw_item_number"];
+	for(var i = 0; i<fields.length; i++){
+	var scriptValue = current.getValue(fields[i]) || "";
+	var matches = scriptValue.match(regex);
+
+	if (matches) {
+		matches.forEach(function(match) {
+			finding.increment();
+			addError('Illegal Space Character on Catalog Item: ' + current.name.toString() + '\r\nField name: ' + fields[i]);
+			
+		});
+	}
+	}
+})(finding, current);
+function addError(message){
+	var errorGr = new GlideRecord('scan_log');
+	errorGr.initialize();
+	errorGr.setValue('message',message);
+	errorGr.setValue('level','error');
+	errorGr.setValue('source','Illegal Space Character Scan');
+	errorGr.insert();
+}]]></script>
+        <short_description>Checks for bad blank space characters on catalog items</short_description>
+        <sys_class_name>scan_table_check</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-01-24 16:55:04</sys_created_on>
+        <sys_id>02964e301b5dc9108c5143f3cc4bcb58</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>CDW Catalog items should not contain bad blank space characters</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>scan_table_check_02964e301b5dc9108c5143f3cc4bcb58</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-04-11 20:01:05</sys_updated_on>
+        <table>sc_cat_item</table>
+        <use_manifest>false</use_manifest>
+    </scan_table_check>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</claim_owner_scope>
+        <claim_timestamp>1801a372e480000001</claim_timestamp>
+        <metadata_update_name>scan_table_check_02964e301b5dc9108c5143f3cc4bcb58</metadata_update_name>
+        <previous_claim_app_version>1.0.3</previous_claim_app_version>
+        <previous_claim_name>CDW Ordering Integration</previous_claim_name>
+        <previous_claim_scope>4630a8861ba9851062e50ed2cd4bcb61</previous_claim_scope>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-04-11 20:01:05</sys_created_on>
+        <sys_id>58e5d7e11bf2811062e50ed2cd4bcb9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-04-11 20:01:05</sys_updated_on>
+    </sys_claim>
+</record_update>

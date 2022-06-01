@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_cdw_item_number" label="CDW Item Number" language="en" table="sc_cat_item">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_cdw_item_number</element>
+            <help/>
+            <hint/>
+            <label>CDW Item Number</label>
+            <language>en</language>
+            <name>sc_cat_item</name>
+            <plural>CDW Item Numbers</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2021-07-21 13:35:16</sys_created_on>
+            <sys_id>7ad99a281bad38508c5143f3cc4bcbd9</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>CDW Item Number</sys_name>
+            <sys_package display_value="Global" source="global">global</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+            <sys_update_name>sys_documentation_sc_cat_item_u_cdw_item_number_en</sys_update_name>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2022-04-11 20:01:10</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</claim_owner_scope>
+        <claim_timestamp>1801a3740f10000001</claim_timestamp>
+        <metadata_update_name>sys_documentation_sc_cat_item_u_cdw_item_number_en</metadata_update_name>
+        <previous_claim_app_version>1.0.3</previous_claim_app_version>
+        <previous_claim_name>CDW Ordering Integration</previous_claim_name>
+        <previous_claim_scope>4630a8861ba9851062e50ed2cd4bcb61</previous_claim_scope>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-04-11 20:01:10</sys_created_on>
+        <sys_id>a1e55be11bf2811062e50ed2cd4bcb12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-04-11 20:01:10</sys_updated_on>
+    </sys_claim>
+</record_update>

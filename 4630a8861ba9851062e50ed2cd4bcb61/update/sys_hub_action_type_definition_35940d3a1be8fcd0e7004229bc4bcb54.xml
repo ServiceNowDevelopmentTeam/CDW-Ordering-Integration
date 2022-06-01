@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>false</ih_action>
+        <internal_name>cdw_preprod_oauth_get_token</internal_name>
+        <label_cache>[]</label_cache>
+        <master_snapshot>dba8c1b21b2cfcd0e7004229bc4bcb5c</master_snapshot>
+        <name>CDW Pre-Prod OAuth Get Token</name>
+        <natlang/>
+        <outputs/>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-08 14:06:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>35940d3a1be8fcd0e7004229bc4bcb54</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>CDW Pre-Prod OAuth Get Token</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_35940d3a1be8fcd0e7004229bc4bcb54</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-04-11 20:01:22</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=35940d3a1be8fcd0e7004229bc4bcb54"/>
+    <sys_variable_value action="delete_multiple" query="document_key=35940d3a1be8fcd0e7004229bc4bcb54"/>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</claim_owner_scope>
+        <claim_timestamp>1801a3771a30000001</claim_timestamp>
+        <metadata_update_name>sys_hub_action_type_definition_35940d3a1be8fcd0e7004229bc4bcb54</metadata_update_name>
+        <previous_claim_app_version>1.0.3</previous_claim_app_version>
+        <previous_claim_name>CDW Ordering Integration</previous_claim_name>
+        <previous_claim_scope>4630a8861ba9851062e50ed2cd4bcb61</previous_claim_scope>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-04-11 20:01:22</sys_created_on>
+        <sys_id>6cf55fe11bf2811062e50ed2cd4bcb5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-04-11 20:01:22</sys_updated_on>
+    </sys_claim>
+    <sys_hub_step_instance action="delete_multiple" query="action=35940d3a1be8fcd0e7004229bc4bcb54^sys_idNOT IN4c9589fa1be8fcd0e7004229bc4bcb61"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="CDW Pre-Prod OAuth Get Token">35940d3a1be8fcd0e7004229bc4bcb54</action>
+        <cid>1abdc8e8-ba5a-4b29-8aa5-bc7b56e5ef45</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-08 14:10:32</sys_created_on>
+        <sys_id>4c9589fa1be8fcd0e7004229bc4bcb61</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-08 17:01:05</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4c9589fa1be8fcd0e7004229bc4bcb61"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>4c9589fa1be8fcd0e7004229bc4bcb61</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-08 14:10:32</sys_created_on>
+        <sys_id>049589fa1be8fcd0e7004229bc4bcb7f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-08 14:13:43</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>4c9589fa1be8fcd0e7004229bc4bcb61</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-08 14:10:32</sys_created_on>
+        <sys_id>089589fa1be8fcd0e7004229bc4bcb7e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-08 14:10:32</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>4c9589fa1be8fcd0e7004229bc4bcb61</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-08 14:45:24</sys_created_on>
+        <sys_id>3a8dc13e1b2cfcd0e7004229bc4bcb89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-08 14:45:24</sys_updated_on>
+        <value>post</value>
+        <variable display_value="HTTP Method">e85b7ebf47222200b4fad7527c9a71e3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>4c9589fa1be8fcd0e7004229bc4bcb61</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-08 14:10:32</sys_created_on>
+        <sys_id>409589fa1be8fcd0e7004229bc4bcb7e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-08 14:10:32</sys_updated_on>
+        <value>ClientCredentialAccessToken</value>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>4c9589fa1be8fcd0e7004229bc4bcb61</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-08 14:10:32</sys_created_on>
+        <sys_id>409589fa1be8fcd0e7004229bc4bcb7f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-08 14:10:32</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>4c9589fa1be8fcd0e7004229bc4bcb61</document_key>
+        <order>40</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-08 14:45:24</sys_created_on>
+        <sys_id>768dc13e1b2cfcd0e7004229bc4bcb89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-08 14:45:24</sys_updated_on>
+        <value>form-url-encoded</value>
+        <variable display_value="Request Type">bc79234a87d01300dd637d5e27cb0b24</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>4c9589fa1be8fcd0e7004229bc4bcb61</document_key>
+        <order>11</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-08 15:14:50</sys_created_on>
+        <sys_id>8a44d5ba1b6cfcd0e7004229bc4bcbd9</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-08 17:01:05</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Use MID">e532afc12f101300a09a839fb18c95b9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>4c9589fa1be8fcd0e7004229bc4bcb61</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-08 14:10:32</sys_created_on>
+        <sys_id>8c9589fa1be8fcd0e7004229bc4bcb7e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-08 14:10:32</sys_updated_on>
+        <value>https://pre-prod-apihub.cdw.com/v2/oauth/</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>4c9589fa1be8fcd0e7004229bc4bcb61</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-08 14:13:43</sys_created_on>
+        <sys_id>b646457e1be8fcd0e7004229bc4bcb49</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-08 14:45:24</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"client_id","value":"JM940GEs1Yoy2e2D6u5WQrZQdd4YWj4c"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"client_secret","value":"S27R5AuBs4fpm2lp"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"grant_type","value":"client_credentials"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"scope","value":"CDW"}]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>4c9589fa1be8fcd0e7004229bc4bcb61</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-08 14:10:32</sys_created_on>
+        <sys_id>c89589fa1be8fcd0e7004229bc4bcb7e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-08 14:10:32</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>4c9589fa1be8fcd0e7004229bc4bcb61</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-08 14:39:29</sys_created_on>
+        <sys_id>cc3c0d7a1b2cfcd0e7004229bc4bcb7b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-08 14:45:46</sys_updated_on>
+        <value/>
+        <variable display_value="Credential Alias">445c2a72b3701300176b051a16a8dcc2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129^id=4c9589fa1be8fcd0e7004229bc4bcb61"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=35940d3a1be8fcd0e7004229bc4bcb54^sys_idNOT INa3a8c1b21b2cfcd0e7004229bc4bcbf6"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="CDW Pre-Prod OAuth Get Token">35940d3a1be8fcd0e7004229bc4bcb54</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"a3a8c1b21b2cfcd0e7004229bc4bcbf6","name":"plan"}}</plan>
+        <snapshot>d7a8c1b21b2cfcd0e7004229bc4bcb3c</snapshot>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-08 14:24:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a3a8c1b21b2cfcd0e7004229bc4bcbf6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-08 14:24:10</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>cdw_preprod_oauth_get_token</internal_name>
+        <label_cache>[]</label_cache>
+        <master>true</master>
+        <name>CDW Pre-Prod OAuth Get Token</name>
+        <natlang/>
+        <outputs/>
+        <parent_action display_value="CDW Pre-Prod OAuth Get Token">35940d3a1be8fcd0e7004229bc4bcb54</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-08 14:24:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dba8c1b21b2cfcd0e7004229bc4bcb5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-08 14:24:08</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=dba8c1b21b2cfcd0e7004229bc4bcb5c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=dba8c1b21b2cfcd0e7004229bc4bcb5c"/>
+    <sys_hub_step_instance action="delete_multiple" query="action=dba8c1b21b2cfcd0e7004229bc4bcb5c^sys_idNOT IN17a8c1b21b2cfcd0e7004229bc4bcb5e"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="CDW Pre-Prod OAuth Get Token">dba8c1b21b2cfcd0e7004229bc4bcb5c</action>
+        <cid>1abdc8e8-ba5a-4b29-8aa5-bc7b56e5ef45</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-08 14:24:08</sys_created_on>
+        <sys_id>17a8c1b21b2cfcd0e7004229bc4bcb5e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-08 14:24:08</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=17a8c1b21b2cfcd0e7004229bc4bcb5e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>17a8c1b21b2cfcd0e7004229bc4bcb5e</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-08 14:24:08</sys_created_on>
+        <sys_id>1ba8c1b21b2cfcd0e7004229bc4bcb6b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-08 14:24:08</sys_updated_on>
+        <value>https://pre-prod-apihub.cdw.com/v2/oauth/</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>17a8c1b21b2cfcd0e7004229bc4bcb5e</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-08 14:24:08</sys_created_on>
+        <sys_id>1fa8c1b21b2cfcd0e7004229bc4bcb6a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-08 14:24:08</sys_updated_on>
+        <value>ClientCredentialAccessToken</value>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>17a8c1b21b2cfcd0e7004229bc4bcb5e</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-08 14:24:08</sys_created_on>
+        <sys_id>57a8c1b21b2cfcd0e7004229bc4bcb6b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-08 14:24:08</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>17a8c1b21b2cfcd0e7004229bc4bcb5e</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-08 14:24:08</sys_created_on>
+        <sys_id>93a8c1b21b2cfcd0e7004229bc4bcb6b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-08 14:24:08</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"client_id","value":"JM940GEs1Yoy2e2D6u5WQrZQdd4YWj4c"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"client_secret","value":"S27R5AuBs4fpm2lp"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"grant_type","value":"authorization_code"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"scope","value":"CDW"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"response_type","value":"code"}]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>17a8c1b21b2cfcd0e7004229bc4bcb5e</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-08 14:24:08</sys_created_on>
+        <sys_id>9fa8c1b21b2cfcd0e7004229bc4bcb6b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-08 14:24:08</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>17a8c1b21b2cfcd0e7004229bc4bcb5e</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-08 14:24:08</sys_created_on>
+        <sys_id>dba8c1b21b2cfcd0e7004229bc4bcb6b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-08 14:24:08</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>17a8c1b21b2cfcd0e7004229bc4bcb5e</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-08 14:24:08</sys_created_on>
+        <sys_id>dfa8c1b21b2cfcd0e7004229bc4bcb6a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-08 14:24:08</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129^id=17a8c1b21b2cfcd0e7004229bc4bcb5e"/>
+    <sys_hub_action_type_definition action="update">
+        <sys_id>35940d3a1be8fcd0e7004229bc4bcb54</sys_id>
+        <latest_snapshot>dba8c1b21b2cfcd0e7004229bc4bcb5c</latest_snapshot>
+    </sys_hub_action_type_definition>
+</record_update>

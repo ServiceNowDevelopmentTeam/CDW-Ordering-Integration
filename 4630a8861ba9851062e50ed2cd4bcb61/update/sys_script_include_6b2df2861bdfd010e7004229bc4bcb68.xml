@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>global.CdwGetRequestedForInfo</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>CdwGetRequestedForInfo</name>
+        <script><![CDATA[var CdwGetRequestedForInfo = Class.create();
+CdwGetRequestedForInfo.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+
+	getUserInfo: function () {
+		var userId = this.getParameter('sysparm_user_id');
+
+		var userGr = new GlideRecord('sys_user');
+		if (userGr.get(userId)) {
+			var json = new JSON();
+			var results = {
+				"name": userGr.getValue("name"),
+				"phone_number": userGr.getValue("mobile_phone"),
+				"email": userGr.getValue("email")
+			};
+			return json.encode(results);
+		} else {
+			return null;
+		}
+	},
+	
+	isPublic: true,
+
+	type: 'CdwGetRequestedForInfo'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>ryan.myers1</sys_created_by>
+        <sys_created_on>2020-09-18 15:32:34</sys_created_on>
+        <sys_id>6b2df2861bdfd010e7004229bc4bcb68</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>CdwGetRequestedForInfo</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sys_script_include_6b2df2861bdfd010e7004229bc4bcb68</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-04-11 20:01:08</sys_updated_on>
+    </sys_script_include>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</claim_owner_scope>
+        <claim_timestamp>1801a373ae50000001</claim_timestamp>
+        <metadata_update_name>sys_script_include_6b2df2861bdfd010e7004229bc4bcb68</metadata_update_name>
+        <previous_claim_app_version>1.0.3</previous_claim_app_version>
+        <previous_claim_name>CDW Ordering Integration</previous_claim_name>
+        <previous_claim_scope>4630a8861ba9851062e50ed2cd4bcb61</previous_claim_scope>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-04-11 20:01:08</sys_created_on>
+        <sys_id>49e51be11bf2811062e50ed2cd4bcbbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-04-11 20:01:08</sys_updated_on>
+    </sys_claim>
+</record_update>

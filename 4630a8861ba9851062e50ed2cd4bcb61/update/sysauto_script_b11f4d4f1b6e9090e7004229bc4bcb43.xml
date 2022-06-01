@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>ClearDemoDataCDW</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="Kirolos Iskander">3a5d085d1bc6dc1030f2ddbbbc4bcbb3</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2020-08-15 03:13:55</run_start>
+        <run_time>1970-01-01 05:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[var nukeIT = new clearDemoDataCDW();
+var answer = nukeIT.clearDemoData();
+gs.print(answer);]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>kirolos.iskander@cdw.com</sys_created_by>
+        <sys_created_on>2020-08-15 03:14:16</sys_created_on>
+        <sys_id>b11f4d4f1b6e9090e7004229bc4bcb43</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>ClearDemoDataCDW</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sysauto_script_b11f4d4f1b6e9090e7004229bc4bcb43</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-04-11 20:01:14</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</claim_owner_scope>
+        <claim_timestamp>1801a374f690000001</claim_timestamp>
+        <metadata_update_name>sysauto_script_b11f4d4f1b6e9090e7004229bc4bcb43</metadata_update_name>
+        <previous_claim_app_version>1.0.3</previous_claim_app_version>
+        <previous_claim_name>CDW Ordering Integration</previous_claim_name>
+        <previous_claim_scope>4630a8861ba9851062e50ed2cd4bcb61</previous_claim_scope>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-04-11 20:01:14</sys_created_on>
+        <sys_id>d2e59be11bf2811062e50ed2cd4bcb3e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-04-11 20:01:14</sys_updated_on>
+    </sys_claim>
+</record_update>

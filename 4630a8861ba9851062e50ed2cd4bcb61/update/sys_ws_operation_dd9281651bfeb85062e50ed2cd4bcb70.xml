@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri/>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>POST</http_method>
+        <name>Post Order</name>
+        <operation_script><![CDATA[(function process( /*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+	var inputs = {};
+	var incoming = request.body.data;
+	//Build array of fields we're expecting for later use
+	var expectedFields = [
+		"u_account_manager_name",
+		"u_cost_center",
+		"u_customer_code",
+		"u_customer_name",
+		"u_customer_pur__line_item_nbr",
+		"u_invoice_line",
+		"u_customer_purchase_order",
+		"u_edc",
+		"u_invoice_date",
+		"u_invoice_nbr",
+		"u_invoiced_quantity",
+		"u_item_class",
+		"u_item_class_code",
+		"u_item_description",
+		"u_item_group",
+		"u_item_group_code",
+		"u_item_type",
+		"u_item_type_code",
+		"u_manufacturer",
+		"u_manufacturer_part_number",
+		"u_order_date",
+		"u_order_nbr",
+		"u_sales_tax",
+		"u_serial_number",
+		"u_ship_to_address_1",
+		"u_ship_to_address_3",
+		"u_ship_to_customer",
+		"u_ship_to_city",
+		"u_ship_to_postal_code",
+		"u_ship_to_state",
+		"u_shipping_carrier",
+		"u_shipping_cost",
+		"u_tracking_number",
+		"u_unit_price"
+	];
+	try {
+		if (incoming.records.length > 0) { //If multiple records run regular
+			for (var i = 0; i<incoming.records.length;i++){
+				var record = incoming.records[i];
+				if(record.u_tracking_number == '' || !(record.u_customer_purchase_order.match(/REQ/g))){
+					gs.info(JSON.stringify(record));
+					gs.info('PO: ' + record.u_customer_purchase_order);
+					gs.info('Tracking: ' + record.u_tracking_number);
+					incoming.records.splice(i,1);
+					gs.info('Removed a record');
+				}
+			}
+			if (incoming.records.length > 0){
+			inputs['records'] = incoming.records;
+			//Trigger Flow Designer Flow
+			sn_fd.FlowAPI.startSubflow('global' + '.' + 'cdw_order_data_return', inputs);
+			}
+		} else if (incoming.u_customer_purchase_order) { //If single record add to array
+
+			if(incoming.u_tracking_number != '' || incoming.u_customer_purchase_order.match(/REQ/g)){
+				//Build record object and add to array
+				var tempObj = {};
+				var tempArr = [];
+				for (var keys in expectedFields) {
+					tempObj[expectedFields[keys]] = incoming[expectedFields[keys]];
+				}
+				tempArr.push(tempObj);
+				inputs['records'] = tempArr;
+				//Trigger Flow Designer Flow
+
+				sn_fd.FlowAPI.startSubflow('global' + '.' + 'cdw_order_data_return', inputs);
+			}
+		} else {//Fail if neither single or multiple, create incident
+			var str = '';
+			for (var key in expectedFields) {
+				str += expectedFields[key] + ':' + incoming[expectedFields[key]] + '\n';
+			}
+			var incGr = new GlideRecord('incident');
+			incGr.initialize();
+			incGr.short_description = 'APi Connect to CDW Order API Failure(Invalid Input)';
+			incGr.description = str;
+			incGr.assigned_to = '';
+			incGr.assignment_group = '48b385421be35090e7004229bc4bcb14';
+			incGr.category = 'Fault/Failure';
+			incGr.subcategory = 'Hardware';
+			incGr.u_service = 'APi Connect (ServiceNow)';
+			incGr.insert();
+		}
+	} catch (e) {//If fatal error then create incident
+		var incidentGr = new GlideRecord('incident');
+		incidentGr.initialize();
+		incidentGr.short_description = 'APi Connect to CDW Order API Failure(Exception)';
+		incidentGr.description = e;
+		incidentGr.assigned_to = '';
+		incidentGr.assignment_group = '48b385421be35090e7004229bc4bcb14';
+		incidentGr.category = 'Fault/Failure';
+		incidentGr.subcategory = 'Hardware';
+		incidentGr.u_service = 'APi Connect (ServiceNow)';
+		incidentGr.insert();
+	}
+
+	//Sending Response
+	var body = {};
+	body.status = "OK";
+	body.msg = "Order Data Accepted";
+	response.setBody(body);
+})(request, response);]]></operation_script>
+        <operation_uri>/api/apig/cdw_order_data_return/postorder</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/postorder</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-09-24 13:06:45</sys_created_on>
+        <sys_id>dd9281651bfeb85062e50ed2cd4bcb70</sys_id>
+        <sys_mod_count>57</sys_mod_count>
+        <sys_name>Post Order</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sys_ws_operation_dd9281651bfeb85062e50ed2cd4bcb70</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-24 13:24:59</sys_updated_on>
+        <web_service_definition display_value="CDW Order Data Return">1e52c5611bfeb85062e50ed2cd4bcb18</web_service_definition>
+        <web_service_version/>
+    </sys_ws_operation>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</claim_owner_scope>
+        <claim_timestamp>17fb7648b0e0000001</claim_timestamp>
+        <metadata_update_name>sys_ws_operation_dd9281651bfeb85062e50ed2cd4bcb70</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>CDW Ordering Integration</previous_claim_name>
+        <previous_claim_scope>4630a8861ba9851062e50ed2cd4bcb61</previous_claim_scope>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-23 15:28:14</sys_created_on>
+        <sys_id>4a312c6f1b5a05908c5143f3cc4bcbcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-23 15:28:14</sys_updated_on>
+    </sys_claim>
+</record_update>

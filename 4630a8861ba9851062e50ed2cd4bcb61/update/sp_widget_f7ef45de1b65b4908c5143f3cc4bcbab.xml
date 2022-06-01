@@ -1,0 +1,1163 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>sc</category>
+        <client_script><![CDATA[function($scope, $http, $timeout, $location, spScUtil, nowAttachmentHandler, spUtil, $log, spAriaUtil, $q, spAtf, spModal, spAriaFocusManager, cabrillo, snAnalytics) {
+	//Set Labels
+	$scope.address1Label = 'Address 1';
+	$scope.address2Label = 'Address 2';
+	$scope.addressCityLabel = 'City';
+	$scope.addressStateLabel = 'State';
+	$scope.addressZipLabel = 'Zip Code';
+	$scope.addressPhoneLabel = "Phone";
+	var c = this;
+	c.showSpecialInstructions = false;
+	c.showDeliveryAddr = false;
+	c.isNative = cabrillo.isNative() && c.data.isMEE;
+	c.isLocationSelected = false;
+	c.phoneValid = true;
+	
+	c.updateDetails = function() {
+		c.deliverTo = c.data.cart.delivery_address;
+		c.special_instructions = c.data.cart.special_instructions;
+		c.requestedFor = {
+			displayValue: c.data.cart.requested_for_display_name,
+			value: c.data.cart.requested_for,
+			name: 'requested_for'
+		};
+	}
+
+	spAtf.init().then(function(atf) {
+		$scope._atf = atf;
+		atf.expose('checkout_util', checkoutUtil);
+	});
+
+	var checkoutUtil = {
+		checkout: function() {
+			var defer = $q.defer();
+			$scope.c.triggerCheckout();
+			var cleanUp;
+			var isOrderGuide = c.data.action == 'order_guide';
+			if (isOrderGuide)
+				cleanUp = $scope.$on('$sp.sc_order_guide.submitted', function(o, result) {
+					$timeout(function() {
+						cleanUp();
+						defer.resolve(result);
+					}, 10);
+				});
+			else
+				cleanUp = $scope.$on('$sp.sc_cat_item.submitted', function(o, result) {
+					$timeout(function() {
+						cleanUp();
+						defer.resolve(result);
+					}, 10);
+				});
+			return defer.promise;
+		}
+	}
+
+	$scope.$on('dialog.upload_too_large.show', function(e) {
+		$log.error($scope.m.largeAttachmentMsg);
+		spUtil.addErrorMessage($scope.m.largeAttachmentMsg);
+	});
+
+	$scope.m = $scope.data.msgs;
+	$scope.checkOutMsg = $scope.m.checkOutMsg;
+	$scope.checkoutPopupTitle = $scope.m.checkoutPopupTitle;
+
+	displayNativeButtons();
+
+	var ah = $scope.attachmentHandler = new nowAttachmentHandler(function(attachments, action) {
+		$scope.attachments = attachments;
+		if (action === "added")
+			$scope.setFocusToAttachment();
+		if (action === "renamed")
+			spAriaUtil.sendLiveMessage($scope.m.renameSuccessMsg);
+		if (action === "deleted")
+			spAriaUtil.sendLiveMessage($scope.m.deleteSuccessMsg);
+		spUtil.get($scope, {
+			action: "from_attachment"
+		});
+	}, function(error) {
+		spUtil.addErrorMessage(error.msg + error.fileName);
+	});
+
+	ah.setParams('sc_cart', c.data.cart.sys_id, 1024 * 1024 * $scope.data.maxAttachmentSize);
+
+	$scope.attachmentHandler.getAttachmentList();
+
+	$scope.confirmDeleteAttachment = function(attachment) {
+		if (c.isNative) {
+			if (confirm($scope.data.msgs.delete_attachment)) {
+				$scope.attachmentHandler.deleteAttachment(attachment);
+				$scope.setFocusToAttachmentButton();
+			}
+		} else {
+			spModal.confirm($scope.data.msgs.delete_attachment).then(function() {
+				$scope.attachmentHandler.deleteAttachment(attachment);
+				$scope.setFocusToAttachmentButton();
+			});
+		}
+	}
+
+	c.changeShippingInfo = function() {
+		if (c.data.action !== 'order_now')
+			c.server.get({
+				action: "change_shipping_info",
+				requestedFor: c.requestedFor.value,
+				special_instructions: c.special_instructions,
+				deliverTo: c.deliverTo,
+				cart: {
+					name: c.data.cart.name
+				}
+			}).then(function(response) {
+				c.data.cart = response.data.cart;
+				c.updateDetails();
+			});
+	}
+
+	c.triggerCheckout = function() {
+		var newURL;
+		c.checkoutInProgress = true;
+		putCheckingOutBtn();
+		var webAnalyticsMsgSuffix = c.isNative ? " - NOW Mobile" : "";
+		var additionalParms = {
+			'sysparm_requested_for': c.requestedFor.value,
+			'special_instructions': c.special_instructions,
+			'delivery_address': c.deliverTo,
+			'address1': c.address1,
+			'address2': c.address2,
+			'addressCity': c.addressCity,
+			'addressState': c.addressState,
+			'addressZip': c.addressZip,
+			'addressPhone': c.addressPhone,
+			'company': c.company.value,
+			'location': c.location.value,
+			'date': '',
+			'department': '',
+			'comment': c.comment
+		};
+
+		if (c.data.parentParams) {
+			additionalParms.sysparm_parent_sys_id = c.data.parentParams.sysparm_parent_sys_id;
+			additionalParms.sysparm_parent_table = c.data.parentParams.sysparm_parent_table;
+		}
+
+		if (c.data.action == 'order_now') {
+			spScUtil.orderNow(c.data.item.sys_id, c.data.item.quantity, c.data.item.fields, c.data.item.newRecordID, additionalParms).then(function(response) {
+				$scope.server.get({
+					action: 'log_request',
+					itemDetails: {
+						sys_id: $scope.data.item.sys_id,
+						name: $scope.data.item.name,
+						sys_class_name: $scope.data.item.sys_class_name
+					}
+				});
+				var a = response.data.result;
+
+				if (c.data.cdwCart) {
+					$scope.server.get({
+						action: 'cdw_vars',
+						cdwReq: a.sys_id,
+						address1: c.address1,
+						address2: c.address2,
+						addressCity: c.addressCity,
+						addressState: c.addressState,
+						addressZip: c.addressZip,
+						addressPhone: c.addressPhone,
+						company: c.company.value,
+						location: c.location.value,
+						date: '',
+						department: '',
+						comment: c.comment
+					});
+				}
+
+				if (!$scope.data.parentParams)
+					$scope.$emit("$$uiNotification", a.$$uiNotification);
+				$scope.$emit("$sp.sc_cat_item.submitted", a);
+				// build and send payload for instrumentation
+				var payload = {};
+				payload.name = "Submit Catalog Request";
+				payload.data = {};
+				payload.data["Catalog Title"] = c.data.item.title;
+				payload.data["Catalog SysID"] = c.data.item.sys_id;
+				payload.data["Shopping Cart"] = "false";
+				snAnalytics.addEvent(payload);
+
+				if (c.options.auto_redirect == 'false') {
+					$rootScope.$broadcast("$sp.service_catalog.cart.submitted", true);
+					spUtil.addInfoMessage($scope.m.requestSubmitted);
+					return;
+				} else if (!$scope._atf) {
+					removeCabrilloButtons();
+
+					newURL = $location.search('id=sc_request&is_new_order=true&table=sc_request&sys_id=' + a.sys_id);
+					spAriaFocusManager.navigateToLink(newURL.url());
+				}
+			}, function(response) {
+				c.cancel();
+				if (response.data.result && response.data.result.errMsg)
+					spUtil.addErrorMessage(response.data.result.errMsg);
+			});
+		} else if (c.data.action == 'order_now_wishlisted_item') {
+			spScUtil.orderWishlistedItem(c.data.item.sys_id, c.data.item.quantity, c.data.item.fields, c.data.item.newRecordID, additionalParms).then(function(response) {
+				$scope.server.get({
+					action: 'log_request',
+					itemDetails: {
+						sys_id: $scope.data.item.sys_id,
+						name: $scope.data.item.name,
+						sys_class_name: $scope.data.item.sys_class_name
+					}
+				});
+				var a = response.data.result;
+				if (!$scope.data.parentParams)
+					$scope.$emit("$$uiNotification", a.$$uiNotification);
+				$scope.$emit("$sp.sc_cat_item.submitted", a);
+				$rootScope.$broadcast("$sp.service_catalog.wishlist.update");
+				if (c.options.auto_redirect == 'false') {
+					$rootScope.$broadcast("$sp.service_catalog.cart.submitted", true);
+					spUtil.addInfoMessage($scope.m.requestSubmitted);
+					return;
+				} else {
+					newURL = $location.search('id=sc_request&is_new_order=true&table=sc_request&sys_id=' + a.sys_id);
+					spAriaFocusManager.navigateToLink(newURL.url());
+				}
+			});
+		} else {
+			c.data.delivery_address = c.deliverTo;
+			c.data.special_instructions = c.special_instructions;
+			c.data.requested_for = c.requestedFor.value;
+
+			if (c.data.cdwCart) {
+				c.data.sysparm_requested_for = c.requestedFor.value;
+				c.data.special_instruction = c.special_instructions;
+				c.data.delivery_address = c.deliverTo;
+				c.data.address1 = c.address1;
+				c.data.address2 = c.address2;
+				c.data.addressCity = c.addressCity;
+				c.data.addressState = c.addressState;
+				c.data.addressZip = c.addressZip;
+				c.data.addressPhone = c.addressPhone;
+				c.data.company = c.company.value;
+				c.data.location = c.location.value;
+				c.data.date = '';
+				c.data.department = '';
+				c.data.comment = c.comment;
+			}
+
+			var isOrderGuide = c.data.action == 'order_guide';
+			c.server.update().then(function(response) {
+				if (!response.result)
+					return;
+
+				// build and send payload for instrumentation
+				var cartData = c.data.cartData;
+				var cartDataLen = c.data.cartData.length;
+				for (var i = 0; i < cartDataLen; i++) {
+					var payload = {};
+					payload.name = "Submit Catalog Request";
+					payload.data = {};
+					payload.data["Catalog Title"] = cartData[i].title;
+					payload.data["Catalog SysID"] = cartData[i].sys_id;
+					payload.data["Catalog Cart SysID"] = cartData[i].cartID;
+					payload.data["Shopping Cart"] = "true";
+					snAnalytics.addEvent(payload);
+				}
+
+				c.data.action = null;
+				if (isOrderGuide) {
+					window.GlideWebAnalytics.trackEvent("Service Catalog", "Order Guide Request" + webAnalyticsMsgSuffix, "Catalog Request Submitted", $scope.data.item.items.length, 0);
+					$scope.$emit("$sp.sc_order_guide.submitted", $scope.data.result);
+				} else {
+					window.GlideWebAnalytics.trackEvent("Service Catalog", "Catalog Cart" + webAnalyticsMsgSuffix, "Catalog Request Submitted", c.data.numberOfCartItems, 0);
+					$scope.$emit("$sp.cart.submitted", $scope.data.result);
+				}
+				if (c.options.auto_redirect == 'false') {
+					$rootScope.$broadcast("$sp.service_catalog.cart.update");
+					$rootScope.$broadcast("$sp.service_catalog.cart.submitted", true);
+					spUtil.addInfoMessage($scope.m.requestSubmitted);
+					return;
+				} else {
+					if ($scope.data.result.sys_id)
+						newURL = $location.search('id=sc_request&is_new_order=true&table=sc_request&sys_id=' + $scope.data.result.sys_id);
+					else
+						newURL = $location.search('id=requests');
+
+					removeCabrilloButtons();
+					spAriaFocusManager.navigateToLink(newURL.url());
+
+					$timeout(function() {
+						$rootScope.$broadcast("$sp.service_catalog.cart.update", {
+							checkedOut: true
+						});
+						$rootScope.$broadcast("$sp.service_catalog.cart.submitted", true);
+					})
+
+				}
+			});
+		}
+	}
+
+	$scope.$on("field.change", function(evt, parms) {
+		if (parms.field.name == 'requested_for') {
+			c.data.cart.requested_for = parms.newValue;
+			var getShippingAddrURL = '/api/sn_sc/v1/servicecatalog/cart/delivery_address/' + parms.newValue;
+			$http.get(getShippingAddrURL).then(function handleSuccess(response) {
+				if (response.data.result) {
+					c.deliverTo = response.data.result.trim();
+				} else {
+					c.deliverTo = '';
+				}
+				c.changeShippingInfo();
+			});
+		}
+	});
+
+	c.cancel = function() {
+		if (c.isNative) {
+			cabrillo.viewLayout.setTitle(c.oldTitle);
+			removeCabrilloButtons();
+		}
+		$rootScope.$broadcast("$sp.service_catalog.cart.cancel_order", true);
+	}	
+
+	c.allowDeliveryAddress = function() {
+		if (c.data.item)
+			return c.data.item.request_method != "request"
+		return true;
+	}
+
+	var mespClosePopupUnregister = $rootScope.$on("mesp.popup.close", function() {
+		// Timeout is to give a better user experience otherwise when this popup opens,
+		// the cabrillo buttons will be displayed immediately giving a bad user experience.
+		$timeout(function() {
+			displayNativeButtons();
+		});
+	});
+
+	var mespOpenPopupUnregister = $rootScope.$on("mesp.popup.open", function() {
+		// Timeout is to give a better user experience otherwise when this popup opens,
+		// the cabrillo buttons will be displayed immediately giving a bad user experience.
+		$timeout(function() {
+			removeCabrilloButtons();
+		});
+	});
+
+	$scope.$on("$destroy", function() {
+		mespClosePopupUnregister();
+		mespOpenPopupUnregister();
+	});
+
+	function removeCabrilloButtons() {
+		if (c.isNative)
+			cabrillo.viewLayout.setBottomButtons();
+	}
+
+	function displayNativeButtons() {
+		if (c.isNative) {
+			if (typeof cabrillo.viewLayout.getTitle == 'function') {
+				cabrillo.viewLayout.getTitle().then(function(title) {
+					c.oldTitle = title;
+					cabrillo.viewLayout.setTitle($scope.checkoutPopupTitle);
+				});
+			}
+			var buttons = [{
+				title: $scope.m.dialogCancel,
+				enabled: true,
+				backgroundColor: '#f7f7f7',
+				textColor: '#000000'
+			},
+										 {
+											 title: $scope.checkOutMsg,
+											 enabled: true,
+											 backgroundColor: $scope.data.sys_properties.mobileNativeColor,
+											 textColor: '#FFFFFF'
+										 }
+										];
+			cabrillo.viewLayout.hideBackButton();
+			cabrillo.viewLayout.setNavigationBarButtons();
+			cabrillo.viewLayout.setBottomButtons(buttons, function(buttonIndex) {
+				if (buttonIndex == 0) {
+					c.cancel();
+				} else {
+					c.triggerCheckout();
+				}
+			});
+		}
+	}
+
+	function putCheckingOutBtn() {
+		if (c.isNative) {
+			var buttons = [{
+				title: $scope.m.dialogCancel,
+				enabled: false,
+				backgroundColor: '#f7f7f7',
+				textColor: '#000000'
+			},
+										 {
+											 title: $scope.m.checkingOutMsg,
+											 enabled: false,
+											 backgroundColor: $scope.data.sys_properties.mobileNativeColor,
+											 textColor: '#FFFFFF'
+										 }
+										];
+
+			cabrillo.viewLayout.setBottomButtons(buttons, function(buttonIndex) {});
+		}
+	}
+	c.changeCompany = function() {
+		c.server.get({
+			action: "change_company",
+			company: c.company.value
+		}).then(function(response) {
+			$scope.data.disable_location = response.data.disable_location;
+			$scope.data.locationQuery = response.data.locationQuery;
+			$scope.c.location.value = '';
+			$scope.data.disable_department = response.data.disable_department;
+			$scope.data.departmentQuery = response.data.departmentQuery;
+			$scope.data.disable_address = response.data.disable_address;
+			$scope.c.company.displayValue = response.data.companyDisplayValue;
+			updateComments();
+			c.changeAddress();
+			
+		if($scope.c.addressPhone){
+			checkPhone();
+		}
+		});
+	}
+
+	c.changeLocation = function() {
+		c.server.get({
+			action: "change_location",
+			location: c.location.value
+		}).then(function(response) {
+			$scope.c.address1 = response.data.address1;
+			$scope.c.address2 = response.data.address2;
+			$scope.c.addressCity = response.data.addressCity;
+			$scope.c.addressState = response.data.addressState;
+			$scope.c.addressZip = response.data.addressZip;
+			$scope.c.addressPhone = response.data.addressPhone;
+			$scope.c.isLocationSelected = true;
+			$scope.c.location.displayValue = response.data.locationDisplayValue;
+			$scope.c.locationCompanyNumber = response.data.locationCompanyNumber;
+			$scope.c.locationDepartmentNumber = response.data.locationDepartmentNumber;
+			$scope.c.gl = response.data.gl;
+			updateComments();
+				checkPhone();
+		});
+
+	}
+	c.changeAddress = function() {
+		c.server.get({
+			action: "enable_address",
+			address_changed: $scope.c.address_changed
+		}).then(function(response) {
+			$scope.data.disable_address = response.data.disable_address
+
+			if($scope.c.addressPhone){
+				checkPhone();
+			}
+		})
+	}
+	c.checkPhone = function(){
+		checkPhone();
+	}
+
+	//Build out the Company - Department - GL for billing
+	function updateComments() {
+		var newComment = '';
+		if (c.locationCompanyNumber) newComment += c.locationCompanyNumber + ' - '
+		if (c.locationDepartmentNumber) newComment += c.locationDepartmentNumber + ' - '
+		newComment += c.gl;
+		newComment += ' - Configure For';
+		if ($scope.c.company.displayValue) {
+			newComment += ' ' + $scope.c.company.displayValue;
+		}
+		if ($scope.c.location.displayValue) {
+			newComment += ' ' + $scope.c.location.displayValue;
+		}
+		$scope.c.comment = newComment;
+		if(c.addressPhone){
+			checkPhone();
+		}
+	}
+	c.updateDetails();
+
+	function checkPhone(){
+		if(!isPhoneValid($scope.c.addressPhone)){
+			var phoneTrimmed = '';
+			if($scope.c.addressPhone && $scope.c.addressPhone != ''){
+			phoneTrimmed = $scope.c.addressPhone.slice(0, 12);
+			}
+			if(isPhoneValid(phoneTrimmed)){
+				$scope.c.addressPhone = phoneTrimmed;
+				$scope.c.phoneValid = true;
+			}
+			else{
+				$scope.c.address_changed = true;
+				$scope.c.phoneValid = false;
+				c.changeAddress();
+			}
+		}
+		else{
+			$scope.c.phoneValid = true;
+		}
+	}
+
+	function isPhoneValid(phoneNumber)
+	{
+		var phoneno = /^(\d{3})-(\d{3})-(\d{4})$/g;
+		if(phoneNumber && phoneNumber != '' && phoneNumber.match(phoneno)) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+
+	if (!c.data.cdwCart) {
+		var newURL;
+		c.checkoutInProgress = true;
+		putCheckingOutBtn();
+		var webAnalyticsMsgSuffix = c.isNative ? " - NOW Mobile" : "";
+
+		var additionalParms = {
+			'sysparm_requested_for': c.requestedFor.value,
+			'special_instructions': c.special_instructions,
+			'delivery_address': c.deliverTo
+		};
+
+		if (c.data.parentParams) {
+			additionalParms.sysparm_parent_sys_id = c.data.parentParams.sysparm_parent_sys_id;
+			additionalParms.sysparm_parent_table = c.data.parentParams.sysparm_parent_table;
+		}
+
+		if (c.data.action == 'order_now') {
+			spScUtil.orderNow(c.data.item.sys_id, c.data.item.quantity, c.data.item.fields, c.data.item.newRecordID, additionalParms).then(function(response) {
+				$scope.server.get({
+					action: 'log_request',
+					itemDetails: {
+						sys_id: $scope.data.item.sys_id,
+						name: $scope.data.item.name,
+						sys_class_name: $scope.data.item.sys_class_name
+					}
+				});
+				var a = response.data.result;
+
+				if (!$scope.data.parentParams)
+					$scope.$emit("$$uiNotification", a.$$uiNotification);
+				$scope.$emit("$sp.sc_cat_item.submitted", a);
+				// build and send payload for instrumentation
+				var payload = {};
+				payload.name = "Submit Catalog Request";
+				payload.data = {};
+				payload.data["Catalog Title"] = c.data.item.title;
+				payload.data["Catalog SysID"] = c.data.item.sys_id;
+				payload.data["Shopping Cart"] = "false";
+				snAnalytics.addEvent(payload);
+
+				if (c.options.auto_redirect == 'false') {
+					$rootScope.$broadcast("$sp.service_catalog.cart.submitted", true);
+					spUtil.addInfoMessage($scope.m.requestSubmitted);
+					return;
+				} else if (!$scope._atf) {
+					removeCabrilloButtons();
+					newURL = $location.search('id=sc_request&is_new_order=true&table=sc_request&sys_id=' + a.sys_id);
+					spAriaFocusManager.navigateToLink(newURL.url());
+				}
+			}, function(response) {
+				c.cancel();
+				if (response.data.result && response.data.result.errMsg)
+					spUtil.addErrorMessage(response.data.result.errMsg);
+			});
+		} else if (c.data.action == 'order_now_wishlisted_item') {
+			spScUtil.orderWishlistedItem(c.data.item.sys_id, c.data.item.quantity, c.data.item.fields, c.data.item.newRecordID, additionalParms).then(function(response) {
+				$scope.server.get({
+					action: 'log_request',
+					itemDetails: {
+						sys_id: $scope.data.item.sys_id,
+						name: $scope.data.item.name,
+						sys_class_name: $scope.data.item.sys_class_name
+					}
+				});
+				var a = response.data.result;
+				if (!$scope.data.parentParams)
+					$scope.$emit("$$uiNotification", a.$$uiNotification);
+				$scope.$emit("$sp.sc_cat_item.submitted", a);
+				$rootScope.$broadcast("$sp.service_catalog.wishlist.update");
+				if (c.options.auto_redirect == 'false') {
+					$rootScope.$broadcast("$sp.service_catalog.cart.submitted", true);
+					spUtil.addInfoMessage($scope.m.requestSubmitted);
+					return;
+				} else {
+					newURL = $location.search('id=sc_request&is_new_order=true&table=sc_request&sys_id=' + a.sys_id);
+					spAriaFocusManager.navigateToLink(newURL.url());
+				}
+			});
+		} else {
+			c.data.delivery_address = c.deliverTo;
+			c.data.special_instructions = c.special_instructions;
+			c.data.requested_for = c.requestedFor.value;
+			var isOrderGuide = c.data.action == 'order_guide';
+			c.server.update().then(function(response) {
+				if (!response.result)
+					return;
+
+				// build and send payload for instrumentation
+				var cartData = c.data.cartData;
+				var cartDataLen = c.data.cartData.length;
+				for (var i = 0; i < cartDataLen; i++) {
+					var payload = {};
+					payload.name = "Submit Catalog Request";
+					payload.data = {};
+					payload.data["Catalog Title"] = cartData[i].title;
+					payload.data["Catalog SysID"] = cartData[i].sys_id;
+					payload.data["Catalog Cart SysID"] = cartData[i].cartID;
+					payload.data["Shopping Cart"] = "true";
+					snAnalytics.addEvent(payload);
+				}
+				
+				c.data.action = null;
+				if (isOrderGuide) {
+					window.GlideWebAnalytics.trackEvent("Service Catalog", "Order Guide Request" + webAnalyticsMsgSuffix, "Catalog Request Submitted", $scope.data.item.items.length, 0);
+					$scope.$emit("$sp.sc_order_guide.submitted", $scope.data.result);
+				} else {
+					window.GlideWebAnalytics.trackEvent("Service Catalog", "Catalog Cart" + webAnalyticsMsgSuffix, "Catalog Request Submitted", c.data.numberOfCartItems, 0);
+					$scope.$emit("$sp.cart.submitted", $scope.data.result);
+				}
+				if (c.options.auto_redirect == 'false') {
+					$rootScope.$broadcast("$sp.service_catalog.cart.update");
+					$rootScope.$broadcast("$sp.service_catalog.cart.submitted", true);
+					spUtil.addInfoMessage($scope.m.requestSubmitted);
+					return;
+				} else {
+					if ($scope.data.result.sys_id) 
+						newURL = $location.search('id=sc_request&is_new_order=true&table=sc_request&sys_id=' + $scope.data.result.sys_id);
+					else
+						newURL = $location.search('id=requests');
+
+					removeCabrilloButtons();
+					spAriaFocusManager.navigateToLink(newURL.url());
+
+					$timeout(function() {
+						$rootScope.$broadcast("$sp.service_catalog.cart.update", {
+							checkedOut: true
+						});
+						$rootScope.$broadcast("$sp.service_catalog.cart.submitted", true);
+					})
+
+				}
+			});
+		}
+	}
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.attachment-list {
+  	max-height: 180px;
+  	overflow-y: scroll;
+  	margin-bottom: 10px;
+}
+
+.accordion-toggle {
+  	line-height: 13px;
+}
+
+textarea {
+	resize: vertical;
+}
+
+.select2-additional-display-field {
+  	padding-right: 5px;
+}
+
+.full-height {
+  	height: -webkit-fill-available;
+}
+
+.attachment-height {
+ 		 height: 80px;
+}
+
+.flex-center {
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+.select2-choice{
+  .select2-arrow {
+    right: 0px !important;
+  }
+}
+.required{
+ 	color:red;
+  font-size:25px;
+}
+
+label{
+	margin-bottom: 0px;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>sc-checkout-copy</id>
+        <internal>false</internal>
+        <link><![CDATA[function(scope, elem){
+    scope.setFocusToAttachment = function () {
+		setTimeout(function () {
+			var inboxArray = elem.find("a.view-attachment");
+			inboxArray.focus();
+		}, 100);
+	}
+	scope.setFocusToAttachmentButton = function () {
+		elem.find('.sp-attachment-add')[0].focus();
+	}
+}
+	]]></link>
+        <name>CDW Catalog Checkout</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function () {
+	var localInput = input; //to safeguard pullution of "input" via BR or other scripts
+
+	data.action = options.action;
+	if (data.action && localInput.action != 'cdw_vars')
+		data.item = options.item;
+	else if (localInput.action != 'cdw_vars')
+		data.action = 'checkout';
+	if (localInput && localInput.action == 'cdw_vars') {
+		setCustomRequestValues(localInput.cdwReq);
+		return;
+	}
+	if (localInput && localInput.action == 'enable_address'){
+		data.disable_address = !localInput.address_changed;
+		return;
+	}
+
+	if (localInput && localInput.action == "from_attachment")
+		return;
+	else if (localInput && localInput.action === 'log_request') {
+		$sp.logStat('Order Now Request', localInput.itemDetails.sys_class_name, localInput.itemDetails.sys_id, localInput.itemDetails.name, $sp.getPortalRecord().getUniqueValue());
+		$sp.logStat('Cat Item Request', localInput.itemDetails.sys_class_name, localInput.itemDetails.sys_id, localInput.itemDetails.name, $sp.getPortalRecord().getUniqueValue());
+		return;
+	}
+
+	if (localInput && localInput.action === "change_company") {
+		data.locationQuery = "companyISNOTEMPTY^u_address_1ISNOTEMPTY^zipISNOTEMPTY^company=" + localInput.company;
+		data.departmentQuery = "departmentISNOTEMPTY^company=" + localInput.company;
+		data.disable_location = true;
+		data.disable_department = true;
+		if(!localInput.address_changed){
+			data.disable_address = true;
+			var companyGr = new GlideRecord('core_company');
+			companyGr.get(localInput.company);
+			data.companyDisplayValue = companyGr.getValue('name');
+		}
+		return;
+	}
+	if (localInput && localInput.action === "change_location") {
+		var locationGR = new GlideRecord('cmn_location');
+		locationGR.get(localInput.location);
+		data.address1 = locationGR.getValue('u_address_1');
+		data.address2 = locationGR.getValue('u_address_2');
+		data.addressCity = locationGR.getValue('city');
+		data.addressState = locationGR.getValue('state');
+		data.addressZip = locationGR.getValue('zip');
+		data.addressPhone = locationGR.getValue('phone');
+		data.locationDisplayValue = locationGR.getValue('name');
+		var companyGR = new GlideRecord('core_company');
+		companyGR.get(locationGR.company);
+		data.locationCompanyNumber = companyGR.getValue('u_company_number');
+		data.locationDepartmentNumber = locationGR.getValue('u_department_number');
+		data.gl = '70700';
+		return;
+	}
+
+
+	var cartName = '';
+	if (localInput)
+		cartName = localInput.cart.name;
+	else if (options.cart)
+		cartName = options.cart.name;
+
+	addInstrumentationData();
+
+	var m = data.msgs = {};
+	m.dialogTitle = gs.getMessage("Delete Attachment");
+	m.dialogMessage = gs.getMessage("Are you sure?");
+	m.dialogOK = gs.getMessage("OK");
+	m.dialogCancel = gs.getMessage("Cancel");
+	m.renameSuccessMsg = gs.getMessage("Attachment renamed successfully");
+	m.deleteSuccessMsg = gs.getMessage("Attachment deleted successfully");
+	m.delete_attachment = gs.getMessage("Delete Attachment?");
+	m.requestSubmitted = gs.getMessage("Thank you, your request has been submitted.");
+	m.checkingOutMsg = gs.getMessage("Submitting...");
+	if (data.item.request_method == "request") {
+		m.checkOutMsg = gs.getMessage("Request");
+		m.checkoutPopupTitle = gs.getMessage("Request Confirmation");
+	} else {
+		m.checkOutMsg = gs.getMessage("Checkout");
+		m.checkoutPopupTitle = gs.getMessage("Order Checkout");
+	}
+	data.isMEE = options.native_mobile == 'true';
+	data.sys_properties = {
+		mobileNativeColor: gs.getProperty("glide.sc.mobile.primary_color", "#1f8476")
+	};
+
+	data.maxAttachmentSize = parseInt(gs.getProperty("com.glide.attachment.max_size", 1024));
+	if (isNaN(data.maxAttachmentSize))
+		data.maxAttachmentSize = 24;
+	m.largeAttachmentMsg = gs.getMessage("Attached files must be smaller than {0} - please try again", "" + data.maxAttachmentSize + "MB");
+
+	var cartJS;
+	if (data.action !== 'order_now') {
+		cartJS = new sn_sc.CartJS(cartName, '' + gs.getUser().getID());
+
+		if (localInput && localInput.action === "change_shipping_info") {
+			cartJS.setRequestedFor(localInput.requestedFor);
+		}
+		data.disable_location = false;
+		data.disable_department = false;
+		data.disable_address = true;
+		data.required = true;
+	}
+
+	if (localInput && localInput.action == 'order_guide') {
+		var guideJS = new sn_sc.OrderGuide('' + cartName);
+		cartJS = new sn_sc.CartJS('' + cartName);
+		for (var i = 0; i < localInput.item.items.length; i++) {
+			guideJS.navigateFromMap(localInput.item.items[i]);
+		}
+		cartJS.activateGuide();
+		cartJS.setRequestedFor(localInput.requested_for);
+		cartJS.setDeliveryAddress(localInput.delivery_address);
+		cartJS.setSpecialInstructions(localInput.special_instructions);
+		cartJS.setParentParams(localInput.parentParams);
+		var request = cartJS.checkoutGuide();
+		data.result = {
+			sys_id: request.request_id,
+			number: request.request_number,
+			table: 'sc_request'
+		};
+		var portalId = $sp.getPortalRecord().getUniqueValue();
+		$sp.logStat('Order Now Request', localInput.item.sys_class_name, localInput.item.sys_id, localInput.item.name, portalId);
+		$sp.logStat('Cat Item Request', localInput.item.sys_class_name, localInput.item.sys_id, localInput.item.name, portalId);
+		return;
+	}
+
+	if (localInput && localInput.action === 'checkout') {
+		checkoutCart(cartJS);
+		return;
+	}
+
+
+	if (data.action !== 'order_now') {
+		data.cart = cartJS.getCartDetails(false);
+		if (isCDWCart(cartName)) {
+			data.cdwCart=true;
+		}
+		else {
+			data.cdwCart=false;
+		}
+	}
+	else {
+		var requested_for = {
+			user_id: gs.getUser().getID(),
+			user_name: gs.getUser().getDisplayName()
+		};
+
+		data.cart = {
+			name: cartName,
+			sys_id: gs.generateGUID(),
+			requested_for: requested_for.user_id,
+			requested_for_display_name: requested_for.user_name,
+			delivery_address: sn_sc.CartJS.getRequestedForAddress(requested_for.user_id)
+		};
+	}
+
+	if (options && options.parentParams) { //if parent is passed
+		data.parentParams = options.parentParams;
+	}
+	if (options && options.requested_for && options.requested_for.id) { //If Passed via options
+		data.cart.requested_for = options.requested_for.id;
+		data.cart.requested_for_display_name = options.requested_for.displayValue;
+		data.cart.delivery_address = sn_sc.CartJS.getRequestedForAddress(options.requested_for.id);
+	}
+
+	if (data.request_for) { //if value is changed by user
+		var user = GlideUser.getUserByID(data.request_for);
+		if (user.exists()) {
+			data.cart.requested_for = data.request_for;
+			data.cart.requested_for_display_name = user.getDisplayName();
+			data.cart.delivery_address = sn_sc.CartJS.getRequestedForAddress(data.request_for);
+		}
+	}
+
+	data.disable_req_for = sn_sc.CartJS.canViewRF();
+	data.disable_company = true;
+	setRequestedForCols(data);
+	data.reqForQuery = gs.getProperty("glide.sc.request_for.query");
+
+
+	data.companyQuery = "vendor!=true";
+	data.companyDispCol = "name";
+	data.companyDispCols = "name";
+	data.companySearchCols = "name";
+	data.locationDispCol = "name";
+	data.locationDispCols = "name";
+	data.locationSearchCols = "name";
+	data.locationQuery = "companyISNOTEMPTY^u_address_1ISNOTEMPTY^zipISNOTEMPTY^company=";
+
+	function setCustomRequestValues(requestSysId) {
+		var localInput = input;
+		var reqGr = new GlideRecord("sc_request");
+		reqGr.get(requestSysId);
+		reqGr.setValue('u_address_1', localInput.address1);
+		reqGr.setValue('u_address_2', localInput.address2);
+		reqGr.setValue('u_address_city', localInput.addressCity);
+		reqGr.setValue('u_address_state', localInput.addressState);
+		reqGr.setValue('u_address_zip', localInput.addressZip);
+		reqGr.setValue('u_address_phone', localInput.addressPhone);
+		reqGr.setValue('u_company', localInput.company);
+		reqGr.setValue('u_location', localInput.location);
+		reqGr.setValue('u_requested_delivery_date', localInput.date);
+		reqGr.setValue('u_cdw_order', 'true');
+		reqGr.setValue('u_cdw_order_flow_ran', 'false');
+		reqGr.setValue('u_department', localInput.department);
+		reqGr.setValue('u_order_comment', localInput.comment);
+		reqGr.update();
+	}
+	function checkoutCart(cart) {
+		try {
+			var cartName = '';
+			if (localInput)
+				cartName = localInput.cart.name;
+			else if (options.cart)
+				cartName = options.cart.name;
+			var cartItemGr = cart.getCartItems();
+			data.numberOfCartItems = cartItemGr.getRowCount();
+			var requestedCatItems = new global.GlobalServiceCatalogUtil().findCatItemsForSpLogs(cartItemGr);
+			var request = cart.checkoutCart(true);
+			data.result = {
+				sys_id: request.request_id,
+				number: request.request_number,
+				table: 'sc_request'
+			};
+			if(input.cdwCart==true){
+				setCustomRequestValues(request.request_id);
+			}
+			var portalId = $sp.getPortalRecord().getUniqueValue();
+			$sp.logStat('Checkout Request', 'sc_request', request.request_id, request.request_number, portalId);
+			new global.GlobalServiceCatalogUtil().logRequestedCatItems(requestedCatItems, portalId);
+		} catch (e) {
+			var catalogExceptionUtils = new CatalogExceptionUtils();
+			if (catalogExceptionUtils.isCartException(e))
+				gs.addErrorMessage(e.getMessage());
+			data.numberOfCartItems = 0;
+		}
+	}
+	function setRequestedForCols(data) {
+		var reqForDispCols = gs.getProperty("glide.sc.request_for.columns");
+		if (JSUtil.notNil(reqForDispCols)) {
+			data.reqForDispCol = "name";
+			data.reqForDispCols = reqForDispCols.replace(/;/g, ",");
+			data.reqForSearchCols = data.reqForDispCol + "," + data.reqForDispCols;
+		} else {
+			var displayCol = GlideTableDescriptor.get("sys_user").getDisplayName();
+			data.reqForDispCol = displayCol || "name";
+			data.reqForSearchCols = data.reqForDispCol;
+			var refAcCols = GlideTableDescriptor.get("sys_user").getED().getAttribute("ref_ac_columns");
+			if (JSUtil.notNil(refAcCols))
+				data.reqForDispCols = (refAcCols + "").replace(/;/g, ",");
+
+			var refAcSearch = GlideTableDescriptor.get("sys_user").getED().getAttribute("ref_ac_columns_search");
+			if (JSUtil.notNil(data.reqForDispCols) && JSUtil.notNil(refAcSearch) && refAcSearch == "true")
+				data.reqForSearchCols += "," + data.reqForDispCols;
+		}
+	}
+
+	function addInstrumentationData() {
+		if ((input && input.action == 'change_shipping_info') || (input && input.action == 'change_company'))
+			return;
+		if (data.action == 'order_now') {
+			var catSysId = data.item.sys_id;
+			var gr = new GlideRecord('sc_cat_item');
+			if (gr.get(catSysId))
+				data.item.title = gr.getValue('name');
+			if (isCDWOrderNow(catSysId)) {
+				data.cdwCart=true;
+			}
+			else {
+				data.cdwCart=false;
+			}
+		} else if (input && input.cart && data.action == 'checkout') {
+			var cartData = [];
+			var _data;
+			var cartSysId = input.cart.sys_id;
+			var grCart = new GlideRecord('sc_cart_item');
+			grCart.query("cart", cartSysId);
+			while (grCart.next()) {
+				_data = {};
+				var gr2 = new GlideRecord('sc_cat_item');
+				if (gr2.get(grCart.getValue("cat_item"))) {
+					_data.sys_id = gr2.getValue('sys_id');
+					_data.title = gr2.getValue('name');
+					_data.cartID = cartSysId;
+					cartData.push(_data);
+				}
+			}
+			data.cartData = cartData;
+		}
+	}
+	function isCDWCart(nameOfCart) {
+		var thisCart = new sn_sc.CartJS(nameOfCart);
+		var cartItems = thisCart.getCartItems();
+		while (cartItems.next()) {
+			if (cartItems.getElement('cat_item').u_cdw_item.getDisplayValue() == "true") {
+				return true;
+			}
+		}
+		return false;
+	}
+	function isCDWOrderNow(itemSysId) {
+		var itemGr = new GlideRecord('sc_cat_item');
+		itemGr.get(itemSysId);
+		if (itemGr.u_cdw_item.getDisplayValue() == "true") {
+			return true;
+		}
+		return false;
+	}
+})();
+
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-07-26 18:41:41</sys_created_on>
+        <sys_id>f7ef45de1b65b4908c5143f3cc4bcbab</sys_id>
+        <sys_mod_count>499</sys_mod_count>
+        <sys_name>CDW Catalog Checkout</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sp_widget_f7ef45de1b65b4908c5143f3cc4bcbab</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-24 18:41:53</sys_updated_on>
+        <template><![CDATA[<div id="sc_cat_checkout" ng-class="{'panel panel-default': !c.isNative}" sn-atf-blacklist="IS_SERVICE_CATALOG" ng-if="c.data.cdwCart">
+    <h1 class="padder-md h3" ng-if="!c.isNative" ng-if="c.data.cdwCart">{{::checkoutPopupTitle}}
+        <span class="text-base">
+            <i class="fa fa-close pull-right text-base" autofocus="true" tabindex="0" ng-click="c.cancel()"
+                aria-label="Close modal"></i>
+        </span>
+    </h1>
+
+<form name="checkout" ng-if="c.data.cdwCart">
+    <div class="wrapper-md clearfix b-t">
+        <div class="form-group">
+          
+            <label for="requested-for" ng-class="{'m-l': c.isNative}"><label class="required" ng-if="!c.requestedFor.value">*</label>${Request For}</label>
+            <sn-record-picker name="requested-for" id="requested-for" field="c.requestedFor" table="'sys_user'"
+                display-field="c.data.reqForDispCol" display-fields="c.data.reqForDispCols" value-field="'sys_id'"
+                search-fields="c.data.reqForSearchCols" default-query="c.data.reqForQuery" page-size="100"
+                options="{allowClear : false}" sn-disabled="!c.data.disable_req_for" sn-atf-id="RequestedFor">
+            </sn-record-picker>
+         		
+          
+              <!--<label for="date"><label class="required" ng-if="!c.date">*</label>${Requested By Date}</label>
+              <input name="date" type="date" ng-model="string" class="form-control" id="date" rows="3" ng-model="c.date"
+                  field="c.date" ng-disabled="false" ng-required={{data.required}}>-->
+         		  
+          
+            <!--<label for="department" ng-class="{'m-l': c.isNative}"><label class="required" ng-if="!c.department">*</label>${Department}</label>
+      			<input name="department" type="text" class="form-control" rows="1" id="department" ng-model="c.department"
+                  field="c.department" ng-required={{data.required}} ng-change="c.changeDepartment()">-->
+          
+
+          
+          
+            <label for="company" ng-class="{'m-l': c.isNative}"><label class="required" ng-if="!c.company.value">*</label>${Company}</label>
+            <sn-record-picker name="company" id="company" field="c.company" table="'core_company'"
+                display-field="c.data.companyDispCol" display-fields="c.data.companyDispCols" value-field="'sys_id'"
+                search-fields="c.data.companyDispCols" default-query="c.data.companyQuery" page-size="100"
+                options="{allowClear : false}" sn-disabled="!c.data.disable_company" ng-change="c.changeCompany()" ng-required={{data.required}} sn-atf-id="Company">
+            </sn-record-picker>
+         		
+          
+            <label for="location" ng-class="{'m-l': c.isNative}"><label class="required" ng-if="!c.location.value">*</label>${Location(Company Addresses Only)}</label>
+            <sn-record-picker name="location" id="location" field="c.location" table="'cmn_location'"
+                display-field="c.data.locationDispCol" display-fields="c.data.locationDispCols" value-field="'sys_id'"
+                search-fields="c.data.locationDispCols" default-query="c.data.locationQuery" page-size="100"
+                options="{allowClear : false}" sn-disabled="!c.data.disable_location" ng-change="c.changeLocation()" ng-required={{data.required}} sn-atf-id="Location">
+            </sn-record-picker>
+         		
+            <div ng-show="c.isLocationSelected">
+              <input name="address_changed" type="checkbox" class="form-check-input" id="address_changed" ng-model="c.address_changed"
+              field="c.address_changed" ng-change="c.changeAddress()">  
+              <label class="form-check-label" for="address_changed">${Change Address}</label><br>
+              <label for="address1">{{address1Label}}</label>
+              <textarea class="form-control" id="address1" rows="1" ng-model="c.address1"
+                  field="c.address1"  ng-disabled="data.disable_address" ng-required={{data.required}}></textarea>
+              <label for="address2">{{address2Label}}</label>
+              <textarea class="form-control" id="address2" rows="1" ng-model="c.address2"
+                  field="c.address2" ng-disabled="data.disable_address"></textarea>
+              <label for="addressCity">{{addressCityLabel}}</label>
+              <textarea class="form-control" id="addressCity" rows="1" ng-model="c.addressCity"
+                  field="c.addressCity" ng-disabled="data.disable_address" ng-required={{data.required}}></textarea>
+              <label for="addressState">{{addressStateLabel}}</label>
+              <textarea class="form-control" id="addressState" rows="1" ng-model="c.addressState"
+                  field="c.addressState" ng-disabled="data.disable_address" ng-required={{data.required}}></textarea>
+              <label for="addressZip">{{addressZipLabel}}</label>
+              <textarea class="form-control" id="addressZip" rows="1" ng-model="c.addressZip"
+                  field="c.addressZip" ng-disabled="data.disable_address" ng-required={{data.required}}></textarea>
+              <label for="addressPhone">{{addressPhoneLabel}}</label>
+              <textarea class="form-control" ng-change="c.checkPhone()" id="addressPhone" rows="1" ng-model="c.addressPhone"
+                  field="c.addressPhone" ng-disabled="data.disable_address" ng-required={{data.required}}></textarea>
+              <div ng-show="!c.phoneValid" class="alert-danger">Invalid phone number, use format "###-###-####"</div>
+              <label for="comment">${Company - Location - GL}</label>
+              <textarea class="form-control" id="comment" rows="1" ng-model="c.comment"
+                  field="c.comment" ng-disabled="false"></textarea>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="panel-footer clearfix" ng-if="!c.isNative && c.data.cdwCart">
+    <div>
+        <div class="pull-right">
+            <button name="cancel" ng-disabled="c.checkoutInProgress" ng-click="c.cancel()"
+                class="btn btn-default">${Cancel}</button>
+            <button ng-disabled="c.checkoutInProgress || !c.requestedFor.value || !c.location.value || !c.company.value || !c.phoneValid" name="submit"
+                ng-click="c.triggerCheckout()" sn-focus="true" class="btn sc-btn btn-primary m-l-xs">
+                <span ng-show="!c.checkoutInProgress">{{::checkOutMsg}}</span>
+                <span ng-show="c.checkoutInProgress">{{::m.checkingOutMsg}}</span>
+            </button>
+        </div>
+    </div>
+</div>
+</div>
+
+  </form>
+
+    <h1 class="padder-md h3" ng-if="!c.isNative" ng-if="!c.isOrderGuide" ng-if="!c.data.cdwCart">${Submitting}
+    </h1>]]></template>
+    </sp_widget>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</claim_owner_scope>
+        <claim_timestamp>17fb7552e960000001</claim_timestamp>
+        <metadata_update_name>sp_widget_f7ef45de1b65b4908c5143f3cc4bcbab</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>CDW Ordering Integration</previous_claim_name>
+        <previous_claim_scope>4630a8861ba9851062e50ed2cd4bcb61</previous_claim_scope>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-03-23 15:11:27</sys_created_on>
+        <sys_id>546d90671b5a05908c5143f3cc4bcbdb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-03-23 15:11:27</sys_updated_on>
+    </sys_claim>
+</record_update>

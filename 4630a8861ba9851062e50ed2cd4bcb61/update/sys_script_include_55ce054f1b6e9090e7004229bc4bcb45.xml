@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>false</active>
+        <api_name>global.clearDemoDataCDW</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>clearDemoDataCDW</name>
+        <script><![CDATA[var clearDemoDataCDW = Class.create();
+var globalTotalForDelete = 0;
+var globalTotalForDeactivate = 0;
+
+clearDemoDataCDW.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+
+	clearDemoData: function(){
+		//Setup JSON of Tables and related encoded queries
+		var tableQuery = {
+			"sys_user": this.findUsers(),
+			//"sys_user_group": this.findEmptyGroups(),
+			//"sys_user_grmember": this.findEmptyGroupMemberships(),
+			"cmn_location": this.findEmptyLocations_Dept('cmn_location'),
+			//"cmn_department": this.findEmptyLocations_Dept('cmn_department'),
+			"sys_email": null,
+			//"kb_knowledge": null,
+			"task": "sys_class_name!=std_change_proposal",
+			"metric_instance": null,
+			//"sysapproval_approver": null,
+			"asmt_assessment_instance_question": null,
+			"asmt_assessment_instance":null,
+			"asmt_metric_result": null,
+			"asmt_category_result": null,
+			"cmdb_ci": "sys_created_by!=cdw_admin",
+			"kb_submission": null,
+			"kb_use": null,
+			"ts_query_kb": null,
+			"alm_transfer_order_line": null,
+			"alm_transfer_order": null,
+			"alm_asset": null,
+			"alm_stockroom": null,
+			"ast_contract": null,
+			"clm_terms_and_conditions":null,
+			"live_profile": null,
+			"live_message_like": null,
+			"live_message": null,
+			"live_group_profile":null,
+			"cmn_cost_center":null,
+			//"core_company":"sys_created_on<javascript:gs.beginningOfLast3Months()^sys_id!=f66b14e1c611227b0166c3a0df4046ff",
+			"task_outage":null,
+			"cmdb_ci_outage":null,
+		//	"kb_uc_can_read_mtom":null,
+			//"kb_uc_can_contribute_mtom":'kb_knowledge_base=a7e8a78bff0221009b20ffffffffff17',
+			//"user_criteria":"sys_created_on<javascript:gs.beginningOfThisYear()",
+			"kb_feedback":"sys_created_on<javascript:gs.beginningOfThisMonth()",
+			"kb_social_qa_question":null,
+			"kb_social_qa_answer":null,
+			"kb_social_qa_comment":null
+		};
+		//gs.log('KI:: tableQuery is ' + tableQuery);
+		//Dynamically loop through table names and related queries to delete from JSON
+		for (var key in tableQuery){
+
+			//For each Table in the JSON::NUKE Table Based on Query
+			var tableName = key;
+			var query = tableQuery[key];
+			this.nukeIt(tableName,query);
+
+			// 			var gr = new GlideRecord(tableName);
+			// 			//Only add an Encoded query if a valid query was provided.
+			// 			if(query != null){
+			// 				gr.addEncodedQuery(query);
+			// 			}
+			// 			gr.query();
+			// 			//Count how many records we are deleting. / Turn off BRs & Delete Records
+			// 			while (gr.next()){
+			// 				globalTotalForDelete++;
+			// 				gr.setWorkflow(false);
+			// 				gr.deleteMultiple();
+			// 			}
+		}
+		//Turns off all Catalog Items created before this year and not created by CDW. Function returns total # of Deactivation count
+		globalTotalForDeactivate = this.deactivateCatalogItems();
+		gs.log('KI:: Total to Deactivate ' + globalTotalForDeactivate + ' and total to Delete is ' + globalTotalForDelete);
+	},
+
+
+	nukeIt: function(tableName,query){
+		//Delete multiple records from large tables in small chunks and batches
+		//The idea here is that you create a scheduled job that will run on an interval and each time it runs it will delete a bunch of records, but only one batch at a time.
+		//Depending on how big you set the runSize and chunkSize will determine how many records will be deleted in each run of the job
+		//For example, if you set runSize to 10,000 and chunkSize 1,000 the job will do 10 chunks or deletions.
+		//The deletions are done against the sys_id field because in MySQL there is a danger of causing blocking operations on non-primary key fields.
+		//Find the key value. Tracks progress of what location records have had their audit records cleaned up.
+
+
+		var keyField = "sys_created_on"; //must be a field with purely chronological order, entered in that order - otherwise we risk an entry sneaking in behind the cleaner. The lowest possible value must be greater than 0 since that is the default key value.
+		//var tableName = "sys_user_group";
+		var key = this.getSetKey();
+		var runSize = 10000; //max records to delete per run of job 
+		var batchSize = 1000; //number records to be deleted at a time
+		var batchPause = 200; //number of milliseconds to wait between batches
+		var ids = []; //array that will hold sys_id's of records to be deleted in a single batch
+		var deleteCount = 0;
+
+		//var field = "group.name"; //name of field you want to match against for the delete en mass
+		//var value = "matthew.watkins@snc"; //value that the field must match to be deleted
+		//The main loop that will be used to glean the sys_id's that we will be updating.
+		var toDelete = new GlideRecord(tableName);
+
+		if(query != null){
+			toDelete.addEncodedQuery(query);
+		}
+
+		//Add any additional restrictions on the set of records to be deleted
+		//toDelete.addEncodedQuery(query);//keyField, ">", key + "");
+		//toDelete.addQuery(field, value);
+		toDelete.setLimit(runSize);
+		toDelete.orderBy(keyField); //defaults to ascending so we start at the back
+		toDelete.query();
+		gs.log("Multiple Delete Job: starting at sys_id: " + key);
+		while (toDelete.next()) {
+			key = toDelete.getValue(keyField);
+			var runs = 1;
+
+			//put some logic here if you want to further vet the records being deleted by some other related data
+			//if (true) {
+			ids.push(toDelete.getValue("sys_id") + ""); //collect an array (i.e. "chunk") of sys_id's
+			// }
+
+			//Now do the multiple delete against all a single chunk of sys_id's
+			//But we wait until we have batchSize # of ids or we've reached the end of the run.
+			if (ids.length > 0 && ((ids.length >= batchSize) || (!toDelete.hasNext()))) {
+				gs.print("Number of sys_id's fed into the delete operation: " + ids.length);
+
+				//*** critical section ***        
+				var target = new GlideRecord(tableName);
+				target.addQuery("sys_id", ids); //deletes should be done with sys_id's to avoid indexing gap lock
+				target.setWorkflow(false); //bypass business rules, workflows and auditing
+				target.setSysFields(false); //bypass updating the "sys" fields (sys_created_on, sys_mod_count, etc.)
+				target.deleteMultiple();
+
+				//target.query();
+				//gs.print("records that would have been deleted: " + target.getRowCount());
+
+				//*** critical section ***
+				this.getSetKey(key);
+				gs.sleep(batchPause); //pause for X milliseconds between batches
+				deleteCount += ids.length;
+				ids = []; //blank out the array
+			}
+		}
+		globalTotalForDelete = globalTotalForDeactivate + deleteCount;
+		this.getSetKey(key);
+		gs.log("MultipleDelete: finished at " + keyField +" = " + key + ". Deleted " + deleteCount + " records.");
+		/*
+		The GlideRecord.deleteMultiple() method is [almost] always an iterative delete. It results in individual database statements to delete each record. There is another way to do it that will be faster but wil bypass all business rules, engines, and cascade delete rules (rules about what to do with records that reference to the deleted records). The following method of deleting multiple records is not supported - you won't find it in any ServiceNow documentation. So use at your own risk. You could put this code into the "*** critical section ***" area above.
+		var target = GlideMultipleDelete(tableName);
+		target.addQuery("sys_id", "IN", ids);
+		target.setValue(field,value);
+		target.execute();
+*/
+
+
+	},
+
+	findUsers: function(){
+		var query = "active=false";
+		var usersArry = [];
+		var gr = new GlideRecord('sys_user');
+		gr.addEncodedQuery(query);
+		gr.query();
+		var count = 0;
+		while(gr.next()){
+			usersArry.push(gr.sys_id.toString());
+			count = count + 1;
+		}
+		globalTotalForDelete = globalTotalForDelete + count;
+		return 'sys_idIN'+ usersArry.toString();
+	},
+
+	findEmptyGroupMemberships: function(){
+		var groupMemberships = [];
+		var gr = new GlideRecord('sys_user_grmember');
+		gr.addEncodedQuery('group.nameISEMPTY^ORuser.nameISEMPTY');
+		gr.query();
+		//gs.info(gr.getRowCount());
+		var count = 0;
+		while(gr.next()){
+			groupMemberships.push(gr.sys_id.toString());
+			count = count + 1;
+		}
+		globalTotalForDelete = globalTotalForDeactivate + count;
+		return 'sys_idIN' + groupMemberships.toString();
+	},
+
+	deactivateCatalogItems: function(){
+		var total = 0;
+		var scCatItem = new GlideRecord('sc_cat_item');
+		//Demo Data Query, not created by CDW.
+		scCatItem.addEncodedQuery('type!=bundle^sys_class_name!=sc_cat_item_guide^type!=package^sys_class_name!=sc_cat_item_content^sys_created_byNOT LIKEcdw^sys_created_on<javascript:gs.beginningOfThisYear()');
+		scCatItem.query();
+		while(scCatItem.next()){
+			total++;
+			scCatItem.active = false;
+			scCatItem.update();
+		}
+		gs.log('KI:: Total Catalog Items to Deactivate is ' + total);
+		return total;
+	},
+
+	findEmptyLocations_Dept: function(tableName){
+		var total = 0;
+		//Get Demo Data - Created before this year - push to array
+		var demoLocations_Dept = new GlideRecord(tableName);
+		var myLocations_Dept = [];
+		demoLocations_Dept.addEncodedQuery("sys_created_on<javascript:gs.dateGenerate('2020-07-01','00:00:00')");
+		demoLocations_Dept.query();
+		while (demoLocations_Dept.next()) {
+			total++;
+			myLocations_Dept.push(demoLocations_Dept.sys_id.toString());
+		}
+
+		//Get Empty Locations/Dept, not tied to any user. Not Including Demo Data.
+		var loc_dept = new GlideRecord(tableName);
+		loc_dept.addEncodedQuery("sys_created_on>javascript:gs.endOfLastYear()");
+		loc_dept.query();
+		while (loc_dept.next()) {
+			var count = 0;
+			var ga = new GlideAggregate('sys_user');
+			ga.addAggregate('COUNT');
+			
+			//Account for Both Tables
+			if(tableName == 'cmn_location'){
+			ga.addQuery('location', loc_dept.getValue('sys_id'));
+			}
+			
+			if(tableName == 'core_company'){
+			ga.addQuery('company', loc_dept.getValue('sys_id'));
+			}
+			
+			ga.query();
+			if (ga.next()) {
+				count = ga.getAggregate('COUNT');
+				//No users were found tied to this location/department
+				if (count == 0) {
+					total++;
+					myLocations_Dept.push(loc_dept.sys_id.toString());
+				}
+			}
+		}
+		globalTotalForDelete = globalTotalForDelete + total;
+		gs.log('KI Found ' + total + ' total record(s) eligible for delete in table ' + tableName);
+		return 'sys_idIN' + myLocations_Dept.toString();
+	},
+
+	findEmptyGroups: function() {
+		var count = 0;
+		//Get all created groups since create of project - Not including Demo Data
+		var myGroups = [];
+		var grGroup = new GlideRecord("sys_user_group");
+		grGroup.addEncodedQuery("sys_created_on>javascript:gs.dateGenerate('2020-07-01','00:00:00')");
+		grGroup.addActiveQuery();
+		grGroup.query();
+
+		//Count Grp Memberships, find groups with 0 results and push to array.		
+		while (grGroup.next()) {
+
+			//Empty named groups can be deleted
+			if (!grGroup.name){
+				myGroups.push(grGroup.sys_id.toString());
+				count = count + 1;
+			}
+
+			//Prevent duplicates being added to the array by putting below code in else if statement based on name
+			else if (grGroup.name){
+				var grGroupMember = new GlideRecord("sys_user_grmember");
+				grGroupMember.addQuery("group", grGroup.sys_id.toString());
+				grGroupMember.query();
+
+				//If no members in group, delete group.
+				if (grGroupMember.getRowCount() == 0) {
+					myGroups.push(grGroup.sys_id.toString());
+					count = count + 1;
+				}
+			}
+		}
+
+		//Add Demo Data Items
+		var demoGroups = new GlideRecord('sys_user_group');
+		demoGroups.addEncodedQuery('sys_created_on<javascript:gs.beginningOfThisYear()');
+		demoGroups.query();
+		while(demoGroups.next()){
+			myGroups.push(demoGroups.sys_id.toString());
+			count = count + 1;
+		}
+		gs.log('KI:: Found ' + count + ' total groups for delete');
+		globalTotalForDelete = globalTotalForDelete + count;
+		return 'sys_idIN' + myGroups;
+	},
+
+	getSetKey: function(newKey) {
+		if (newKey) {
+			gs.setProperty("delete.my.table.key", String(newKey));
+		} else {
+			newKey = gs.getProperty("delete.my.table.key");
+			if (!newKey) {
+				newKey = 0;
+				gs.setProperty("delete.my.table.key", newKey);
+			}
+		}
+		return newKey;
+	},
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>kirolos.iskander@cdw.com</sys_created_by>
+        <sys_created_on>2020-08-15 03:13:31</sys_created_on>
+        <sys_id>55ce054f1b6e9090e7004229bc4bcb45</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>clearDemoDataCDW</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sys_script_include_55ce054f1b6e9090e7004229bc4bcb45</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-04-11 20:01:21</sys_updated_on>
+    </sys_script_include>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</claim_owner_scope>
+        <claim_timestamp>1801a376cc60000001</claim_timestamp>
+        <metadata_update_name>sys_script_include_55ce054f1b6e9090e7004229bc4bcb45</metadata_update_name>
+        <previous_claim_app_version>1.0.3</previous_claim_app_version>
+        <previous_claim_name>CDW Ordering Integration</previous_claim_name>
+        <previous_claim_scope>4630a8861ba9851062e50ed2cd4bcb61</previous_claim_scope>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-04-11 20:01:21</sys_created_on>
+        <sys_id>90f51fe11bf2811062e50ed2cd4bcbc1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-04-11 20:01:21</sys_updated_on>
+    </sys_claim>
+</record_update>

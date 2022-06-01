@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>active</field>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>Read Only CDW Fields</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	//Set CDW Ordering fields to read only if user is not admin
+	//List of fields to set to read only
+	var fields = ['u_requested_delivery_date','u_address_phone','u_location','u_department','u_address_state','u_address_city','u_company','u_address_zip','u_address_2','u_order_comment','u_address_1'];
+	
+	//If user is not admin then loop through fields list and set read only
+	if (!(g_user.hasRole('admin'))){
+		for(var i = 0; i<fields.length; i++){
+			g_form.setReadOnly(fields[i],true);
+		}
+	}
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-15 19:27:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6ebb06921bfb305062e50ed2cd4bcb3f</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Read Only CDW Fields</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sys_script_client_6ebb06921bfb305062e50ed2cd4bcb3f</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-04-11 20:01:21</sys_updated_on>
+        <table>sc_request</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</claim_owner_scope>
+        <claim_timestamp>1801a376d630000001</claim_timestamp>
+        <metadata_update_name>sys_script_client_6ebb06921bfb305062e50ed2cd4bcb3f</metadata_update_name>
+        <previous_claim_app_version>1.0.3</previous_claim_app_version>
+        <previous_claim_name>CDW Ordering Integration</previous_claim_name>
+        <previous_claim_scope>4630a8861ba9851062e50ed2cd4bcb61</previous_claim_scope>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-04-11 20:01:21</sys_created_on>
+        <sys_id>1cf51fe11bf2811062e50ed2cd4bcbc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-04-11 20:01:21</sys_updated_on>
+    </sys_claim>
+</record_update>
