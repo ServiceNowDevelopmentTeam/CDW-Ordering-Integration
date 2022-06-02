@@ -1,0 +1,1380 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="DELETE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="Service Catalog">bf2f2fec73f70300b61e66476bf6a774</category>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>false</ih_action>
+        <internal_name>cdw_ordering__build_order_lines</internal_name>
+        <label_cache>[{"name":"{{action.orderlines}}","label":"action➛orderLines","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.line_number}}","label":"action➛orderLines➛orderLines_child0➛line_number","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.unit_price}}","label":"action➛orderLines➛orderLines_child0➛unit_price","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.quantity}}","label":"action➛orderLines➛orderLines_child0➛quantity","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.item_description}}","label":"action➛orderLines➛orderLines_child0➛item_description","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.manufacturer_name}}","label":"action➛orderLines➛orderLines_child0➛manufacturer_name","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.cdw_part_number}}","label":"action➛orderLines➛orderLines_child0➛cdw_part_number","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.unit_of_measure}}","label":"action➛orderLines➛orderLines_child0➛unit_of_measure","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.part_id}}","label":"action➛orderLines➛orderLines_child0➛part_id","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.contract_id}}","label":"action➛orderLines➛orderLines_child0➛contract_id","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.requested_delivery_date}}","label":"action➛orderLines➛orderLines_child0➛requested_delivery_date","type":"action","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines}}","label":"step➛Script step➛orderLines","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child1}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child1","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.unitPrice}}","label":"step➛Script step➛orderLines➛orderLines_child0➛unitPrice","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child2}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child2","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.manufacturerPartId}}","label":"step➛Script step➛orderLines➛orderLines_child0➛manufacturerPartId","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child3}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child3","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.quantity}}","label":"step➛Script step➛orderLines➛orderLines_child0➛quantity","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child4}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child4","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.cdwPartNumber}}","label":"step➛Script step➛orderLines➛orderLines_child0➛cdwPartNumber","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child5}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child5","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.manufacturerName}}","label":"step➛Script step➛orderLines➛orderLines_child0➛manufacturerName","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child6}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child6","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.requestDeliveryDate}}","label":"step➛Script step➛orderLines➛orderLines_child0➛requestDeliveryDate","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child7}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child7","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.uom}}","label":"step➛Script step➛orderLines➛orderLines_child0➛uom","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child8}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child8","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.contractId}}","label":"step➛Script step➛orderLines➛orderLines_child0➛contractId","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child9}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child9","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.unspscCode}}","label":"step➛Script step➛orderLines➛orderLines_child0➛unspscCode","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child10}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child10","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.itemDescription}}","label":"step➛Script step➛orderLines➛orderLines_child0➛itemDescription","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child11}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child11","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.lineNumber}}","label":"step➛Script step➛orderLines➛orderLines_child0➛lineNumber","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child12}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child12","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.couponCode}}","label":"step➛Script step➛orderLines➛orderLines_child0➛couponCode","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0}}","label":"step➛Script step➛orderLines➛orderLines_child0","type":"step","ref":""}]</label_cache>
+        <master_snapshot>f487cd431bb83c50e7004229bc4bcb08</master_snapshot>
+        <name>CDW Ordering - Build Order Lines</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:09:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5496cd8f1b783c50e7004229bc4bcbc0</sys_id>
+        <sys_mod_count>149</sys_mod_count>
+        <sys_name>CDW Ordering - Build Order Lines</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_5496cd8f1b783c50e7004229bc4bcbc0</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-04-11 20:01:09</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="DELETE" query="documentkey=5496cd8f1b783c50e7004229bc4bcbc0"/>
+    <sys_variable_value action="DELETE" query="document_key=5496cd8f1b783c50e7004229bc4bcbc0"/>
+    <sys_element_mapping action="DELETE" query="id=5496cd8f1b783c50e7004229bc4bcbc0"/>
+    <sys_element_mapping action="DELETE">
+        <field>orderlines</field>
+        <id>5496cd8f1b783c50e7004229bc4bcbc0</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:29:32</sys_created_on>
+        <sys_id>7f3b09cb1bb83c50e7004229bc4bcbeb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-22 14:26:17</sys_updated_on>
+        <table>var__m_sys_hub_action_output_5496cd8f1b783c50e7004229bc4bcbc0</table>
+        <value>{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines}}</value>
+    </sys_element_mapping>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</claim_owner_scope>
+        <claim_timestamp>1801a373d780000001</claim_timestamp>
+        <metadata_update_name>sys_hub_action_type_definition_5496cd8f1b783c50e7004229bc4bcbc0</metadata_update_name>
+        <previous_claim_app_version>1.0.3</previous_claim_app_version>
+        <previous_claim_name>CDW Ordering Integration</previous_claim_name>
+        <previous_claim_scope>4630a8861ba9851062e50ed2cd4bcb61</previous_claim_scope>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-04-11 20:01:09</sys_created_on>
+        <sys_id>d9e51be11bf2811062e50ed2cd4bcbec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-04-11 20:01:09</sys_updated_on>
+    </sys_claim>
+    <sys_hub_step_instance action="DELETE" query="action=5496cd8f1b783c50e7004229bc4bcbc0^sys_idNOT IN6f3b09cb1bb83c50e7004229bc4bcba8"/>
+    <sys_hub_step_instance action="DELETE">
+        <action display_value="CDW Ordering - Build Order Lines">5496cd8f1b783c50e7004229bc4bcbc0</action>
+        <cid>7061f812-e2ef-4e4f-8922-9e4e83eb72da</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:29:31</sys_created_on>
+        <sys_id>6f3b09cb1bb83c50e7004229bc4bcba8</sys_id>
+        <sys_mod_count>29</sys_mod_count>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-22 20:08:44</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="DELETE" query="document_key=6f3b09cb1bb83c50e7004229bc4bcba8"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6f3b09cb1bb83c50e7004229bc4bcba8</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:29:34</sys_created_on>
+        <sys_id>144b49cb1bb83c50e7004229bc4bcb56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-21 19:29:34</sys_updated_on>
+        <value/>
+        <variable display_value="Select MID Server">2c226939b3101300176b051a16a8dc83</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6f3b09cb1bb83c50e7004229bc4bcba8</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:29:32</sys_created_on>
+        <sys_id>3b3b09cb1bb83c50e7004229bc4bcbdc</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-22 20:08:44</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+
+  var orderLinesArr = [];
+  for(var i=0;i&lt;inputs.orderLines.length;i++){
+    objLine=inputs.orderLines[i];
+    
+    var line = {
+    unitPrice:objLine.unit_price,
+    manufacturerPartId:'',
+    quantity:parseInt(objLine.quantity),
+    cdwPartNumber:objLine.cdw_part_number,
+    manufacturerName:objLine.manufacturer_name,
+    requestDeliverydate:objLine.requested_delivery_date,
+    uom:'EA',
+    contractId:'',
+    unspscCode:'',
+    itemDescription:objLine.item_description,
+    lineNumber:objLine.line_number,
+    couponCode:''
+  };
+    orderLinesArr.push(line);
+  }
+  outputs.orderlines=JSON.stringify(orderLinesArr);
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6f3b09cb1bb83c50e7004229bc4bcba8</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:29:34</sys_created_on>
+        <sys_id>504b49cb1bb83c50e7004229bc4bcb56</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-21 19:41:47</sys_updated_on>
+        <value>instance</value>
+        <variable display_value="Required Runtime">74315b04b3201300176b051a16a8dc2b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>6f3b09cb1bb83c50e7004229bc4bcba8</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:29:34</sys_created_on>
+        <sys_id>9c4b49cb1bb83c50e7004229bc4bcb55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-21 19:29:34</sys_updated_on>
+        <value/>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=6f3b09cb1bb83c50e7004229bc4bcba8"/>
+    <sys_element_mapping action="DELETE">
+        <field>application</field>
+        <id>6f3b09cb1bb83c50e7004229bc4bcba8</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:29:34</sys_created_on>
+        <sys_id>944b49cb1bb83c50e7004229bc4bcb55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-21 19:29:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>mid_selection_type</field>
+        <id>6f3b09cb1bb83c50e7004229bc4bcba8</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:29:34</sys_created_on>
+        <sys_id>1c4b49cb1bb83c50e7004229bc4bcb55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-21 19:29:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>orderLines</field>
+        <id>6f3b09cb1bb83c50e7004229bc4bcba8</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:29:32</sys_created_on>
+        <sys_id>b73b09cb1bb83c50e7004229bc4bcbdd</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-22 14:28:48</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_6f3b09cb1bb83c50e7004229bc4bcba8</table>
+        <value>{{action.orderlines}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>required_run_time</field>
+        <id>6f3b09cb1bb83c50e7004229bc4bcba8</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:29:34</sys_created_on>
+        <sys_id>584b49cb1bb83c50e7004229bc4bcb55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-21 19:29:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>script</field>
+        <id>6f3b09cb1bb83c50e7004229bc4bcba8</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:29:32</sys_created_on>
+        <sys_id>b73b09cb1bb83c50e7004229bc4bcbdc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-21 19:29:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_step_ext_output_6f3b09cb1bb83c50e7004229bc4bcba8^id=6f3b09cb1bb83c50e7004229bc4bcba8"/>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=6f3b09cb1bb83c50e7004229bc4bcba8"/>
+    <sys_hub_step_ext_input action="DELETE" query="model=6f3b09cb1bb83c50e7004229bc4bcba8^sys_idNOT IN6b3b09cb1bb83c50e7004229bc4bcbaf"/>
+    <sys_hub_step_ext_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>orderLines</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">6f3b09cb1bb83c50e7004229bc4bcba8</model>
+        <model_id>6f3b09cb1bb83c50e7004229bc4bcba8</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_6f3b09cb1bb83c50e7004229bc4bcba8</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:29:32</sys_created_on>
+        <sys_id>6b3b09cb1bb83c50e7004229bc4bcbaf</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-22 14:28:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="DELETE" query="model=6f3b09cb1bb83c50e7004229bc4bcba8^sys_idNOT INa4ef459b1bbcbc50e7004229bc4bcbcb"/>
+    <sys_hub_step_ext_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1d134225-900b-4d98-a751-17a4f842c6a4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>orderlines</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>orderLines</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">6f3b09cb1bb83c50e7004229bc4bcba8</model>
+        <model_id>6f3b09cb1bb83c50e7004229bc4bcba8</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_6f3b09cb1bb83c50e7004229bc4bcba8</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-22 14:28:17</sys_created_on>
+        <sys_id>a4ef459b1bbcbc50e7004229bc4bcbcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-22 14:28:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_action_input action="DELETE" query="model=5496cd8f1b783c50e7004229bc4bcbc0^sys_idNOT IN672741031bb83c50e7004229bc4bcb09"/>
+    <sys_hub_action_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=orderLines_child0,child_name=orderLines_child0,child_type=object,child_type_label=Object,child_uiUniqueId=36f14cde-0807-4445-a4ae-7fd19ee5439e,co_type_name=FDa7274103feb83c5038204ef9847e3d06,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=354dfed1-fcd8-48ed-b88c-f6bef27e96e1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>orderlines</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>orderLines</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="CDW Ordering - Build Order Lines">5496cd8f1b783c50e7004229bc4bcbc0</model>
+        <model_id>5496cd8f1b783c50e7004229bc4bcbc0</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_5496cd8f1b783c50e7004229bc4bcbc0</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:11:47</sys_created_on>
+        <sys_id>672741031bb83c50e7004229bc4bcb09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-21 19:11:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="DELETE" query="model=5496cd8f1b783c50e7004229bc4bcbc0^sys_idNOT INefef099b1bbcbc50e7004229bc4bcbcb"/>
+    <sys_hub_action_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=90c5e095-38ae-456d-aa90-78cebd24b05f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>orderlines</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>orderLines</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="CDW Ordering - Build Order Lines">5496cd8f1b783c50e7004229bc4bcbc0</model>
+        <model_id>5496cd8f1b783c50e7004229bc4bcbc0</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_5496cd8f1b783c50e7004229bc4bcbc0</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-22 14:28:30</sys_created_on>
+        <sys_id>efef099b1bbcbc50e7004229bc4bcbcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-22 14:28:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_action_input_5496cd8f1b783c50e7004229bc4bcbc0^sys_idNOT IN2f2749031bb83c50e7004229bc4bcb5e"/>
+    <sys_documentation action="DELETE">
+        <element>orderlines</element>
+        <help/>
+        <hint/>
+        <label>orderLines</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_5496cd8f1b783c50e7004229bc4bcbc0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:11:47</sys_created_on>
+        <sys_id>2f2749031bb83c50e7004229bc4bcb5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>orderLines</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_5496cd8f1b783c50e7004229bc4bcbc0_orderlines_en</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-21 19:11:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_action_output_5496cd8f1b783c50e7004229bc4bcbc0^sys_idNOT INbfef099b1bbcbc50e7004229bc4bcbd1"/>
+    <sys_documentation action="DELETE">
+        <element>orderlines</element>
+        <help/>
+        <hint/>
+        <label>orderLines</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_5496cd8f1b783c50e7004229bc4bcbc0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-22 14:28:30</sys_created_on>
+        <sys_id>bfef099b1bbcbc50e7004229bc4bcbd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>orderLines</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_5496cd8f1b783c50e7004229bc4bcbc0_orderlines_en</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-22 14:28:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_plan action="DELETE" query="action_id=5496cd8f1b783c50e7004229bc4bcbc0^sys_idNOT IN8987cd431bb83c50e7004229bc4bcb3d"/>
+    <sys_hub_action_plan action="DELETE">
+        <action_id display_value="CDW Ordering - Build Order Lines">5496cd8f1b783c50e7004229bc4bcbc0</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"8987cd431bb83c50e7004229bc4bcb3d","name":"plan"}}</plan>
+        <snapshot>acda4a1b1b38fc50e7004229bc4bcb2a</snapshot>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:13:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8987cd431bb83c50e7004229bc4bcb3d</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-22 18:45:50</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="DELETE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="Service Catalog">bf2f2fec73f70300b61e66476bf6a774</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>cdw_ordering__build_order_lines</internal_name>
+        <label_cache>[{"name":"{{action.orderlines}}","label":"action➛orderLines","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.line_number}}","label":"action➛orderLines➛orderLines_child0➛line_number","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.unit_price}}","label":"action➛orderLines➛orderLines_child0➛unit_price","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.quantity}}","label":"action➛orderLines➛orderLines_child0➛quantity","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.item_description}}","label":"action➛orderLines➛orderLines_child0➛item_description","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.manufacturer_name}}","label":"action➛orderLines➛orderLines_child0➛manufacturer_name","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.cdw_part_number}}","label":"action➛orderLines➛orderLines_child0➛cdw_part_number","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.unit_of_measure}}","label":"action➛orderLines➛orderLines_child0➛unit_of_measure","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.part_id}}","label":"action➛orderLines➛orderLines_child0➛part_id","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.contract_id}}","label":"action➛orderLines➛orderLines_child0➛contract_id","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.requested_delivery_date}}","label":"action➛orderLines➛orderLines_child0➛requested_delivery_date","type":"action","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines}}","label":"step➛Script step➛orderLines","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child1}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child1","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.unitPrice}}","label":"step➛Script step➛orderLines➛orderLines_child0➛unitPrice","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child2}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child2","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.manufacturerPartId}}","label":"step➛Script step➛orderLines➛orderLines_child0➛manufacturerPartId","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child3}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child3","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.quantity}}","label":"step➛Script step➛orderLines➛orderLines_child0➛quantity","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child4}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child4","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.cdwPartNumber}}","label":"step➛Script step➛orderLines➛orderLines_child0➛cdwPartNumber","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child5}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child5","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.manufacturerName}}","label":"step➛Script step➛orderLines➛orderLines_child0➛manufacturerName","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child6}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child6","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.requestDeliveryDate}}","label":"step➛Script step➛orderLines➛orderLines_child0➛requestDeliveryDate","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child7}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child7","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.uom}}","label":"step➛Script step➛orderLines➛orderLines_child0➛uom","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child8}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child8","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.contractId}}","label":"step➛Script step➛orderLines➛orderLines_child0➛contractId","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child9}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child9","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.unspscCode}}","label":"step➛Script step➛orderLines➛orderLines_child0➛unspscCode","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child10}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child10","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.itemDescription}}","label":"step➛Script step➛orderLines➛orderLines_child0➛itemDescription","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child11}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child11","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.lineNumber}}","label":"step➛Script step➛orderLines➛orderLines_child0➛lineNumber","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child12}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child12","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.couponCode}}","label":"step➛Script step➛orderLines➛orderLines_child0➛couponCode","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0}}","label":"step➛Script step➛orderLines➛orderLines_child0","type":"step","ref":""}]</label_cache>
+        <master>true</master>
+        <name>CDW Ordering - Build Order Lines</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="CDW Ordering - Build Order Lines">5496cd8f1b783c50e7004229bc4bcbc0</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:13:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f487cd431bb83c50e7004229bc4bcb08</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-22 14:28:53</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="DELETE" query="documentkey=f487cd431bb83c50e7004229bc4bcb08"/>
+    <sys_variable_value action="DELETE" query="document_key=f487cd431bb83c50e7004229bc4bcb08"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>f487cd431bb83c50e7004229bc4bcb08</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 21:17:38</sys_created_on>
+        <sys_id>cbf3e10f1bbc3c50e7004229bc4bcb0e</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-22 14:28:53</sys_updated_on>
+        <value/>
+        <variable display_value="orderLines">7c4b89cb1bb83c50e7004229bc4bcba2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=f487cd431bb83c50e7004229bc4bcb08"/>
+    <sys_element_mapping action="DELETE">
+        <field>orderlines</field>
+        <id>f487cd431bb83c50e7004229bc4bcb08</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:29:36</sys_created_on>
+        <sys_id>bc4b89cb1bb83c50e7004229bc4bcbab</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-22 14:28:53</sys_updated_on>
+        <table>var__m_sys_hub_action_output_f487cd431bb83c50e7004229bc4bcb08</table>
+        <value>{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="DELETE" query="action=f487cd431bb83c50e7004229bc4bcb08^sys_idNOT IN284b89cb1bb83c50e7004229bc4bcb2e"/>
+    <sys_hub_step_instance action="DELETE">
+        <action display_value="CDW Ordering - Build Order Lines">f487cd431bb83c50e7004229bc4bcb08</action>
+        <cid>7061f812-e2ef-4e4f-8922-9e4e83eb72da</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:29:36</sys_created_on>
+        <sys_id>284b89cb1bb83c50e7004229bc4bcb2e</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-22 20:08:48</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="DELETE" query="document_key=284b89cb1bb83c50e7004229bc4bcb2e"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>284b89cb1bb83c50e7004229bc4bcb2e</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:29:36</sys_created_on>
+        <sys_id>344b89cb1bb83c50e7004229bc4bcb84</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-21 19:29:36</sys_updated_on>
+        <value/>
+        <variable display_value="Select MID Server">2c226939b3101300176b051a16a8dc83</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>284b89cb1bb83c50e7004229bc4bcb2e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:29:36</sys_created_on>
+        <sys_id>704b89cb1bb83c50e7004229bc4bcb84</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-21 19:41:56</sys_updated_on>
+        <value>instance</value>
+        <variable display_value="Required Runtime">74315b04b3201300176b051a16a8dc2b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>284b89cb1bb83c50e7004229bc4bcb2e</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:29:36</sys_created_on>
+        <sys_id>bc4b89cb1bb83c50e7004229bc4bcb83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-21 19:29:36</sys_updated_on>
+        <value/>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>284b89cb1bb83c50e7004229bc4bcb2e</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:29:36</sys_created_on>
+        <sys_id>f44b89cb1bb83c50e7004229bc4bcb84</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-22 20:08:48</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+
+  var orderLinesArr = [];
+  for(var i=0;i&lt;inputs.orderLines.length;i++){
+    objLine=inputs.orderLines[i];
+    
+    var line = {
+    unitPrice:objLine.unit_price,
+    manufacturerPartId:'',
+    quantity:parseInt(objLine.quantity),
+    cdwPartNumber:objLine.cdw_part_number,
+    manufacturerName:objLine.manufacturer_name,
+    requestDeliverydate:objLine.requested_delivery_date,
+    uom:'EA',
+    contractId:'',
+    unspscCode:'',
+    itemDescription:objLine.item_description,
+    lineNumber:objLine.line_number,
+    couponCode:''
+  };
+    orderLinesArr.push(line);
+  }
+  outputs.orderlines=JSON.stringify(orderLinesArr);
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="id=284b89cb1bb83c50e7004229bc4bcb2e"/>
+    <sys_element_mapping action="DELETE">
+        <field>application</field>
+        <id>284b89cb1bb83c50e7004229bc4bcb2e</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:29:36</sys_created_on>
+        <sys_id>f04b89cb1bb83c50e7004229bc4bcb83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-21 19:29:36</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>mid_selection_type</field>
+        <id>284b89cb1bb83c50e7004229bc4bcb2e</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:29:36</sys_created_on>
+        <sys_id>784b89cb1bb83c50e7004229bc4bcb83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-21 19:29:36</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>orderLines</field>
+        <id>284b89cb1bb83c50e7004229bc4bcb2e</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:29:36</sys_created_on>
+        <sys_id>704b89cb1bb83c50e7004229bc4bcb85</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-21 19:29:36</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_284b89cb1bb83c50e7004229bc4bcb2e</table>
+        <value>{{action.orderlines}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>required_run_time</field>
+        <id>284b89cb1bb83c50e7004229bc4bcb2e</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:29:36</sys_created_on>
+        <sys_id>b44b89cb1bb83c50e7004229bc4bcb83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-21 19:29:36</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE">
+        <field>script</field>
+        <id>284b89cb1bb83c50e7004229bc4bcb2e</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:29:36</sys_created_on>
+        <sys_id>3c4b89cb1bb83c50e7004229bc4bcb83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-21 19:29:36</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_step_ext_output_284b89cb1bb83c50e7004229bc4bcb2e^id=284b89cb1bb83c50e7004229bc4bcb2e"/>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=284b89cb1bb83c50e7004229bc4bcb2e"/>
+    <sys_hub_step_ext_input action="DELETE" query="model=284b89cb1bb83c50e7004229bc4bcb2e^sys_idNOT INe84b89cb1bb83c50e7004229bc4bcb31"/>
+    <sys_hub_step_ext_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>orderLines</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>orderLines</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">284b89cb1bb83c50e7004229bc4bcb2e</model>
+        <model_id>284b89cb1bb83c50e7004229bc4bcb2e</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_284b89cb1bb83c50e7004229bc4bcb2e</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:29:36</sys_created_on>
+        <sys_id>e84b89cb1bb83c50e7004229bc4bcb31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-21 19:29:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="DELETE" query="model=284b89cb1bb83c50e7004229bc4bcb2e^sys_idNOT INb04b89cb1bb83c50e7004229bc4bcb6d"/>
+    <sys_hub_step_ext_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1d134225-900b-4d98-a751-17a4f842c6a4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>orderlines</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>orderLines</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">284b89cb1bb83c50e7004229bc4bcb2e</model>
+        <model_id>284b89cb1bb83c50e7004229bc4bcb2e</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_284b89cb1bb83c50e7004229bc4bcb2e</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:29:36</sys_created_on>
+        <sys_id>b04b89cb1bb83c50e7004229bc4bcb6d</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-22 14:28:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_action_input action="DELETE" query="model=f487cd431bb83c50e7004229bc4bcb08^sys_idNOT IN7887cd431bb83c50e7004229bc4bcb0b"/>
+    <sys_hub_action_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=orderLines_child0,child_name=orderLines_child0,child_type=object,child_type_label=Object,child_uiUniqueId=36f14cde-0807-4445-a4ae-7fd19ee5439e,co_type_name=FD74dd1e534070b4904041a9411fbfed86,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=354dfed1-fcd8-48ed-b88c-f6bef27e96e1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>orderlines</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>orderLines</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="CDW Ordering - Build Order Lines">f487cd431bb83c50e7004229bc4bcb08</model>
+        <model_id>f487cd431bb83c50e7004229bc4bcb08</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_f487cd431bb83c50e7004229bc4bcb08</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:13:14</sys_created_on>
+        <sys_id>7887cd431bb83c50e7004229bc4bcb0b</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-22 20:08:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_output action="DELETE" query="model=f487cd431bb83c50e7004229bc4bcb08^sys_idNOT IN7c4b89cb1bb83c50e7004229bc4bcba2"/>
+    <sys_hub_action_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=90c5e095-38ae-456d-aa90-78cebd24b05f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>orderlines</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>orderLines</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="CDW Ordering - Build Order Lines">f487cd431bb83c50e7004229bc4bcb08</model>
+        <model_id>f487cd431bb83c50e7004229bc4bcb08</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_f487cd431bb83c50e7004229bc4bcb08</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:29:36</sys_created_on>
+        <sys_id>7c4b89cb1bb83c50e7004229bc4bcba2</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-22 14:28:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_action_input_f487cd431bb83c50e7004229bc4bcb08^sys_idNOT INf087cd431bb83c50e7004229bc4bcb1e"/>
+    <sys_documentation action="DELETE">
+        <element>orderlines</element>
+        <help/>
+        <hint/>
+        <label>orderLines</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_f487cd431bb83c50e7004229bc4bcb08</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:13:14</sys_created_on>
+        <sys_id>f087cd431bb83c50e7004229bc4bcb1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>orderLines</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_f487cd431bb83c50e7004229bc4bcb08_orderlines_en</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-21 19:13:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_action_output_f487cd431bb83c50e7004229bc4bcb08^sys_idNOT IN704b89cb1bb83c50e7004229bc4bcba9"/>
+    <sys_documentation action="DELETE">
+        <element>orderlines</element>
+        <help/>
+        <hint/>
+        <label>orderLines</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_f487cd431bb83c50e7004229bc4bcb08</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-06-21 19:29:36</sys_created_on>
+        <sys_id>704b89cb1bb83c50e7004229bc4bcba9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>orderLines</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_f487cd431bb83c50e7004229bc4bcb08_orderlines_en</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-06-21 19:29:36</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_type_definition action="DELETE">
+        <sys_id>5496cd8f1b783c50e7004229bc4bcbc0</sys_id>
+        <latest_snapshot>f487cd431bb83c50e7004229bc4bcb08</latest_snapshot>
+    </sys_hub_action_type_definition>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</application>
+        <file_path/>
+        <instance_id>37412023db6dd890ad8dd7c8f49619a0</instance_id>
+        <instance_name>apigroupdev</instance_name>
+        <name>sys_hub_action_type_definition_5496cd8f1b783c50e7004229bc4bcbc0</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_action_type_definition"&gt;&lt;sys_hub_action_type_definition action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;action_status/&gt;&lt;action_template/&gt;&lt;active&gt;true&lt;/active&gt;&lt;annotation/&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category display_value="Service Catalog"&gt;bf2f2fec73f70300b61e66476bf6a774&lt;/category&gt;&lt;compiler_build/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description/&gt;&lt;ih_action&gt;false&lt;/ih_action&gt;&lt;internal_name&gt;cdw_ordering__build_order_lines&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"{{action.orderlines}}","label":"action➛orderLines","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.line_number}}","label":"action➛orderLines➛orderLines_child0➛line_number","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.unit_price}}","label":"action➛orderLines➛orderLines_child0➛unit_price","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.quantity}}","label":"action➛orderLines➛orderLines_child0➛quantity","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.item_description}}","label":"action➛orderLines➛orderLines_child0➛item_description","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.manufacturer_name}}","label":"action➛orderLines➛orderLines_child0➛manufacturer_name","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.cdw_part_number}}","label":"action➛orderLines➛orderLines_child0➛cdw_part_number","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.unit_of_measure}}","label":"action➛orderLines➛orderLines_child0➛unit_of_measure","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.part_id}}","label":"action➛orderLines➛orderLines_child0➛part_id","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.contract_id}}","label":"action➛orderLines➛orderLines_child0➛contract_id","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.requested_delivery_date}}","label":"action➛orderLines➛orderLines_child0➛requested_delivery_date","type":"action","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines}}","label":"step➛Script step➛orderLines","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child1}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child1","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.unitPrice}}","label":"step➛Script step➛orderLines➛orderLines_child0➛unitPrice","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child2}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child2","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.manufacturerPartId}}","label":"step➛Script step➛orderLines➛orderLines_child0➛manufacturerPartId","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child3}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child3","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.quantity}}","label":"step➛Script step➛orderLines➛orderLines_child0➛quantity","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child4}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child4","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.cdwPartNumber}}","label":"step➛Script step➛orderLines➛orderLines_child0➛cdwPartNumber","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child5}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child5","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.manufacturerName}}","label":"step➛Script step➛orderLines➛orderLines_child0➛manufacturerName","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child6}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child6","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.requestDeliveryDate}}","label":"step➛Script step➛orderLines➛orderLines_child0➛requestDeliveryDate","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child7}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child7","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.uom}}","label":"step➛Script step➛orderLines➛orderLines_child0➛uom","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child8}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child8","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.contractId}}","label":"step➛Script step➛orderLines➛orderLines_child0➛contractId","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child9}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child9","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.unspscCode}}","label":"step➛Script step➛orderLines➛orderLines_child0➛unspscCode","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child10}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child10","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.itemDescription}}","label":"step➛Script step➛orderLines➛orderLines_child0➛itemDescription","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child11}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child11","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.lineNumber}}","label":"step➛Script step➛orderLines➛orderLines_child0➛lineNumber","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child12}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child12","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.couponCode}}","label":"step➛Script step➛orderLines➛orderLines_child0➛couponCode","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0}}","label":"step➛Script step➛orderLines➛orderLines_child0","type":"step","ref":""}]&lt;/label_cache&gt;&lt;master_snapshot&gt;f487cd431bb83c50e7004229bc4bcb08&lt;/master_snapshot&gt;&lt;name&gt;CDW Ordering - Build Order Lines&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;outputs/&gt;&lt;state&gt;published&lt;/state&gt;&lt;sys_class_name&gt;sys_hub_action_type_definition&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:09:05&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;5496cd8f1b783c50e7004229bc4bcbc0&lt;/sys_id&gt;&lt;sys_mod_count&gt;149&lt;/sys_mod_count&gt;&lt;sys_name&gt;CDW Ordering - Build Order Lines&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="CDW Ordering Integration"&gt;4630a8861ba9851062e50ed2cd4bcb61&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_action_type_definition_5496cd8f1b783c50e7004229bc4bcbc0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-04-11 20:01:09&lt;/sys_updated_on&gt;&lt;system_level&gt;false&lt;/system_level&gt;&lt;type/&gt;&lt;/sys_hub_action_type_definition&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=5496cd8f1b783c50e7004229bc4bcbc0"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=5496cd8f1b783c50e7004229bc4bcbc0"/&gt;&lt;sys_element_mapping action="delete_multiple" query="id=5496cd8f1b783c50e7004229bc4bcbc0"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;orderlines&lt;/field&gt;&lt;id&gt;5496cd8f1b783c50e7004229bc4bcbc0&lt;/id&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:29:32&lt;/sys_created_on&gt;&lt;sys_id&gt;7f3b09cb1bb83c50e7004229bc4bcbeb&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-22 14:26:17&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_output_5496cd8f1b783c50e7004229bc4bcbc0&lt;/table&gt;&lt;value&gt;{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_claim action="INSERT_OR_UPDATE"&gt;&lt;claim_owner_scope display_value="CDW Ordering Integration"&gt;4630a8861ba9851062e50ed2cd4bcb61&lt;/claim_owner_scope&gt;&lt;claim_timestamp&gt;1801a373d780000001&lt;/claim_timestamp&gt;&lt;metadata_update_name&gt;sys_hub_action_type_definition_5496cd8f1b783c50e7004229bc4bcbc0&lt;/metadata_update_name&gt;&lt;previous_claim_app_version&gt;1.0.3&lt;/previous_claim_app_version&gt;&lt;previous_claim_name&gt;CDW Ordering Integration&lt;/previous_claim_name&gt;&lt;previous_claim_scope&gt;4630a8861ba9851062e50ed2cd4bcb61&lt;/previous_claim_scope&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-04-11 20:01:09&lt;/sys_created_on&gt;&lt;sys_id&gt;d9e51be11bf2811062e50ed2cd4bcbec&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-04-11 20:01:09&lt;/sys_updated_on&gt;&lt;/sys_claim&gt;&lt;sys_hub_step_instance action="delete_multiple" query="action=5496cd8f1b783c50e7004229bc4bcbc0^sys_idNOT IN6f3b09cb1bb83c50e7004229bc4bcba8"/&gt;&lt;sys_hub_step_instance action="INSERT_OR_UPDATE"&gt;&lt;action display_value="CDW Ordering - Build Order Lines"&gt;5496cd8f1b783c50e7004229bc4bcbc0&lt;/action&gt;&lt;cid&gt;7061f812-e2ef-4e4f-8922-9e4e83eb72da&lt;/cid&gt;&lt;error_handling_type&gt;1&lt;/error_handling_type&gt;&lt;extended_inputs/&gt;&lt;extended_inputs/&gt;&lt;extended_outputs/&gt;&lt;icon/&gt;&lt;inputs/&gt;&lt;label&gt;Script step&lt;/label&gt;&lt;order&gt;1&lt;/order&gt;&lt;outputs/&gt;&lt;section/&gt;&lt;step_type display_value="Script"&gt;106afb6647032200b4fad7527c9a71e7&lt;/step_type&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:29:31&lt;/sys_created_on&gt;&lt;sys_id&gt;6f3b09cb1bb83c50e7004229bc4bcba8&lt;/sys_id&gt;&lt;sys_mod_count&gt;29&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-22 20:08:44&lt;/sys_updated_on&gt;&lt;/sys_hub_step_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=6f3b09cb1bb83c50e7004229bc4bcba8"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;6f3b09cb1bb83c50e7004229bc4bcba8&lt;/document_key&gt;&lt;order&gt;200&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:29:34&lt;/sys_created_on&gt;&lt;sys_id&gt;144b49cb1bb83c50e7004229bc4bcb56&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-21 19:29:34&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="Select MID Server"&gt;2c226939b3101300176b051a16a8dc83&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;6f3b09cb1bb83c50e7004229bc4bcba8&lt;/document_key&gt;&lt;order&gt;600&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:29:32&lt;/sys_created_on&gt;&lt;sys_id&gt;3b3b09cb1bb83c50e7004229bc4bcbdc&lt;/sys_id&gt;&lt;sys_mod_count&gt;22&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-22 20:08:44&lt;/sys_updated_on&gt;&lt;value&gt;(function execute(inputs, outputs) {
+
+  var orderLinesArr = [];
+  for(var i=0;i&amp;lt;inputs.orderLines.length;i++){
+    objLine=inputs.orderLines[i];
+    
+    var line = {
+    unitPrice:objLine.unit_price,
+    manufacturerPartId:'',
+    quantity:parseInt(objLine.quantity),
+    cdwPartNumber:objLine.cdw_part_number,
+    manufacturerName:objLine.manufacturer_name,
+    requestDeliverydate:objLine.requested_delivery_date,
+    uom:'EA',
+    contractId:'',
+    unspscCode:'',
+    itemDescription:objLine.item_description,
+    lineNumber:objLine.line_number,
+    couponCode:''
+  };
+    orderLinesArr.push(line);
+  }
+  outputs.orderlines=JSON.stringify(orderLinesArr);
+})(inputs, outputs);
+&lt;/value&gt;&lt;variable display_value="Script"&gt;71aa7f6647032200b4fad7527c9a719b&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;6f3b09cb1bb83c50e7004229bc4bcba8&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:29:34&lt;/sys_created_on&gt;&lt;sys_id&gt;504b49cb1bb83c50e7004229bc4bcb56&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-21 19:41:47&lt;/sys_updated_on&gt;&lt;value&gt;instance&lt;/value&gt;&lt;variable display_value="Required Runtime"&gt;74315b04b3201300176b051a16a8dc2b&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;6f3b09cb1bb83c50e7004229bc4bcba8&lt;/document_key&gt;&lt;order&gt;400&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:29:34&lt;/sys_created_on&gt;&lt;sys_id&gt;9c4b49cb1bb83c50e7004229bc4bcb55&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-21 19:29:34&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="MID Application"&gt;f5e56d79b3101300176b051a16a8dce4&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=6f3b09cb1bb83c50e7004229bc4bcba8"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;application&lt;/field&gt;&lt;id&gt;6f3b09cb1bb83c50e7004229bc4bcba8&lt;/id&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:29:34&lt;/sys_created_on&gt;&lt;sys_id&gt;944b49cb1bb83c50e7004229bc4bcb55&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-21 19:29:34&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;mid_selection_type&lt;/field&gt;&lt;id&gt;6f3b09cb1bb83c50e7004229bc4bcba8&lt;/id&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:29:34&lt;/sys_created_on&gt;&lt;sys_id&gt;1c4b49cb1bb83c50e7004229bc4bcb55&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-21 19:29:34&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;orderLines&lt;/field&gt;&lt;id&gt;6f3b09cb1bb83c50e7004229bc4bcba8&lt;/id&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:29:32&lt;/sys_created_on&gt;&lt;sys_id&gt;b73b09cb1bb83c50e7004229bc4bcbdd&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-22 14:28:48&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_step_ext_input_6f3b09cb1bb83c50e7004229bc4bcba8&lt;/table&gt;&lt;value&gt;{{action.orderlines}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;required_run_time&lt;/field&gt;&lt;id&gt;6f3b09cb1bb83c50e7004229bc4bcba8&lt;/id&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:29:34&lt;/sys_created_on&gt;&lt;sys_id&gt;584b49cb1bb83c50e7004229bc4bcb55&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-21 19:29:34&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;script&lt;/field&gt;&lt;id&gt;6f3b09cb1bb83c50e7004229bc4bcba8&lt;/id&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:29:32&lt;/sys_created_on&gt;&lt;sys_id&gt;b73b09cb1bb83c50e7004229bc4bcbdc&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-21 19:29:32&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_6f3b09cb1bb83c50e7004229bc4bcba8^id=6f3b09cb1bb83c50e7004229bc4bcba8"/&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=6f3b09cb1bb83c50e7004229bc4bcba8"/&gt;&lt;sys_hub_step_ext_input action="delete_multiple" query="model=6f3b09cb1bb83c50e7004229bc4bcba8^sys_idNOT IN6b3b09cb1bb83c50e7004229bc4bcbaf"/&gt;&lt;sys_hub_step_ext_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;orderLines&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label/&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Script step"&gt;6f3b09cb1bb83c50e7004229bc4bcba8&lt;/model&gt;&lt;model_id&gt;6f3b09cb1bb83c50e7004229bc4bcba8&lt;/model_id&gt;&lt;model_table&gt;sys_hub_step_instance&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_step_ext_input_6f3b09cb1bb83c50e7004229bc4bcba8&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;0&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_step_ext_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:29:32&lt;/sys_created_on&gt;&lt;sys_id&gt;6b3b09cb1bb83c50e7004229bc4bcbaf&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-22 14:28:51&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_step_ext_input&gt;&lt;sys_hub_step_ext_output action="delete_multiple" query="model=6f3b09cb1bb83c50e7004229bc4bcba8^sys_idNOT INa4ef459b1bbcbc50e7004229bc4bcbcb"/&gt;&lt;sys_hub_step_ext_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1d134225-900b-4d98-a751-17a4f842c6a4&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;orderlines&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;orderLines&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Script step"&gt;6f3b09cb1bb83c50e7004229bc4bcba8&lt;/model&gt;&lt;model_id&gt;6f3b09cb1bb83c50e7004229bc4bcba8&lt;/model_id&gt;&lt;model_table&gt;sys_hub_step_instance&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_step_ext_output_6f3b09cb1bb83c50e7004229bc4bcba8&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_step_ext_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-22 14:28:17&lt;/sys_created_on&gt;&lt;sys_id&gt;a4ef459b1bbcbc50e7004229bc4bcbcb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-22 14:28:17&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_step_ext_output&gt;&lt;sys_hub_action_input action="delete_multiple" query="model=5496cd8f1b783c50e7004229bc4bcbc0^sys_idNOT IN672741031bb83c50e7004229bc4bcb09"/&gt;&lt;sys_hub_action_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;child_label=orderLines_child0,child_name=orderLines_child0,child_type=object,child_type_label=Object,child_uiUniqueId=36f14cde-0807-4445-a4ae-7fd19ee5439e,co_type_name=FDa7274103feb83c5038204ef9847e3d06,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=354dfed1-fcd8-48ed-b88c-f6bef27e96e1&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;orderlines&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;orderLines&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;65000&lt;/max_length&gt;&lt;model display_value="CDW Ordering - Build Order Lines"&gt;5496cd8f1b783c50e7004229bc4bcbc0&lt;/model&gt;&lt;model_id&gt;5496cd8f1b783c50e7004229bc4bcbc0&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_definition&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_input_5496cd8f1b783c50e7004229bc4bcbc0&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:11:47&lt;/sys_created_on&gt;&lt;sys_id&gt;672741031bb83c50e7004229bc4bcb09&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-21 19:11:47&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_input&gt;&lt;sys_hub_action_output action="delete_multiple" query="model=5496cd8f1b783c50e7004229bc4bcbc0^sys_idNOT INefef099b1bbcbc50e7004229bc4bcbcb"/&gt;&lt;sys_hub_action_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=90c5e095-38ae-456d-aa90-78cebd24b05f&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;orderlines&lt;/element&gt;&lt;element_prototype/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_link/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;orderLines&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="CDW Ordering - Build Order Lines"&gt;5496cd8f1b783c50e7004229bc4bcbc0&lt;/model&gt;&lt;model_id&gt;5496cd8f1b783c50e7004229bc4bcbc0&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_definition&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_output_5496cd8f1b783c50e7004229bc4bcbc0&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-22 14:28:30&lt;/sys_created_on&gt;&lt;sys_id&gt;efef099b1bbcbc50e7004229bc4bcbcb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-22 14:28:30&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_output&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_5496cd8f1b783c50e7004229bc4bcbc0^sys_idNOT IN2f2749031bb83c50e7004229bc4bcb5e"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;orderlines&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;orderLines&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_input_5496cd8f1b783c50e7004229bc4bcbc0&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:11:47&lt;/sys_created_on&gt;&lt;sys_id&gt;2f2749031bb83c50e7004229bc4bcb5e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;orderLines&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_documentation_var__m_sys_hub_action_input_5496cd8f1b783c50e7004229bc4bcbc0_orderlines_en&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-21 19:11:47&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_5496cd8f1b783c50e7004229bc4bcbc0^sys_idNOT INbfef099b1bbcbc50e7004229bc4bcbd1"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;orderlines&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;orderLines&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_output_5496cd8f1b783c50e7004229bc4bcbc0&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-22 14:28:30&lt;/sys_created_on&gt;&lt;sys_id&gt;bfef099b1bbcbc50e7004229bc4bcbd1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;orderLines&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_documentation_var__m_sys_hub_action_output_5496cd8f1b783c50e7004229bc4bcbc0_orderlines_en&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-22 14:28:30&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_hub_action_plan action="delete_multiple" query="action_id=5496cd8f1b783c50e7004229bc4bcbc0^sys_idNOT IN8987cd431bb83c50e7004229bc4bcb3d"/&gt;&lt;sys_hub_action_plan action="INSERT_OR_UPDATE"&gt;&lt;action_id display_value="CDW Ordering - Build Order Lines"&gt;5496cd8f1b783c50e7004229bc4bcbc0&lt;/action_id&gt;&lt;plan&gt;{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"8987cd431bb83c50e7004229bc4bcb3d","name":"plan"}}&lt;/plan&gt;&lt;snapshot&gt;acda4a1b1b38fc50e7004229bc4bcb2a&lt;/snapshot&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:13:14&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;8987cd431bb83c50e7004229bc4bcb3d&lt;/sys_id&gt;&lt;sys_mod_count&gt;26&lt;/sys_mod_count&gt;&lt;sys_overrides/&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-22 18:45:50&lt;/sys_updated_on&gt;&lt;/sys_hub_action_plan&gt;&lt;sys_hub_action_type_snapshot action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;action_status/&gt;&lt;action_template/&gt;&lt;annotation/&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category display_value="Service Catalog"&gt;bf2f2fec73f70300b61e66476bf6a774&lt;/category&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description/&gt;&lt;internal_name&gt;cdw_ordering__build_order_lines&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"{{action.orderlines}}","label":"action➛orderLines","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.line_number}}","label":"action➛orderLines➛orderLines_child0➛line_number","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.unit_price}}","label":"action➛orderLines➛orderLines_child0➛unit_price","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.quantity}}","label":"action➛orderLines➛orderLines_child0➛quantity","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.item_description}}","label":"action➛orderLines➛orderLines_child0➛item_description","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.manufacturer_name}}","label":"action➛orderLines➛orderLines_child0➛manufacturer_name","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.cdw_part_number}}","label":"action➛orderLines➛orderLines_child0➛cdw_part_number","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.unit_of_measure}}","label":"action➛orderLines➛orderLines_child0➛unit_of_measure","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.part_id}}","label":"action➛orderLines➛orderLines_child0➛part_id","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.contract_id}}","label":"action➛orderLines➛orderLines_child0➛contract_id","type":"action","ref":""},{"name":"{{action.orderlines.orderLines_child0.requested_delivery_date}}","label":"action➛orderLines➛orderLines_child0➛requested_delivery_date","type":"action","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines}}","label":"step➛Script step➛orderLines","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child1}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child1","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.unitPrice}}","label":"step➛Script step➛orderLines➛orderLines_child0➛unitPrice","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child2}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child2","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.manufacturerPartId}}","label":"step➛Script step➛orderLines➛orderLines_child0➛manufacturerPartId","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child3}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child3","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.quantity}}","label":"step➛Script step➛orderLines➛orderLines_child0➛quantity","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child4}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child4","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.cdwPartNumber}}","label":"step➛Script step➛orderLines➛orderLines_child0➛cdwPartNumber","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child5}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child5","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.manufacturerName}}","label":"step➛Script step➛orderLines➛orderLines_child0➛manufacturerName","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child6}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child6","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.requestDeliveryDate}}","label":"step➛Script step➛orderLines➛orderLines_child0➛requestDeliveryDate","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child7}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child7","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.uom}}","label":"step➛Script step➛orderLines➛orderLines_child0➛uom","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child8}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child8","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.contractId}}","label":"step➛Script step➛orderLines➛orderLines_child0➛contractId","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child9}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child9","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.unspscCode}}","label":"step➛Script step➛orderLines➛orderLines_child0➛unspscCode","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child10}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child10","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.itemDescription}}","label":"step➛Script step➛orderLines➛orderLines_child0➛itemDescription","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child11}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child11","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.lineNumber}}","label":"step➛Script step➛orderLines➛orderLines_child0➛lineNumber","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.orderlines_child0_child12}}","label":"step➛Script step➛orderLines➛orderLines_child0➛orderLines_child0_child12","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0.couponCode}}","label":"step➛Script step➛orderLines➛orderLines_child0➛couponCode","type":"step","ref":""},{"name":"{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines.orderLines_child0}}","label":"step➛Script step➛orderLines➛orderLines_child0","type":"step","ref":""}]&lt;/label_cache&gt;&lt;master&gt;true&lt;/master&gt;&lt;name&gt;CDW Ordering - Build Order Lines&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;outputs/&gt;&lt;parent_action display_value="CDW Ordering - Build Order Lines"&gt;5496cd8f1b783c50e7004229bc4bcbc0&lt;/parent_action&gt;&lt;sys_class_name&gt;sys_hub_action_type_snapshot&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:13:14&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;f487cd431bb83c50e7004229bc4bcb08&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-22 14:28:53&lt;/sys_updated_on&gt;&lt;system_level&gt;false&lt;/system_level&gt;&lt;type/&gt;&lt;/sys_hub_action_type_snapshot&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=f487cd431bb83c50e7004229bc4bcb08"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=f487cd431bb83c50e7004229bc4bcb08"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_type_snapshot&lt;/document&gt;&lt;document_key&gt;f487cd431bb83c50e7004229bc4bcb08&lt;/document_key&gt;&lt;order&gt;1&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 21:17:38&lt;/sys_created_on&gt;&lt;sys_id&gt;cbf3e10f1bbc3c50e7004229bc4bcb0e&lt;/sys_id&gt;&lt;sys_mod_count&gt;15&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-22 14:28:53&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="orderLines"&gt;7c4b89cb1bb83c50e7004229bc4bcba2&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=f487cd431bb83c50e7004229bc4bcb08"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;orderlines&lt;/field&gt;&lt;id&gt;f487cd431bb83c50e7004229bc4bcb08&lt;/id&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:29:36&lt;/sys_created_on&gt;&lt;sys_id&gt;bc4b89cb1bb83c50e7004229bc4bcbab&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-22 14:28:53&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_action_output_f487cd431bb83c50e7004229bc4bcb08&lt;/table&gt;&lt;value&gt;{{step[7061f812-e2ef-4e4f-8922-9e4e83eb72da].orderlines}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_hub_step_instance action="delete_multiple" query="action=f487cd431bb83c50e7004229bc4bcb08^sys_idNOT IN284b89cb1bb83c50e7004229bc4bcb2e"/&gt;&lt;sys_hub_step_instance action="INSERT_OR_UPDATE"&gt;&lt;action display_value="CDW Ordering - Build Order Lines"&gt;f487cd431bb83c50e7004229bc4bcb08&lt;/action&gt;&lt;cid&gt;7061f812-e2ef-4e4f-8922-9e4e83eb72da&lt;/cid&gt;&lt;error_handling_type&gt;1&lt;/error_handling_type&gt;&lt;extended_inputs/&gt;&lt;extended_inputs/&gt;&lt;extended_outputs/&gt;&lt;icon/&gt;&lt;inputs/&gt;&lt;label&gt;Script step&lt;/label&gt;&lt;order&gt;1&lt;/order&gt;&lt;outputs/&gt;&lt;section/&gt;&lt;step_type display_value="Script"&gt;106afb6647032200b4fad7527c9a71e7&lt;/step_type&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:29:36&lt;/sys_created_on&gt;&lt;sys_id&gt;284b89cb1bb83c50e7004229bc4bcb2e&lt;/sys_id&gt;&lt;sys_mod_count&gt;22&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-22 20:08:48&lt;/sys_updated_on&gt;&lt;/sys_hub_step_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=284b89cb1bb83c50e7004229bc4bcb2e"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;284b89cb1bb83c50e7004229bc4bcb2e&lt;/document_key&gt;&lt;order&gt;200&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:29:36&lt;/sys_created_on&gt;&lt;sys_id&gt;344b89cb1bb83c50e7004229bc4bcb84&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-21 19:29:36&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="Select MID Server"&gt;2c226939b3101300176b051a16a8dc83&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;284b89cb1bb83c50e7004229bc4bcb2e&lt;/document_key&gt;&lt;order&gt;100&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:29:36&lt;/sys_created_on&gt;&lt;sys_id&gt;704b89cb1bb83c50e7004229bc4bcb84&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-21 19:41:56&lt;/sys_updated_on&gt;&lt;value&gt;instance&lt;/value&gt;&lt;variable display_value="Required Runtime"&gt;74315b04b3201300176b051a16a8dc2b&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;284b89cb1bb83c50e7004229bc4bcb2e&lt;/document_key&gt;&lt;order&gt;400&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:29:36&lt;/sys_created_on&gt;&lt;sys_id&gt;bc4b89cb1bb83c50e7004229bc4bcb83&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-21 19:29:36&lt;/sys_updated_on&gt;&lt;value/&gt;&lt;variable display_value="MID Application"&gt;f5e56d79b3101300176b051a16a8dce4&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;284b89cb1bb83c50e7004229bc4bcb2e&lt;/document_key&gt;&lt;order&gt;600&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:29:36&lt;/sys_created_on&gt;&lt;sys_id&gt;f44b89cb1bb83c50e7004229bc4bcb84&lt;/sys_id&gt;&lt;sys_mod_count&gt;20&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-22 20:08:48&lt;/sys_updated_on&gt;&lt;value&gt;(function execute(inputs, outputs) {
+
+  var orderLinesArr = [];
+  for(var i=0;i&amp;lt;inputs.orderLines.length;i++){
+    objLine=inputs.orderLines[i];
+    
+    var line = {
+    unitPrice:objLine.unit_price,
+    manufacturerPartId:'',
+    quantity:parseInt(objLine.quantity),
+    cdwPartNumber:objLine.cdw_part_number,
+    manufacturerName:objLine.manufacturer_name,
+    requestDeliverydate:objLine.requested_delivery_date,
+    uom:'EA',
+    contractId:'',
+    unspscCode:'',
+    itemDescription:objLine.item_description,
+    lineNumber:objLine.line_number,
+    couponCode:''
+  };
+    orderLinesArr.push(line);
+  }
+  outputs.orderlines=JSON.stringify(orderLinesArr);
+})(inputs, outputs);
+&lt;/value&gt;&lt;variable display_value="Script"&gt;71aa7f6647032200b4fad7527c9a719b&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="id=284b89cb1bb83c50e7004229bc4bcb2e"/&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;application&lt;/field&gt;&lt;id&gt;284b89cb1bb83c50e7004229bc4bcb2e&lt;/id&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:29:36&lt;/sys_created_on&gt;&lt;sys_id&gt;f04b89cb1bb83c50e7004229bc4bcb83&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-21 19:29:36&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;mid_selection_type&lt;/field&gt;&lt;id&gt;284b89cb1bb83c50e7004229bc4bcb2e&lt;/id&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:29:36&lt;/sys_created_on&gt;&lt;sys_id&gt;784b89cb1bb83c50e7004229bc4bcb83&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-21 19:29:36&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;orderLines&lt;/field&gt;&lt;id&gt;284b89cb1bb83c50e7004229bc4bcb2e&lt;/id&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:29:36&lt;/sys_created_on&gt;&lt;sys_id&gt;704b89cb1bb83c50e7004229bc4bcb85&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-21 19:29:36&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_hub_step_ext_input_284b89cb1bb83c50e7004229bc4bcb2e&lt;/table&gt;&lt;value&gt;{{action.orderlines}}&lt;/value&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;required_run_time&lt;/field&gt;&lt;id&gt;284b89cb1bb83c50e7004229bc4bcb2e&lt;/id&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:29:36&lt;/sys_created_on&gt;&lt;sys_id&gt;b44b89cb1bb83c50e7004229bc4bcb83&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-21 19:29:36&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="INSERT_OR_UPDATE"&gt;&lt;field&gt;script&lt;/field&gt;&lt;id&gt;284b89cb1bb83c50e7004229bc4bcb2e&lt;/id&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:29:36&lt;/sys_created_on&gt;&lt;sys_id&gt;3c4b89cb1bb83c50e7004229bc4bcb83&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-21 19:29:36&lt;/sys_updated_on&gt;&lt;table&gt;var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7&lt;/table&gt;&lt;value/&gt;&lt;/sys_element_mapping&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_284b89cb1bb83c50e7004229bc4bcb2e^id=284b89cb1bb83c50e7004229bc4bcb2e"/&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=284b89cb1bb83c50e7004229bc4bcb2e"/&gt;&lt;sys_hub_step_ext_input action="delete_multiple" query="model=284b89cb1bb83c50e7004229bc4bcb2e^sys_idNOT INe84b89cb1bb83c50e7004229bc4bcb31"/&gt;&lt;sys_hub_step_ext_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;orderLines&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;orderLines&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Script step"&gt;284b89cb1bb83c50e7004229bc4bcb2e&lt;/model&gt;&lt;model_id&gt;284b89cb1bb83c50e7004229bc4bcb2e&lt;/model_id&gt;&lt;model_table&gt;sys_hub_step_instance&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_step_ext_input_284b89cb1bb83c50e7004229bc4bcb2e&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;0&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_step_ext_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:29:36&lt;/sys_created_on&gt;&lt;sys_id&gt;e84b89cb1bb83c50e7004229bc4bcb31&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-21 19:29:36&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_step_ext_input&gt;&lt;sys_hub_step_ext_output action="delete_multiple" query="model=284b89cb1bb83c50e7004229bc4bcb2e^sys_idNOT INb04b89cb1bb83c50e7004229bc4bcb6d"/&gt;&lt;sys_hub_step_ext_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1d134225-900b-4d98-a751-17a4f842c6a4&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;orderlines&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;orderLines&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="Script step"&gt;284b89cb1bb83c50e7004229bc4bcb2e&lt;/model&gt;&lt;model_id&gt;284b89cb1bb83c50e7004229bc4bcb2e&lt;/model_id&gt;&lt;model_table&gt;sys_hub_step_instance&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_step_ext_output_284b89cb1bb83c50e7004229bc4bcb2e&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_step_ext_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:29:36&lt;/sys_created_on&gt;&lt;sys_id&gt;b04b89cb1bb83c50e7004229bc4bcb6d&lt;/sys_id&gt;&lt;sys_mod_count&gt;21&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-22 14:28:53&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_step_ext_output&gt;&lt;sys_hub_action_input action="delete_multiple" query="model=f487cd431bb83c50e7004229bc4bcb08^sys_idNOT IN7887cd431bb83c50e7004229bc4bcb0b"/&gt;&lt;sys_hub_action_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;child_label=orderLines_child0,child_name=orderLines_child0,child_type=object,child_type_label=Object,child_uiUniqueId=36f14cde-0807-4445-a4ae-7fd19ee5439e,co_type_name=FD74dd1e534070b4904041a9411fbfed86,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=354dfed1-fcd8-48ed-b88c-f6bef27e96e1&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;orderlines&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;orderLines&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;65000&lt;/max_length&gt;&lt;model display_value="CDW Ordering - Build Order Lines"&gt;f487cd431bb83c50e7004229bc4bcb08&lt;/model&gt;&lt;model_id&gt;f487cd431bb83c50e7004229bc4bcb08&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_input_f487cd431bb83c50e7004229bc4bcb08&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:13:14&lt;/sys_created_on&gt;&lt;sys_id&gt;7887cd431bb83c50e7004229bc4bcb0b&lt;/sys_id&gt;&lt;sys_mod_count&gt;27&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-22 20:08:48&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_input&gt;&lt;sys_hub_action_output action="delete_multiple" query="model=f487cd431bb83c50e7004229bc4bcb08^sys_idNOT IN7c4b89cb1bb83c50e7004229bc4bcba2"/&gt;&lt;sys_hub_action_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=90c5e095-38ae-456d-aa90-78cebd24b05f&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;orderlines&lt;/element&gt;&lt;element_prototype/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_link/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;orderLines&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;8000&lt;/max_length&gt;&lt;model display_value="CDW Ordering - Build Order Lines"&gt;f487cd431bb83c50e7004229bc4bcb08&lt;/model&gt;&lt;model_id&gt;f487cd431bb83c50e7004229bc4bcb08&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_output_f487cd431bb83c50e7004229bc4bcb08&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:29:36&lt;/sys_created_on&gt;&lt;sys_id&gt;7c4b89cb1bb83c50e7004229bc4bcba2&lt;/sys_id&gt;&lt;sys_mod_count&gt;21&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-22 14:28:53&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_output&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_f487cd431bb83c50e7004229bc4bcb08^sys_idNOT INf087cd431bb83c50e7004229bc4bcb1e"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;orderlines&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;orderLines&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_input_f487cd431bb83c50e7004229bc4bcb08&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:13:14&lt;/sys_created_on&gt;&lt;sys_id&gt;f087cd431bb83c50e7004229bc4bcb1e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;orderLines&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_documentation_var__m_sys_hub_action_input_f487cd431bb83c50e7004229bc4bcb08_orderlines_en&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-21 19:13:14&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_f487cd431bb83c50e7004229bc4bcb08^sys_idNOT IN704b89cb1bb83c50e7004229bc4bcba9"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;orderlines&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;orderLines&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_output_f487cd431bb83c50e7004229bc4bcb08&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;Terry.Lillo&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2021-06-21 19:29:36&lt;/sys_created_on&gt;&lt;sys_id&gt;704b89cb1bb83c50e7004229bc4bcba9&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;orderLines&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_documentation_var__m_sys_hub_action_output_f487cd431bb83c50e7004229bc4bcb08_orderlines_en&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Terry.Lillo&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-06-21 19:29:36&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_hub_action_type_definition action="update"&gt;&lt;sys_id&gt;5496cd8f1b783c50e7004229bc4bcbc0&lt;/sys_id&gt;&lt;latest_snapshot&gt;f487cd431bb83c50e7004229bc4bcb08&lt;/latest_snapshot&gt;&lt;/sys_hub_action_type_definition&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>347840229</payload_hash>
+        <record_name>CDW Ordering - Build Order Lines</record_name>
+        <reverted_from/>
+        <source>c75d3a421b1dc55062e50ed2cd4bcbd1</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-04-11 20:01:10</sys_created_on>
+        <sys_id>e9e55be11bf2811062e50ed2cd4bcb10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1801a3740ad0000001</sys_recorded_at>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-04-11 20:01:10</sys_updated_on>
+        <type>Action Type</type>
+        <update_guid>e1e55be1f2f281105079b18f627aa710</update_guid>
+        <update_guid_history>e1e55be1f2f281105079b18f627aa710:347840229,c5dd1e53ea70b490eb78e983ccfa88e6:-697808844,84ddda53a070b49045dc5e57def18f1b:2120413342,1dda8a1bee38fc50fc8599d98fb41905:-2082744706,67ca0a1b2b38fc50e1ab05956fb2a02f:-2090229684,9b8ac6d75438fc50f4a4005c1ae115cc:1762395756,c4c355d79afcbc503ebefc5c23779b3f:-2106784500,6eb3d1d7dcfcbc5075d30ef2fd712a35:-1128075417,cd431557f6fcbc502ff3a683bba88f3a:-781235146,63335157c4fcbc502fb776949eb334be:-2071687378,15b215d353fcbc50bd980d0b7ec602a5:-206034066,6c509ddb3fbcbc5067db3d6e5060ccd9:-403124735,87405ddb68bcbc506619a8907134c25b:-1666448338,69009d9b4dbcbc50476fb04ba2def4ca:779405838,cd005d9be1bcbc5080cd8af4eabf6ed3:704627803,90005d9bcdbcbc502fb3dee4e708eb11:-1893320225,7bef499b3ebcbc509bf61624d08ce255:766746459,b0ef859be4bcbc5019d782f4a4ac3b25:1765136772,49df819b88bcbc50073ef7917a204ea2:1161904857,064e0d57f8bcbc50cea3ea5f40020644:1113233832,8c4e495722bcbc500ec8d0cf44f55fcb:-1031790960,d87d85d329bcbc50eabee3d12b6afa6e:-1248575220,8f6d05d3cbbcbc50b650accfc0ab53e2:-684793962,451dc1936cbcbc50d716e3b88ffd17fa:356307892,6b0d419378bcbc50eb5df55ae561399d:-2084089159,4b2c0ddf057cbc504ae9443d60aa7992:-941872199,252c89dff87cbc50fc2c1a7fb247d4b0:-651809545,58478517bb7cbc5029ab66f09135a21f:2131586634,7a370517297cbc50e4c6181c7f27dbc1:-1026355877,4c66cd53d47cbc50508e470df9fcda8b:2003144296,ba564d53617cbc50db08367a52ccb99b:-1053584910,1bd50d13047cbc501e64e488aa8b5ccf:2083212730,8ad5c913cd7cbc50500d839f87cb0c0d:1063835708,85b4095fc23cbc50d43262e273c54d99:-1696403448,eba4855f733cbc502682b54644f17249:-1384713058,be1ba1cfd1fc3c50e5e2aeee18b16596:-1729691489,a91b21cfacfc3c50f00141b4aa94abc7:-2006762860,67ca258f65fc3c50502b638b9b403945:1155602119,f0ca618f98fc3c5075d8f60c659fa537:846421034,698ae54ffbfc3c5021ace8e93c34f1e1:1202468288,148a654fb2fc3c50b5ce2fdc29a33bed:15975595,2d2aa50fc9fc3c50e9529fd45265748c:-1837609873,582a250f03fc3c50ce2231f4d4d7ed7f:-591914622,3be52943edfc3c50a98830d9bd552adf:199942706,1ee5e543effc3c50c22119e4d2efb070:845634969,b71565cfa7bc3c50553df007c896464e:-217415073,ae15e1cffbbc3c50ef7bb95bc52ff1ce:-1924037490,57f3e10f46bc3c503730b32df126a155:901998689,f6f3a10fa6bc3c50fc5bb1d8c8c7209f:1130826169,06f3610f0fbc3c50ea409852d7899ebf:-783491637,1ad32dcb4fbc3c500d98a008859e8d86:-1619474147,2cb3a5cb0cbc3c502a649a14a6e6d0f8:-988803677,0a40114b64f83c503980bafbb8c0a59b:-1490238654,e0409d0b08f83c501d034025287942b6:72004772,4020590b58f83c50990b7e36df08ada1:906745291,b610190b56f83c507744684e52a1291a:1299852866,b50f8947baf83c500e12147dfcc612e9:396478044,d40f49471ff83c503cd6d54a1eeecc49:-777530773,a51ec5c38bf83c50d61b0dce48562297:1213226782,2b0e45c3d2f83c50eb6de49cf60c414f:-1631356480,54db814f9eb83c50f4c886de5cf665cc:-1986653126,83cb414f04b83c50fa7cde8d21502941:-1825536142,014b89cbeeb83c50b9b80da2b7fc2dff:-997077452,9c4b49cb34b83c50ec3d2b8d9a642279:1956808232,3f3b49cb15b83c509bb0a397cccf2206:1755797192,c187cd433db83c50733d54ee8723a73b:1092760850,7b27490365b83c50f70fca4b6834938f:-817910899,1096cd8fd3783c50a90613677f59c6c4:2092614916</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-02 13:59:02</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_action_type_definition">sys_hub_action_type_definition</sys_db_object>
+        <sys_id>059e1383bfe748009e7190ecd05a8d24</sys_id>
+        <sys_metadata>5496cd8f1b783c50e7004229bc4bcbc0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CDW Ordering - Build Order Lines</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_scope_delete display_value="">1de550a9788c4602b4836958c30c66c9</sys_scope_delete>
+        <sys_update_name>sys_hub_action_type_definition_5496cd8f1b783c50e7004229bc4bcbc0</sys_update_name>
+        <sys_update_version display_value="sys_hub_action_type_definition_5496cd8f1b783c50e7004229bc4bcbc0">e9e55be11bf2811062e50ed2cd4bcb10</sys_update_version>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-06-02 13:59:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
