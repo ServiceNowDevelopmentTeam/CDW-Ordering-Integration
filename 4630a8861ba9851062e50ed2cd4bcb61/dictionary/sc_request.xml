@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element attributes="hasLabels=true,hasWorkflow=true,use_document_viewer=true" audit="true" create_roles="catalog_admin" extends="task" label="Request" max_length="40" name="sc_request" read_roles="catalog,itil" sizeclass="21701" text_index="true" type="collection">
+    <element attributes="hasLabels=true,hasWorkflow=true,use_document_viewer=true" audit="true" create_roles="catalog_admin" extends="task" label="Request" max_length="40" name="sc_request" read_roles="catalog,itil" sizeclass="22396" text_index="true" type="collection">
         <element label="Address 1" max_length="35" name="u_address_1" type="string"/>
         <element label="Address 2" max_length="35" name="u_address_2" type="string"/>
         <element label="Address City" max_length="20" name="u_address_city" type="string"/>

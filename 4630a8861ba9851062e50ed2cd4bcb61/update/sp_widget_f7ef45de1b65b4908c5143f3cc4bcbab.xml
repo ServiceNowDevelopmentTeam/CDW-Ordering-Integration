@@ -15,7 +15,7 @@
 	c.isNative = cabrillo.isNative() && c.data.isMEE;
 	c.isLocationSelected = false;
 	c.phoneValid = true;
-	
+
 	c.updateDetails = function() {
 		c.deliverTo = c.data.cart.delivery_address;
 		c.special_instructions = c.data.cart.special_instructions;
@@ -111,7 +111,7 @@
 				}
 			}).then(function(response) {
 				c.data.cart = response.data.cart;
-				c.updateDetails();
+				//c.updateDetails();
 			});
 	}
 
@@ -405,6 +405,7 @@
 			cabrillo.viewLayout.setBottomButtons(buttons, function(buttonIndex) {});
 		}
 	}
+
 	c.changeCompany = function() {
 		c.server.get({
 			action: "change_company",
@@ -417,12 +418,36 @@
 			$scope.data.departmentQuery = response.data.departmentQuery;
 			$scope.data.disable_address = response.data.disable_address;
 			$scope.c.company.displayValue = response.data.companyDisplayValue;
+			$scope.data.reqForQuery = response.data.reqForQuery;
+			$scope.c.locationCompanyNumber = response.data.locationCompanyNumber;
+			$scope.c.gl = response.data.gl;
 			updateComments();
 			c.changeAddress();
-			
-		if($scope.c.addressPhone){
-			checkPhone();
-		}
+
+			if($scope.c.addressPhone){
+				checkPhone();
+			}
+		});
+	}
+
+	c.changeReqFor = function() {
+		c.server.get({
+			action: "change_req_for",
+			reqFor: c.requestedFor.value
+		}).then(function(response) {
+			c.company = {
+				displayValue: response.data.reqForCompanyDisplayValue,
+				value: response.data.reqForCompanyValue,
+				name: 'company'
+			};
+			console.log('company: ' + response.data.reqForCompanyValue);
+		console.log('company name: ' + response.data.reqForCompanyDisplayValue);
+			updateComments();
+			c.changeAddress();
+
+			if($scope.c.addressPhone){
+				checkPhone();
+			}
 		});
 	}
 
@@ -443,7 +468,8 @@
 			$scope.c.locationDepartmentNumber = response.data.locationDepartmentNumber;
 			$scope.c.gl = response.data.gl;
 			updateComments();
-				checkPhone();
+			c.changeAddress();
+			checkPhone();
 		});
 
 	}
@@ -453,7 +479,6 @@
 			address_changed: $scope.c.address_changed
 		}).then(function(response) {
 			$scope.data.disable_address = response.data.disable_address
-
 			if($scope.c.addressPhone){
 				checkPhone();
 			}
@@ -466,8 +491,10 @@
 	//Build out the Company - Department - GL for billing
 	function updateComments() {
 		var newComment = '';
-		if (c.locationCompanyNumber) newComment += c.locationCompanyNumber + ' - '
-		if (c.locationDepartmentNumber) newComment += c.locationDepartmentNumber + ' - '
+		newComment += c.locationCompanyNumber != undefined ? c.locationCompanyNumber : '?';
+		newComment += ' - ';
+		newComment += c.locationDepartmentNumber != undefined ? c.locationDepartmentNumber : '?';
+		newComment += ' - ';
 		newComment += c.gl;
 		newComment += ' - Configure For';
 		if ($scope.c.company.displayValue) {
@@ -481,13 +508,12 @@
 			checkPhone();
 		}
 	}
-	c.updateDetails();
 
 	function checkPhone(){
 		if(!isPhoneValid($scope.c.addressPhone)){
 			var phoneTrimmed = '';
 			if($scope.c.addressPhone && $scope.c.addressPhone != ''){
-			phoneTrimmed = $scope.c.addressPhone.slice(0, 12);
+				phoneTrimmed = $scope.c.addressPhone.slice(0, 12);
 			}
 			if(isPhoneValid(phoneTrimmed)){
 				$scope.c.addressPhone = phoneTrimmed;
@@ -616,7 +642,7 @@
 					payload.data["Shopping Cart"] = "true";
 					snAnalytics.addEvent(payload);
 				}
-				
+
 				c.data.action = null;
 				if (isOrderGuide) {
 					window.GlideWebAnalytics.trackEvent("Service Catalog", "Order Guide Request" + webAnalyticsMsgSuffix, "Catalog Request Submitted", $scope.data.item.items.length, 0);
@@ -751,12 +777,19 @@ label{
 		data.departmentQuery = "departmentISNOTEMPTY^company=" + localInput.company;
 		data.disable_location = true;
 		data.disable_department = true;
+		data.gl = '70700';
+		if(localInput.company){
+			var companyGR = new GlideRecord('core_company');
+			companyGR.get(localInput.company);
+			data.locationCompanyNumber = companyGR.getValue('u_company_number');
+		}
 		if(!localInput.address_changed){
 			data.disable_address = true;
 			var companyGr = new GlideRecord('core_company');
 			companyGr.get(localInput.company);
 			data.companyDisplayValue = companyGr.getValue('name');
 		}
+		data.reqForQuery = gs.getProperty("glide.sc.request_for.query") + "^company=" + localInput.company;
 		return;
 	}
 	if (localInput && localInput.action === "change_location") {
@@ -777,6 +810,13 @@ label{
 		return;
 	}
 
+	if (localInput && localInput.action === "change_req_for"){
+		var userGr = new GlideRecord('sys_user');
+		userGr.get(localInput.reqFor);
+		data.reqForCompanyValue = userGr.getValue('company');
+		data.reqForCompanyDisplayValue = userGr.company.name.toString();
+		return;
+	}
 
 	var cartName = '';
 	if (localInput)
@@ -1039,112 +1079,100 @@ label{
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2021-07-26 18:41:41</sys_created_on>
         <sys_id>f7ef45de1b65b4908c5143f3cc4bcbab</sys_id>
-        <sys_mod_count>499</sys_mod_count>
+        <sys_mod_count>565</sys_mod_count>
         <sys_name>CDW Catalog Checkout</sys_name>
         <sys_package display_value="Global" source="global">global</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>sp_widget_f7ef45de1b65b4908c5143f3cc4bcbab</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-03-24 18:41:53</sys_updated_on>
+        <sys_updated_on>2022-06-16 21:16:11</sys_updated_on>
         <template><![CDATA[<div id="sc_cat_checkout" ng-class="{'panel panel-default': !c.isNative}" sn-atf-blacklist="IS_SERVICE_CATALOG" ng-if="c.data.cdwCart">
-    <h1 class="padder-md h3" ng-if="!c.isNative" ng-if="c.data.cdwCart">{{::checkoutPopupTitle}}
-        <span class="text-base">
-            <i class="fa fa-close pull-right text-base" autofocus="true" tabindex="0" ng-click="c.cancel()"
-                aria-label="Close modal"></i>
-        </span>
-    </h1>
+  <h1 class="padder-md h3" ng-if="!c.isNative" ng-if="c.data.cdwCart">{{::checkoutPopupTitle}}
+    <span class="text-base">
+      <i class="fa fa-close pull-right text-base" autofocus="true" tabindex="0" ng-click="c.cancel()"
+         aria-label="Close modal"></i>
+    </span>
+  </h1>
 
-<form name="checkout" ng-if="c.data.cdwCart">
+  <form name="checkout" ng-if="c.data.cdwCart">
     <div class="wrapper-md clearfix b-t">
-        <div class="form-group">
-          
-            <label for="requested-for" ng-class="{'m-l': c.isNative}"><label class="required" ng-if="!c.requestedFor.value">*</label>${Request For}</label>
-            <sn-record-picker name="requested-for" id="requested-for" field="c.requestedFor" table="'sys_user'"
-                display-field="c.data.reqForDispCol" display-fields="c.data.reqForDispCols" value-field="'sys_id'"
-                search-fields="c.data.reqForSearchCols" default-query="c.data.reqForQuery" page-size="100"
-                options="{allowClear : false}" sn-disabled="!c.data.disable_req_for" sn-atf-id="RequestedFor">
-            </sn-record-picker>
-         		
-          
-              <!--<label for="date"><label class="required" ng-if="!c.date">*</label>${Requested By Date}</label>
-              <input name="date" type="date" ng-model="string" class="form-control" id="date" rows="3" ng-model="c.date"
-                  field="c.date" ng-disabled="false" ng-required={{data.required}}>-->
-         		  
-          
-            <!--<label for="department" ng-class="{'m-l': c.isNative}"><label class="required" ng-if="!c.department">*</label>${Department}</label>
-      			<input name="department" type="text" class="form-control" rows="1" id="department" ng-model="c.department"
-                  field="c.department" ng-required={{data.required}} ng-change="c.changeDepartment()">-->
-          
+      <div class="form-group">
 
+        <label for="requested-for" ng-class="{'m-l': c.isNative}"><label ng-class="required" ng-if="!c.requestedFor.value">*</label>${Request For}</label>
+        <sn-record-picker name="requested-for" id="requested-for" field="c.requestedFor" table="'sys_user'"
+                          display-field="c.data.reqForDispCol" display-fields="c.data.reqForDispCols" value-field="'sys_id'"
+                          search-fields="c.data.reqForSearchCols" default-query="c.data.reqForQuery" page-size="100"
+                          options="{allowClear : false}"  ng-change="c.changeReqFor()" sn-disabled="!c.data.disable_req_for" sn-atf-id="RequestedFor">
+        </sn-record-picker>
+
+        <label for="company" ng-class="{'m-l': c.isNative}"><label ng-class="required" ng-if="!c.company.value">*</label>${Company}</label>
+        <sn-record-picker name="company" id="company" field="c.company" table="'core_company'"
+                          display-field="c.data.companyDispCol" display-fields="c.data.companyDispCols" value-field="'sys_id'"
+                          search-fields="c.data.companyDispCols" default-query="c.data.companyQuery" page-size="100"
+                          options="{allowClear : false}" sn-disabled="!c.data.disable_company" ng-change="c.changeCompany()" ng-required={{data.required}} sn-atf-id="Company">
+        </sn-record-picker>
+
+
+        <label for="location" ng-class="{'m-l': c.isNative}"><label ng-class="required" ng-if="(!c.location.value && !c.address_changed)">*</label>${Location(Company Addresses Only)}</label>
+        <sn-record-picker name="location" id="location" field="c.location" table="'cmn_location'"
+                          display-field="c.data.locationDispCol" display-fields="c.data.locationDispCols" value-field="'sys_id'"
+                          search-fields="c.data.locationDispCols" default-query="c.data.locationQuery" page-size="100"
+                          options="{allowClear : false}" sn-disabled="!c.data.disable_location" ng-change="c.changeLocation()" ng-required="(!data.disable_address && data.required)" sn-atf-id="Location">
+        </sn-record-picker>
           
-          
-            <label for="company" ng-class="{'m-l': c.isNative}"><label class="required" ng-if="!c.company.value">*</label>${Company}</label>
-            <sn-record-picker name="company" id="company" field="c.company" table="'core_company'"
-                display-field="c.data.companyDispCol" display-fields="c.data.companyDispCols" value-field="'sys_id'"
-                search-fields="c.data.companyDispCols" default-query="c.data.companyQuery" page-size="100"
-                options="{allowClear : false}" sn-disabled="!c.data.disable_company" ng-change="c.changeCompany()" ng-required={{data.required}} sn-atf-id="Company">
-            </sn-record-picker>
-         		
-          
-            <label for="location" ng-class="{'m-l': c.isNative}"><label class="required" ng-if="!c.location.value">*</label>${Location(Company Addresses Only)}</label>
-            <sn-record-picker name="location" id="location" field="c.location" table="'cmn_location'"
-                display-field="c.data.locationDispCol" display-fields="c.data.locationDispCols" value-field="'sys_id'"
-                search-fields="c.data.locationDispCols" default-query="c.data.locationQuery" page-size="100"
-                options="{allowClear : false}" sn-disabled="!c.data.disable_location" ng-change="c.changeLocation()" ng-required={{data.required}} sn-atf-id="Location">
-            </sn-record-picker>
-         		
-            <div ng-show="c.isLocationSelected">
-              <input name="address_changed" type="checkbox" class="form-check-input" id="address_changed" ng-model="c.address_changed"
-              field="c.address_changed" ng-change="c.changeAddress()">  
-              <label class="form-check-label" for="address_changed">${Change Address}</label><br>
-              <label for="address1">{{address1Label}}</label>
-              <textarea class="form-control" id="address1" rows="1" ng-model="c.address1"
-                  field="c.address1"  ng-disabled="data.disable_address" ng-required={{data.required}}></textarea>
-              <label for="address2">{{address2Label}}</label>
-              <textarea class="form-control" id="address2" rows="1" ng-model="c.address2"
-                  field="c.address2" ng-disabled="data.disable_address"></textarea>
-              <label for="addressCity">{{addressCityLabel}}</label>
-              <textarea class="form-control" id="addressCity" rows="1" ng-model="c.addressCity"
-                  field="c.addressCity" ng-disabled="data.disable_address" ng-required={{data.required}}></textarea>
-              <label for="addressState">{{addressStateLabel}}</label>
-              <textarea class="form-control" id="addressState" rows="1" ng-model="c.addressState"
-                  field="c.addressState" ng-disabled="data.disable_address" ng-required={{data.required}}></textarea>
-              <label for="addressZip">{{addressZipLabel}}</label>
-              <textarea class="form-control" id="addressZip" rows="1" ng-model="c.addressZip"
-                  field="c.addressZip" ng-disabled="data.disable_address" ng-required={{data.required}}></textarea>
-              <label for="addressPhone">{{addressPhoneLabel}}</label>
-              <textarea class="form-control" ng-change="c.checkPhone()" id="addressPhone" rows="1" ng-model="c.addressPhone"
-                  field="c.addressPhone" ng-disabled="data.disable_address" ng-required={{data.required}}></textarea>
-              <div ng-show="!c.phoneValid" class="alert-danger">Invalid phone number, use format "###-###-####"</div>
-              <label for="comment">${Company - Location - GL}</label>
-              <textarea class="form-control" id="comment" rows="1" ng-model="c.comment"
-                  field="c.comment" ng-disabled="false"></textarea>
-            </div>
+        <input name="address_changed" type="checkbox" class="form-check-input" id="address_changed" ng-model="c.address_changed"
+               field="c.address_changed" ng-change="c.changeAddress()"> 
+        <label for="address_changed" class="form-check-label">${Location Incorrect or Not Found}</label>      
+
+        <div ng-show="c.isLocationSelected || data.disable_address === false">
+          <label for="address1"><label ng-class="required" ng-if="!c.address1">*</label>{{address1Label}}</label>
+          <textarea class="form-control" id="address1" rows="1" ng-model="c.address1"
+                    field="c.address1"  ng-disabled="data.disable_address" ng-required={{data.required}}></textarea>
+          <label for="address2">{{address2Label}}</label>
+          <textarea class="form-control" id="address2" rows="1" ng-model="c.address2"
+                    field="c.address2" ng-disabled="data.disable_address"></textarea>
+          <label for="addressCity"><label ng-class="required" ng-if="!c.addressCity">*</label>{{addressCityLabel}}</label>
+          <textarea class="form-control" id="addressCity" rows="1" ng-model="c.addressCity"
+                    field="c.addressCity" ng-disabled="data.disable_address" ng-required={{data.required}}></textarea>
+          <label for="addressState"><label ng-class="required" ng-if="!c.addressState">*</label>{{addressStateLabel}}</label>
+          <textarea class="form-control" id="addressState" rows="1" ng-model="c.addressState"
+                    field="c.addressState" ng-disabled="data.disable_address" ng-required={{data.required}}></textarea>
+          <label for="addressZip"><label ng-class="required" ng-if="!c.addressZip">*</label>{{addressZipLabel}}</label>
+          <textarea class="form-control" id="addressZip" rows="1" ng-model="c.addressZip"
+                    field="c.addressZip" ng-disabled="data.disable_address" ng-required={{data.required}}></textarea>
+          <label for="addressPhone"><label ng-class="required" ng-if="!c.addressPhone">*</label>{{addressPhoneLabel}}</label>
+          <textarea class="form-control" ng-change="c.checkPhone()" id="addressPhone" rows="1" ng-model="c.addressPhone"
+                    field="c.addressPhone" ng-disabled="data.disable_address" ng-required={{data.required}}></textarea>
+          <div ng-show="!c.phoneValid" class="alert-danger">Invalid phone number, use format "###-###-####"</div>
+          <label for="comment"><label ng-class="required" ng-if="!c.comment">*</label>${Company - Location - GL}</label>
+          <textarea class="form-control" id="comment" rows="1" ng-model="c.comment"
+                    field="c.comment" ng-disabled="false"></textarea>
         </div>
+      </div>
     </div>
-</div>
+    </div>
 
 
-<div class="panel-footer clearfix" ng-if="!c.isNative && c.data.cdwCart">
+  <div class="panel-footer clearfix" ng-if="!c.isNative && c.data.cdwCart">
     <div>
-        <div class="pull-right">
-            <button name="cancel" ng-disabled="c.checkoutInProgress" ng-click="c.cancel()"
+      <div class="pull-right">
+        <button name="cancel" ng-disabled="c.checkoutInProgress" ng-click="c.cancel()"
                 class="btn btn-default">${Cancel}</button>
-            <button ng-disabled="c.checkoutInProgress || !c.requestedFor.value || !c.location.value || !c.company.value || !c.phoneValid" name="submit"
+        <button ng-disabled="c.checkoutInProgress || !c.requestedFor.value || (!c.location.value && !c.address_changed) || !c.company.value || !c.phoneValid || !c.address1 || !c.addressCity || !c.addressState || !c.addressZip || !c.addressPhone || !c.comment" name="submit"
                 ng-click="c.triggerCheckout()" sn-focus="true" class="btn sc-btn btn-primary m-l-xs">
-                <span ng-show="!c.checkoutInProgress">{{::checkOutMsg}}</span>
-                <span ng-show="c.checkoutInProgress">{{::m.checkingOutMsg}}</span>
-            </button>
-        </div>
+          <span ng-show="!c.checkoutInProgress">{{::checkOutMsg}}</span>
+          <span ng-show="c.checkoutInProgress">{{::m.checkingOutMsg}}</span>
+        </button>
+      </div>
     </div>
-</div>
+  </div>
 </div>
 
-  </form>
+</form>
 
-    <h1 class="padder-md h3" ng-if="!c.isNative" ng-if="!c.isOrderGuide" ng-if="!c.data.cdwCart">${Submitting}
-    </h1>]]></template>
+<h1 class="padder-md h3" ng-if="!c.isNative" ng-if="!c.isOrderGuide" ng-if="!c.data.cdwCart">${Submitting}
+</h1>]]></template>
     </sp_widget>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</claim_owner_scope>

@@ -2,31 +2,45 @@
     <sys_ui_related sys_domain="global" table="sc_cat_item" version="2" view="cdw_items">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Catalog Item - CDW Items" name="sc_cat_item" related_list="NULL" sys_domain="global" view="042d55f51b5e305062e50ed2cd4bcb6f">cbba7c5b1bcd011062e50ed2cd4bcb0b</list_id>
+            <list_id display_value="Catalog Item - CDW Items" name="sc_cat_item" related_list="NULL" sys_domain="global" view="042d55f51b5e305062e50ed2cd4bcb6f">e26bf0e61b8c511062e50ed2cd4bcbf2</list_id>
             <order_by/>
             <position>0</position>
             <related_list>sp_carousel_slide.u_cat_item</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>Terry.Lillo</sys_created_by>
-            <sys_created_on>2022-01-19 19:22:44</sys_created_on>
-            <sys_id>4bba7c5b1bcd011062e50ed2cd4bcb0c</sys_id>
+            <sys_created_on>2022-06-15 14:38:37</sys_created_on>
+            <sys_id>aa6bf0e61b8c511062e50ed2cd4bcbf3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>Terry.Lillo</sys_updated_by>
-            <sys_updated_on>2022-01-19 19:22:44</sys_updated_on>
+            <sys_updated_on>2022-06-15 14:38:37</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
             <filter/>
-            <list_id display_value="Catalog Item - CDW Items" name="sc_cat_item" related_list="NULL" sys_domain="global" view="042d55f51b5e305062e50ed2cd4bcb6f">cbba7c5b1bcd011062e50ed2cd4bcb0b</list_id>
+            <list_id display_value="Catalog Item - CDW Items" name="sc_cat_item" related_list="NULL" sys_domain="global" view="042d55f51b5e305062e50ed2cd4bcb6f">e26bf0e61b8c511062e50ed2cd4bcbf2</list_id>
             <order_by/>
             <position>1</position>
             <related_list>io_set_item.sc_cat_item</related_list>
             <sys_class_name>sys_ui_related_list_entry</sys_class_name>
             <sys_created_by>Terry.Lillo</sys_created_by>
-            <sys_created_on>2022-01-19 19:22:44</sys_created_on>
-            <sys_id>cfba7c5b1bcd011062e50ed2cd4bcb0c</sys_id>
+            <sys_created_on>2022-06-15 14:38:37</sys_created_on>
+            <sys_id>666bf0e61b8c511062e50ed2cd4bcbf4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>Terry.Lillo</sys_updated_by>
-            <sys_updated_on>2022-01-19 19:22:44</sys_updated_on>
+            <sys_updated_on>2022-06-15 14:38:37</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Catalog Item - CDW Items" name="sc_cat_item" related_list="NULL" sys_domain="global" view="042d55f51b5e305062e50ed2cd4bcb6f">e26bf0e61b8c511062e50ed2cd4bcbf2</list_id>
+            <order_by/>
+            <position>2</position>
+            <related_list>catalog_ui_policy.catalog_item</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2022-06-15 14:38:37</sys_created_on>
+            <sys_id>ea6bf0e61b8c511062e50ed2cd4bcbf4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2022-06-15 14:38:37</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
             <calculated_name>Catalog Item - CDW Items</calculated_name>
@@ -37,18 +51,18 @@
             <related_list/>
             <sys_class_name>sys_ui_related_list</sys_class_name>
             <sys_created_by>Terry.Lillo</sys_created_by>
-            <sys_created_on>2022-01-19 19:22:44</sys_created_on>
+            <sys_created_on>2022-06-15 14:38:37</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>cbba7c5b1bcd011062e50ed2cd4bcb0b</sys_id>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_id>e26bf0e61b8c511062e50ed2cd4bcbf2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
             <sys_name>Catalog Item - CDW Items</sys_name>
             <sys_package display_value="Global" source="global">global</sys_package>
             <sys_policy/>
             <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
             <sys_update_name>sys_ui_related_sc_cat_item_cdw_items</sys_update_name>
             <sys_updated_by>Terry.Lillo</sys_updated_by>
-            <sys_updated_on>2022-04-11 20:01:05</sys_updated_on>
+            <sys_updated_on>2022-06-15 14:38:37</sys_updated_on>
             <sys_user/>
             <view display_value="CDW Items" name="cdw_items">042d55f51b5e305062e50ed2cd4bcb6f</view>
             <view_name/>
