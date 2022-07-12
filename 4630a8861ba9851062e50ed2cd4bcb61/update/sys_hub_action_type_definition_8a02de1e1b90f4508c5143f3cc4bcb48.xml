@@ -662,6 +662,7 @@
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=0042965e1b90f4508c5143f3cc4bcb49"/>
     <sys_hub_step_ext_output action="delete_multiple" query="model=0042965e1b90f4508c5143f3cc4bcb49^sys_idNOT INc842965e1b90f4508c5143f3cc4bcb5e,cde082fa1be03014e7004229bc4bcbd3,cde082fa1be03014e7004229bc4bcbda"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -906,6 +907,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0042965e1b90f4508c5143f3cc4bcb49"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_0042965e1b90f4508c5143f3cc4bcb49^sys_idNOT IN722285981ba0019062e50ed2cd4bcbbd,762285981ba0019062e50ed2cd4bcbbf,7a2285981ba0019062e50ed2cd4bcbc1"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>sn_auth_token</element>
@@ -1052,6 +1054,10 @@
         <table>var__m_sys_flow_step_definition_input_2429af02b3331300176b051a16a8dcab</table>
         <value>{"type":"ADV_NV","value":[{"name":"orderType","value":"{{action.order.orderHeader.orderType}}","attributes":{}},{"name":"comments","value":"{{action.order.orderHeader.comments}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"orderId","value":"{{action.order.orderHeader.orderId}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"customerName","value":"{{action.order.orderHeader.customerName}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"quoteId","value":"{{action.order.orderHeader.quoteId}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"orderAmount","value":"{{action.order.orderHeader.orderAmount}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"shipMethod","value":"{{action.order.orderHeader.shipMethod}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"customerId","value":"{{action.order.orderHeader.customerId}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"currency","value":"{{action.order.orderHeader.currency}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"orderDate","value":"{{action.order.orderHeader.orderDate}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"termDuedays","value":"{{action.order.orderHeader.termDuedays}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
     </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=14c3e9571bb0fc50e7004229bc4bcb4b"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=14c3e9571bb0fc50e7004229bc4bcb4b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=14c3e9571bb0fc50e7004229bc4bcb4b"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_14c3e9571bb0fc50e7004229bc4bcb4b"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="CDW Ordering - Send Order">8a02de1e1b90f4508c5143f3cc4bcb48</action>
         <cid>a0aa99ad-2387-4626-bc28-6ee5518787b5</cid>
@@ -3435,6 +3441,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5b0a919b1b30fc50e7004229bc4bcb18"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_5b0a919b1b30fc50e7004229bc4bcb18^sys_idNOT INe22285981ba0019062e50ed2cd4bcb8d"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>order</element>
@@ -4126,6 +4133,7 @@ var bodyObject=JSON.parse(inputs.responseBody);
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=eac4c4301bf83410e7004229bc4bcb57"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_eac4c4301bf83410e7004229bc4bcb57^sys_idNOT IN322285981ba0019062e50ed2cd4bcbe7,322285981ba0019062e50ed2cd4bcbf0,362285981ba0019062e50ed2cd4bcbe9,3a2285981ba0019062e50ed2cd4bcbeb,3e2285981ba0019062e50ed2cd4bcbe4,3e2285981ba0019062e50ed2cd4bcbed"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>ordernumber</element>
@@ -4347,6 +4355,7 @@ var bodyObject=JSON.parse(inputs.responseBody);
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4842965e1b90f4508c5143f3cc4bcb3d"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -4428,6 +4437,7 @@ var bodyObject=JSON.parse(inputs.responseBody);
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=92248ed71bf4fc50e7004229bc4bcbe6"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -4509,6 +4519,7 @@ var bodyObject=JSON.parse(inputs.responseBody);
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9ba0515f1bbcbc50e7004229bc4bcb8f"/>
     <sys_hub_action_output action="delete_multiple" query="model=8a02de1e1b90f4508c5143f3cc4bcb48^sys_idNOT IN3ec4c4301bf83410e7004229bc4bcbdf,8322c5981ba0019062e50ed2cd4bcb01,8322c5981ba0019062e50ed2cd4bcb09,8b22c5981ba0019062e50ed2cd4bcb1c,bbce8a801b5538108c5143f3cc4bcbfc,c322c5981ba0019062e50ed2cd4bcb15"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -4593,6 +4604,8 @@ var bodyObject=JSON.parse(inputs.responseBody);
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3ec4c4301bf83410e7004229bc4bcbdf"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3ec4c4301bf83410e7004229bc4bcbdf"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -4676,6 +4689,8 @@ var bodyObject=JSON.parse(inputs.responseBody);
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8322c5981ba0019062e50ed2cd4bcb01"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8322c5981ba0019062e50ed2cd4bcb01"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -4759,6 +4774,8 @@ var bodyObject=JSON.parse(inputs.responseBody);
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8322c5981ba0019062e50ed2cd4bcb09"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8322c5981ba0019062e50ed2cd4bcb09"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -4842,6 +4859,8 @@ var bodyObject=JSON.parse(inputs.responseBody);
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8b22c5981ba0019062e50ed2cd4bcb1c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8b22c5981ba0019062e50ed2cd4bcb1c"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -4925,6 +4944,8 @@ var bodyObject=JSON.parse(inputs.responseBody);
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bbce8a801b5538108c5143f3cc4bcbfc"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=bbce8a801b5538108c5143f3cc4bcbfc"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -5008,6 +5029,8 @@ var bodyObject=JSON.parse(inputs.responseBody);
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c322c5981ba0019062e50ed2cd4bcb15"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c322c5981ba0019062e50ed2cd4bcb15"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=8a02de1e1b90f4508c5143f3cc4bcb48^sys_idNOT IN0322c5981ba0019062e50ed2cd4bcb50,0f22c5981ba0019062e50ed2cd4bcb50,1b22c5981ba0019062e50ed2cd4bcb51,4b22c5981ba0019062e50ed2cd4bcb50,5722c5981ba0019062e50ed2cd4bcb51,8722c5981ba0019062e50ed2cd4bcb36,8722c5981ba0019062e50ed2cd4bcb50,9322c5981ba0019062e50ed2cd4bcb51,c322c5981ba0019062e50ed2cd4bcb50,cf22c5981ba0019062e50ed2cd4bcb36,cf22c5981ba0019062e50ed2cd4bcb50"/>
     <sys_hub_pill_compound action="INSERT_OR_UPDATE">
         <attached_to>8a02de1e1b90f4508c5143f3cc4bcb48</attached_to>
@@ -5206,6 +5229,7 @@ var bodyObject=JSON.parse(inputs.responseBody);
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2021-12-16 15:42:03</sys_updated_on>
     </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=1f22c5981ba0019062e50ed2cd4bcb51"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_8a02de1e1b90f4508c5143f3cc4bcb48^sys_idNOT IN23a0515f1bbcbc50e7004229bc4bcb95,62248ed71bf4fc50e7004229bc4bcbeb,8042965e1b90f4508c5143f3cc4bcb46"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>orderlines</element>
@@ -5276,6 +5300,7 @@ var bodyObject=JSON.parse(inputs.responseBody);
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_8a02de1e1b90f4508c5143f3cc4bcb48"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_8a02de1e1b90f4508c5143f3cc4bcb48^sys_idNOT IN0f22c5981ba0019062e50ed2cd4bcb13,3ec4c4301bf83410e7004229bc4bcbe5,73ceca801b5538108c5143f3cc4bcb11,8b22c5981ba0019062e50ed2cd4bcb22,c322c5981ba0019062e50ed2cd4bcb1b,cb22c5981ba0019062e50ed2cd4bcb07"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>__dont_treat_as_error__</element>
@@ -5415,6 +5440,7 @@ var bodyObject=JSON.parse(inputs.responseBody);
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_8a02de1e1b90f4508c5143f3cc4bcb48"/>
     <sys_hub_action_plan action="delete_multiple" query="action_id=8a02de1e1b90f4508c5143f3cc4bcb48^sys_idNOT INf6e896f81bacbc90e7004229bc4bcb1f"/>
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="CDW Ordering - Send Order">8a02de1e1b90f4508c5143f3cc4bcb48</action_id>
@@ -7955,6 +7981,7 @@ var bodyObject=JSON.parse(inputs.responseBody);
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=22cad11f1b30fc50e7004229bc4bcb74"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_22cad11f1b30fc50e7004229bc4bcb74^sys_idNOT IN583209981ba0019062e50ed2cd4bcbcb"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>order</element>
@@ -8458,6 +8485,7 @@ var bodyObject=JSON.parse(inputs.responseBody);
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=96e856f81bacbc90e7004229bc4bcb54"/>
     <sys_hub_step_ext_output action="delete_multiple" query="model=96e856f81bacbc90e7004229bc4bcb54^sys_idNOT IN3652c1831b783c50e7004229bc4bcb4b,9ee856f81bacbc90e7004229bc4bcb5a,f652c1831b783c50e7004229bc4bcb44"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -8702,6 +8730,7 @@ var bodyObject=JSON.parse(inputs.responseBody);
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=96e856f81bacbc90e7004229bc4bcb54"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_96e856f81bacbc90e7004229bc4bcb54^sys_idNOT IN5c3209981ba0019062e50ed2cd4bcbf6,903209981ba0019062e50ed2cd4bcbe8,9c3209981ba0019062e50ed2cd4bcbe5"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>u_content-type</element>
@@ -9439,6 +9468,7 @@ var bodyObject=JSON.parse(inputs.responseBody);
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b652c1831b783c50e7004229bc4bcbc1"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_b652c1831b783c50e7004229bc4bcbc1^sys_idNOT IN103249981ba0019062e50ed2cd4bcb10,143249981ba0019062e50ed2cd4bcb12,183249981ba0019062e50ed2cd4bcb0b,183249981ba0019062e50ed2cd4bcb14,1c3249981ba0019062e50ed2cd4bcb0d,1c3249981ba0019062e50ed2cd4bcb16"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>orderdate</element>
@@ -9654,6 +9684,10 @@ var bodyObject=JSON.parse(inputs.responseBody);
         <table>var__m_sys_flow_step_definition_input_2429af02b3331300176b051a16a8dcab</table>
         <value>{"type":"ADV_NV","value":[{"name":"orderType","value":"{{action.order.orderHeader.orderType}}","attributes":{}},{"name":"comments","value":"{{action.order.orderHeader.comments}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"orderId","value":"{{action.order.orderHeader.orderId}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"customerName","value":"{{action.order.orderHeader.customerName}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"quoteId","value":"{{action.order.orderHeader.quoteId}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"orderAmount","value":"{{action.order.orderHeader.orderAmount}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"shipMethod","value":"{{action.order.orderHeader.shipMethod}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"customerId","value":"{{action.order.orderHeader.customerId}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"currency","value":"{{action.order.orderHeader.currency}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"orderDate","value":"{{action.order.orderHeader.orderDate}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"termDuedays","value":"{{action.order.orderHeader.termDuedays}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
     </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=fbc321971bb0fc50e7004229bc4bcb79"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=fbc321971bb0fc50e7004229bc4bcb79"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=fbc321971bb0fc50e7004229bc4bcb79"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_fbc321971bb0fc50e7004229bc4bcb79"/>
     <sys_hub_action_input action="delete_multiple" query="model=0ae856f81bacbc90e7004229bc4bcb23^sys_idNOT IN42e856f81bacbc90e7004229bc4bcb4c,92045e571bb8fc50e7004229bc4bcb37,a8c0955f1bbcbc50e7004229bc4bcbcc"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -9736,6 +9770,7 @@ var bodyObject=JSON.parse(inputs.responseBody);
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=42e856f81bacbc90e7004229bc4bcb4c"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -9817,6 +9852,7 @@ var bodyObject=JSON.parse(inputs.responseBody);
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=92045e571bb8fc50e7004229bc4bcb37"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -9898,6 +9934,7 @@ var bodyObject=JSON.parse(inputs.responseBody);
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a8c0955f1bbcbc50e7004229bc4bcbcc"/>
     <sys_hub_action_output action="delete_multiple" query="model=0ae856f81bacbc90e7004229bc4bcb23^sys_idNOT IN45ee82c01b5538108c5143f3cc4bcbdc,8f5205831b783c50e7004229bc4bcb09,943249981ba0019062e50ed2cd4bcb27,9c3249981ba0019062e50ed2cd4bcb2e,a43249981ba0019062e50ed2cd4bcb42,ec3249981ba0019062e50ed2cd4bcb3a"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -9982,6 +10019,8 @@ var bodyObject=JSON.parse(inputs.responseBody);
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=45ee82c01b5538108c5143f3cc4bcbdc"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=45ee82c01b5538108c5143f3cc4bcbdc"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -10065,6 +10104,8 @@ var bodyObject=JSON.parse(inputs.responseBody);
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8f5205831b783c50e7004229bc4bcb09"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8f5205831b783c50e7004229bc4bcb09"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -10148,6 +10189,8 @@ var bodyObject=JSON.parse(inputs.responseBody);
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=943249981ba0019062e50ed2cd4bcb27"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=943249981ba0019062e50ed2cd4bcb27"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -10231,6 +10274,8 @@ var bodyObject=JSON.parse(inputs.responseBody);
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9c3249981ba0019062e50ed2cd4bcb2e"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9c3249981ba0019062e50ed2cd4bcb2e"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -10314,6 +10359,8 @@ var bodyObject=JSON.parse(inputs.responseBody);
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a43249981ba0019062e50ed2cd4bcb42"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a43249981ba0019062e50ed2cd4bcb42"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -10397,6 +10444,8 @@ var bodyObject=JSON.parse(inputs.responseBody);
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ec3249981ba0019062e50ed2cd4bcb3a"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ec3249981ba0019062e50ed2cd4bcb3a"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=0ae856f81bacbc90e7004229bc4bcb23^sys_idNOT IN203249981ba0019062e50ed2cd4bcb5d,243249981ba0019062e50ed2cd4bcb5c,2c3249981ba0019062e50ed2cd4bcb5d,603249981ba0019062e50ed2cd4bcb5c,683249981ba0019062e50ed2cd4bcb5d,6c3249981ba0019062e50ed2cd4bcb5c,a43249981ba0019062e50ed2cd4bcb5d,a83249981ba0019062e50ed2cd4bcb5c,e03249981ba0019062e50ed2cd4bcb5d,e43249981ba0019062e50ed2cd4bcb5c,ec3249981ba0019062e50ed2cd4bcb5d"/>
     <sys_hub_pill_compound action="INSERT_OR_UPDATE">
         <attached_to>0ae856f81bacbc90e7004229bc4bcb23</attached_to>
@@ -10595,6 +10644,7 @@ var bodyObject=JSON.parse(inputs.responseBody);
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2021-12-16 15:42:09</sys_updated_on>
     </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=e03249981ba0019062e50ed2cd4bcb5e"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_0ae856f81bacbc90e7004229bc4bcb23^sys_idNOT IN1a045e571bb8fc50e7004229bc4bcb3c,20c0955f1bbcbc50e7004229bc4bcbd2,cee856f81bacbc90e7004229bc4bcb51"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>orderstring</element>
@@ -10665,6 +10715,7 @@ var bodyObject=JSON.parse(inputs.responseBody);
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_0ae856f81bacbc90e7004229bc4bcb23"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_0ae856f81bacbc90e7004229bc4bcb23^sys_idNOT IN283249981ba0019062e50ed2cd4bcb39,85ee82c01b5538108c5143f3cc4bcbe1,8b5205831b783c50e7004229bc4bcb0f,a43249981ba0019062e50ed2cd4bcb48,d43249981ba0019062e50ed2cd4bcb2d,ec3249981ba0019062e50ed2cd4bcb40"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>__dont_treat_as_error__</element>
@@ -10804,6 +10855,7 @@ var bodyObject=JSON.parse(inputs.responseBody);
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_0ae856f81bacbc90e7004229bc4bcb23"/>
     <sys_hub_action_type_definition action="update">
         <sys_id>8a02de1e1b90f4508c5143f3cc4bcb48</sys_id>
         <latest_snapshot>0ae856f81bacbc90e7004229bc4bcb23</latest_snapshot>

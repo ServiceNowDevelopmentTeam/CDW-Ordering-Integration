@@ -445,6 +445,7 @@
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=61024a931bf4fc50e7004229bc4bcb53"/>
     <sys_hub_step_ext_output action="delete_multiple" query="model=61024a931bf4fc50e7004229bc4bcb53^sys_idNOT IN29024a931bf4fc50e7004229bc4bcb59,2d024a931bf4fc50e7004229bc4bcb65,ad024a931bf4fc50e7004229bc4bcb5f"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -689,6 +690,8 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=61024a931bf4fc50e7004229bc4bcb53"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_61024a931bf4fc50e7004229bc4bcb53"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
         <action display_value="TEST CDW Ordering - Send Order">c1020a931bf4fc50e7004229bc4bcbce</action>
         <cid>f363d899-9a31-454f-9a6a-e78fde72dc2e</cid>
@@ -1356,6 +1359,8 @@ var bodyObject=inputs.responseBody;
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=bd024a931bf4fc50e7004229bc4bcb79"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_bd024a931bf4fc50e7004229bc4bcb79"/>
     <sys_hub_action_input action="delete_multiple" query="model=c1020a931bf4fc50e7004229bc4bcbce^sys_idNOT IN51020a931bf4fc50e7004229bc4bcbd6"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -1438,6 +1443,7 @@ var bodyObject=inputs.responseBody;
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=51020a931bf4fc50e7004229bc4bcbd6"/>
     <sys_hub_action_output action="delete_multiple" query="model=c1020a931bf4fc50e7004229bc4bcbce^sys_idNOT INf9028a931bf4fc50e7004229bc4bcb06"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -1522,6 +1528,10 @@ var bodyObject=inputs.responseBody;
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f9028a931bf4fc50e7004229bc4bcb06"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f9028a931bf4fc50e7004229bc4bcb06"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=c1020a931bf4fc50e7004229bc4bcbce"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=c1020a931bf4fc50e7004229bc4bcbce"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_c1020a931bf4fc50e7004229bc4bcbce^sys_idNOT INd5020a931bf4fc50e7004229bc4bcbdb"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>order</element>
@@ -1546,6 +1556,7 @@ var bodyObject=inputs.responseBody;
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_c1020a931bf4fc50e7004229bc4bcbce"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_c1020a931bf4fc50e7004229bc4bcbce^sys_idNOT IN06028a931bf4fc50e7004229bc4bcb18"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>ordernumber</element>
@@ -1570,4 +1581,6 @@ var bodyObject=inputs.responseBody;
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_c1020a931bf4fc50e7004229bc4bcbce"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=c1020a931bf4fc50e7004229bc4bcbce"/>
 </record_update>

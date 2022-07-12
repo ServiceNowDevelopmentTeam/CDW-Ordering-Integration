@@ -501,6 +501,7 @@ date.addDaysUTC(inputs.Days.toString());
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5fbdac011b5b49d08c5143f3cc4bcb37"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_5fbdac011b5b49d08c5143f3cc4bcb37^sys_idNOT INdfbdac011b5b49d08c5143f3cc4bcb4e"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>datetimevalue</element>
@@ -607,6 +608,7 @@ date.addDaysUTC(inputs.Days.toString());
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c26e68411b5b49d08c5143f3cc4bcb78"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -688,6 +690,7 @@ date.addDaysUTC(inputs.Days.toString());
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ca6ea0411b5b49d08c5143f3cc4bcb70"/>
     <sys_hub_action_output action="delete_multiple" query="model=53bdac011b5b49d08c5143f3cc4bcb31^sys_idNOT IN2fbdac011b5b49d08c5143f3cc4bcb61,a7bdac011b5b49d08c5143f3cc4bcb59,a7bdac011b5b49d08c5143f3cc4bcb69"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -772,6 +775,8 @@ date.addDaysUTC(inputs.Days.toString());
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2fbdac011b5b49d08c5143f3cc4bcb61"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2fbdac011b5b49d08c5143f3cc4bcb61"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -855,6 +860,8 @@ date.addDaysUTC(inputs.Days.toString());
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a7bdac011b5b49d08c5143f3cc4bcb59"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a7bdac011b5b49d08c5143f3cc4bcb59"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -938,6 +945,9 @@ date.addDaysUTC(inputs.Days.toString());
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a7bdac011b5b49d08c5143f3cc4bcb69"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a7bdac011b5b49d08c5143f3cc4bcb69"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=53bdac011b5b49d08c5143f3cc4bcb31"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=53bdac011b5b49d08c5143f3cc4bcb31^sys_idNOT INe7bdac011b5b49d08c5143f3cc4bcb7a"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
         <action_type_id display_value="Add Days to DateTime">53bdac011b5b49d08c5143f3cc4bcb31</action_type_id>
@@ -948,6 +958,7 @@ date.addDaysUTC(inputs.Days.toString());
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2022-05-04 15:00:54</sys_updated_on>
     </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=e7bdac011b5b49d08c5143f3cc4bcb7a"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_53bdac011b5b49d08c5143f3cc4bcb31^sys_idNOT IN0e6e68411b5b49d08c5143f3cc4bcb76,4e6e68411b5b49d08c5143f3cc4bcb8a"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>date_time</element>
@@ -995,6 +1006,7 @@ date.addDaysUTC(inputs.Days.toString());
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_53bdac011b5b49d08c5143f3cc4bcb31"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_53bdac011b5b49d08c5143f3cc4bcb31^sys_idNOT IN2bbdac011b5b49d08c5143f3cc4bcb74,67bdac011b5b49d08c5143f3cc4bcb60,efbdac011b5b49d08c5143f3cc4bcb67"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>__dont_treat_as_error__</element>
@@ -1065,6 +1077,7 @@ date.addDaysUTC(inputs.Days.toString());
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_53bdac011b5b49d08c5143f3cc4bcb31"/>
     <sys_hub_action_plan action="delete_multiple" query="action_id=53bdac011b5b49d08c5143f3cc4bcb31^sys_idNOT INc76ea8411b5b49d08c5143f3cc4bcbb4"/>
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Add Days to DateTime">53bdac011b5b49d08c5143f3cc4bcb31</action_id>
@@ -1580,6 +1593,7 @@ date.addDaysUTC(inputs.Days.toString());
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6e6e68411b5b49d08c5143f3cc4bcbfd"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_6e6e68411b5b49d08c5143f3cc4bcbfd^sys_idNOT IN6a6ea8411b5b49d08c5143f3cc4bcb15"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>datetimevalue</element>
@@ -1686,6 +1700,7 @@ date.addDaysUTC(inputs.Days.toString());
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e26e68411b5b49d08c5143f3cc4bcbf5"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1767,6 +1782,7 @@ date.addDaysUTC(inputs.Days.toString());
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ee6e68411b5b49d08c5143f3cc4bcbec"/>
     <sys_hub_action_output action="delete_multiple" query="model=166e68411b5b49d08c5143f3cc4bcbe9^sys_idNOT IN666ea8411b5b49d08c5143f3cc4bcb20,a26ea8411b5b49d08c5143f3cc4bcb30,a66ea8411b5b49d08c5143f3cc4bcb28"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -1851,6 +1867,8 @@ date.addDaysUTC(inputs.Days.toString());
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=666ea8411b5b49d08c5143f3cc4bcb20"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=666ea8411b5b49d08c5143f3cc4bcb20"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1934,6 +1952,8 @@ date.addDaysUTC(inputs.Days.toString());
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a26ea8411b5b49d08c5143f3cc4bcb30"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a26ea8411b5b49d08c5143f3cc4bcb30"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -2017,6 +2037,9 @@ date.addDaysUTC(inputs.Days.toString());
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a66ea8411b5b49d08c5143f3cc4bcb28"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a66ea8411b5b49d08c5143f3cc4bcb28"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=166e68411b5b49d08c5143f3cc4bcbe9"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=166e68411b5b49d08c5143f3cc4bcbe9^sys_idNOT IN726ea8411b5b49d08c5143f3cc4bcb5a"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
         <action_type_id display_value="Add Days to DateTime">166e68411b5b49d08c5143f3cc4bcbe9</action_type_id>
@@ -2027,6 +2050,7 @@ date.addDaysUTC(inputs.Days.toString());
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2022-05-04 15:03:51</sys_updated_on>
     </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=726ea8411b5b49d08c5143f3cc4bcb5a"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_166e68411b5b49d08c5143f3cc4bcbe9^sys_idNOT IN2e6e68411b5b49d08c5143f3cc4bcbf3,a66e68411b5b49d08c5143f3cc4bcbfb"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>date_time</element>
@@ -2074,6 +2098,7 @@ date.addDaysUTC(inputs.Days.toString());
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_166e68411b5b49d08c5143f3cc4bcbe9"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_166e68411b5b49d08c5143f3cc4bcbe9^sys_idNOT INea6ea8411b5b49d08c5143f3cc4bcb2e,ee6ea8411b5b49d08c5143f3cc4bcb26,fe6ea8411b5b49d08c5143f3cc4bcb53"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>__action_status__</element>
@@ -2144,6 +2169,7 @@ date.addDaysUTC(inputs.Days.toString());
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_166e68411b5b49d08c5143f3cc4bcbe9"/>
     <sys_hub_action_type_definition action="update">
         <sys_id>53bdac011b5b49d08c5143f3cc4bcb31</sys_id>
         <latest_snapshot>166e68411b5b49d08c5143f3cc4bcbe9</latest_snapshot>

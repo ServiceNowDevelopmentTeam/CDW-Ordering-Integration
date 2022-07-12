@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_ng_template">
+    <sp_ng_template action="INSERT_OR_UPDATE">
+        <id>large_shopping_cart_v2_copy.html</id>
+        <sp_widget display_value="Copy of SC Shopping Cart">e1c3515a1ba5b4908c5143f3cc4bcb77</sp_widget>
+        <sys_class_name>sp_ng_template</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-07-26 19:02:15</sys_created_on>
+        <sys_id>d1a419da1ba5b4908c5143f3cc4bcb8e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>large_shopping_cart_v2_copy.html</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sp_ng_template_d1a419da1ba5b4908c5143f3cc4bcb8e</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-07-12 13:15:09</sys_updated_on>
+        <template><![CDATA[<div ng-if="c.data.cartItems.length > 0">
+  <div class="panel panel-primary b {{::c.data.isMEE ? 'cart-mobile' : ''}}">
+    <div class="cart-header">
+	    <h2 class="padder-md h3 m-t-sm col-sm-6 col-xs-8">${Your Cart}</h2>
+      <a class="m-r-xs hidden col-xs-3" ng-click="c.clearCart()" >${Empty Cart}</a>
+    </div>
+    <table ng-if="::!c.data.isMEE" id="cart" class="table table-hover b-t table-condensed cart-table">
+      <thead>
+        <tr>
+          <th class="col-sm-6 wrapper padder-md">${Item}</th>
+          <th class="col-sm-2 wrapper hidden-xs" ng-if="c.data.cart.cart_items.show_subtotal_price === 'true'">${Price}</th>
+          <th class="col-sm-1 wrapper hidden-xs">${Quantity}</th>
+          <th class="col-sm-2 wrapper hidden-xs" ng-if="c.data.cart.cart_items.show_subtotal_price === 'true'">${Subtotal}</th>
+          <th class="col-sm-1"><span style="visibility: hidden;">${Item Controls}</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="item-row b-b" ng-repeat="item in c.data.cartItems | orderBy: 'created_on' track by item.sys_id">
+          <td data-th="Product" class="col-sm-7 col-xs-11 wrapper-md break-word">
+            <div class="row">
+              <div class="col-sm-3 col-xs-4">
+                <a ng-href="{{::item.item_url}}" ng-if ="::item.picture" aria-label="{{::item.name}}">
+                  <img ng-show="item.picture" ng-src="{{::item.picture}}" alt="{{::item.name}}" class="img-responsive item-image"/>
+                </a>
+              </div>
+              <div class="col-sm-9 col-xs-8">
+                <h2 class="nomargin h4"><a ng-href="{{::item.item_url}}" ng-class="::{'a-disabled': !item.can_order}">{{::item.name}}</a></h2>
+                <p>{{::item.short_description}}</p>
+              </div>
+            </div>
+                <div class="col-xs-4 visible-xs">
+                  <select ng-if="c.showQuantity(item) && !item.read_only_quantity"
+                     title="{{item.order_guide || !item.can_order ? '${Quantity can not be changed}': '${Quantity}'}}"
+                     aria-label="${Quantity}"
+                     class="m-b scBasicSelect"
+                     ng-disabled="item.order_guide || !item.can_order"
+                     ng-model="item.quantity"
+                     ng-change="c.updateQuantity(item)">
+                     <option ng-repeat="num in data.choiceListQuantity" value={{::num.value}}>{{::num.label}}</option>
+                  </select>
+                </div>
+                <div class="col-xs-6 visible-xs" ng-if="c.data.cart.cart_items.show_subtotal_price === 'true'">
+                  <span ng-if="::c.showPrice(item)">&nbsp;&nbsp;&nbsp;{{item.subtotal_price_display}}</span>
+                  <div ng-if="::c.showRecurringPrice(item)">{{::c.showPrice(item) ? '+ ' : ' '}} {{item.recurring_subtotal_price_display + ' ' + item.recurring_frequency}}</div>
+                  <div ng-if="::(!c.showPrice(item) && !c.showRecurringPrice(item))">
+                    ---
+                  </div>
+                </div>
+          </td>
+          <td class="break-word hidden-xs wrapper" ng-if="c.data.cart.cart_items.show_subtotal_price === 'true'">
+            <span ng-if="::c.showPrice(item)">&nbsp;&nbsp;&nbsp;{{::item.price_display}}</span>
+            <div ng-if="::c.showRecurringPrice(item)">{{::c.showPrice(item) ? '+ ' : ' '}} {{item.recurring_price_display + ' ' + item.recurring_frequency}}</div>
+            <div ng-if="::(!c.showPrice(item) && !c.showRecurringPrice(item))">
+               ---
+            </div>
+          </td>
+          <td data-th="Quantity" class="break-word hidden-xs wrapper">
+            <select ng-if="c.showQuantity(item) && !item.read_only_quantity"
+               title="{{item.order_guide || !item.can_order ? '${Quantity can not be changed}': '${Quantity}'}}"
+               aria-label="${Quantity}"
+               class="m-b scBasicSelect"
+               ng-model="item.quantity"
+               ng-disabled="item.order_guide || !item.can_order"
+               ng-change="c.updateQuantity(item)">
+               <option ng-repeat="num in data.choiceListQuantity" value={{::num.value}}>{{::num.label}}</option>
+            </select>
+            <span ng-if="::(!item.show_quantity || (item.read_only_quantity && item.sys_class_name != 'sc_cat_item_producer'))">{{::item.show_quantity ? item.quantity : '--'}}</span>
+          </td>
+          <td class="break-word hidden-xs wrapper" ng-if="c.data.cart.cart_items.show_subtotal_price === 'true'">
+            <span ng-if="::c.showPrice(item)">&nbsp;&nbsp;&nbsp;{{item.subtotal_price_display}}</span>
+            <div ng-if="::c.showRecurringPrice(item)">{{::c.showPrice(item) ? '+ ' : ' '}} {{item.recurring_subtotal_price_display + ' ' + item.recurring_frequency}}</div>
+            <div ng-if="::(!c.showPrice(item) && !c.showRecurringPrice(item))">
+               ---
+             </div>
+          </td>
+          <td class="actions break-word col-xs-1" data-th="">
+						<button class="btn btn-clear" ng-click="c.removeItem(item)" aria-label="${Remove Item From Cart} {{::item.name}}" title="${Remove Item} {{::item.name}}">
+              <i class="fa fa-times-circle btn-remove" aria-hidden="true"></i>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div ng-if="::c.data.isMEE">
+      <div ng-repeat="item in c.data.cartItems | orderBy: 'created_on' track by item.sys_id" class="cart-item-mobile-info b-b">
+        <div class="col-xs-3">
+            <a ng-href="{{::item.item_url}}" ng-if ="::item.picture">
+            <img ng-show="item.picture" ng-src="{{::item.picture}}" alt="{{::item.name}}" class="img-responsive item-image"/>
+          </a>
+        </div>
+        <div class="item-info col-xs-7">
+          <div class="col-sm-9">
+            <h2 class="nomargin h4"><a ng-href="{{::item.item_url}}" ng-class="::{'a-disabled': !item.can_order}" style="font-size: 16px !important;">{{::item.name}}</a></h2>
+          </div>
+          <div class="col-sm-9" ng-if="::c.data.cart.cart_items.show_subtotal_price === 'true'">
+            <span ng-if="::c.showPrice(item)">{{item.subtotal_price_display}}</span>
+            <span ng-if="::c.showRecurringPrice(item)">{{::c.showPrice(item) ? '+ ' : ' '}} {{item.recurring_subtotal_price_display + ' ' + item.recurring_frequency}}</span>
+            <div ng-if="::(!c.showPrice(item) && !c.showRecurringPrice(item))">
+              ---
+            </div>
+          </div>
+          <div class="col-sm-4 col-xs-4">
+          <h2 class="nomargin h4"/>
+            <select ng-if="c.showQuantity(item) && !item.read_only_quantity"
+                    title="{{item.order_guide || !item.can_order ? '${Quantity can not be changed}': '${Quantity}'}}"
+                    aria-label="${Quantity}"
+                    class="m-b scBasicSelect"
+                    ng-disabled="item.order_guide || !item.can_order"
+                    ng-model="item.quantity"
+                    ng-change="c.updateQuantity(item)">
+                    <option ng-repeat="num in data.choiceListQuantity" value={{::num.value}}>{{::num.label}}</option>
+            </select>
+          </div>
+        </div>
+        <a class="col-xs-2" ng-click="c.removeItem(item)" aria-label="${Remove Item From Cart} {{::item.name}}" title="${Remove Item} {{::item.name}}">${Remove}</a>
+      </div>
+    </div>
+    <div class="clearfix" ng-class="{'wrapper': !c.data.isMEE}">
+      
+      <div class="m-b-lg" ng-if="::c.data.isMEE && c.data.cart.cart_items.show_subtotal_price === 'true'">
+        <div class="m-t-sm">
+          <strong>{{c.data.cart.cart_items.subtotal_price}}</strong>
+          <div ng-repeat="(key, value) in c.data.cart.recurring_subtotals">+ {{value}} {{key}}</div>
+        </div>
+      </div>
+      
+      <div class="pull-right m-r-lg m-b-lg" ng-if="::!c.data.isMEE && c.data.cart.cart_items.show_subtotal_price === 'true'">
+        <div class="pull-left"><strong>${Total price}: </strong></div>
+        <div class="pull-left m-l-sm">
+          <span>&nbsp;&nbsp;&nbsp;{{c.data.cart.cart_items.subtotal_price}}</span>
+          <div ng-repeat="(key, value) in c.data.cart.recurring_subtotals">+ {{value}} {{key}}</div>
+        </div>
+      </div>
+
+      <div class="sc-btn-group">
+        <a ng-if="::!c.data.isMEE" href="?id=sc_home" name="submit" class="btn sc-btn btn-default m-r-xs">${Continue Shopping}</a>
+        <button ng-if="::!c.data.isMEE" class="btn sc-btn btn-default" ng-click="c.saveBundle()">${Save as Bundle}</button>
+        <div ng-if="::!c.data.isMEE" class="sc-btn-group pull-right">
+          <button class="btn sc-btn btn-default m-r-xs sc-remove-btn" ng-click="c.clearCart()" >${Clear Cart}</button>
+          <button ng-disabled="c.checkoutInProgress" name="submit" ng-click="c.triggerCheckout()" class="btn sc-btn btn-primary" ng-class="{'rounded m-r-lg padder-xl': c.data.isMEE}">
+            <span ng-show="!c.checkoutInProgress && c.data.sys_properties.twostep">${Proceed to Checkout}</span>
+            <span ng-show="!c.checkoutInProgress && !c.data.sys_properties.twostep">${Checkout}</span>
+            <span ng-show="c.checkoutInProgress">${Ordering...}</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div ng-show="c.data.cartItems.length == 0" class="panel panel-default b">
+	<div class="panel-body">
+		<div class="empty-state-content" ng-show="!c.data.checkedOut">
+			<span class="fa fa-shopping-cart" aria-label="${Shopping cart icon}"></span>
+			<h2 class="h3">${Your shopping cart is empty}</h2>
+			<p>${Once you have added items to your shopping cart, you can check out from here.}</p>
+			<a class="btn btn-primary" href="?id=sc_home" ng-if="!c.data.isMEE">${View the Catalog}</a>
+    	</div>
+    	<div class="text-a-c" ng-show="c.data.checkedOut">
+      		<i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+      		<span class="sr-only">${Loading...}</span>
+		</div>
+	</div>
+</div>
+]]></template>
+    </sp_ng_template>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</claim_owner_scope>
+        <claim_timestamp>181f28c99ec0000001</claim_timestamp>
+        <metadata_update_name>sp_ng_template_d1a419da1ba5b4908c5143f3cc4bcb8e</metadata_update_name>
+        <previous_claim_app_version>1.1.9</previous_claim_app_version>
+        <previous_claim_name>CDW Ordering Integration</previous_claim_name>
+        <previous_claim_scope>4630a8861ba9851062e50ed2cd4bcb61</previous_claim_scope>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-07-12 13:15:09</sys_created_on>
+        <sys_id>133bafcf1b6811508c5143f3cc4bcbdd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-07-12 13:15:09</sys_updated_on>
+    </sys_claim>
+</record_update>

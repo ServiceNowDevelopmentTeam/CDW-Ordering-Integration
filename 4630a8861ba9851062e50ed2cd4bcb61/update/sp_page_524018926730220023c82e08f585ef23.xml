@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <category>sc</category>
+        <css/>
+        <draft>false</draft>
+        <dynamic_title_structure/>
+        <id>sc_cart</id>
+        <internal>false</internal>
+        <omit_watcher>false</omit_watcher>
+        <public>false</public>
+        <roles>snc_external,snc_internal</roles>
+        <seo_script/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-07-25 17:36:07</sys_created_on>
+        <sys_id>524018926730220023c82e08f585ef23</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>sc_cart</sys_name>
+        <sys_package display_value="Service Portal - Service Catalog (do not activate...see plugin description)" source="com.glide.service-portal.service-catalog">303a60af1b251010e7004229bc4bcbfd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sp_page_524018926730220023c82e08f585ef23</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-07-12 13:15:18</sys_updated_on>
+        <title>Shopping Cart</title>
+        <use_seo_script>false</use_seo_script>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=524018926730220023c82e08f585ef23"/>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</claim_owner_scope>
+        <claim_timestamp>181f28cbc3f0000001</claim_timestamp>
+        <metadata_update_name>sp_page_524018926730220023c82e08f585ef23</metadata_update_name>
+        <previous_claim_app_version>1.1.9</previous_claim_app_version>
+        <previous_claim_name>CDW Ordering Integration</previous_claim_name>
+        <previous_claim_scope>4630a8861ba9851062e50ed2cd4bcb61</previous_claim_scope>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-07-12 13:15:18</sys_created_on>
+        <sys_id>d54befcf1b6811508c5143f3cc4bcb1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-07-12 13:15:18</sys_updated_on>
+    </sys_claim>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</claim_owner_scope>
+        <claim_timestamp>181f28cbc3c0000001</claim_timestamp>
+        <metadata_update_name>sp_page_524018926730220023c82e08f585ef23</metadata_update_name>
+        <previous_claim_app_version/>
+        <previous_claim_name>com.glide.service-portal.service-catalog</previous_claim_name>
+        <previous_claim_scope>com.glide.service-portal.service</previous_claim_scope>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-07-12 13:15:18</sys_created_on>
+        <sys_id>994befcf1b6811508c5143f3cc4bcb1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-07-12 13:15:18</sys_updated_on>
+    </sys_claim>
+</record_update>

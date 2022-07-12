@@ -232,6 +232,18 @@
         <variable display_value="Credential Alias">445c2a72b3701300176b051a16a8dcc2</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129^id=4c9589fa1be8fcd0e7004229bc4bcb61"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=4c9589fa1be8fcd0e7004229bc4bcb61"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=4c9589fa1be8fcd0e7004229bc4bcb61"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4c9589fa1be8fcd0e7004229bc4bcb61"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_4c9589fa1be8fcd0e7004229bc4bcb61"/>
+    <sys_hub_action_input action="delete_multiple" query="model=35940d3a1be8fcd0e7004229bc4bcb54"/>
+    <sys_hub_action_output action="delete_multiple" query="model=35940d3a1be8fcd0e7004229bc4bcb54"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=35940d3a1be8fcd0e7004229bc4bcb54"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=35940d3a1be8fcd0e7004229bc4bcb54"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_35940d3a1be8fcd0e7004229bc4bcb54"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_35940d3a1be8fcd0e7004229bc4bcb54"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_35940d3a1be8fcd0e7004229bc4bcb54"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_35940d3a1be8fcd0e7004229bc4bcb54"/>
     <sys_hub_action_plan action="delete_multiple" query="action_id=35940d3a1be8fcd0e7004229bc4bcb54^sys_idNOT INa3a8c1b21b2cfcd0e7004229bc4bcbf6"/>
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="CDW Pre-Prod OAuth Get Token">35940d3a1be8fcd0e7004229bc4bcb54</action_id>
@@ -408,6 +420,18 @@
         <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129^id=17a8c1b21b2cfcd0e7004229bc4bcb5e"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=17a8c1b21b2cfcd0e7004229bc4bcb5e"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=17a8c1b21b2cfcd0e7004229bc4bcb5e"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=17a8c1b21b2cfcd0e7004229bc4bcb5e"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_17a8c1b21b2cfcd0e7004229bc4bcb5e"/>
+    <sys_hub_action_input action="delete_multiple" query="model=dba8c1b21b2cfcd0e7004229bc4bcb5c"/>
+    <sys_hub_action_output action="delete_multiple" query="model=dba8c1b21b2cfcd0e7004229bc4bcb5c"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=dba8c1b21b2cfcd0e7004229bc4bcb5c"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=dba8c1b21b2cfcd0e7004229bc4bcb5c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_dba8c1b21b2cfcd0e7004229bc4bcb5c"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_dba8c1b21b2cfcd0e7004229bc4bcb5c"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_dba8c1b21b2cfcd0e7004229bc4bcb5c"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_dba8c1b21b2cfcd0e7004229bc4bcb5c"/>
     <sys_hub_action_type_definition action="update">
         <sys_id>35940d3a1be8fcd0e7004229bc4bcb54</sys_id>
         <latest_snapshot>dba8c1b21b2cfcd0e7004229bc4bcb5c</latest_snapshot>

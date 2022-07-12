@@ -56,6 +56,8 @@
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2022-04-11 20:01:10</sys_updated_on>
     </sys_claim>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=c0988dad1bfeb85062e50ed2cd4bcbcc"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=c0988dad1bfeb85062e50ed2cd4bcbcc"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=c0988dad1bfeb85062e50ed2cd4bcbcc^sys_idNOT INcc988dad1bfeb85062e50ed2cd4bcbce"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
         <id>c0988dad1bfeb85062e50ed2cd4bcbcc</id>
@@ -68,6 +70,7 @@
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2021-09-24 13:32:30</sys_updated_on>
     </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=cc988dad1bfeb85062e50ed2cd4bcbce"/>
     <sys_hub_flow_input action="delete_multiple" query="model=c0988dad1bfeb85062e50ed2cd4bcbcc^sys_idNOT IN24c98d611b32f85062e50ed2cd4bcbc6"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -150,6 +153,8 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=c0988dad1bfeb85062e50ed2cd4bcbcc"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c0988dad1bfeb85062e50ed2cd4bcbcc"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=c0988dad1bfeb85062e50ed2cd4bcbcc^sys_idNOT IN05ac5a561b7f305062e50ed2cd4bcbfd,0aa699531b1c49508c5143f3cc4bcbc2,1cac89e51b32f85062e50ed2cd4bcb06,98afc3c31bbef41062e50ed2cd4bcb8c,99ac9a561b7f305062e50ed2cd4bcb07"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
@@ -212,6 +217,8 @@
         <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
         <value/>
     </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=05ac5a561b7f305062e50ed2cd4bcbfd"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=05ac5a561b7f305062e50ed2cd4bcbfd"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -273,6 +280,8 @@
         <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
         <value/>
     </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0aa699531b1c49508c5143f3cc4bcbc2"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0aa699531b1c49508c5143f3cc4bcbc2"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -360,6 +369,8 @@
         <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
         <value/>
     </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1cac89e51b32f85062e50ed2cd4bcb06"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1cac89e51b32f85062e50ed2cd4bcb06"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -448,6 +459,7 @@
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2021-09-29 15:13:29</sys_updated_on>
     </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=98afc3c31bbef41062e50ed2cd4bcb8c"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -536,6 +548,8 @@
         <value>state=53^work_notes=CDW Order Update Received:
 {{95edb16e-e613-4592-a81e-4736e6709572.item}}</value>
     </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=99ac9a561b7f305062e50ed2cd4bcb07"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=99ac9a561b7f305062e50ed2cd4bcb07"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=c0988dad1bfeb85062e50ed2cd4bcbcc^sys_idNOT IN6d61e15f1b5c49508c5143f3cc4bcbf3,daa699531b1c49508c5143f3cc4bcbc5"/>
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
         <comment/>
@@ -719,6 +733,7 @@ JSON:
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6d61e15f1b5c49508c5143f3cc4bcbf3"/>
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
         <comment/>
         <display_text/>
@@ -1074,6 +1089,8 @@ JSON:
     </sys_hub_flow_logic>
     <sys_variable_value action="delete_multiple" query="document_key=2961e15f1b5c49508c5143f3cc4bcb7f"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_c0988dad1bfeb85062e50ed2cd4bcbcc^id=2961e15f1b5c49508c5143f3cc4bcb7f"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=2961e15f1b5c49508c5143f3cc4bcb7f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2961e15f1b5c49508c5143f3cc4bcb7f"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <block display_value="">5992b9a71bb73c14622b32ac0a4bcbec</block>
         <comment/>
@@ -1145,6 +1162,8 @@ JSON:
         <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
         <value/>
     </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=50afc3c31bbef41062e50ed2cd4bcb91"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=50afc3c31bbef41062e50ed2cd4bcb91"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <block display_value="">1592b9a71bb73c14622b32ac0a4bcbf5</block>
         <comment/>
@@ -1190,6 +1209,8 @@ JSON:
         <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
         <value>{{295b422c-a48a-4010-8a7a-813d30e5435e.Records}}</value>
     </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=81ac9a561b7f305062e50ed2cd4bcb01"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=81ac9a561b7f305062e50ed2cd4bcb01"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <block display_value="">9d92b9a71bb73c14622b32ac0a4bcbdc</block>
         <comment/>
@@ -1235,6 +1256,8 @@ JSON:
         <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
         <value>{{95edb16e-e613-4592-a81e-4736e6709572.item.u_customer_purchase_order}}LIKEREQ</value>
     </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=9192b9a71bb73c14622b32ac0a4bcbdd"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9192b9a71bb73c14622b32ac0a4bcbdd"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <block display_value="">5992b9a71bb73c14622b32ac0a4bcbe5</block>
         <comment/>
@@ -1306,6 +1329,8 @@ JSON:
         <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
         <value/>
     </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=acac89e51b32f85062e50ed2cd4bcb0a"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=acac89e51b32f85062e50ed2cd4bcb0a"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <block display_value="">5192b9a71bb73c14622b32ac0a4bcbd9</block>
         <comment/>
@@ -1351,6 +1376,8 @@ JSON:
         <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
         <value>{{subflow.records}}</value>
     </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=c10a45a11b32f85062e50ed2cd4bcbd2"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c10a45a11b32f85062e50ed2cd4bcbd2"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <block display_value="">e161e15f1b5c49508c5143f3cc4bcbef</block>
         <comment/>
@@ -1411,6 +1438,8 @@ JSON:
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_c0988dad1bfeb85062e50ed2cd4bcbcc^id=e961e15f1b5c49508c5143f3cc4bcbef"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_35d60003e6022010a5e40cdd1254dd23^id=e961e15f1b5c49508c5143f3cc4bcbef"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=e961e15f1b5c49508c5143f3cc4bcbef"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e961e15f1b5c49508c5143f3cc4bcbef"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=c0988dad1bfeb85062e50ed2cd4bcbcc^sys_idNOT IN9eab119f1b1c49508c5143f3cc4bcbd4,c6bc91931b5c49508c5143f3cc4bcb82"/>
     <sys_hub_pill_compound action="INSERT_OR_UPDATE">
         <attached_to>c0988dad1bfeb85062e50ed2cd4bcbcc</attached_to>
@@ -1552,6 +1581,10 @@ JSON:
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_c0988dad1bfeb85062e50ed2cd4bcbcc"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_c0988dad1bfeb85062e50ed2cd4bcbcc"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_c0988dad1bfeb85062e50ed2cd4bcbcc"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=c0988dad1bfeb85062e50ed2cd4bcbcc"/>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=c0988dad1bfeb85062e50ed2cd4bcbcc^sys_idNOT IN950a85a11b32f85062e50ed2cd4bcb65"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"950a85a11b32f85062e50ed2cd4bcb65","name":"plan","plan_signature":null}}</plan>
@@ -1609,6 +1642,8 @@ JSON:
     </sys_hub_flow_snapshot>
     <sys_translated_text action="delete_multiple" query="documentkey=5d0a85a11b32f85062e50ed2cd4bcb04"/>
     <sys_variable_value action="delete_multiple" query="document_key=5d0a85a11b32f85062e50ed2cd4bcb04"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=5d0a85a11b32f85062e50ed2cd4bcb04"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=5d0a85a11b32f85062e50ed2cd4bcb04"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=5d0a85a11b32f85062e50ed2cd4bcb04^sys_idNOT IN910a85a11b32f85062e50ed2cd4bcb06"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
         <id>5d0a85a11b32f85062e50ed2cd4bcb04</id>
@@ -1621,6 +1656,7 @@ JSON:
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2021-09-24 13:38:52</sys_updated_on>
     </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=910a85a11b32f85062e50ed2cd4bcb06"/>
     <sys_hub_flow_input action="delete_multiple" query="model=5d0a85a11b32f85062e50ed2cd4bcb04^sys_idNOT IN550a85a11b32f85062e50ed2cd4bcb09"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -1703,6 +1739,8 @@ JSON:
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=5d0a85a11b32f85062e50ed2cd4bcb04"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5d0a85a11b32f85062e50ed2cd4bcb04"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=5d0a85a11b32f85062e50ed2cd4bcb04^sys_idNOT IN4aacda561b7f305062e50ed2cd4bcb61,74af07c31bbef41062e50ed2cd4bcbc7,ceacda561b7f305062e50ed2cd4bcb5a,d82d89291b32f85062e50ed2cd4bcb15,dbabd19f1b1c49508c5143f3cc4bcb1c"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
@@ -1792,6 +1830,8 @@ JSON:
         <value>state=53^work_notes=CDW Order Update Received:
 {{95edb16e-e613-4592-a81e-4736e6709572.item}}</value>
     </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4aacda561b7f305062e50ed2cd4bcb61"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4aacda561b7f305062e50ed2cd4bcb61"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -1880,6 +1920,7 @@ JSON:
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2021-09-29 15:13:32</sys_updated_on>
     </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=74af07c31bbef41062e50ed2cd4bcbc7"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -1941,6 +1982,8 @@ JSON:
         <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
         <value/>
     </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ceacda561b7f305062e50ed2cd4bcb5a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ceacda561b7f305062e50ed2cd4bcb5a"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -2028,6 +2071,8 @@ JSON:
         <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
         <value/>
     </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d82d89291b32f85062e50ed2cd4bcb15"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d82d89291b32f85062e50ed2cd4bcb15"/>
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
@@ -2089,6 +2134,8 @@ JSON:
         <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
         <value/>
     </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=dbabd19f1b1c49508c5143f3cc4bcb1c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=dbabd19f1b1c49508c5143f3cc4bcb1c"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=5d0a85a11b32f85062e50ed2cd4bcb04^sys_idNOT IN1babd19f1b1c49508c5143f3cc4bcb50,3e61655f1b5c49508c5143f3cc4bcbcc"/>
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
         <comment/>
@@ -2595,6 +2642,7 @@ JSON:
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3e61655f1b5c49508c5143f3cc4bcbcc"/>
     <sys_hub_flow_logic action="delete_multiple" query="flow=5d0a85a11b32f85062e50ed2cd4bcb04^sys_idNOT IN1c2d89291b32f85062e50ed2cd4bcb28,26923da71bb73c14622b32ac0a4bcbb7,3661655f1b5c49508c5143f3cc4bcbbd,7661655f1b5c49508c5143f3cc4bcb9d,81af07c31bbef41062e50ed2cd4bcbdb,950a85a11b32f85062e50ed2cd4bcb37,caacda561b7f305062e50ed2cd4bcb77"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <block display_value="">5992b9a71bb73c14622b32ac0a4bcbe5</block>
@@ -2667,6 +2715,8 @@ JSON:
         <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
         <value/>
     </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=1c2d89291b32f85062e50ed2cd4bcb28"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1c2d89291b32f85062e50ed2cd4bcb28"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <block display_value="">9d92b9a71bb73c14622b32ac0a4bcbdc</block>
         <comment/>
@@ -2712,6 +2762,8 @@ JSON:
         <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
         <value>{{95edb16e-e613-4592-a81e-4736e6709572.item.u_customer_purchase_order}}LIKEREQ</value>
     </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=26923da71bb73c14622b32ac0a4bcbb7"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=26923da71bb73c14622b32ac0a4bcbb7"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <block display_value="">e161e15f1b5c49508c5143f3cc4bcbef</block>
         <comment/>
@@ -2772,6 +2824,8 @@ JSON:
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_5d0a85a11b32f85062e50ed2cd4bcb04^id=3661655f1b5c49508c5143f3cc4bcbbd"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_35d60003e6022010a5e40cdd1254dd23^id=3661655f1b5c49508c5143f3cc4bcbbd"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=3661655f1b5c49508c5143f3cc4bcbbd"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3661655f1b5c49508c5143f3cc4bcbbd"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <block display_value="">2d61e15f1b5c49508c5143f3cc4bcb7e</block>
         <comment/>
@@ -2803,6 +2857,8 @@ JSON:
     </sys_hub_flow_logic>
     <sys_variable_value action="delete_multiple" query="document_key=7661655f1b5c49508c5143f3cc4bcb9d"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_5d0a85a11b32f85062e50ed2cd4bcb04^id=7661655f1b5c49508c5143f3cc4bcb9d"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=7661655f1b5c49508c5143f3cc4bcb9d"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7661655f1b5c49508c5143f3cc4bcb9d"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <block display_value="">5992b9a71bb73c14622b32ac0a4bcbec</block>
         <comment/>
@@ -2874,6 +2930,8 @@ JSON:
         <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
         <value/>
     </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=81af07c31bbef41062e50ed2cd4bcbdb"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=81af07c31bbef41062e50ed2cd4bcbdb"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <block display_value="">5192b9a71bb73c14622b32ac0a4bcbd9</block>
         <comment/>
@@ -2919,6 +2977,8 @@ JSON:
         <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
         <value>{{subflow.records}}</value>
     </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=950a85a11b32f85062e50ed2cd4bcb37"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=950a85a11b32f85062e50ed2cd4bcb37"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
         <block display_value="">1592b9a71bb73c14622b32ac0a4bcbf5</block>
         <comment/>
@@ -2964,6 +3024,8 @@ JSON:
         <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
         <value>{{295b422c-a48a-4010-8a7a-813d30e5435e.Records}}</value>
     </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=caacda561b7f305062e50ed2cd4bcb77"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=caacda561b7f305062e50ed2cd4bcb77"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=5d0a85a11b32f85062e50ed2cd4bcb04^sys_idNOT IN2bbc15931b5c49508c5143f3cc4bcb70,6babd19f1b1c49508c5143f3cc4bcbec"/>
     <sys_hub_pill_compound action="INSERT_OR_UPDATE">
         <attached_to>5d0a85a11b32f85062e50ed2cd4bcb04</attached_to>
@@ -3105,6 +3167,9 @@ JSON:
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_5d0a85a11b32f85062e50ed2cd4bcb04"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_5d0a85a11b32f85062e50ed2cd4bcb04"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_5d0a85a11b32f85062e50ed2cd4bcb04"/>
     <sys_hub_flow action="update">
         <sys_id>c0988dad1bfeb85062e50ed2cd4bcbcc</sys_id>
         <latest_snapshot>5d0a85a11b32f85062e50ed2cd4bcb04</latest_snapshot>
