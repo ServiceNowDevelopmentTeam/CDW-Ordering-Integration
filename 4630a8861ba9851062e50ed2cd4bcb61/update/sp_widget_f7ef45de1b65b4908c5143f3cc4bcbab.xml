@@ -168,7 +168,9 @@
 						location: c.location.value,
 						date: '',
 						department: '',
-						comment: c.comment
+						comment: c.comment,
+						requested_for : c.requestedFor.value,
+						sysparm_requested_for : c.requestedFor.value
 					});
 				}
 
@@ -968,6 +970,7 @@ label{
 		reqGr.setValue('u_cdw_order_flow_ran', 'false');
 		reqGr.setValue('u_department', localInput.department);
 		reqGr.setValue('u_order_comment', localInput.comment);
+		reqGr.setValue('requested_for', localInput.sysparm_requested_for || localInput.requested_for)
 		reqGr.update();
 	}
 	function checkoutCart(cart) {
@@ -1078,14 +1081,14 @@ label{
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2021-07-26 18:41:41</sys_created_on>
         <sys_id>f7ef45de1b65b4908c5143f3cc4bcbab</sys_id>
-        <sys_mod_count>568</sys_mod_count>
+        <sys_mod_count>571</sys_mod_count>
         <sys_name>CDW Catalog Checkout</sys_name>
         <sys_package display_value="Global" source="global">global</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>sp_widget_f7ef45de1b65b4908c5143f3cc4bcbab</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-07-12 13:18:49</sys_updated_on>
+        <sys_updated_on>2022-07-20 19:05:19</sys_updated_on>
         <template><![CDATA[<div id="sc_cat_checkout" ng-class="{'panel panel-default': !c.isNative}" sn-atf-blacklist="IS_SERVICE_CATALOG" ng-if="c.data.cdwCart">
   <h1 class="padder-md h3" ng-if="!c.isNative" ng-if="c.data.cdwCart">{{::checkoutPopupTitle}}
     <span class="text-base">
