@@ -23,14 +23,11 @@ gs.print(answer);]]></script>
         <sys_created_by>kirolos.iskander@cdw.com</sys_created_by>
         <sys_created_on>2020-08-15 03:14:16</sys_created_on>
         <sys_id>b11f4d4f1b6e9090e7004229bc4bcb43</sys_id>
-        <sys_mod_count>4</sys_mod_count>
         <sys_name>ClearDemoDataCDW</sys_name>
         <sys_package display_value="Global" source="global">global</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>sysauto_script_b11f4d4f1b6e9090e7004229bc4bcb43</sys_update_name>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-04-11 20:01:14</sys_updated_on>
         <time_zone/>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>
@@ -44,8 +41,5 @@ gs.print(answer);]]></script>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-04-11 20:01:14</sys_created_on>
         <sys_id>d2e59be11bf2811062e50ed2cd4bcb3e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-04-11 20:01:14</sys_updated_on>
     </sys_claim>
 </record_update>

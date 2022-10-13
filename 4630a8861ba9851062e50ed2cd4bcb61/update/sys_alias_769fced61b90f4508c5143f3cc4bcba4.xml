@@ -11,14 +11,11 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2021-05-25 20:02:02</sys_created_on>
         <sys_id>769fced61b90f4508c5143f3cc4bcba4</sys_id>
-        <sys_mod_count>5</sys_mod_count>
         <sys_name>CDW_Prod_API</sys_name>
         <sys_package display_value="Global" source="global">global</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>sys_alias_769fced61b90f4508c5143f3cc4bcba4</sys_update_name>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-04-11 20:01:09</sys_updated_on>
         <type>connection</type>
     </sys_alias>
     <sys_claim action="INSERT_OR_UPDATE">
@@ -31,8 +28,5 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-04-11 20:01:09</sys_created_on>
         <sys_id>95e51be11bf2811062e50ed2cd4bcbe8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-04-11 20:01:09</sys_updated_on>
     </sys_claim>
 </record_update>

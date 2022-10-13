@@ -6,14 +6,11 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2021-07-26 18:58:27</sys_created_on>
         <sys_id>adc3915a1ba5b4908c5143f3cc4bcb34</sys_id>
-        <sys_mod_count>1</sys_mod_count>
         <sys_name>scBasicSelect.Copy of SC Shopping Cart</sys_name>
         <sys_package display_value="Global" source="global">global</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>m2m_sp_ng_pro_sp_widget_adc3915a1ba5b4908c5143f3cc4bcb34</sys_update_name>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-07-12 13:14:59</sys_updated_on>
     </m2m_sp_ng_pro_sp_widget>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</claim_owner_scope>
@@ -25,8 +22,5 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-12 13:14:59</sys_created_on>
         <sys_id>a83b27031ba811508c5143f3cc4bcb89</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-07-12 13:14:59</sys_updated_on>
     </sys_claim>
 </record_update>

@@ -31,14 +31,11 @@
         <sys_created_by>mounika.paluri</sys_created_by>
         <sys_created_on>2020-09-14 18:21:39</sys_created_on>
         <sys_id>938eb2f41b93d8d0f5a3635bbc4bcba5</sys_id>
-        <sys_mod_count>8</sys_mod_count>
         <sys_name>CDW Homepage Search</sys_name>
         <sys_package display_value="Global" source="global">global</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>sp_widget_938eb2f41b93d8d0f5a3635bbc4bcba5</sys_update_name>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-06-16 14:49:35</sys_updated_on>
         <template><![CDATA[<div id="homepage-search" class="hidden-xs wrapper-xl">
   <div class="wrapper-xl">
   	<h2 class="text-center text-4x m-b-lg sp-tagline-color" ng-bind="data.greeting"></h2>
@@ -58,8 +55,5 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-04-11 20:01:21</sys_created_on>
         <sys_id>d4f51fe11bf2811062e50ed2cd4bcb6b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-04-11 20:01:21</sys_updated_on>
     </sys_claim>
 </record_update>

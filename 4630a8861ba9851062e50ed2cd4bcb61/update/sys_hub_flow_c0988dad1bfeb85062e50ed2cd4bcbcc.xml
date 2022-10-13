@@ -6,7 +6,6 @@
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
-        <compiler_build>glide-rome-06-23-2021__patch4-hotfix1b-01-19-2022_02-08-2022_1831.zip</compiler_build>
         <copied_from/>
         <copied_from_name/>
         <description>Triggered by Scripted REST API "CDW Order Data Return"</description>
@@ -16,6 +15,7 @@
         <name>CDW Order Data Return</name>
         <natlang/>
         <outputs/>
+        <pre_compiled>false</pre_compiled>
         <remote_trigger_id/>
         <run_as>system</run_as>
         <run_with_roles/>
@@ -29,15 +29,12 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c0988dad1bfeb85062e50ed2cd4bcbcc</sys_id>
-        <sys_mod_count>22</sys_mod_count>
         <sys_name>CDW Order Data Return</sys_name>
         <sys_overrides/>
         <sys_package display_value="Global" source="global">global</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>sys_hub_flow_c0988dad1bfeb85062e50ed2cd4bcbcc</sys_update_name>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-07-14 13:56:47</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=c0988dad1bfeb85062e50ed2cd4bcbcc"/>
@@ -52,9 +49,6 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-04-11 20:01:10</sys_created_on>
         <sys_id>29e55be11bf2811062e50ed2cd4bcb53</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-04-11 20:01:10</sys_updated_on>
     </sys_claim>
     <sys_hub_trigger_instance action="delete_multiple" query="flow=c0988dad1bfeb85062e50ed2cd4bcbcc"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=c0988dad1bfeb85062e50ed2cd4bcbcc"/>
@@ -103,6 +97,7 @@
         <element>records</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -149,6 +144,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -162,7 +158,6 @@
         <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
         <action_type_parent/>
         <comment/>
-        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
         <display_text/>
         <flow display_value="CDW Order Data Return">c0988dad1bfeb85062e50ed2cd4bcbcc</flow>
         <order>9</order>
@@ -225,7 +220,6 @@
         <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
         <action_type_parent/>
         <comment/>
-        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
         <display_text/>
         <flow display_value="CDW Order Data Return">c0988dad1bfeb85062e50ed2cd4bcbcc</flow>
         <order>7</order>
@@ -288,7 +282,6 @@
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
         <action_type_parent/>
         <comment>Look up request where REQ number is  the same as PO</comment>
-        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
         <display_text/>
         <flow display_value="CDW Order Data Return">c0988dad1bfeb85062e50ed2cd4bcbcc</flow>
         <order>3</order>
@@ -377,7 +370,6 @@
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent/>
         <comment>Comment Order Data on Request</comment>
-        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="CDW Order Data Return">c0988dad1bfeb85062e50ed2cd4bcbcc</flow>
         <order>5</order>
@@ -466,7 +458,6 @@
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent/>
         <comment/>
-        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="CDW Order Data Return">c0988dad1bfeb85062e50ed2cd4bcbcc</flow>
         <order>11</order>
@@ -739,18 +730,6 @@
         <table>var__m_sys_hub_flow_input_e420ef711b13fc5062e50ed2cd4bcb8a</table>
         <value>{"version":"1.0","complexObject":{"name$":"FD2c20ef713b13fc5032f6ccecbe00e18c","$COCollectionField":[{"variableName":{"$cv":{"$c":"java.lang.String","$v":"Number"}},"variableValue":{"$cv":{"$c":"java.lang.String","$v":""}}},{"variableName":{"$cv":{"$c":"java.lang.String","$v":"Status"}},"variableValue":{"$cv":{"$c":"java.lang.String","$v":""}}},{"variableName":{"$cv":{"$c":"java.lang.String","$v":"Tracking Number"}},"variableValue":{"$cv":{"$c":"java.lang.String","$v":""}}}]},"complexObjectSchema":{"FlowDesigner:FD2c20ef713b13fc5032f6ccecbe00e18c":{"$COCollectionField":[{"variable":{"variableName":"String","variableName.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"variableName\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"variableValue":"String","variableValue.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"[0].variableValue\\\":\\\"{{c71fb260-c12f-4999-b0ef-6dfeaf0aa3a5.Record.number}}\\\",\\\"[1].variableValue\\\":\\\"{{c71fb260-c12f-4999-b0ef-6dfeaf0aa3a5.status}}\\\",\\\"[2].variableValue\\\":\\\"{{subflow.records.records_child0.u_tracking_number}}\\\"}\",\"default_value\":\"\",\"label\":\"variableValue\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"varList\",\"mandatory\":\"false\",\"child_name\":\"variable\",\"uiUniqueId\":\"93a9eb96-99c2-4a7f-ad16-f42bb6aadc22\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD2c20ef713b13fc5032f6ccecbe00e18c\",\"child_label\":\"variable\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"3\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"cafd5b44-2501-4b0f-a955-c2b259035e3d\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD2c20ef713b13fc5032f6ccecbe00e18c.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"varList\",\"mandatory\":\"false\",\"child_name\":\"variable\",\"uiUniqueId\":\"93a9eb96-99c2-4a7f-ad16-f42bb6aadc22\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD2c20ef713b13fc5032f6ccecbe00e18c\",\"child_label\":\"variable\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"3\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"cafd5b44-2501-4b0f-a955-c2b259035e3d\"}"}},"serializationFormat":"JSON"}</value>
     </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>daa699531b1c49508c5143f3cc4bcbc5</id>
-        <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2021-12-13 14:37:39</sys_created_on>
-        <sys_id>52a6d9531b1c49508c5143f3cc4bcb04</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2021-12-13 14:37:39</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_daa699531b1c49508c5143f3cc4bcbc5</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_daa699531b1c49508c5143f3cc4bcbc5^id=daa699531b1c49508c5143f3cc4bcbc5"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=daa699531b1c49508c5143f3cc4bcbc5^sys_idNOT INd2a699531b1c49508c5143f3cc4bcbc7"/>
     <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
@@ -784,6 +763,7 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -830,6 +810,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1229,6 +1210,7 @@
         <element>email_more_info</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1275,6 +1257,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1293,7 +1276,7 @@
         <sys_created_on>2021-09-24 13:37:44</sys_created_on>
         <sys_id>f8c98d611b32f85062e50ed2cd4bcbce</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>records</sys_name>
         <sys_package display_value="Global" source="global">global</sys_package>
         <sys_policy/>
         <sys_scope display_value="Global">global</sys_scope>
@@ -1411,6 +1394,7 @@
         <element>records</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1457,6 +1441,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1470,7 +1455,6 @@
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <comment/>
-        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="CDW Order Data Return">5d0a85a11b32f85062e50ed2cd4bcb04</flow>
         <order>11</order>
@@ -1560,7 +1544,6 @@
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <comment>Comment Order Data on Request</comment>
-        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="CDW Order Data Return">5d0a85a11b32f85062e50ed2cd4bcb04</flow>
         <order>5</order>
@@ -1649,7 +1632,6 @@
         <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
         <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
         <comment/>
-        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
         <display_text/>
         <flow display_value="CDW Order Data Return">5d0a85a11b32f85062e50ed2cd4bcb04</flow>
         <order>9</order>
@@ -1712,7 +1694,6 @@
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
         <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
         <comment>Look up request where REQ number is  the same as PO</comment>
-        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
         <display_text/>
         <flow display_value="CDW Order Data Return">5d0a85a11b32f85062e50ed2cd4bcb04</flow>
         <order>3</order>
@@ -1801,7 +1782,6 @@
         <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
         <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
         <comment/>
-        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
         <display_text/>
         <flow display_value="CDW Order Data Return">5d0a85a11b32f85062e50ed2cd4bcb04</flow>
         <order>7</order>
@@ -2047,18 +2027,6 @@
         <table>var__m_sys_hub_flow_input_e420ef711b13fc5062e50ed2cd4bcb8a</table>
         <value>{"version":"1.0","complexObject":{"name$":"FD2c20ef713b13fc5032f6ccecbe00e18c","$COCollectionField":[{"variableName":{"$cv":{"$c":"java.lang.String","$v":"Number"}},"variableValue":{"$cv":{"$c":"java.lang.String","$v":""}}},{"variableName":{"$cv":{"$c":"java.lang.String","$v":"Status"}},"variableValue":{"$cv":{"$c":"java.lang.String","$v":""}}},{"variableName":{"$cv":{"$c":"java.lang.String","$v":"Tracking Number"}},"variableValue":{"$cv":{"$c":"java.lang.String","$v":""}}}]},"complexObjectSchema":{"FlowDesigner:FD2c20ef713b13fc5032f6ccecbe00e18c":{"$COCollectionField":[{"variable":{"variableName":"String","variableName.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"variableName\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"},"variableValue":"String","variableValue.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{\\\"[0].variableValue\\\":\\\"{{c71fb260-c12f-4999-b0ef-6dfeaf0aa3a5.Record.number}}\\\",\\\"[1].variableValue\\\":\\\"{{c71fb260-c12f-4999-b0ef-6dfeaf0aa3a5.status}}\\\",\\\"[2].variableValue\\\":\\\"{{subflow.records.records_child0.u_tracking_number}}\\\"}\",\"default_value\":\"\",\"label\":\"variableValue\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"varList\",\"mandatory\":\"false\",\"child_name\":\"variable\",\"uiUniqueId\":\"93a9eb96-99c2-4a7f-ad16-f42bb6aadc22\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD2c20ef713b13fc5032f6ccecbe00e18c\",\"child_label\":\"variable\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"3\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"cafd5b44-2501-4b0f-a955-c2b259035e3d\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD2c20ef713b13fc5032f6ccecbe00e18c.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"varList\",\"mandatory\":\"false\",\"child_name\":\"variable\",\"uiUniqueId\":\"93a9eb96-99c2-4a7f-ad16-f42bb6aadc22\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD2c20ef713b13fc5032f6ccecbe00e18c\",\"child_label\":\"variable\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"3\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"cafd5b44-2501-4b0f-a955-c2b259035e3d\"}"}},"serializationFormat":"JSON"}</value>
     </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>1babd19f1b1c49508c5143f3cc4bcb50</id>
-        <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2021-12-13 14:59:34</sys_created_on>
-        <sys_id>e7abd19f1b1c49508c5143f3cc4bcb73</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2021-12-13 14:59:34</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_1babd19f1b1c49508c5143f3cc4bcb50</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_1babd19f1b1c49508c5143f3cc4bcb50^id=1babd19f1b1c49508c5143f3cc4bcb50"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=1babd19f1b1c49508c5143f3cc4bcb50^sys_idNOT IN9fabd19f1b1c49508c5143f3cc4bcb5d"/>
     <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
@@ -2092,6 +2060,7 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -2138,6 +2107,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2537,6 +2507,7 @@
         <element>email_more_info</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -2583,6 +2554,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2601,7 +2573,7 @@
         <sys_created_on>2021-09-24 13:38:52</sys_created_on>
         <sys_id>950a85a11b32f85062e50ed2cd4bcb30</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>records</sys_name>
         <sys_package display_value="Global" source="global">global</sys_package>
         <sys_policy/>
         <sys_scope display_value="Global">global</sys_scope>
@@ -2614,8 +2586,9 @@
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_5d0a85a11b32f85062e50ed2cd4bcb04"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_5d0a85a11b32f85062e50ed2cd4bcb04"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_5d0a85a11b32f85062e50ed2cd4bcb04"/>
-    <sys_hub_flow action="update">
+    <sys_hub_flow action="UPDATE">
         <sys_id>c0988dad1bfeb85062e50ed2cd4bcbcc</sys_id>
         <latest_snapshot>5d0a85a11b32f85062e50ed2cd4bcb04</latest_snapshot>
+        <compiler_build>glide-rome-06-23-2021__patch4-hotfix1b-01-19-2022_02-08-2022_1831.zip</compiler_build>
     </sys_hub_flow>
 </record_update>

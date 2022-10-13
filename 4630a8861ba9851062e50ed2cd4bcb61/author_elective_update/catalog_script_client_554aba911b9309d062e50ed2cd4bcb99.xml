@@ -75,14 +75,13 @@ g_form.setValue('order_lines',itemData);
         <update_guid_history>fb2d0e6e31d741109bf622791a6af2a5:902853247,545a7a91d49309d0573b85f6b1af31f1:260313477</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Test Data">9f0705821b73c5d062e50ed2cd4bcb5a</sys_audit_delete>
+        <sys_audit_delete display_value="">9f0705821b73c5d062e50ed2cd4bcb5a</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-06-01 15:56:48</sys_created_on>
         <sys_db_object display_value="" name="catalog_script_client">catalog_script_client</sys_db_object>
         <sys_id>0efcc887ddfa45e885e7e3ee56b74551</sys_id>
         <sys_metadata>554aba911b9309d062e50ed2cd4bcb99</sys_metadata>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>Test Data</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_parent/>
@@ -91,7 +90,5 @@ g_form.setValue('order_lines',itemData);
         <sys_scope_delete display_value="">1de550a9788c4602b4836958c30c66c9</sys_scope_delete>
         <sys_update_name>catalog_script_client_554aba911b9309d062e50ed2cd4bcb99</sys_update_name>
         <sys_update_version display_value="catalog_script_client_554aba911b9309d062e50ed2cd4bcb99">f32d0e6e1bd741108c5143f3cc4bcba6</sys_update_version>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-06-01 15:56:48</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="variable" label="Date Time Value" language="en" table="var__m_sys_hub_action_output_53bdac011b5b49d08c5143f3cc4bcb31">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>variable</element>
+            <help/>
+            <hint/>
+            <label>Date Time Value</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_output_53bdac011b5b49d08c5143f3cc4bcb31</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2022-05-04 15:00:54</sys_created_on>
+            <sys_name>Date Time Value</sys_name>
+            <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_action_output_53bdac011b5b49d08c5143f3cc4bcb31_variable_en</sys_update_name>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

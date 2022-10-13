@@ -11,14 +11,11 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2021-05-25 20:14:54</sys_created_on>
         <sys_id>daa25e5e1b90f4508c5143f3cc4bcbc5</sys_id>
-        <sys_mod_count>2</sys_mod_count>
         <sys_name>CDW_Prod_Credential</sys_name>
         <sys_package display_value="Global" source="global">global</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>sys_alias_daa25e5e1b90f4508c5143f3cc4bcbc5</sys_update_name>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-04-11 20:01:13</sys_updated_on>
         <type>credential</type>
     </sys_alias>
     <sys_claim action="INSERT_OR_UPDATE">
@@ -31,8 +28,5 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-04-11 20:01:13</sys_created_on>
         <sys_id>56e59be11bf2811062e50ed2cd4bcb27</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-04-11 20:01:13</sys_updated_on>
     </sys_claim>
 </record_update>

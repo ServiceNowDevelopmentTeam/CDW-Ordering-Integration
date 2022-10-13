@@ -8,7 +8,6 @@
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
-        <compiler_build/>
         <copied_from/>
         <copied_from_name/>
         <description/>
@@ -19,6 +18,7 @@
         <name>CDW Pre-Prod OAuth Get Token</name>
         <natlang/>
         <outputs/>
+        <pre_compiled>false</pre_compiled>
         <state>draft</state>
         <sys_class_name>sys_hub_action_type_definition</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
@@ -26,15 +26,12 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>35940d3a1be8fcd0e7004229bc4bcb54</sys_id>
-        <sys_mod_count>18</sys_mod_count>
         <sys_name>CDW Pre-Prod OAuth Get Token</sys_name>
         <sys_overrides/>
         <sys_package display_value="Global" source="global">global</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_35940d3a1be8fcd0e7004229bc4bcb54</sys_update_name>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-04-11 20:01:22</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -50,9 +47,6 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-04-11 20:01:22</sys_created_on>
         <sys_id>6cf55fe11bf2811062e50ed2cd4bcb5d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-04-11 20:01:22</sys_updated_on>
     </sys_claim>
     <sys_hub_step_instance action="delete_multiple" query="action=35940d3a1be8fcd0e7004229bc4bcb54^sys_idNOT IN4c9589fa1be8fcd0e7004229bc4bcb61"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
@@ -432,8 +426,9 @@
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_dba8c1b21b2cfcd0e7004229bc4bcb5c"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_dba8c1b21b2cfcd0e7004229bc4bcb5c"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_dba8c1b21b2cfcd0e7004229bc4bcb5c"/>
-    <sys_hub_action_type_definition action="update">
+    <sys_hub_action_type_definition action="UPDATE">
         <sys_id>35940d3a1be8fcd0e7004229bc4bcb54</sys_id>
         <latest_snapshot>dba8c1b21b2cfcd0e7004229bc4bcb5c</latest_snapshot>
+        <compiler_build/>
     </sys_hub_action_type_definition>
 </record_update>

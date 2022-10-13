@@ -11,15 +11,11 @@
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>Terry.Lillo</sys_created_by>
             <sys_created_on>2021-07-21 13:30:17</sys_created_on>
-            <sys_id>39b812a41bad38508c5143f3cc4bcb56</sys_id>
-            <sys_mod_count>1</sys_mod_count>
             <sys_name>CDW Item</sys_name>
             <sys_package display_value="Global" source="global">global</sys_package>
             <sys_policy/>
             <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
             <sys_update_name>sys_documentation_sc_cat_item_u_cdw_item_en</sys_update_name>
-            <sys_updated_by>Terry.Lillo</sys_updated_by>
-            <sys_updated_on>2022-04-11 20:01:22</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>
@@ -34,8 +30,5 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-04-11 20:01:22</sys_created_on>
         <sys_id>5cf51fe11bf2811062e50ed2cd4bcbfc</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-04-11 20:01:22</sys_updated_on>
     </sys_claim>
 </record_update>

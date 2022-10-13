@@ -29,15 +29,12 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6ebb06921bfb305062e50ed2cd4bcb3f</sys_id>
-        <sys_mod_count>7</sys_mod_count>
         <sys_name>Read Only CDW Fields</sys_name>
         <sys_overrides/>
         <sys_package display_value="Global" source="global">global</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>sys_script_client_6ebb06921bfb305062e50ed2cd4bcb3f</sys_update_name>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-04-11 20:01:21</sys_updated_on>
         <table>sc_request</table>
         <type>onLoad</type>
         <ui_type>10</ui_type>
@@ -53,8 +50,5 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-04-11 20:01:21</sys_created_on>
         <sys_id>1cf51fe11bf2811062e50ed2cd4bcbc6</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-04-11 20:01:21</sys_updated_on>
     </sys_claim>
 </record_update>

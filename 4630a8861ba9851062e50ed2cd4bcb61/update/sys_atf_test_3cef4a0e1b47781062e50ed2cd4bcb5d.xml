@@ -5,6 +5,7 @@
         <description>Keywords: CDW, Hardware, Order, Laptop, Computer, Accessories, API&#13;
 Description: We can't submit a CDW order using the two step checkout, so we're going to send it by inserting a REQ/RITM on the server side for running the flow to validate the outputs. After that's done, we're going to validate that an inbound hardware asset api call will send the user an email.</description>
         <enable_parameterized_testing>false</enable_parameterized_testing>
+        <fail_on_server_error>false</fail_on_server_error>
         <name>TC - 210 - CDW - CDW Ordering Receive - IT</name>
         <parameters/>
         <remember/>
@@ -12,14 +13,11 @@ Description: We can't submit a CDW order using the two step checkout, so we're g
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2021-10-08 18:16:46</sys_created_on>
         <sys_id>3cef4a0e1b47781062e50ed2cd4bcb5d</sys_id>
-        <sys_mod_count>4</sys_mod_count>
         <sys_name>TC - 210 - CDW - CDW Ordering Receive - IT</sys_name>
         <sys_package display_value="Global" source="global">global</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>sys_atf_test_3cef4a0e1b47781062e50ed2cd4bcb5d</sys_update_name>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-04-11 20:01:04</sys_updated_on>
     </sys_atf_test>
     <sys_variable_value action="delete_multiple" query="document_key=3cef4a0e1b47781062e50ed2cd4bcb5d"/>
     <sys_claim action="INSERT_OR_UPDATE">
@@ -32,8 +30,5 @@ Description: We can't submit a CDW order using the two step checkout, so we're g
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-04-11 20:01:04</sys_created_on>
         <sys_id>4ce5d7e11bf2811062e50ed2cd4bcb48</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-04-11 20:01:04</sys_updated_on>
     </sys_claim>
 </record_update>

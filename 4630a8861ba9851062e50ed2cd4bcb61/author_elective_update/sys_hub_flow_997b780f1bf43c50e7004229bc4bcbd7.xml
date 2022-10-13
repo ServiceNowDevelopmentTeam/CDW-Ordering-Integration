@@ -2013,7 +2013,6 @@ We are here to help. &amp;lt;br /&amp;gt;&amp;lt;a href="sp/?id=ticket&amp;amp;a
         <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
         <sys_id>0933b9aaf7f24af08b871a6d670f9100</sys_id>
         <sys_metadata>997b780f1bf43c50e7004229bc4bcbd7</sys_metadata>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>CDW Ordering</sys_name>
         <sys_package display_value="Global" source="global">global</sys_package>
         <sys_parent/>
@@ -2022,7 +2021,5 @@ We are here to help. &amp;lt;br /&amp;gt;&amp;lt;a href="sp/?id=ticket&amp;amp;a
         <sys_scope_delete display_value="">1de550a9788c4602b4836958c30c66c9</sys_scope_delete>
         <sys_update_name>sys_hub_flow_997b780f1bf43c50e7004229bc4bcbd7</sys_update_name>
         <sys_update_version display_value="sys_hub_flow_997b780f1bf43c50e7004229bc4bcbd7">2be51fe11bf2811062e50ed2cd4bcb19</sys_update_version>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-05-04 12:44:43</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

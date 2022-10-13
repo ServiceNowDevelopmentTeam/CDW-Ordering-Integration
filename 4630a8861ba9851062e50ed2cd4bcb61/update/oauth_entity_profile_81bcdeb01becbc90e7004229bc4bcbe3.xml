@@ -5,18 +5,16 @@
         <jwt_provider/>
         <name>CDW Pre-Prod OAuth default_profile</name>
         <oauth_entity display_value="CDW Pre-Prod OAuth">b12c56b01becbc90e7004229bc4bcb45</oauth_entity>
+        <saml2_assertion_producer/>
         <sys_class_name>oauth_entity_profile</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2021-06-02 15:23:24</sys_created_on>
         <sys_id>81bcdeb01becbc90e7004229bc4bcbe3</sys_id>
-        <sys_mod_count>12</sys_mod_count>
         <sys_name>CDW Pre-Prod OAuth default_profile</sys_name>
         <sys_package display_value="Global" source="global">global</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>oauth_entity_profile_81bcdeb01becbc90e7004229bc4bcbe3</sys_update_name>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-04-11 20:01:08</sys_updated_on>
     </oauth_entity_profile>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</claim_owner_scope>
@@ -28,8 +26,5 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-04-11 20:01:08</sys_created_on>
         <sys_id>01e51be11bf2811062e50ed2cd4bcb9b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-04-11 20:01:08</sys_updated_on>
     </sys_claim>
 </record_update>

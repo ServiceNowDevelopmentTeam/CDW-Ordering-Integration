@@ -6,7 +6,6 @@
         <annotation/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
-        <compiler_build>glide-rome-06-23-2021__patch9a-06-15-2022_07-15-2022_1637.zip</compiler_build>
         <copied_from>0a31dbda1b2af0108c5143f3cc4bcb00</copied_from>
         <copied_from_name>Laptop Catalog Request Flow</copied_from_name>
         <description/>
@@ -16,6 +15,7 @@
         <name>CDW Hardware Catalog Item RITM Flow</name>
         <natlang/>
         <outputs/>
+        <pre_compiled>false</pre_compiled>
         <remote_trigger_id>27fedf301bb634508c5143f3cc4bcb45</remote_trigger_id>
         <run_as>system</run_as>
         <run_with_roles/>
@@ -29,15 +29,12 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2b7e9bfc1b7634508c5143f3cc4bcbcd</sys_id>
-        <sys_mod_count>4</sys_mod_count>
         <sys_name>CDW Hardware Catalog Item RITM Flow</sys_name>
         <sys_overrides/>
         <sys_package display_value="Global" source="global">global</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>sys_hub_flow_2b7e9bfc1b7634508c5143f3cc4bcbcd</sys_update_name>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-05-04 19:30:42</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=2b7e9bfc1b7634508c5143f3cc4bcbcd"/>
@@ -52,9 +49,6 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-04-11 20:01:14</sys_created_on>
         <sys_id>6ae59be11bf2811062e50ed2cd4bcb82</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-04-11 20:01:14</sys_updated_on>
     </sys_claim>
     <sys_flow_catalog_trigger action="INSERT_OR_UPDATE">
         <active>true</active>
@@ -140,6 +134,7 @@
         <element>request_item</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -186,6 +181,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -221,6 +217,7 @@
         <element>table_name</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -267,6 +264,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -280,7 +278,6 @@
         <action_type display_value="Wait For Condition">89ce8a4187120010663ca1bb36cb0be3</action_type>
         <action_type_parent/>
         <comment/>
-        <compiled_snapshot>89ce8a4187120010663ca1bb36cb0be3</compiled_snapshot>
         <display_text/>
         <flow display_value="CDW Hardware Catalog Item RITM Flow">2b7e9bfc1b7634508c5143f3cc4bcbcd</flow>
         <order>3</order>
@@ -460,7 +457,6 @@
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent/>
         <comment/>
-        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="CDW Hardware Catalog Item RITM Flow">2b7e9bfc1b7634508c5143f3cc4bcbcd</flow>
         <order>5</order>
@@ -549,7 +545,6 @@
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <comment/>
-        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="CDW Hardware Catalog Item RITM Flow">2b7e9bfc1b7634508c5143f3cc4bcbcd</flow>
         <order>1</order>
@@ -624,7 +619,6 @@
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <comment/>
-        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="CDW Hardware Catalog Item RITM Flow">2b7e9bfc1b7634508c5143f3cc4bcbcd</flow>
         <order>2</order>
@@ -805,18 +799,6 @@
         <table>var__m_sys_hub_flow_input_11a0eddb1b5c49508c5143f3cc4bcbe4</table>
         <value>{{Service Catalog_1.request_item}}</value>
     </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>9a5d74891b9b49d08c5143f3cc4bcb6a</id>
-        <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2022-05-04 16:09:06</sys_created_on>
-        <sys_id>ae5d74891b9b49d08c5143f3cc4bcbb3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-05-04 16:09:06</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_9a5d74891b9b49d08c5143f3cc4bcb6a</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_9a5d74891b9b49d08c5143f3cc4bcb6a^id=9a5d74891b9b49d08c5143f3cc4bcb6a"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=9a5d74891b9b49d08c5143f3cc4bcb6a^sys_idNOT IN225d74891b9b49d08c5143f3cc4bcb6c"/>
     <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
@@ -850,6 +832,7 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -896,6 +879,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1083,7 +1067,7 @@
         <sys_created_on>2021-09-22 16:32:08</sys_created_on>
         <sys_id>7b7e9bfc1b7634508c5143f3cc4bcbe7</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Table Name</sys_name>
         <sys_package display_value="Global" source="global">global</sys_package>
         <sys_policy/>
         <sys_scope display_value="Global">global</sys_scope>
@@ -1106,7 +1090,7 @@
         <sys_created_on>2021-09-22 16:32:08</sys_created_on>
         <sys_id>f77e9bfc1b7634508c5143f3cc4bcbdc</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Request Item</sys_name>
         <sys_package display_value="Global" source="global">global</sys_package>
         <sys_policy/>
         <sys_scope display_value="Global">global</sys_scope>
@@ -1245,6 +1229,7 @@
         <element>table_name</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1291,6 +1276,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1326,6 +1312,7 @@
         <element>request_item</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1372,6 +1359,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1385,7 +1373,6 @@
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <comment/>
-        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="CDW Hardware Catalog Item RITM Flow">13fe9f301bb634508c5143f3cc4bcbac</flow>
         <order>5</order>
@@ -1474,7 +1461,6 @@
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <comment/>
-        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="CDW Hardware Catalog Item RITM Flow">13fe9f301bb634508c5143f3cc4bcbac</flow>
         <order>4</order>
@@ -1563,7 +1549,6 @@
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <comment/>
-        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="CDW Hardware Catalog Item RITM Flow">13fe9f301bb634508c5143f3cc4bcbac</flow>
         <order>2</order>
@@ -1651,7 +1636,6 @@
         <action_type display_value="Wait For Condition">89ce8a4187120010663ca1bb36cb0be3</action_type>
         <action_type_parent display_value="Wait For Condition">8bb9a8160b10030085c083eb37673aec</action_type_parent>
         <comment/>
-        <compiled_snapshot>89ce8a4187120010663ca1bb36cb0be3</compiled_snapshot>
         <display_text/>
         <flow display_value="CDW Hardware Catalog Item RITM Flow">13fe9f301bb634508c5143f3cc4bcbac</flow>
         <order>3</order>
@@ -1831,7 +1815,6 @@
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
         <comment/>
-        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
         <display_text/>
         <flow display_value="CDW Hardware Catalog Item RITM Flow">13fe9f301bb634508c5143f3cc4bcbac</flow>
         <order>1</order>
@@ -1999,18 +1982,6 @@
         <table>var__m_sys_hub_flow_input_11a0eddb1b5c49508c5143f3cc4bcbe4</table>
         <value>{{Service Catalog_1.request_item}}</value>
     </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>2f5db4891b9b49d08c5143f3cc4bcb88</id>
-        <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2022-05-04 16:09:10</sys_created_on>
-        <sys_id>a35db4891b9b49d08c5143f3cc4bcb9b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-05-04 16:09:10</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_2f5db4891b9b49d08c5143f3cc4bcb88</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_2f5db4891b9b49d08c5143f3cc4bcb88^id=2f5db4891b9b49d08c5143f3cc4bcb88"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=2f5db4891b9b49d08c5143f3cc4bcb88^sys_idNOT INe75db4891b9b49d08c5143f3cc4bcb89"/>
     <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
@@ -2044,6 +2015,7 @@
         <element>wait_for_completion</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -2090,6 +2062,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type/>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -2205,7 +2178,7 @@
         <sys_created_on>2021-09-22 16:34:17</sys_created_on>
         <sys_id>27fedf301bb634508c5143f3cc4bcb0d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Request Item</sys_name>
         <sys_package display_value="Global" source="global">global</sys_package>
         <sys_policy/>
         <sys_scope display_value="Global">global</sys_scope>
@@ -2228,7 +2201,7 @@
         <sys_created_on>2021-09-22 16:34:17</sys_created_on>
         <sys_id>a7fedf301bb634508c5143f3cc4bcb02</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Table Name</sys_name>
         <sys_package display_value="Global" source="global">global</sys_package>
         <sys_policy/>
         <sys_scope display_value="Global">global</sys_scope>
@@ -2241,8 +2214,9 @@
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_13fe9f301bb634508c5143f3cc4bcbac"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_13fe9f301bb634508c5143f3cc4bcbac"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_13fe9f301bb634508c5143f3cc4bcbac"/>
-    <sys_hub_flow action="update">
+    <sys_hub_flow action="UPDATE">
         <sys_id>2b7e9bfc1b7634508c5143f3cc4bcbcd</sys_id>
         <latest_snapshot>13fe9f301bb634508c5143f3cc4bcbac</latest_snapshot>
+        <compiler_build>glide-rome-06-23-2021__patch9a-06-15-2022_07-15-2022_1637.zip</compiler_build>
     </sys_hub_flow>
 </record_update>

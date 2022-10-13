@@ -1860,7 +1860,6 @@
         <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
         <sys_id>2e7122296011412692c05c36bf011a84</sys_id>
         <sys_metadata>b9da69521b334dd08c5143f3cc4bcb56</sys_metadata>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>TEST CDW Ordering</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_parent/>
@@ -1869,7 +1868,5 @@
         <sys_scope_delete display_value="">1de550a9788c4602b4836958c30c66c9</sys_scope_delete>
         <sys_update_name>sys_hub_flow_b9da69521b334dd08c5143f3cc4bcb56</sys_update_name>
         <sys_update_version display_value="sys_hub_flow_b9da69521b334dd08c5143f3cc4bcb56">f6feed521bbb09d062e50ed2cd4bcbe2</sys_update_version>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-06-02 13:30:34</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

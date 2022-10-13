@@ -21,6 +21,7 @@
         <natlang/>
         <outputs/>
         <outputs/>
+        <pre_compiled>false</pre_compiled>
         <state>draft</state>
         <sys_class_name>sys_hub_action_type_definition</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
@@ -28,15 +29,12 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c1020a931bf4fc50e7004229bc4bcbce</sys_id>
-        <sys_mod_count>5</sys_mod_count>
         <sys_name>TEST CDW Ordering - Send Order</sys_name>
         <sys_overrides/>
         <sys_package display_value="Global" source="global">global</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_c1020a931bf4fc50e7004229bc4bcbce</sys_update_name>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-04-11 20:01:15</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -65,9 +63,6 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-04-11 20:01:15</sys_created_on>
         <sys_id>fee59be11bf2811062e50ed2cd4bcbc4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-04-11 20:01:15</sys_updated_on>
     </sys_claim>
     <sys_hub_step_instance action="delete_multiple" query="action=c1020a931bf4fc50e7004229bc4bcbce^sys_idNOT IN61024a931bf4fc50e7004229bc4bcb53,bd024a931bf4fc50e7004229bc4bcb79"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
@@ -478,6 +473,7 @@
         <element>sn_auth_token</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -524,6 +520,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -559,6 +556,7 @@
         <element>u_content-type</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -605,6 +603,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -640,6 +639,7 @@
         <element>u_accept</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -686,6 +686,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -753,18 +754,6 @@ var bodyObject=inputs.responseBody;
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=bd024a931bf4fc50e7004229bc4bcb79"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>bd024a931bf4fc50e7004229bc4bcb79</id>
-        <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2021-06-22 18:07:22</sys_created_on>
-        <sys_id>35028a931bf4fc50e7004229bc4bcb02</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2021-06-22 18:07:22</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>responseBody</field>
         <id>bd024a931bf4fc50e7004229bc4bcb79</id>
         <sys_created_by>Terry.Lillo</sys_created_by>
@@ -775,18 +764,6 @@ var bodyObject=inputs.responseBody;
         <sys_updated_on>2021-06-22 18:07:22</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_bd024a931bf4fc50e7004229bc4bcb79</table>
         <value>{{step[1d2aaee4-a289-458c-b13f-dfe81b696545].response_body}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>bd024a931bf4fc50e7004229bc4bcb79</id>
-        <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2021-06-22 18:07:22</sys_created_on>
-        <sys_id>f5028a931bf4fc50e7004229bc4bcb02</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2021-06-22 18:07:22</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_bd024a931bf4fc50e7004229bc4bcb79^id=bd024a931bf4fc50e7004229bc4bcb79"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=bd024a931bf4fc50e7004229bc4bcb79"/>
@@ -822,6 +799,7 @@ var bodyObject=inputs.responseBody;
         <element>responseBody</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -868,6 +846,7 @@ var bodyObject=inputs.responseBody;
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -904,6 +883,7 @@ var bodyObject=inputs.responseBody;
         <element>orderlines</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -950,6 +930,7 @@ var bodyObject=inputs.responseBody;
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -985,6 +966,7 @@ var bodyObject=inputs.responseBody;
         <element>orderdate</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1031,6 +1013,7 @@ var bodyObject=inputs.responseBody;
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1066,6 +1049,7 @@ var bodyObject=inputs.responseBody;
         <element>statuscode</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1112,6 +1096,7 @@ var bodyObject=inputs.responseBody;
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1147,6 +1132,7 @@ var bodyObject=inputs.responseBody;
         <element>customerid</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1193,6 +1179,7 @@ var bodyObject=inputs.responseBody;
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1228,6 +1215,7 @@ var bodyObject=inputs.responseBody;
         <element>statusmessage</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1274,6 +1262,7 @@ var bodyObject=inputs.responseBody;
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1309,6 +1298,7 @@ var bodyObject=inputs.responseBody;
         <element>ordernumber</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1355,6 +1345,7 @@ var bodyObject=inputs.responseBody;
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1393,6 +1384,7 @@ var bodyObject=inputs.responseBody;
         <element>order</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1439,6 +1431,7 @@ var bodyObject=inputs.responseBody;
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
@@ -1477,6 +1470,7 @@ var bodyObject=inputs.responseBody;
         <element_prototype/>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <help/>
@@ -1524,6 +1518,7 @@ var bodyObject=inputs.responseBody;
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>

@@ -59,7 +59,6 @@
         <sys_db_object display_value="" name="sys_decision_question">sys_decision_question</sys_db_object>
         <sys_id>4e097482cede4ae0a8a760dee1799440</sys_id>
         <sys_metadata>02156b041b0f09508c5143f3cc4bcba3</sys_metadata>
-        <sys_mod_count>0</sys_mod_count>
         <sys_name>Company and Segment CDW Approvers_150</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_parent/>
@@ -68,7 +67,5 @@
         <sys_scope_delete display_value="">1de550a9788c4602b4836958c30c66c9</sys_scope_delete>
         <sys_update_name>sys_decision_question_02156b041b0f09508c5143f3cc4bcba3</sys_update_name>
         <sys_update_version display_value="sys_decision_question_02156b041b0f09508c5143f3cc4bcba3">4e156b041b0f09508c5143f3cc4bcba8</sys_update_version>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-04-19 15:34:31</sys_updated_on>
     </sys_metadata_delete>
 </record_update>
