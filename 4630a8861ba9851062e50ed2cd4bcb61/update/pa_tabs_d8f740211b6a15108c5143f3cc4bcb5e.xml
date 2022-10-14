@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_tabs">
+    <pa_tabs action="INSERT_OR_UPDATE">
+        <canvas_page display_value="PA ServiceNow Admin Das - New Tab">d0f740211b6a15108c5143f3cc4bcb5c</canvas_page>
+        <name>ServiceNow Admin Das - New Tab</name>
+        <page display_value="PA ServiceNow Admin Das - New Tab">58f740211b6a15108c5143f3cc4bcb5a</page>
+        <sys_class_name>pa_tabs</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-10-14 14:56:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d8f740211b6a15108c5143f3cc4bcb5e</sys_id>
+        <sys_name>ServiceNow Admin Das - New Tab</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>pa_tabs_d8f740211b6a15108c5143f3cc4bcb5e</sys_update_name>
+    </pa_tabs>
+</record_update>

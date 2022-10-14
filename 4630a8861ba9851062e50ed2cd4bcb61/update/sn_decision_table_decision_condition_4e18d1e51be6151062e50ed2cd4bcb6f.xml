@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_decision_table_decision_condition">
+    <sn_decision_table_decision_condition action="INSERT_OR_UPDATE">
+        <decision_input display_value="Location Name">6712192d1ba6151062e50ed2cd4bcbe0</decision_input>
+        <decision_table display_value="CDW Recipient Overrides">4de54c2d1b2a15108c5143f3cc4bcbb8</decision_table>
+        <default_operator>=</default_operator>
+        <description/>
+        <field/>
+        <field_label/>
+        <field_parent_table/>
+        <label>Location Name</label>
+        <order>200</order>
+        <reference/>
+        <sys_class_name>sn_decision_table_decision_condition</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-10-14 20:46:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>4e18d1e51be6151062e50ed2cd4bcb6f</sys_id>
+        <sys_name/>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sn_decision_table_decision_condition_4e18d1e51be6151062e50ed2cd4bcb6f</sys_update_name>
+        <type display_value="String">747127c1bf3320001875647fcf0739e0</type>
+    </sn_decision_table_decision_condition>
+</record_update>
