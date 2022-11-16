@@ -29,12 +29,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c1020a931bf4fc50e7004229bc4bcbce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>TEST CDW Ordering - Send Order</sys_name>
         <sys_overrides/>
         <sys_package display_value="Global" source="global">global</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_c1020a931bf4fc50e7004229bc4bcbce</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-10-13 13:40:57</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -63,6 +66,9 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-04-11 20:01:15</sys_created_on>
         <sys_id>fee59be11bf2811062e50ed2cd4bcbc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-10-13 13:40:57</sys_updated_on>
     </sys_claim>
     <sys_hub_step_instance action="delete_multiple" query="action=c1020a931bf4fc50e7004229bc4bcbce^sys_idNOT IN61024a931bf4fc50e7004229bc4bcb53,bd024a931bf4fc50e7004229bc4bcb79"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">

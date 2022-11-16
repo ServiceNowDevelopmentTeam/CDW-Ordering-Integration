@@ -26,12 +26,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>915641251b9fd410e7004229bc4bcb84</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>CDW - Require Workaround or Resolution</sys_name>
         <sys_overrides/>
         <sys_package display_value="Global" source="global">global</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>sys_script_client_915641251b9fd410e7004229bc4bcb84</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-10-13 13:40:57</sys_updated_on>
         <table>u_kb_template_api_kcs_article</table>
         <type>onSubmit</type>
         <ui_type>0</ui_type>
@@ -47,5 +50,8 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-04-11 20:01:09</sys_created_on>
         <sys_id>51e51be11bf2811062e50ed2cd4bcbe3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-10-13 13:40:57</sys_updated_on>
     </sys_claim>
 </record_update>

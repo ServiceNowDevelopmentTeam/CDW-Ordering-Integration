@@ -5,11 +5,14 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-05-05 19:58:25</sys_created_on>
         <sys_id>476bf2951b9309d062e50ed2cd4bcbd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>CDW Approval.Role: Admin</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>sc_cat_item_user_criteria_mtom_476bf2951b9309d062e50ed2cd4bcbd9</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-10-13 13:40:57</sys_updated_on>
         <user_criteria display_value="Role: Admin">21a1e5831bc7c9908c5143f3cc4bcb7e</user_criteria>
     </sc_cat_item_user_criteria_mtom>
 </record_update>

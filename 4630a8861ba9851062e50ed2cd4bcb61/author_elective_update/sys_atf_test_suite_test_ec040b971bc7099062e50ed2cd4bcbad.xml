@@ -50,6 +50,7 @@
         <sys_db_object display_value="" name="sys_atf_test_suite_test">sys_atf_test_suite_test</sys_db_object>
         <sys_id>66d2ab35701a4078941ea216d236bc10</sys_id>
         <sys_metadata>ec040b971bc7099062e50ed2cd4bcbad</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>32d3435b1b83cd908c5143f3cc4bcba1</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_parent/>
@@ -58,5 +59,7 @@
         <sys_scope_delete display_value="">1de550a9788c4602b4836958c30c66c9</sys_scope_delete>
         <sys_update_name>sys_atf_test_suite_test_ec040b971bc7099062e50ed2cd4bcbad</sys_update_name>
         <sys_update_version display_value="sys_atf_test_suite_test_ec040b971bc7099062e50ed2cd4bcbad">86b583db1bc3cd908c5143f3cc4bcb88</sys_update_version>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-04-29 15:35:32</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

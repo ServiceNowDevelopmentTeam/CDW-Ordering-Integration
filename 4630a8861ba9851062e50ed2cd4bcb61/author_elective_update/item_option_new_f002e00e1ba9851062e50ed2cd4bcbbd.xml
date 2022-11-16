@@ -163,6 +163,7 @@
         <sys_db_object display_value="" name="item_option_new">item_option_new</sys_db_object>
         <sys_id>1b1f4d9c50aa48af845d649e4ab3eaa9</sys_id>
         <sys_metadata>f002e00e1ba9851062e50ed2cd4bcbbd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>CDW Item</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_parent display_value="Catalog Item Builder">91edb87273221010c84e2bb43cf6a7ae</sys_parent>
@@ -171,5 +172,7 @@
         <sys_scope_delete display_value="">1de550a9788c4602b4836958c30c66c9</sys_scope_delete>
         <sys_update_name>item_option_new_f002e00e1ba9851062e50ed2cd4bcbbd</sys_update_name>
         <sys_update_version display_value="item_option_new_f002e00e1ba9851062e50ed2cd4bcbbd">2b12e8ce1ba9851062e50ed2cd4bcb7d</sys_update_version>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-02-09 16:55:44</sys_updated_on>
     </sys_metadata_delete>
 </record_update>

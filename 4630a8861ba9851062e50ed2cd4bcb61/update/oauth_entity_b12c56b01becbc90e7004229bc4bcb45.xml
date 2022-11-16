@@ -7,7 +7,7 @@
         <auth_url/>
         <certificate_url/>
         <client_id>JM940GEs1Yoy2e2D6u5WQrZQdd4YWj4c</client_id>
-        <client_secret>7egSTKEc+nWkzXSnrWPM4HsxpJr4TKMY</client_secret>
+        <client_secret>﷞﷟﷒1b0348b31b02511062e50ed2cd4bcbb8﷬﷔1﷬﷭sHFiizmdKcN3K2WDb59LWQ==2stGNx-D8C-8gbDvAZQ18c9m0EyX-76sgXmVB2fSRKQ=﷮﷯</client_secret>
         <client_uuid>fd2c56b01becbc90e7004229bc4bcb44</client_uuid>
         <code_challenge_method>S256</code_challenge_method>
         <comments/>
@@ -31,11 +31,14 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2021-06-02 15:23:24</sys_created_on>
         <sys_id>b12c56b01becbc90e7004229bc4bcb45</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>CDW Pre-Prod OAuth</sys_name>
         <sys_package display_value="Global" source="global">global</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>oauth_entity_b12c56b01becbc90e7004229bc4bcb45</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-10-13 13:40:57</sys_updated_on>
         <token_url>https://pre-prod-apihub.cdw.com/v2/oauth/ClientCredentialAcessToken</token_url>
         <type>oauth_provider</type>
         <use_mutual_auth>false</use_mutual_auth>
@@ -51,5 +54,8 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-04-11 20:01:09</sys_created_on>
         <sys_id>9de51be11bf2811062e50ed2cd4bcbde</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-10-13 13:40:57</sys_updated_on>
     </sys_claim>
 </record_update>

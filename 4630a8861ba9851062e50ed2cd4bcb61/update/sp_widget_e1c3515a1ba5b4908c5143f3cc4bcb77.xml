@@ -779,11 +779,14 @@ function isCartValid(cart) {
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2021-07-26 18:58:27</sys_created_on>
         <sys_id>e1c3515a1ba5b4908c5143f3cc4bcb77</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Copy of SC Shopping Cart</sys_name>
         <sys_package display_value="Global" source="global">global</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>sp_widget_e1c3515a1ba5b4908c5143f3cc4bcb77</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-10-13 13:40:57</sys_updated_on>
         <template><![CDATA[<div ng-if="options.cartTemplate">
 	<div ng-include="options.cartTemplate"></div>
 
@@ -817,5 +820,8 @@ function isCartValid(cart) {
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-07-12 13:14:49</sys_created_on>
         <sys_id>962b6b031ba811508c5143f3cc4bcb47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-10-13 13:40:57</sys_updated_on>
     </sys_claim>
 </record_update>

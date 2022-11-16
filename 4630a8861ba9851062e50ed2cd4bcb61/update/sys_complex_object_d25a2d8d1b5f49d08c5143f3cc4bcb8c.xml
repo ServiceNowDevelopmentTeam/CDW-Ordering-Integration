@@ -11,12 +11,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d25a2d8d1b5f49d08c5143f3cc4bcb8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>FD125a2d8da35f49d0b95f9b147a47a58c</sys_name>
         <sys_overrides/>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>sys_complex_object_d25a2d8d1b5f49d08c5143f3cc4bcb8c</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-10-13 13:40:57</sys_updated_on>
         <type>complex_object_collection</type>
     </sys_complex_object>
 </record_update>

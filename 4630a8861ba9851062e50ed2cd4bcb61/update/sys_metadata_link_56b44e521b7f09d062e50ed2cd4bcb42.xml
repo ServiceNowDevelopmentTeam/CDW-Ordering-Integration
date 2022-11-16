@@ -36,11 +36,14 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-06-02 15:04:43</sys_created_on>
         <sys_id>56b44e521b7f09d062e50ed2cd4bcb42</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Company and Segment CDW Approvers_240</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>sys_metadata_link_56b44e521b7f09d062e50ed2cd4bcb42</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-10-13 13:40:57</sys_updated_on>
         <tablename>sys_decision_question</tablename>
     </sys_metadata_link>
 </record_update>

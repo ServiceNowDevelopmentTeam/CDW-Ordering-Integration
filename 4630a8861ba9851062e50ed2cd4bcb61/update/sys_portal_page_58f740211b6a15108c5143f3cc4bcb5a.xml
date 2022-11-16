@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_portal_page" unload_date="2022-10-21 20:24:33">
+<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_portal_page" unload_date="2022-11-16 17:00:50">
     <sys_portal_page action="INSERT_OR_UPDATE">
         <layout/>
         <order/>
@@ -11,12 +11,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>58f740211b6a15108c5143f3cc4bcb5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>PA ServiceNow Admin Das - New Tab</sys_name>
         <sys_overrides/>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>sys_portal_page_58f740211b6a15108c5143f3cc4bcb5a</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-10-21 20:24:47</sys_updated_on>
         <title>PA ServiceNow Admin Das - New Tab</title>
         <user/>
         <view>pa_servicenow_admin_das_-_new_tab</view>

@@ -52,6 +52,7 @@
         <sys_db_object display_value="" name="sys_grid_canvas_pane">sys_grid_canvas_pane</sys_db_object>
         <sys_id>1889d292a21741e6a06172f75eb5c1e4</sys_id>
         <sys_metadata>dc380c211b6a15108c5143f3cc4bcbe8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>d0f740211b6a15108c5143f3cc4bcb5c</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_parent/>
@@ -60,5 +61,7 @@
         <sys_scope_delete display_value="">1de550a9788c4602b4836958c30c66c9</sys_scope_delete>
         <sys_update_name>sys_grid_canvas_pane_dc380c211b6a15108c5143f3cc4bcbe8</sys_update_name>
         <sys_update_version display_value="sys_grid_canvas_pane_dc380c211b6a15108c5143f3cc4bcbe8">54380c211b6a15108c5143f3cc4bcbeb</sys_update_version>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-10-14 14:58:21</sys_updated_on>
     </sys_metadata_delete>
 </record_update>
