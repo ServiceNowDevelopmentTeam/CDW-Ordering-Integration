@@ -420,6 +420,7 @@
 			$scope.data.departmentQuery = response.data.departmentQuery;
 			$scope.data.disable_address = response.data.disable_address;
 			$scope.c.company.displayValue = response.data.companyDisplayValue;
+			$scope.c.companyCode = response.data.companyCode;
 			$scope.data.reqForQuery = response.data.reqForQuery;
 			$scope.c.locationCompanyNumber = response.data.locationCompanyNumber;
 			$scope.c.gl = response.data.gl;
@@ -472,7 +473,6 @@
 			c.changeAddress();
 			checkPhone();
 		});
-
 	}
 	c.changeAddress = function() {
 		c.server.get({
@@ -497,13 +497,14 @@
 		newComment += c.locationDepartmentNumber != undefined ? c.locationDepartmentNumber : '?';
 		newComment += ' - ';
 		newComment += c.gl;
-		newComment += ' - Configure For';
+		newComment += ' - Configure For ' + $scope.c.companyCode;
+		/*
 		if ($scope.c.company.displayValue) {
 			newComment += ' ' + $scope.c.company.displayValue;
 		}
 		if ($scope.c.location.displayValue) {
 			newComment += ' ' + $scope.c.location.displayValue;
-		}
+		}*/
 		$scope.c.comment = newComment;
 		if(c.addressPhone){
 			checkPhone();
@@ -783,6 +784,7 @@ label{
 			var companyGR = new GlideRecord('core_company');
 			companyGR.get(localInput.company);
 			data.locationCompanyNumber = companyGR.getValue('u_company_number');
+			data.companyCode = companyGR.getValue('u_company_code');
 		}
 		if(!localInput.address_changed){
 			data.disable_address = true;
@@ -807,6 +809,7 @@ label{
 		companyGR.get(locationGR.company);
 		data.locationCompanyNumber = companyGR.getValue('u_company_number');
 		data.locationDepartmentNumber = locationGR.getValue('u_department_number');
+		data.companyCode = companyGR.getValue('u_company_code');
 		data.gl = '70700';
 		return;
 	}
@@ -944,7 +947,7 @@ label{
 	data.reqForQuery = gs.getProperty("glide.sc.request_for.query");
 
 
-	data.companyQuery = "vendor!=true";
+	data.companyQuery = "vendor!=true^u_company_code!=";
 	data.companyDispCol = "name";
 	data.companyDispCols = "name";
 	data.companySearchCols = "name";
@@ -1081,14 +1084,14 @@ label{
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2021-07-26 18:41:41</sys_created_on>
         <sys_id>f7ef45de1b65b4908c5143f3cc4bcbab</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>CDW Catalog Checkout</sys_name>
         <sys_package display_value="Global" source="global">global</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>sp_widget_f7ef45de1b65b4908c5143f3cc4bcbab</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-10-13 13:40:57</sys_updated_on>
+        <sys_updated_on>2023-03-23 13:37:51</sys_updated_on>
         <template><![CDATA[<div id="sc_cat_checkout" ng-class="{'panel panel-default': !c.isNative}" sn-atf-blacklist="IS_SERVICE_CATALOG" ng-if="c.data.cdwCart">
   <h1 class="padder-md h3" ng-if="!c.isNative" ng-if="c.data.cdwCart">{{::checkoutPopupTitle}}
     <span class="text-base">
