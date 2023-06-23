@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="e876b3ed1bab61508c5143f3cc4bcb44" extends="syslog0004" label="REST API Logs" max_length="40" name="u_rest_api_logs0004" type="collection">
+        <element choice="1" choice_field="u_direction" choice_table="u_rest_api_logs" label="Direction" max_length="40" name="u_direction" type="choice">
+            <choice/>
+        </element>
+        <element attributes="json_view=true" label="JSON Payload" max_length="4000" name="u_json_payload" type="script"/>
+        <element attributes="encode_utf8=false" label="Related Task" max_length="32" name="u_related_task" reference="task" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="HTTP Status Code" max_length="10" name="u_status_code" type="string"/>
+        <index name="index">
+            <element name="u_related_task"/>
+        </index>
+    </element>
+</database>
