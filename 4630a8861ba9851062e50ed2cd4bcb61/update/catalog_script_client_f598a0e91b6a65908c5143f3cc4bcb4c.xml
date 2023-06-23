@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>true</applies_req_item>
+        <applies_sc_task>true</applies_sc_task>
+        <applies_target_record>true</applies_target_record>
+        <applies_to>set</applies_to>
+        <cat_item/>
+        <cat_variable/>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>Set Delivery Visibility</name>
+        <order>0</order>
+        <script><![CDATA[function onLoad() {
+	g_scratchpad.isAutofilling = true;
+    var userId = g_user.userID;
+
+    var ga = new GlideAjax('global.CartItemVariables');
+    ga.addParam('sysparm_name', 'ajaxFunction_getVariablesForUserCart');
+    ga.addParam('sysparm_user_id', userId);
+    ga.getXMLAnswer(function(response) {
+            g_form.setValue('enabled', true);
+        var cartItemsWithVariables = JSON.parse(response);
+
+        var requiredVariables = ['location','phone_number', 'enabled', 'address_2', 'chargeback_and_configuration', 'company', 'city', 'address_1', 'state', 'zip_code', 'location_incorrect_or_not_found', 'requested_for'];
+        var itemsWithRequiredVariables = cartItemsWithVariables.filter(function(item) {
+            var itemVariableNames = item.variables.map(function(variable) {
+                return variable.name;
+            });
+            return requiredVariables.every(function(requiredVariable) {
+                return itemVariableNames.includes(requiredVariable);
+            });
+        });
+
+        if (itemsWithRequiredVariables.length > 0) {
+            var referenceItem = itemsWithRequiredVariables[0];
+            var itemsHaveSameValues = itemsWithRequiredVariables.every(function(item) {
+                return item.variables.every(function(variable, index) {
+                    return variable.value === referenceItem.variables[index].value;
+                });
+            });
+
+            if (itemsHaveSameValues) {
+                referenceItem.variables.forEach(function(variable) {
+                    g_form.setValue(variable.name, variable.value);
+					if(variable.name == 'location'){
+						g_scratchpad.location = variable.value;
+					}
+                });
+            } else {
+            g_form.setValue('enabled', true);
+            }
+        } else {
+            g_form.setValue('enabled', true);
+        }
+    });
+	g_scratchpad.isAutofilling = false;
+}
+]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-05-01 13:54:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f598a0e91b6a65908c5143f3cc4bcb4c</sys_id>
+        <sys_mod_count>33</sys_mod_count>
+        <sys_name>Set Delivery Visibility</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>catalog_script_client_f598a0e91b6a65908c5143f3cc4bcb4c</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-05-03 18:52:20</sys_updated_on>
+        <table/>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <variable_set display_value="Delivery Information">7eadc3b71b926d508c5143f3cc4bcb57</variable_set>
+        <view/>
+    </catalog_script_client>
+</record_update>

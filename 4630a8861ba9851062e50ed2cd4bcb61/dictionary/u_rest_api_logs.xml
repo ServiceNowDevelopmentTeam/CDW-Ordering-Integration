@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="fa26bbad1bab61508c5143f3cc4bcb2c" extends="syslog" label="REST API Logs" max_length="40" name="u_rest_api_logs" type="collection">
+        <element choice="1" label="Direction" max_length="40" name="u_direction" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Inbound" value="inbound"/>
+                <element inactive_on_update="false" label="Outbound" value="outbound"/>
+            </choice>
+        </element>
+        <element attributes="json_view=true" label="JSON Payload" max_length="4000" name="u_json_payload" type="script"/>
+        <element label="Related Task" max_length="32" name="u_related_task" reference="task" type="reference"/>
+        <element label="HTTP Status Code" max_length="10" name="u_status_code" type="string"/>
+        <index name="index">
+            <element name="u_related_task"/>
+        </index>
+    </element>
+</database>

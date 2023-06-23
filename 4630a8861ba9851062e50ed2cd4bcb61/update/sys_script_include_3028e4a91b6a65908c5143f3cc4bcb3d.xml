@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>global.CartItemVariables</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>CartItemVariables</name>
+        <script><![CDATA[var CartItemVariables = Class.create();
+CartItemVariables.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    ajaxFunction_getVariablesForUserCart: function() {
+        var userId = this.getParameter('sysparm_user_id');
+        var cartItemsWithVariables = this.getVariablesForUserCart(userId);
+        return JSON.stringify(cartItemsWithVariables);
+    },
+
+    getVariablesForUserCart: function(userId) {
+        var cart = new GlideRecord('sc_cart');
+        cart.addQuery('user', userId);
+        cart.addQuery('hidden', false);
+        cart.query();
+
+        if (!cart.next()) {
+            return [];
+        }
+
+        var cartId = cart.sys_id.toString();
+        var cartItems = new GlideRecord('sc_cart_item');
+        cartItems.addQuery('cart', cartId);
+        cartItems.query();
+
+        var cartItemVariables = [];
+
+        while (cartItems.next()) {
+            var itemVariables = {};
+            itemVariables.itemName = cartItems.cat_item.name.toString();
+            itemVariables.variables = this.getCartItemVariables(cartItems.sys_id.toString());
+            cartItemVariables.push(itemVariables);
+        }
+
+        return cartItemVariables;
+    },
+
+    getCartItemVariables: function(cartItemId) {
+        var cartItemVariables = new GlideRecord('sc_item_option');
+        cartItemVariables.addQuery('cart_item', cartItemId);
+        cartItemVariables.setLimit(100);
+        cartItemVariables.query();
+
+        var itemVariables = [];
+
+        while (cartItemVariables.next()) {
+            var variable = {};
+            variable.name = cartItemVariables.item_option_new.name.toString();
+            variable.value = cartItemVariables.value.toString();
+			variable.displayValue = cartItemVariables.item_option_new.display_value.toString();
+
+            itemVariables.push(variable);
+        }
+
+        return itemVariables;
+    },
+
+    type: 'CartItemVariables'
+});
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-05-01 13:29:12</sys_created_on>
+        <sys_id>3028e4a91b6a65908c5143f3cc4bcb3d</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_name>CartItemVariables</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sys_script_include_3028e4a91b6a65908c5143f3cc4bcb3d</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-05-03 16:15:40</sys_updated_on>
+    </sys_script_include>
+</record_update>
