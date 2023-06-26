@@ -1,0 +1,2756 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>prof__sync_cdw_cart_items__s</internal_name>
+        <label_cache>[{"name":"164defd4-87b5-4741-95e3-7368e3bc5e64.item.cat_item.vendor","label":"12 - For Each➛Item Record➛Item➛Vendor","reference":"core_company","reference_display":"Company","type":"reference","base_type":"reference","parent_table_name":"sc_cat_item","column_name":"vendor"},{"name":"flow_variable.loop_count","label":"Flow Variables➛Loop Count","reference":"","reference_display":"","type":"integer","base_type":"integer","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"2dae9720-0aff-4708-b4df-d8faffde4f42"}},{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛Item Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sc_cart_item","column_name":"sys_id"},{"name":"164defd4-87b5-4741-95e3-7368e3bc5e64.item.sys_id","label":"12 - For Each➛Item Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sc_cart_item","column_name":"sys_id"},{"name":"29c3b16c-780e-400e-9a1c-180da3731ba4.item","label":"3 - For Each➛Item Record","reference":"sc_cart_item","reference_display":"Item","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"7d579d16-d492-4fcf-abd3-738fed6dfb04.Records","label":"2 - Look Up Records➛Item Records","reference":"sc_cart_item","reference_display":"Item","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.cart","label":"Trigger - Record Created➛Item Record➛Cart","reference":"sc_cart","reference_display":"Shopping Cart","type":"reference","base_type":"reference","parent_table_name":"sc_cart_item","column_name":"cart"},{"name":"Created_1.current.cart.user.sys_id","label":"Trigger - Record Created➛Item Record➛Cart➛User➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user","column_name":"sys_id"},{"name":"4bff5d1f-fdae-4c69-a5d4-5fab38ced8d7.Count","label":"4 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Item Record","reference":"sc_cart_item","reference_display":"Item","type":"reference","base_type":"reference","attributes":{}},{"name":"164defd4-87b5-4741-95e3-7368e3bc5e64.item","label":"12 - For Each➛Item Record","reference":"sc_cart_item","reference_display":"Item","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"flow_variable.item_variable_count","label":"Flow Variables➛Item Variable Count","reference":"","reference_display":"","type":"integer","base_type":"integer","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"b63f592b-0e11-47a8-9336-4a520366c60c"}},{"name":"20dad529-49e3-4a08-8e66-a0f28d56a952.Count","label":"9 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"164defd4-87b5-4741-95e3-7368e3bc5e64.item.cat_item.vendor.sys_id","label":"12 - For Each➛Item Record➛Item➛Vendor➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"core_company","column_name":"sys_id"},{"name":"164defd4-87b5-4741-95e3-7368e3bc5e64.item.cat_item.vendor.name","label":"12 - For Each➛Item Record➛Item➛Vendor➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"core_company","column_name":"name"}]</label_cache>
+        <master_snapshot>dc2d76e21b23e5508c5143f3cc4bcbd3</master_snapshot>
+        <name>PROF - Sync CDW Cart Items - S</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>db25c1e31b27a1908c5143f3cc4bcbc2</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:51:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>691c7a621b23e5508c5143f3cc4bcb1f</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>PROF - Sync CDW Cart Items - S</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sys_hub_flow_691c7a621b23e5508c5143f3cc4bcb1f</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:46:08</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=691c7a621b23e5508c5143f3cc4bcb1f"/>
+    <sys_variable_value action="delete_multiple" query="document_key=691c7a621b23e5508c5143f3cc4bcb1f"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="sc_cart_item">cat_item.vendor=5bcd40401b2a6d508c5143f3cc4bcbb0<item display_table="core_company" display_value="CDW" endquery="false" field="cat_item.vendor" goto="false" newquery="false" operator="=" or="false" value="5bcd40401b2a6d508c5143f3cc4bcbb0"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:46:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>db25c1e31b27a1908c5143f3cc4bcbc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:46:06</sys_updated_on>
+        <table>sc_cart_item</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>691c7a621b23e5508c5143f3cc4bcb1f</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:46:06</sys_created_on>
+        <sys_id>9725c1e31b27a1908c5143f3cc4bcbc3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:46:06</sys_updated_on>
+        <trigger display_value="">db25c1e31b27a1908c5143f3cc4bcbc2</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=691c7a621b23e5508c5143f3cc4bcb1f^sys_idNOT IN9725c1e31b27a1908c5143f3cc4bcbc3"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=691c7a621b23e5508c5143f3cc4bcb1f^sys_idNOT INb43cfe621b23e5508c5143f3cc4bcb2a"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="PROF - Sync CDW Cart Items - S">691c7a621b23e5508c5143f3cc4bcb1f</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:52:12</sys_created_on>
+        <sys_id>b43cfe621b23e5508c5143f3cc4bcb2a</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:46:07</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b43cfe621b23e5508c5143f3cc4bcb2a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>b43cfe621b23e5508c5143f3cc4bcb2a</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:52:12</sys_created_on>
+        <sys_id>b43cfe621b23e5508c5143f3cc4bcb2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-23 19:52:12</sys_updated_on>
+        <value>cat_item.vendor=5bcd40401b2a6d508c5143f3cc4bcbb0</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>b43cfe621b23e5508c5143f3cc4bcb2a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:52:12</sys_created_on>
+        <sys_id>bc3cfe621b23e5508c5143f3cc4bcb2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-23 19:52:12</sys_updated_on>
+        <value>sc_cart_item</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=691c7a621b23e5508c5143f3cc4bcb1f"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=691c7a621b23e5508c5143f3cc4bcb1f^sys_idNOT INe91c7a621b23e5508c5143f3cc4bcb21"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>691c7a621b23e5508c5143f3cc4bcb1f</id>
+        <name>PROF - Sync CDW Cart Items - S</name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:51:42</sys_created_on>
+        <sys_id>e91c7a621b23e5508c5143f3cc4bcb21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-23 19:51:42</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=e91c7a621b23e5508c5143f3cc4bcb21"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=691c7a621b23e5508c5143f3cc4bcb1f^sys_idNOT IN2c3cfe621b23e5508c5143f3cc4bcb25,6c3c7a621b23e5508c5143f3cc4bcb0b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="PROF - Sync CDW Cart Items - S">691c7a621b23e5508c5143f3cc4bcb1f</model>
+        <model_id>691c7a621b23e5508c5143f3cc4bcb1f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_691c7a621b23e5508c5143f3cc4bcb1f</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:52:12</sys_created_on>
+        <sys_id>2c3cfe621b23e5508c5143f3cc4bcb25</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:46:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="PROF - Sync CDW Cart Items - S">691c7a621b23e5508c5143f3cc4bcb1f</model>
+        <model_id>691c7a621b23e5508c5143f3cc4bcb1f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_691c7a621b23e5508c5143f3cc4bcb1f</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:52:12</sys_created_on>
+        <sys_id>6c3c7a621b23e5508c5143f3cc4bcb0b</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:46:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=691c7a621b23e5508c5143f3cc4bcb1f"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=691c7a621b23e5508c5143f3cc4bcb1f"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=691c7a621b23e5508c5143f3cc4bcb1f^sys_idNOT IN0b6c76a21b23e5508c5143f3cc4bcb02,2b32096f1be3a1908c5143f3cc4bcbde,b31d76e21b23e5508c5143f3cc4bcb43,b71d76e21b23e5508c5143f3cc4bcb35,e98349ef1be3a1908c5143f3cc4bcb03"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent/>
+        <comment>Look up cart User</comment>
+        <display_text/>
+        <flow display_value="PROF - Sync CDW Cart Items - S">691c7a621b23e5508c5143f3cc4bcb1f</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:53:11</sys_created_on>
+        <sys_id>0b6c76a21b23e5508c5143f3cc4bcb02</sys_id>
+        <sys_mod_count>40</sys_mod_count>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-06-26 14:00:10</sys_updated_on>
+        <ui_id>f0469747-0181-43a1-8261-58ef6bd5ef10</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0b6c76a21b23e5508c5143f3cc4bcb02"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0b6c76a21b23e5508c5143f3cc4bcb02</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:53:11</sys_created_on>
+        <sys_id>8b6c76a21b23e5508c5143f3cc4bcb05</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-23 19:53:11</sys_updated_on>
+        <value>sys_user</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0b6c76a21b23e5508c5143f3cc4bcb02"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>0b6c76a21b23e5508c5143f3cc4bcb02</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:53:11</sys_created_on>
+        <sys_id>036c76a21b23e5508c5143f3cc4bcb05</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-23 19:53:11</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>sys_id={{Created_1.current.cart.user.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>0b6c76a21b23e5508c5143f3cc4bcb02</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:53:11</sys_created_on>
+        <sys_id>0b6c76a21b23e5508c5143f3cc4bcb05</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-23 19:53:11</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0b6c76a21b23e5508c5143f3cc4bcb02"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0b6c76a21b23e5508c5143f3cc4bcb02"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Copy Variables to Cart Item">6f1189eb1be3a1908c5143f3cc4bcbda</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="PROF - Sync CDW Cart Items - S">691c7a621b23e5508c5143f3cc4bcb1f</flow>
+        <order>14</order>
+        <parent_ui_id>4529df0d-533a-4c47-8b2d-f2b51127ebb3</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:33:18</sys_created_on>
+        <sys_id>2b32096f1be3a1908c5143f3cc4bcbde</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-06-26 14:00:11</sys_updated_on>
+        <ui_id>4c3e85fe-65c7-4995-ba70-06967d50eaec</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2b32096f1be3a1908c5143f3cc4bcbde"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2b32096f1be3a1908c5143f3cc4bcbde</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:33:18</sys_created_on>
+        <sys_id>a332096f1be3a1908c5143f3cc4bcbe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:33:18</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FD631189eb94e3a190fe6740f1a2a49ede":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD631189eb94e3a190fe6740f1a2a49ede.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Variables to Copy\",\"mandatory\":\"true\",\"child_name\":\"Variables_to_Copy0\",\"uiUniqueId\":\"2341b6e0-e343-47f4-9f81-b77c34072344\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FD631189eb94e3a190fe6740f1a2a49ede\",\"child_label\":\"Variables to Copy0\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.string\",\"mapped\":\"{}\",\"child_type\":\"string\",\"order\":\"2\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"7aeb2415-550b-48e1-b244-ff94d948101a\"}"}},"serializationFormat":"JSON","complexObject":{"name$":"FD631189eb94e3a190fe6740f1a2a49ede","$COCollectionField":["location","phone_number","address_2","chargeback_and_configuration","company","city","address_1","state","zip_code","location_incorrect_or_not_found","requested_for"]}}</value>
+        <variable display_value="Variables to Copy">271189eb1be3a1908c5143f3cc4bcbf9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2b32096f1be3a1908c5143f3cc4bcbde"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_cart_item</field>
+        <id>2b32096f1be3a1908c5143f3cc4bcbde</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:33:18</sys_created_on>
+        <sys_id>2332096f1be3a1908c5143f3cc4bcbe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:33:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6f1189eb1be3a1908c5143f3cc4bcbda</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_cart_item</field>
+        <id>2b32096f1be3a1908c5143f3cc4bcbde</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:33:18</sys_created_on>
+        <sys_id>a732096f1be3a1908c5143f3cc4bcbe0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:33:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6f1189eb1be3a1908c5143f3cc4bcbda</table>
+        <value>{{164defd4-87b5-4741-95e3-7368e3bc5e64.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>Variables_to_Copy</field>
+        <id>2b32096f1be3a1908c5143f3cc4bcbde</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:33:18</sys_created_on>
+        <sys_id>6f32096f1be3a1908c5143f3cc4bcbe0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:33:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6f1189eb1be3a1908c5143f3cc4bcbda</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2b32096f1be3a1908c5143f3cc4bcbde"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2b32096f1be3a1908c5143f3cc4bcbde"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment>Look up cart item variables</comment>
+        <display_text/>
+        <flow display_value="PROF - Sync CDW Cart Items - S">691c7a621b23e5508c5143f3cc4bcb1f</flow>
+        <order>4</order>
+        <parent_ui_id>29c3b16c-780e-400e-9a1c-180da3731ba4</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:14</sys_created_on>
+        <sys_id>b31d76e21b23e5508c5143f3cc4bcb43</sys_id>
+        <sys_mod_count>38</sys_mod_count>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-06-26 14:00:11</sys_updated_on>
+        <ui_id>4bff5d1f-fdae-4c69-a5d4-5fab38ced8d7</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b31d76e21b23e5508c5143f3cc4bcb43"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b31d76e21b23e5508c5143f3cc4bcb43</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:14</sys_created_on>
+        <sys_id>3f1d76e21b23e5508c5143f3cc4bcb44</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-23 19:59:45</sys_updated_on>
+        <value>sc_item_option</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b31d76e21b23e5508c5143f3cc4bcb43"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>b31d76e21b23e5508c5143f3cc4bcb43</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:14</sys_created_on>
+        <sys_id>f71d76e21b23e5508c5143f3cc4bcb44</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-23 19:59:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>cart_item={{29c3b16c-780e-400e-9a1c-180da3731ba4.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>b31d76e21b23e5508c5143f3cc4bcb43</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:14</sys_created_on>
+        <sys_id>bb1d76e21b23e5508c5143f3cc4bcb44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-23 19:56:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b31d76e21b23e5508c5143f3cc4bcb43"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b31d76e21b23e5508c5143f3cc4bcb43"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment>Look up CDW items in cart</comment>
+        <display_text/>
+        <flow display_value="PROF - Sync CDW Cart Items - S">691c7a621b23e5508c5143f3cc4bcb1f</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:14</sys_created_on>
+        <sys_id>b71d76e21b23e5508c5143f3cc4bcb35</sys_id>
+        <sys_mod_count>38</sys_mod_count>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-06-26 14:00:10</sys_updated_on>
+        <ui_id>7d579d16-d492-4fcf-abd3-738fed6dfb04</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b71d76e21b23e5508c5143f3cc4bcb35"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b71d76e21b23e5508c5143f3cc4bcb35</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:14</sys_created_on>
+        <sys_id>331d76e21b23e5508c5143f3cc4bcb38</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-23 19:56:14</sys_updated_on>
+        <value>sc_cart_item</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b71d76e21b23e5508c5143f3cc4bcb35"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>b71d76e21b23e5508c5143f3cc4bcb35</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:14</sys_created_on>
+        <sys_id>f71d76e21b23e5508c5143f3cc4bcb37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-23 19:56:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>cart={{Created_1.current.cart}}^cat_item.vendor=5bcd40401b2a6d508c5143f3cc4bcbb0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>b71d76e21b23e5508c5143f3cc4bcb35</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:14</sys_created_on>
+        <sys_id>bf1d76e21b23e5508c5143f3cc4bcb37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-23 19:56:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b71d76e21b23e5508c5143f3cc4bcb35"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b71d76e21b23e5508c5143f3cc4bcb35"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment>Look up cart item variables</comment>
+        <display_text/>
+        <flow display_value="PROF - Sync CDW Cart Items - S">691c7a621b23e5508c5143f3cc4bcb1f</flow>
+        <order>9</order>
+        <parent_ui_id>5020e38b-4046-43fd-ac26-4cc4988e318b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:38:53</sys_created_on>
+        <sys_id>e98349ef1be3a1908c5143f3cc4bcb03</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-06-26 14:00:11</sys_updated_on>
+        <ui_id>20dad529-49e3-4a08-8e66-a0f28d56a952</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e98349ef1be3a1908c5143f3cc4bcb03"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e98349ef1be3a1908c5143f3cc4bcb03</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:38:53</sys_created_on>
+        <sys_id>ad8349ef1be3a1908c5143f3cc4bcb05</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:38:53</sys_updated_on>
+        <value>sc_item_option</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e98349ef1be3a1908c5143f3cc4bcb03"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>e98349ef1be3a1908c5143f3cc4bcb03</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:38:53</sys_created_on>
+        <sys_id>698349ef1be3a1908c5143f3cc4bcb05</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:38:53</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>cart_item={{29c3b16c-780e-400e-9a1c-180da3731ba4.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>e98349ef1be3a1908c5143f3cc4bcb03</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:38:53</sys_created_on>
+        <sys_id>2d8349ef1be3a1908c5143f3cc4bcb05</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:38:53</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e98349ef1be3a1908c5143f3cc4bcb03"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e98349ef1be3a1908c5143f3cc4bcb03"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=691c7a621b23e5508c5143f3cc4bcb1f"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=691c7a621b23e5508c5143f3cc4bcb1f^sys_idNOT IN17edba261b23e5508c5143f3cc4bcbfe,3b1d76e21b23e5508c5143f3cc4bcb39,602441631b27a1908c5143f3cc4bcb29,97edba261b23e5508c5143f3cc4bcbf9,9d8309ef1be3a1908c5143f3cc4bcbdb,a18309ef1be3a1908c5143f3cc4bcbe7,a58309ef1be3a1908c5143f3cc4bcbf7,a98349ef1be3a1908c5143f3cc4bcb06"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">5fedba261b23e5508c5143f3cc4bcbfd</block>
+        <comment>For each cart item, copy variables from current item</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="PROF - Sync CDW Cart Items - S">691c7a621b23e5508c5143f3cc4bcb1f</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>12</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:59:45</sys_created_on>
+        <sys_id>17edba261b23e5508c5143f3cc4bcbfe</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:46:08</sys_updated_on>
+        <ui_id>164defd4-87b5-4741-95e3-7368e3bc5e64</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=17edba261b23e5508c5143f3cc4bcbfe"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_691c7a621b23e5508c5143f3cc4bcb1f^id=17edba261b23e5508c5143f3cc4bcbfe"/>
+    <sys_element_mapping action="delete_multiple" query="id=17edba261b23e5508c5143f3cc4bcbfe"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>17edba261b23e5508c5143f3cc4bcbfe</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:59:45</sys_created_on>
+        <sys_id>9fedfa261b23e5508c5143f3cc4bcb00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-23 19:59:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{7d579d16-d492-4fcf-abd3-738fed6dfb04.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=17edba261b23e5508c5143f3cc4bcbfe"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=17edba261b23e5508c5143f3cc4bcbfe"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">3f1d76e21b23e5508c5143f3cc4bcb38</block>
+        <comment>For each cart item, make sure variable exist</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="PROF - Sync CDW Cart Items - S">691c7a621b23e5508c5143f3cc4bcb1f</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:14</sys_created_on>
+        <sys_id>3b1d76e21b23e5508c5143f3cc4bcb39</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:46:07</sys_updated_on>
+        <ui_id>29c3b16c-780e-400e-9a1c-180da3731ba4</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=3b1d76e21b23e5508c5143f3cc4bcb39"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_691c7a621b23e5508c5143f3cc4bcb1f^id=3b1d76e21b23e5508c5143f3cc4bcb39"/>
+    <sys_element_mapping action="delete_multiple" query="id=3b1d76e21b23e5508c5143f3cc4bcb39"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>3b1d76e21b23e5508c5143f3cc4bcb39</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:14</sys_created_on>
+        <sys_id>ff1d76e21b23e5508c5143f3cc4bcb3c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-23 19:56:14</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{7d579d16-d492-4fcf-abd3-738fed6dfb04.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=3b1d76e21b23e5508c5143f3cc4bcb39"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3b1d76e21b23e5508c5143f3cc4bcb39"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">a42441631b27a1908c5143f3cc4bcb28</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="PROF - Sync CDW Cart Items - S">691c7a621b23e5508c5143f3cc4bcb1f</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>13</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>164defd4-87b5-4741-95e3-7368e3bc5e64</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:41:33</sys_created_on>
+        <sys_id>602441631b27a1908c5143f3cc4bcb29</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:46:08</sys_updated_on>
+        <ui_id>4529df0d-533a-4c47-8b2d-f2b51127ebb3</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=602441631b27a1908c5143f3cc4bcb29"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_691c7a621b23e5508c5143f3cc4bcb1f^id=602441631b27a1908c5143f3cc4bcb29"/>
+    <sys_element_mapping action="delete_multiple" query="id=602441631b27a1908c5143f3cc4bcb29"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>602441631b27a1908c5143f3cc4bcb29</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:41:33</sys_created_on>
+        <sys_id>a02441631b27a1908c5143f3cc4bcb2c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:45:54</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{164defd4-87b5-4741-95e3-7368e3bc5e64.item.cat_item.vendor.name}}=CDW</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=602441631b27a1908c5143f3cc4bcb29"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=602441631b27a1908c5143f3cc4bcb29"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">9bedba261b23e5508c5143f3cc4bcbf8</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="PROF - Sync CDW Cart Items - S">691c7a621b23e5508c5143f3cc4bcb1f</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>29c3b16c-780e-400e-9a1c-180da3731ba4</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:59:45</sys_created_on>
+        <sys_id>97edba261b23e5508c5143f3cc4bcbf9</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:46:07</sys_updated_on>
+        <ui_id>ebadb031-208e-4f8f-a500-34a9acc84b00</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=97edba261b23e5508c5143f3cc4bcbf9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>97edba261b23e5508c5143f3cc4bcbf9</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:59:45</sys_created_on>
+        <sys_id>93edba261b23e5508c5143f3cc4bcbfd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-23 19:59:45</sys_updated_on>
+        <value>no variables exist</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_691c7a621b23e5508c5143f3cc4bcb1f^id=97edba261b23e5508c5143f3cc4bcbf9"/>
+    <sys_element_mapping action="delete_multiple" query="id=97edba261b23e5508c5143f3cc4bcbf9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>97edba261b23e5508c5143f3cc4bcbf9</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:59:45</sys_created_on>
+        <sys_id>13edba261b23e5508c5143f3cc4bcbfd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:38:53</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{flow_variable.item_variable_count}}=0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>97edba261b23e5508c5143f3cc4bcbf9</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:59:45</sys_created_on>
+        <sys_id>5bedba261b23e5508c5143f3cc4bcbfc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-23 19:59:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=97edba261b23e5508c5143f3cc4bcbf9"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=97edba261b23e5508c5143f3cc4bcbf9"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">d18309ef1be3a1908c5143f3cc4bcbdb</block>
+        <comment>Set variable count</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="PROF - Sync CDW Cart Items - S">691c7a621b23e5508c5143f3cc4bcb1f</flow>
+        <flow_variable/>
+        <flow_variable/>
+        <flow_variables_assigned>item_variable_count,loop_count</flow_variables_assigned>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>29c3b16c-780e-400e-9a1c-180da3731ba4</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:38:53</sys_created_on>
+        <sys_id>9d8309ef1be3a1908c5143f3cc4bcbdb</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:46:07</sys_updated_on>
+        <ui_id>4a358642-7ea7-41a0-81c0-5d99d4e13cf2</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=9d8309ef1be3a1908c5143f3cc4bcbdb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>9d8309ef1be3a1908c5143f3cc4bcbdb</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:40:25</sys_created_on>
+        <sys_id>80e341231b27a1908c5143f3cc4bcbe5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:40:25</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Loop Count">73d341231b27a1908c5143f3cc4bcbd1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>9d8309ef1be3a1908c5143f3cc4bcbdb</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:38:53</sys_created_on>
+        <sys_id>dd8309ef1be3a1908c5143f3cc4bcbde</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:38:53</sys_updated_on>
+        <value/>
+        <variable display_value="Item Variable Count">5d8309ef1be3a1908c5143f3cc4bcbca</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9d8309ef1be3a1908c5143f3cc4bcbdb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>item_variable_count</field>
+        <id>9d8309ef1be3a1908c5143f3cc4bcbdb</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:38:53</sys_created_on>
+        <sys_id>598309ef1be3a1908c5143f3cc4bcbde</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:38:53</sys_updated_on>
+        <table>var__m_sys_hub_flow_variable_691c7a621b23e5508c5143f3cc4bcb1f</table>
+        <value>{{4bff5d1f-fdae-4c69-a5d4-5fab38ced8d7.Count}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>loop_count</field>
+        <id>9d8309ef1be3a1908c5143f3cc4bcbdb</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:40:25</sys_created_on>
+        <sys_id>00e341231b27a1908c5143f3cc4bcbe5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:40:25</sys_updated_on>
+        <table>var__m_sys_hub_flow_variable_691c7a621b23e5508c5143f3cc4bcb1f</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=9d8309ef1be3a1908c5143f3cc4bcbdb"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9d8309ef1be3a1908c5143f3cc4bcbdb"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">2d8309ef1be3a1908c5143f3cc4bcbe6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="PROF - Sync CDW Cart Items - S">691c7a621b23e5508c5143f3cc4bcb1f</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>ebadb031-208e-4f8f-a500-34a9acc84b00</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:38:53</sys_created_on>
+        <sys_id>a18309ef1be3a1908c5143f3cc4bcbe7</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:46:07</sys_updated_on>
+        <ui_id>5020e38b-4046-43fd-ac26-4cc4988e318b</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=a18309ef1be3a1908c5143f3cc4bcbe7"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_691c7a621b23e5508c5143f3cc4bcb1f^id=a18309ef1be3a1908c5143f3cc4bcbe7"/>
+    <sys_element_mapping action="delete_multiple" query="id=a18309ef1be3a1908c5143f3cc4bcbe7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>a18309ef1be3a1908c5143f3cc4bcbe7</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:38:53</sys_created_on>
+        <sys_id>e98309ef1be3a1908c5143f3cc4bcbf6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:40:25</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_eaeb040687210300e6c2c88fc0e3ec89</table>
+        <value>{{flow_variable.item_variable_count}}&gt;0^NQ{{flow_variable.loop_count}}&gt;=10</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=a18309ef1be3a1908c5143f3cc4bcbe7"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a18309ef1be3a1908c5143f3cc4bcbe7"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">218309ef1be3a1908c5143f3cc4bcbf7</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="PROF - Sync CDW Cart Items - S">691c7a621b23e5508c5143f3cc4bcb1f</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>5020e38b-4046-43fd-ac26-4cc4988e318b</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:38:53</sys_created_on>
+        <sys_id>a58309ef1be3a1908c5143f3cc4bcbf7</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:46:07</sys_updated_on>
+        <ui_id>88122314-75c7-400f-8b20-77857d1fbbf6</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=a58309ef1be3a1908c5143f3cc4bcbf7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>a58309ef1be3a1908c5143f3cc4bcbf7</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:38:53</sys_created_on>
+        <sys_id>698309ef1be3a1908c5143f3cc4bcbfd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:38:53</sys_updated_on>
+        <value>1970-01-01 00:00:03</value>
+        <variable display_value="Duration">ef145c1473031300b61e66476bf6a7be</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>a58309ef1be3a1908c5143f3cc4bcbf7</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:38:53</sys_created_on>
+        <sys_id>a58309ef1be3a1908c5143f3cc4bcbfd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:38:53</sys_updated_on>
+        <value/>
+        <variable display_value="Timer relative duration operator">dca4105473031300b61e66476bf6a726</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_691c7a621b23e5508c5143f3cc4bcb1f^id=a58309ef1be3a1908c5143f3cc4bcbf7"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_fdb2541473031300b61e66476bf6a70e^id=a58309ef1be3a1908c5143f3cc4bcbf7"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=a58309ef1be3a1908c5143f3cc4bcbf7"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a58309ef1be3a1908c5143f3cc4bcbf7"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">258349ef1be3a1908c5143f3cc4bcb06</block>
+        <comment>Set Variable Count</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="PROF - Sync CDW Cart Items - S">691c7a621b23e5508c5143f3cc4bcb1f</flow>
+        <flow_variable/>
+        <flow_variable/>
+        <flow_variables_assigned>item_variable_count,loop_count</flow_variables_assigned>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>5020e38b-4046-43fd-ac26-4cc4988e318b</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:38:53</sys_created_on>
+        <sys_id>a98349ef1be3a1908c5143f3cc4bcb06</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:46:07</sys_updated_on>
+        <ui_id>5a8f9b30-bf33-4cc2-b273-8a469d892dce</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=a98349ef1be3a1908c5143f3cc4bcb06"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>a98349ef1be3a1908c5143f3cc4bcb06</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:38:53</sys_created_on>
+        <sys_id>618349ef1be3a1908c5143f3cc4bcb09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:38:53</sys_updated_on>
+        <value/>
+        <variable display_value="Item Variable Count">5d8309ef1be3a1908c5143f3cc4bcbca</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>a98349ef1be3a1908c5143f3cc4bcb06</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:40:26</sys_created_on>
+        <sys_id>8ce381231b27a1908c5143f3cc4bcb5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:40:26</sys_updated_on>
+        <value/>
+        <variable display_value="Loop Count">73d341231b27a1908c5143f3cc4bcbd1</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a98349ef1be3a1908c5143f3cc4bcb06"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>item_variable_count</field>
+        <id>a98349ef1be3a1908c5143f3cc4bcb06</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:38:53</sys_created_on>
+        <sys_id>ed8349ef1be3a1908c5143f3cc4bcb08</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:38:53</sys_updated_on>
+        <table>var__m_sys_hub_flow_variable_691c7a621b23e5508c5143f3cc4bcb1f</table>
+        <value>{{20dad529-49e3-4a08-8e66-a0f28d56a952.Count}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>loop_count</field>
+        <id>a98349ef1be3a1908c5143f3cc4bcb06</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:40:26</sys_created_on>
+        <sys_id>0ce381231b27a1908c5143f3cc4bcb5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:40:26</sys_updated_on>
+        <table>var__m_sys_hub_flow_variable_691c7a621b23e5508c5143f3cc4bcb1f</table>
+        <value>{{fd_transform:79865ead-1491-4a0c-91ed-4583f0e9afe8}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=a98349ef1be3a1908c5143f3cc4bcb06"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a98349ef1be3a1908c5143f3cc4bcb06"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=691c7a621b23e5508c5143f3cc4bcb1f^sys_idNOT IN84e381231b27a1908c5143f3cc4bcb7e,cce381231b27a1908c5143f3cc4bcb7e"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>691c7a621b23e5508c5143f3cc4bcb1f</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{flow_variable.loop_count}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:40:26</sys_created_on>
+        <sys_id>84e381231b27a1908c5143f3cc4bcb7e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:40:26</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>79865ead-1491-4a0c-91ed-4583f0e9afe8</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>691c7a621b23e5508c5143f3cc4bcb1f</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>79865ead-1491-4a0c-91ed-4583f0e9afe8</source_ui_id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:40:26</sys_created_on>
+        <sys_id>cce381231b27a1908c5143f3cc4bcb7e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:40:26</sys_updated_on>
+        <transform_compositions>[{"id":"06190ffa23a220103a3339e1d7bf65f9","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"number","label":"Number","order":0,"attributes":{},"value":"1","type":"int","defaultValue":"","typeLabel":null,"mandatory":true,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="add">50980bfa23a220103a3339e1d7bf6510</transform_definition_id>
+        <ui_id>6b222015-0e47-4b92-ab91-354b59838225</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=691c7a621b23e5508c5143f3cc4bcb1f^sys_idNOT IN5d8309ef1be3a1908c5143f3cc4bcbca,73d341231b27a1908c5143f3cc4bcbd1"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=b63f592b-0e11-47a8-9336-4a520366c60c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>item_variable_count</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Item Variable Count</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="PROF - Sync CDW Cart Items - S">691c7a621b23e5508c5143f3cc4bcb1f</model>
+        <model_id>691c7a621b23e5508c5143f3cc4bcb1f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_691c7a621b23e5508c5143f3cc4bcb1f</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:38:53</sys_created_on>
+        <sys_id>5d8309ef1be3a1908c5143f3cc4bcbca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Item Variable Count</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_5d8309ef1be3a1908c5143f3cc4bcbca</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:38:53</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=2dae9720-0aff-4708-b4df-d8faffde4f42</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>loop_count</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Loop Count</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="PROF - Sync CDW Cart Items - S">691c7a621b23e5508c5143f3cc4bcb1f</model>
+        <model_id>691c7a621b23e5508c5143f3cc4bcb1f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_691c7a621b23e5508c5143f3cc4bcb1f</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:40:25</sys_created_on>
+        <sys_id>73d341231b27a1908c5143f3cc4bcbd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Loop Count</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_73d341231b27a1908c5143f3cc4bcbd1</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:40:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_691c7a621b23e5508c5143f3cc4bcb1f^sys_idNOT IN603cfe621b23e5508c5143f3cc4bcb28,e43cfe621b23e5508c5143f3cc4bcb24"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_691c7a621b23e5508c5143f3cc4bcb1f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:52:12</sys_created_on>
+        <sys_id>603cfe621b23e5508c5143f3cc4bcb28</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-23 19:52:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_691c7a621b23e5508c5143f3cc4bcb1f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:52:12</sys_created_on>
+        <sys_id>e43cfe621b23e5508c5143f3cc4bcb24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-23 19:52:12</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_691c7a621b23e5508c5143f3cc4bcb1f"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_691c7a621b23e5508c5143f3cc4bcb1f"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_691c7a621b23e5508c5143f3cc4bcb1f"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=691c7a621b23e5508c5143f3cc4bcb1f^sys_idNOT IN342df6e21b23e5508c5143f3cc4bcb25"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"342df6e21b23e5508c5143f3cc4bcb25","name":"plan","plan_signature":null}}</plan>
+        <plan_id>691c7a621b23e5508c5143f3cc4bcb1f</plan_id>
+        <snapshot>e868812b1b27a1908c5143f3cc4bcbac</snapshot>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>342df6e21b23e5508c5143f3cc4bcb25</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:46:06</sys_updated_on>
+        <trigger display_value="">db25c1e31b27a1908c5143f3cc4bcbc2</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=691c7a621b23e5508c5143f3cc4bcb1f"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>prof__sync_cdw_cart_items__s</internal_name>
+        <label_cache>[{"name":"164defd4-87b5-4741-95e3-7368e3bc5e64.item.cat_item.vendor","label":"12 - For Each➛Item Record➛Item➛Vendor","reference":"core_company","reference_display":"Company","type":"reference","base_type":"reference","parent_table_name":"sc_cat_item","column_name":"vendor"},{"name":"flow_variable.loop_count","label":"Flow Variables➛Loop Count","reference":"","reference_display":"","type":"integer","base_type":"integer","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"2dae9720-0aff-4708-b4df-d8faffde4f42"}},{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛Item Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sc_cart_item","column_name":"sys_id"},{"name":"164defd4-87b5-4741-95e3-7368e3bc5e64.item.sys_id","label":"12 - For Each➛Item Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sc_cart_item","column_name":"sys_id"},{"name":"29c3b16c-780e-400e-9a1c-180da3731ba4.item","label":"3 - For Each➛Item Record","reference":"sc_cart_item","reference_display":"Item","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"7d579d16-d492-4fcf-abd3-738fed6dfb04.Records","label":"2 - Look Up Records➛Item Records","reference":"sc_cart_item","reference_display":"Item","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.cart","label":"Trigger - Record Created➛Item Record➛Cart","reference":"sc_cart","reference_display":"Shopping Cart","type":"reference","base_type":"reference","parent_table_name":"sc_cart_item","column_name":"cart"},{"name":"Created_1.current.cart.user.sys_id","label":"Trigger - Record Created➛Item Record➛Cart➛User➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sys_user","column_name":"sys_id"},{"name":"4bff5d1f-fdae-4c69-a5d4-5fab38ced8d7.Count","label":"4 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Item Record","reference":"sc_cart_item","reference_display":"Item","type":"reference","base_type":"reference","attributes":{}},{"name":"164defd4-87b5-4741-95e3-7368e3bc5e64.item","label":"12 - For Each➛Item Record","reference":"sc_cart_item","reference_display":"Item","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"flow_variable.item_variable_count","label":"Flow Variables➛Item Variable Count","reference":"","reference_display":"","type":"integer","base_type":"integer","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"b63f592b-0e11-47a8-9336-4a520366c60c"}},{"name":"20dad529-49e3-4a08-8e66-a0f28d56a952.Count","label":"9 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"164defd4-87b5-4741-95e3-7368e3bc5e64.item.cat_item.vendor.sys_id","label":"12 - For Each➛Item Record➛Item➛Vendor➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"core_company","column_name":"sys_id"},{"name":"164defd4-87b5-4741-95e3-7368e3bc5e64.item.cat_item.vendor.name","label":"12 - For Each➛Item Record➛Item➛Vendor➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"core_company","column_name":"name"}]</label_cache>
+        <master>true</master>
+        <name>PROF - Sync CDW Cart Items - S</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="PROF - Sync CDW Cart Items - S">691c7a621b23e5508c5143f3cc4bcb1f</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dc2d76e21b23e5508c5143f3cc4bcbd3</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:46:03</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=dc2d76e21b23e5508c5143f3cc4bcbd3"/>
+    <sys_variable_value action="delete_multiple" query="document_key=dc2d76e21b23e5508c5143f3cc4bcbd3"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=dc2d76e21b23e5508c5143f3cc4bcbd3^sys_idNOT INa42db6e21b23e5508c5143f3cc4bcbbe"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="PROF - Sync CDW Cart Items - S">dc2d76e21b23e5508c5143f3cc4bcbd3</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:17</sys_created_on>
+        <sys_id>a42db6e21b23e5508c5143f3cc4bcbbe</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:46:06</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a42db6e21b23e5508c5143f3cc4bcbbe"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>a42db6e21b23e5508c5143f3cc4bcbbe</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:17</sys_created_on>
+        <sys_id>a02db6e21b23e5508c5143f3cc4bcbc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-23 19:56:17</sys_updated_on>
+        <value>sc_cart_item</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>a42db6e21b23e5508c5143f3cc4bcbbe</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:17</sys_created_on>
+        <sys_id>ec2db6e21b23e5508c5143f3cc4bcbbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-23 19:56:17</sys_updated_on>
+        <value>cat_item.vendor=5bcd40401b2a6d508c5143f3cc4bcbb0</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=dc2d76e21b23e5508c5143f3cc4bcbd3"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=dc2d76e21b23e5508c5143f3cc4bcbd3^sys_idNOT IN142d76e21b23e5508c5143f3cc4bcbd5"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>dc2d76e21b23e5508c5143f3cc4bcbd3</id>
+        <name>PROF - Sync CDW Cart Items - S</name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:16</sys_created_on>
+        <sys_id>142d76e21b23e5508c5143f3cc4bcbd5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-23 19:56:16</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=142d76e21b23e5508c5143f3cc4bcbd5"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=dc2d76e21b23e5508c5143f3cc4bcbd3^sys_idNOT IN142db6e21b23e5508c5143f3cc4bcb79,582d76e21b23e5508c5143f3cc4bcbd6"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="PROF - Sync CDW Cart Items - S">dc2d76e21b23e5508c5143f3cc4bcbd3</model>
+        <model_id>dc2d76e21b23e5508c5143f3cc4bcbd3</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_dc2d76e21b23e5508c5143f3cc4bcbd3</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:16</sys_created_on>
+        <sys_id>142db6e21b23e5508c5143f3cc4bcb79</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:46:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="PROF - Sync CDW Cart Items - S">dc2d76e21b23e5508c5143f3cc4bcbd3</model>
+        <model_id>dc2d76e21b23e5508c5143f3cc4bcbd3</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_dc2d76e21b23e5508c5143f3cc4bcbd3</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:16</sys_created_on>
+        <sys_id>582d76e21b23e5508c5143f3cc4bcbd6</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:46:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=dc2d76e21b23e5508c5143f3cc4bcbd3"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=dc2d76e21b23e5508c5143f3cc4bcbd3"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=dc2d76e21b23e5508c5143f3cc4bcbd3^sys_idNOT IN282db6e21b23e5508c5143f3cc4bcbbc,2c2db6e21b23e5508c5143f3cc4bcbb4,b8f3c5231b27a1908c5143f3cc4bcbf4,c272cd6f1be3a1908c5143f3cc4bcb98,e42db6e21b23e5508c5143f3cc4bcbaa"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment>Look up cart item variables</comment>
+        <display_text/>
+        <flow display_value="PROF - Sync CDW Cart Items - S">dc2d76e21b23e5508c5143f3cc4bcbd3</flow>
+        <order>4</order>
+        <parent_ui_id>29c3b16c-780e-400e-9a1c-180da3731ba4</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:17</sys_created_on>
+        <sys_id>282db6e21b23e5508c5143f3cc4bcbbc</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:46:01</sys_updated_on>
+        <ui_id>4bff5d1f-fdae-4c69-a5d4-5fab38ced8d7</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=282db6e21b23e5508c5143f3cc4bcbbc"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>282db6e21b23e5508c5143f3cc4bcbbc</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:17</sys_created_on>
+        <sys_id>a02db6e21b23e5508c5143f3cc4bcbbe</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:34:17</sys_updated_on>
+        <value>sc_item_option</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=282db6e21b23e5508c5143f3cc4bcbbc"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>282db6e21b23e5508c5143f3cc4bcbbc</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:17</sys_created_on>
+        <sys_id>6c2db6e21b23e5508c5143f3cc4bcbbd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:34:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>cart_item={{29c3b16c-780e-400e-9a1c-180da3731ba4.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>282db6e21b23e5508c5143f3cc4bcbbc</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:17</sys_created_on>
+        <sys_id>202db6e21b23e5508c5143f3cc4bcbbe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-23 19:56:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=282db6e21b23e5508c5143f3cc4bcbbc"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=282db6e21b23e5508c5143f3cc4bcbbc"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment>Look up CDW items in cart</comment>
+        <display_text/>
+        <flow display_value="PROF - Sync CDW Cart Items - S">dc2d76e21b23e5508c5143f3cc4bcbd3</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:17</sys_created_on>
+        <sys_id>2c2db6e21b23e5508c5143f3cc4bcbb4</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:46:01</sys_updated_on>
+        <ui_id>7d579d16-d492-4fcf-abd3-738fed6dfb04</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2c2db6e21b23e5508c5143f3cc4bcbb4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2c2db6e21b23e5508c5143f3cc4bcbb4</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:17</sys_created_on>
+        <sys_id>a42db6e21b23e5508c5143f3cc4bcbb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-23 19:56:17</sys_updated_on>
+        <value>sc_cart_item</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2c2db6e21b23e5508c5143f3cc4bcbb4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>2c2db6e21b23e5508c5143f3cc4bcbb4</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:17</sys_created_on>
+        <sys_id>602db6e21b23e5508c5143f3cc4bcbb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-23 19:56:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>cart={{Created_1.current.cart}}^cat_item.vendor=5bcd40401b2a6d508c5143f3cc4bcbb0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>2c2db6e21b23e5508c5143f3cc4bcbb4</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:17</sys_created_on>
+        <sys_id>242db6e21b23e5508c5143f3cc4bcbb6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-23 19:56:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2c2db6e21b23e5508c5143f3cc4bcbb4"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2c2db6e21b23e5508c5143f3cc4bcbb4"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment>Look up cart item variables</comment>
+        <display_text/>
+        <flow display_value="PROF - Sync CDW Cart Items - S">dc2d76e21b23e5508c5143f3cc4bcbd3</flow>
+        <order>9</order>
+        <parent_ui_id>5020e38b-4046-43fd-ac26-4cc4988e318b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:40:45</sys_created_on>
+        <sys_id>b8f3c5231b27a1908c5143f3cc4bcbf4</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:46:02</sys_updated_on>
+        <ui_id>20dad529-49e3-4a08-8e66-a0f28d56a952</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b8f3c5231b27a1908c5143f3cc4bcbf4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b8f3c5231b27a1908c5143f3cc4bcbf4</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:40:45</sys_created_on>
+        <sys_id>7cf3c5231b27a1908c5143f3cc4bcbf6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:40:45</sys_updated_on>
+        <value>sc_item_option</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b8f3c5231b27a1908c5143f3cc4bcbf4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>b8f3c5231b27a1908c5143f3cc4bcbf4</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:40:45</sys_created_on>
+        <sys_id>38f3c5231b27a1908c5143f3cc4bcbf6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:40:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>cart_item={{29c3b16c-780e-400e-9a1c-180da3731ba4.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>b8f3c5231b27a1908c5143f3cc4bcbf4</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:40:45</sys_created_on>
+        <sys_id>f8f3c5231b27a1908c5143f3cc4bcbf6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:40:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b8f3c5231b27a1908c5143f3cc4bcbf4"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b8f3c5231b27a1908c5143f3cc4bcbf4"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Copy Variables to Cart Item">6f1189eb1be3a1908c5143f3cc4bcbda</action_type>
+        <action_type_parent display_value="Copy Variables to Cart Item">99af306b1be3a1908c5143f3cc4bcb00</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="PROF - Sync CDW Cart Items - S">dc2d76e21b23e5508c5143f3cc4bcbd3</flow>
+        <order>14</order>
+        <parent_ui_id>4529df0d-533a-4c47-8b2d-f2b51127ebb3</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:34:17</sys_created_on>
+        <sys_id>c272cd6f1be3a1908c5143f3cc4bcb98</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:46:03</sys_updated_on>
+        <ui_id>4c3e85fe-65c7-4995-ba70-06967d50eaec</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c272cd6f1be3a1908c5143f3cc4bcb98"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c272cd6f1be3a1908c5143f3cc4bcb98</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:34:17</sys_created_on>
+        <sys_id>8e72cd6f1be3a1908c5143f3cc4bcb99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:34:17</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FD631189eb94e3a190fe6740f1a2a49ede":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD631189eb94e3a190fe6740f1a2a49ede.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Variables to Copy\",\"mandatory\":\"true\",\"child_name\":\"Variables_to_Copy0\",\"uiUniqueId\":\"2341b6e0-e343-47f4-9f81-b77c34072344\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FD631189eb94e3a190fe6740f1a2a49ede\",\"child_label\":\"Variables to Copy0\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.string\",\"mapped\":\"{}\",\"child_type\":\"string\",\"order\":\"2\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"7aeb2415-550b-48e1-b244-ff94d948101a\"}"}},"serializationFormat":"JSON","complexObject":{"name$":"FD631189eb94e3a190fe6740f1a2a49ede","$COCollectionField":["location","phone_number","address_2","chargeback_and_configuration","company","city","address_1","state","zip_code","location_incorrect_or_not_found","requested_for"]}}</value>
+        <variable display_value="Variables to Copy">271189eb1be3a1908c5143f3cc4bcbf9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c272cd6f1be3a1908c5143f3cc4bcb98"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_cart_item</field>
+        <id>c272cd6f1be3a1908c5143f3cc4bcb98</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:34:17</sys_created_on>
+        <sys_id>0e72cd6f1be3a1908c5143f3cc4bcb99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:34:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6f1189eb1be3a1908c5143f3cc4bcbda</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_cart_item</field>
+        <id>c272cd6f1be3a1908c5143f3cc4bcb98</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:34:17</sys_created_on>
+        <sys_id>8672cd6f1be3a1908c5143f3cc4bcb99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:34:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6f1189eb1be3a1908c5143f3cc4bcbda</table>
+        <value>{{164defd4-87b5-4741-95e3-7368e3bc5e64.item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>Variables_to_Copy</field>
+        <id>c272cd6f1be3a1908c5143f3cc4bcb98</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:34:17</sys_created_on>
+        <sys_id>4a72cd6f1be3a1908c5143f3cc4bcb99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:34:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_6f1189eb1be3a1908c5143f3cc4bcbda</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c272cd6f1be3a1908c5143f3cc4bcb98"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c272cd6f1be3a1908c5143f3cc4bcb98"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <comment>Look up cart User</comment>
+        <display_text/>
+        <flow display_value="PROF - Sync CDW Cart Items - S">dc2d76e21b23e5508c5143f3cc4bcbd3</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:17</sys_created_on>
+        <sys_id>e42db6e21b23e5508c5143f3cc4bcbaa</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:46:01</sys_updated_on>
+        <ui_id>f0469747-0181-43a1-8261-58ef6bd5ef10</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e42db6e21b23e5508c5143f3cc4bcbaa"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e42db6e21b23e5508c5143f3cc4bcbaa</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:17</sys_created_on>
+        <sys_id>e42db6e21b23e5508c5143f3cc4bcbac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-23 19:56:17</sys_updated_on>
+        <value>sys_user</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e42db6e21b23e5508c5143f3cc4bcbaa"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>e42db6e21b23e5508c5143f3cc4bcbaa</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:17</sys_created_on>
+        <sys_id>a02db6e21b23e5508c5143f3cc4bcbac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-23 19:56:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>sys_id={{Created_1.current.cart.user.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>e42db6e21b23e5508c5143f3cc4bcbaa</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:17</sys_created_on>
+        <sys_id>642db6e21b23e5508c5143f3cc4bcbac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-23 19:56:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e42db6e21b23e5508c5143f3cc4bcbaa"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e42db6e21b23e5508c5143f3cc4bcbaa"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=dc2d76e21b23e5508c5143f3cc4bcbd3"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=dc2d76e21b23e5508c5143f3cc4bcbd3^sys_idNOT IN1624c1631b27a1908c5143f3cc4bcb4d,38f309231b27a1908c5143f3cc4bcb17,4672cd6f1be3a1908c5143f3cc4bcba0,4e72cd6f1be3a1908c5143f3cc4bcba4,5c2db6e21b23e5508c5143f3cc4bcb9d,bcf309231b27a1908c5143f3cc4bcb0b,c9f309231b27a1908c5143f3cc4bcb1b,c9f309231b27a1908c5143f3cc4bcb2f"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">a42441631b27a1908c5143f3cc4bcb28</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="PROF - Sync CDW Cart Items - S">dc2d76e21b23e5508c5143f3cc4bcbd3</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>13</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>164defd4-87b5-4741-95e3-7368e3bc5e64</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:41:40</sys_created_on>
+        <sys_id>1624c1631b27a1908c5143f3cc4bcb4d</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:46:02</sys_updated_on>
+        <ui_id>4529df0d-533a-4c47-8b2d-f2b51127ebb3</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=1624c1631b27a1908c5143f3cc4bcb4d"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_dc2d76e21b23e5508c5143f3cc4bcbd3^id=1624c1631b27a1908c5143f3cc4bcb4d"/>
+    <sys_element_mapping action="delete_multiple" query="id=1624c1631b27a1908c5143f3cc4bcb4d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>1624c1631b27a1908c5143f3cc4bcb4d</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:41:40</sys_created_on>
+        <sys_id>5224c1631b27a1908c5143f3cc4bcb50</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:46:01</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{164defd4-87b5-4741-95e3-7368e3bc5e64.item.cat_item.vendor.name}}=CDW</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=1624c1631b27a1908c5143f3cc4bcb4d"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1624c1631b27a1908c5143f3cc4bcb4d"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">2d8309ef1be3a1908c5143f3cc4bcbe6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="PROF - Sync CDW Cart Items - S">dc2d76e21b23e5508c5143f3cc4bcbd3</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>ebadb031-208e-4f8f-a500-34a9acc84b00</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:40:46</sys_created_on>
+        <sys_id>38f309231b27a1908c5143f3cc4bcb17</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:46:02</sys_updated_on>
+        <ui_id>5020e38b-4046-43fd-ac26-4cc4988e318b</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=38f309231b27a1908c5143f3cc4bcb17"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_dc2d76e21b23e5508c5143f3cc4bcbd3^id=38f309231b27a1908c5143f3cc4bcb17"/>
+    <sys_element_mapping action="delete_multiple" query="id=38f309231b27a1908c5143f3cc4bcb17"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>38f309231b27a1908c5143f3cc4bcb17</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:40:46</sys_created_on>
+        <sys_id>cdf309231b27a1908c5143f3cc4bcb1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:40:46</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_eaeb040687210300e6c2c88fc0e3ec89</table>
+        <value>{{flow_variable.item_variable_count}}&gt;0^NQ{{flow_variable.loop_count}}&gt;=10</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=38f309231b27a1908c5143f3cc4bcb17"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=38f309231b27a1908c5143f3cc4bcb17"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">9bedba261b23e5508c5143f3cc4bcbf8</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="PROF - Sync CDW Cart Items - S">dc2d76e21b23e5508c5143f3cc4bcbd3</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>29c3b16c-780e-400e-9a1c-180da3731ba4</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:34:17</sys_created_on>
+        <sys_id>4672cd6f1be3a1908c5143f3cc4bcba0</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:46:02</sys_updated_on>
+        <ui_id>ebadb031-208e-4f8f-a500-34a9acc84b00</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=4672cd6f1be3a1908c5143f3cc4bcba0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>4672cd6f1be3a1908c5143f3cc4bcba0</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:34:17</sys_created_on>
+        <sys_id>0272cd6f1be3a1908c5143f3cc4bcba4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:34:17</sys_updated_on>
+        <value>no variables exist</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_dc2d76e21b23e5508c5143f3cc4bcbd3^id=4672cd6f1be3a1908c5143f3cc4bcba0"/>
+    <sys_element_mapping action="delete_multiple" query="id=4672cd6f1be3a1908c5143f3cc4bcba0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>4672cd6f1be3a1908c5143f3cc4bcba0</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:34:17</sys_created_on>
+        <sys_id>8e72cd6f1be3a1908c5143f3cc4bcba3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:40:46</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{flow_variable.item_variable_count}}=0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>4672cd6f1be3a1908c5143f3cc4bcba0</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:34:17</sys_created_on>
+        <sys_id>ca72cd6f1be3a1908c5143f3cc4bcba3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:34:17</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=4672cd6f1be3a1908c5143f3cc4bcba0"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4672cd6f1be3a1908c5143f3cc4bcba0"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">5fedba261b23e5508c5143f3cc4bcbfd</block>
+        <comment>For each cart item, copy variables from current item</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="PROF - Sync CDW Cart Items - S">dc2d76e21b23e5508c5143f3cc4bcbd3</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>12</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:34:17</sys_created_on>
+        <sys_id>4e72cd6f1be3a1908c5143f3cc4bcba4</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:46:02</sys_updated_on>
+        <ui_id>164defd4-87b5-4741-95e3-7368e3bc5e64</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=4e72cd6f1be3a1908c5143f3cc4bcba4"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_dc2d76e21b23e5508c5143f3cc4bcbd3^id=4e72cd6f1be3a1908c5143f3cc4bcba4"/>
+    <sys_element_mapping action="delete_multiple" query="id=4e72cd6f1be3a1908c5143f3cc4bcba4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>4e72cd6f1be3a1908c5143f3cc4bcba4</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:34:17</sys_created_on>
+        <sys_id>c672cd6f1be3a1908c5143f3cc4bcba7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:34:17</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{7d579d16-d492-4fcf-abd3-738fed6dfb04.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=4e72cd6f1be3a1908c5143f3cc4bcba4"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4e72cd6f1be3a1908c5143f3cc4bcba4"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">3f1d76e21b23e5508c5143f3cc4bcb38</block>
+        <comment>For each cart item, make sure variable exist</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="PROF - Sync CDW Cart Items - S">dc2d76e21b23e5508c5143f3cc4bcbd3</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:17</sys_created_on>
+        <sys_id>5c2db6e21b23e5508c5143f3cc4bcb9d</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:46:01</sys_updated_on>
+        <ui_id>29c3b16c-780e-400e-9a1c-180da3731ba4</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=5c2db6e21b23e5508c5143f3cc4bcb9d"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_dc2d76e21b23e5508c5143f3cc4bcbd3^id=5c2db6e21b23e5508c5143f3cc4bcb9d"/>
+    <sys_element_mapping action="delete_multiple" query="id=5c2db6e21b23e5508c5143f3cc4bcb9d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>5c2db6e21b23e5508c5143f3cc4bcb9d</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:17</sys_created_on>
+        <sys_id>5c2db6e21b23e5508c5143f3cc4bcba0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-23 19:56:17</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{7d579d16-d492-4fcf-abd3-738fed6dfb04.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=5c2db6e21b23e5508c5143f3cc4bcb9d"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5c2db6e21b23e5508c5143f3cc4bcb9d"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">d18309ef1be3a1908c5143f3cc4bcbdb</block>
+        <comment>Set variable count</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="PROF - Sync CDW Cart Items - S">dc2d76e21b23e5508c5143f3cc4bcbd3</flow>
+        <flow_variable/>
+        <flow_variable/>
+        <flow_variables_assigned>item_variable_count,loop_count</flow_variables_assigned>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>29c3b16c-780e-400e-9a1c-180da3731ba4</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:40:45</sys_created_on>
+        <sys_id>bcf309231b27a1908c5143f3cc4bcb0b</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:46:02</sys_updated_on>
+        <ui_id>4a358642-7ea7-41a0-81c0-5d99d4e13cf2</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=bcf309231b27a1908c5143f3cc4bcb0b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>bcf309231b27a1908c5143f3cc4bcb0b</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:40:45</sys_created_on>
+        <sys_id>34f309231b27a1908c5143f3cc4bcb0f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:40:45</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Loop Count">e4f3c5231b27a1908c5143f3cc4bcbc4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>bcf309231b27a1908c5143f3cc4bcb0b</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:40:45</sys_created_on>
+        <sys_id>f4f309231b27a1908c5143f3cc4bcb0f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:40:45</sys_updated_on>
+        <value/>
+        <variable display_value="Item Variable Count">6cf3c5231b27a1908c5143f3cc4bcbc0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=bcf309231b27a1908c5143f3cc4bcb0b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>item_variable_count</field>
+        <id>bcf309231b27a1908c5143f3cc4bcb0b</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:40:45</sys_created_on>
+        <sys_id>fcf309231b27a1908c5143f3cc4bcb0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:40:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_variable_dc2d76e21b23e5508c5143f3cc4bcbd3</table>
+        <value>{{4bff5d1f-fdae-4c69-a5d4-5fab38ced8d7.Count}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>loop_count</field>
+        <id>bcf309231b27a1908c5143f3cc4bcb0b</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:40:45</sys_created_on>
+        <sys_id>b0f309231b27a1908c5143f3cc4bcb0f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:40:45</sys_updated_on>
+        <table>var__m_sys_hub_flow_variable_dc2d76e21b23e5508c5143f3cc4bcbd3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=bcf309231b27a1908c5143f3cc4bcb0b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=bcf309231b27a1908c5143f3cc4bcb0b"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">218309ef1be3a1908c5143f3cc4bcbf7</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="PROF - Sync CDW Cart Items - S">dc2d76e21b23e5508c5143f3cc4bcbd3</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>5020e38b-4046-43fd-ac26-4cc4988e318b</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:40:46</sys_created_on>
+        <sys_id>c9f309231b27a1908c5143f3cc4bcb1b</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:46:02</sys_updated_on>
+        <ui_id>88122314-75c7-400f-8b20-77857d1fbbf6</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c9f309231b27a1908c5143f3cc4bcb1b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>c9f309231b27a1908c5143f3cc4bcb1b</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:40:46</sys_created_on>
+        <sys_id>8df309231b27a1908c5143f3cc4bcb2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:40:46</sys_updated_on>
+        <value>1970-01-01 00:00:03</value>
+        <variable display_value="Duration">ef145c1473031300b61e66476bf6a7be</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>c9f309231b27a1908c5143f3cc4bcb1b</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:40:46</sys_created_on>
+        <sys_id>c9f309231b27a1908c5143f3cc4bcb2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:40:46</sys_updated_on>
+        <value/>
+        <variable display_value="Timer relative duration operator">dca4105473031300b61e66476bf6a726</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_dc2d76e21b23e5508c5143f3cc4bcbd3^id=c9f309231b27a1908c5143f3cc4bcb1b"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_logic_input_fdb2541473031300b61e66476bf6a70e^id=c9f309231b27a1908c5143f3cc4bcb1b"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=c9f309231b27a1908c5143f3cc4bcb1b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c9f309231b27a1908c5143f3cc4bcb1b"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">258349ef1be3a1908c5143f3cc4bcb06</block>
+        <comment>Set Variable Count</comment>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="PROF - Sync CDW Cart Items - S">dc2d76e21b23e5508c5143f3cc4bcbd3</flow>
+        <flow_variable/>
+        <flow_variable/>
+        <flow_variables_assigned>item_variable_count,loop_count</flow_variables_assigned>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>5020e38b-4046-43fd-ac26-4cc4988e318b</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:40:46</sys_created_on>
+        <sys_id>c9f309231b27a1908c5143f3cc4bcb2f</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:46:02</sys_updated_on>
+        <ui_id>5a8f9b30-bf33-4cc2-b273-8a469d892dce</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c9f309231b27a1908c5143f3cc4bcb2f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>c9f309231b27a1908c5143f3cc4bcb2f</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:40:46</sys_created_on>
+        <sys_id>0df309231b27a1908c5143f3cc4bcb32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:40:46</sys_updated_on>
+        <value/>
+        <variable display_value="Item Variable Count">6cf3c5231b27a1908c5143f3cc4bcbc0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>c9f309231b27a1908c5143f3cc4bcb2f</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:40:46</sys_created_on>
+        <sys_id>49f309231b27a1908c5143f3cc4bcb32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:40:46</sys_updated_on>
+        <value/>
+        <variable display_value="Loop Count">e4f3c5231b27a1908c5143f3cc4bcbc4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c9f309231b27a1908c5143f3cc4bcb2f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>item_variable_count</field>
+        <id>c9f309231b27a1908c5143f3cc4bcb2f</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:40:46</sys_created_on>
+        <sys_id>05f309231b27a1908c5143f3cc4bcb32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:40:46</sys_updated_on>
+        <table>var__m_sys_hub_flow_variable_dc2d76e21b23e5508c5143f3cc4bcbd3</table>
+        <value>{{20dad529-49e3-4a08-8e66-a0f28d56a952.Count}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>loop_count</field>
+        <id>c9f309231b27a1908c5143f3cc4bcb2f</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:40:46</sys_created_on>
+        <sys_id>c5f309231b27a1908c5143f3cc4bcb32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:40:46</sys_updated_on>
+        <table>var__m_sys_hub_flow_variable_dc2d76e21b23e5508c5143f3cc4bcbd3</table>
+        <value>{{fd_transform:79865ead-1491-4a0c-91ed-4583f0e9afe8}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=c9f309231b27a1908c5143f3cc4bcb2f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c9f309231b27a1908c5143f3cc4bcb2f"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=dc2d76e21b23e5508c5143f3cc4bcbd3^sys_idNOT IN6df309231b27a1908c5143f3cc4bcbca,a9f309231b27a1908c5143f3cc4bcbca"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>dc2d76e21b23e5508c5143f3cc4bcbd3</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>79865ead-1491-4a0c-91ed-4583f0e9afe8</source_ui_id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:40:48</sys_created_on>
+        <sys_id>6df309231b27a1908c5143f3cc4bcbca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:40:48</sys_updated_on>
+        <transform_compositions>[{"id":"06190ffa23a220103a3339e1d7bf65f9","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"number","label":"Number","order":0,"attributes":{},"value":"1","type":"int","defaultValue":"","typeLabel":null,"mandatory":true,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="add">50980bfa23a220103a3339e1d7bf6510</transform_definition_id>
+        <ui_id>6b222015-0e47-4b92-ab91-354b59838225</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>dc2d76e21b23e5508c5143f3cc4bcbd3</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{flow_variable.loop_count}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:40:48</sys_created_on>
+        <sys_id>a9f309231b27a1908c5143f3cc4bcbca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:40:48</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>79865ead-1491-4a0c-91ed-4583f0e9afe8</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=dc2d76e21b23e5508c5143f3cc4bcbd3^sys_idNOT IN6cf3c5231b27a1908c5143f3cc4bcbc0,e4f3c5231b27a1908c5143f3cc4bcbc4"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=b63f592b-0e11-47a8-9336-4a520366c60c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>item_variable_count</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Item Variable Count</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="PROF - Sync CDW Cart Items - S">dc2d76e21b23e5508c5143f3cc4bcbd3</model>
+        <model_id>dc2d76e21b23e5508c5143f3cc4bcbd3</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_dc2d76e21b23e5508c5143f3cc4bcbd3</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:40:44</sys_created_on>
+        <sys_id>6cf3c5231b27a1908c5143f3cc4bcbc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Item Variable Count</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_6cf3c5231b27a1908c5143f3cc4bcbc0</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:40:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=2dae9720-0aff-4708-b4df-d8faffde4f42</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>loop_count</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Loop Count</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="PROF - Sync CDW Cart Items - S">dc2d76e21b23e5508c5143f3cc4bcbd3</model>
+        <model_id>dc2d76e21b23e5508c5143f3cc4bcbd3</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_dc2d76e21b23e5508c5143f3cc4bcbd3</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:40:44</sys_created_on>
+        <sys_id>e4f3c5231b27a1908c5143f3cc4bcbc4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Loop Count</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_e4f3c5231b27a1908c5143f3cc4bcbc4</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:40:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_dc2d76e21b23e5508c5143f3cc4bcbd3^sys_idNOT IN982db6e21b23e5508c5143f3cc4bcb7d,d82db6e21b23e5508c5143f3cc4bcb75"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_dc2d76e21b23e5508c5143f3cc4bcbd3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:16</sys_created_on>
+        <sys_id>982db6e21b23e5508c5143f3cc4bcb7d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-23 19:56:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_dc2d76e21b23e5508c5143f3cc4bcbd3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:56:16</sys_created_on>
+        <sys_id>d82db6e21b23e5508c5143f3cc4bcb75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-23 19:56:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_dc2d76e21b23e5508c5143f3cc4bcbd3"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_dc2d76e21b23e5508c5143f3cc4bcbd3"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_dc2d76e21b23e5508c5143f3cc4bcbd3"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>691c7a621b23e5508c5143f3cc4bcb1f</sys_id>
+        <latest_snapshot>dc2d76e21b23e5508c5143f3cc4bcbd3</latest_snapshot>
+        <compiler_build>glide-tokyo-07-08-2022__patch9-05-10-2023_05-25-2023_0925.zip</compiler_build>
+    </sys_hub_flow>
+</record_update>

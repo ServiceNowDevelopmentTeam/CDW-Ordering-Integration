@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD4600056ba4e3a190f5d2fe446fbc06e9</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>4630a8861ba9851062e50ed2cd4bcb61</scope_name>
+        <serialized_content>{"FlowDesigner:FD4600056ba4e3a190f5d2fe446fbc06e9":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD4600056ba4e3a190f5d2fe446fbc06e9.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Ignore Variables\",\"mandatory\":\"false\",\"child_name\":\"ignore_variables_child0\",\"uiUniqueId\":\"049e5c43-e0d8-4ba4-aa2e-43878a9b0d5f\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FD4600056ba4e3a190f5d2fe446fbc06e9\",\"child_label\":\"Ignore Variables_child0\",\"child_type_label\":\"String\",\"read_only\":\"false\",\"hint\":\"Variable Names\",\"uiType\":\"array.string\",\"child_type\":\"string\",\"order\":\"3\",\"max_length\":\"0\",\"child_uiUniqueId\":\"383988e9-6614-498c-a8c0-6ecbfdb3713c\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:23:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0a00056b1be3a1908c5143f3cc4bcbe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD4600056ba4e3a190f5d2fe446fbc06e9</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sys_complex_object_0a00056b1be3a1908c5143f3cc4bcbe9</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:23:38</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD5340096b46e3a190d29d39b017285e99</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>4630a8861ba9851062e50ed2cd4bcb61</scope_name>
+        <serialized_content>{"FlowDesigner:FD5340096b46e3a190d29d39b017285e99":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD5340096b46e3a190d29d39b017285e99.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Variables to Copy\",\"mandatory\":\"true\",\"child_name\":\"Variables_to_Copy0\",\"uiUniqueId\":\"2341b6e0-e343-47f4-9f81-b77c34072344\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FD5340096b46e3a190d29d39b017285e99\",\"child_label\":\"Variables to Copy0\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"2\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"7aeb2415-550b-48e1-b244-ff94d948101a\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-26 13:24:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1740096b1be3a1908c5143f3cc4bcb99</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>FD5340096b46e3a190d29d39b017285e99</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sys_complex_object_1740096b1be3a1908c5143f3cc4bcb99</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-26 13:30:07</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

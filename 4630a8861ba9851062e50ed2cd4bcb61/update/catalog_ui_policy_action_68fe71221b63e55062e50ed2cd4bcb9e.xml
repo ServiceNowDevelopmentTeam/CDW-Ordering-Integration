@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item/>
+        <catalog_variable>IO:c38b5c081b6a6d508c5143f3cc4bcbe2</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 15:24:40</sys_created_on>
+        <sys_id>68fe71221b63e55062e50ed2cd4bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>enabled</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_68fe71221b63e55062e50ed2cd4bcb9e</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-23 15:24:40</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Show enabled checkbox">afce79ae1b23e55062e50ed2cd4bcbe5</ui_policy>
+        <variable>enabled</variable>
+        <variable_set display_value="Delivery Information">7eadc3b71b926d508c5143f3cc4bcb57</variable_set>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

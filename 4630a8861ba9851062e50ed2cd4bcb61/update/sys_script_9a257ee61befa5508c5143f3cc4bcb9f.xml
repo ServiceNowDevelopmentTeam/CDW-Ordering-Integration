@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>sc_cart_item</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="sc_cart_item">cat_item.vendor=5bcd40401b2a6d508c5143f3cc4bcbb0^EQ<item display_table="core_company" display_value="CDW" endquery="false" field="cat_item.vendor" goto="false" newquery="false" operator="=" or="false" value="5bcd40401b2a6d508c5143f3cc4bcbb0"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>CDW Cart Item Variable Sync</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+    // current: The current item being added to the cart
+
+    var requiredVariables = ['location', 'phone_number', 'address_2', 'chargeback_and_configuration', 'company', 'city', 'address_1', 'state', 'zip_code', 'location_incorrect_or_not_found', 'requested_for'];
+
+    var CartItemVariables = new global.CartItemVariables();
+    var cartItemsWithVariables = CartItemVariables.getVariablesForUserCart(gs.getUserID());
+	gs.info(gs.getUserID());
+	gs.info(JSON.stringify(cartItemsWithVariables));
+    cartItemsWithVariables.forEach(function(item) {
+        // Skip the current item
+        if (item.sys_id == current.sys_id.toString()) return;
+
+        // Iterate over all required variables
+        requiredVariables.forEach(function(variable) {
+            // Skip 'enabled' variable
+            if (variable === 'enabled') return;
+
+            // Find variable in item's variables
+            var itemVariable = item.variables.find(function(v) {
+                return v.name === variable;
+            });
+
+            // If the current item has this variable and it's different than the current value, update it
+            if (current.variables[variable] && itemVariable && current.variables[variable] !== itemVariable.value) {
+                // Update variable value in item's variables
+                itemVariable.value = current.variables[variable];
+            }
+        });
+    });
+
+    // Now update cart items with new variable values
+    cartItemsWithVariables.forEach(function(item) {
+        var cartItem = new GlideRecord('sc_cart_item');
+        if (cartItem.get(item.sys_id)) {
+            // Update cart item variables
+            item.variables.forEach(function(variable) {
+                if (cartItem.variables[variable.name] && cartItem.variables[variable.name] !== variable.value) {
+                    cartItem.variables[variable.name] = variable.value;
+                }
+            });
+            // Update cart item
+            cartItem.update();
+        }
+    });
+
+})(current, previous);
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-23 19:22:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9a257ee61befa5508c5143f3cc4bcb9f</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>CDW Cart Item Variable Sync</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sys_script_9a257ee61befa5508c5143f3cc4bcb9f</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-23 19:53:22</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=9a257ee61befa5508c5143f3cc4bcb9f"/>
+</record_update>
