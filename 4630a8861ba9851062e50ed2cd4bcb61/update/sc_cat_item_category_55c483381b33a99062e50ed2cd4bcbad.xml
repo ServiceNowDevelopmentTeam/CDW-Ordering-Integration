@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Lenovo ThinkPad X12 Tablet">9dc483381b33a99062e50ed2cd4bcba6</sc_cat_item>
+        <sc_category display_value="Standard Office Laptops">758ea4dc1b9230108c5143f3cc4bcba1</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-30 20:15:58</sys_created_on>
+        <sys_id>55c483381b33a99062e50ed2cd4bcbad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Standard Office Laptops.Lenovo ThinkPad X12 Tablet</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sc_cat_item_category_55c483381b33a99062e50ed2cd4bcbad</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-30 20:15:58</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>

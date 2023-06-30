@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="3b0502b01bbb699062e50ed2cd4bcbe8" extends="sys_import_set_row" label="Hardware Products(CDW)" max_length="40" name="u_hardware_products_cdw_" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Access Type" label="Access Type" max_length="40" name="u_access_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Active" label="Active" max_length="40" name="u_active" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Application" label="Application" max_length="40" name="u_application" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Approvals Are Conditional" label="Approvals Are Conditional" max_length="40" name="u_approvals_are_conditional" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Approvals Require Multiple Approvers" label="Approvals Require Multiple Approvers" max_length="40" name="u_approvals_re_iple_approvers" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Approval Condition" label="Approval Condition" max_length="40" name="u_approval_condition" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Associated template" label="Associated template" max_length="40" name="u_associated_template" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Availability" label="Availability" max_length="40" name="u_availability" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Billable" label="Billable" max_length="40" name="u_billable" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Cart" label="Cart" max_length="40" name="u_cart" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Catalogs" label="Catalogs" max_length="40" name="u_catalogs" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Category" label="Category" max_length="40" name="u_category" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=CDW Item" label="CDW Item" max_length="40" name="u_cdw_item" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=CDW Item Number" label="CDW Item Number" max_length="40" name="u_cdw_item_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Checked out" label="Checked out" max_length="40" name="u_checked_out" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Class" label="Class" max_length="40" name="u_class" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Classic Mobile Picture" label="Classic Mobile Picture" max_length="40" name="u_classic_mobile_picture" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Classic Mobile Picture Type" label="Classic Mobile Picture Type" max_length="40" name="u_classic_mobile_picture_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Completed Additional Info" label="Completed Additional Info" max_length="40" name="u_completed_additional_info" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Completed Info" label="Completed Info" max_length="40" name="u_completed_info" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Completed Subject" label="Completed Subject" max_length="40" name="u_completed_subject" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Contains Approvals" label="Contains Approvals" max_length="40" name="u_contains_approvals" type="string"/>
+        <element attributes="import_attribute_name=Cost" label="Cost" max_length="40" name="u_cost" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Created" label="Created" max_length="40" name="u_created" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Created by" label="Created by" max_length="40" name="u_created_by" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Created from item design" label="Created from item design" max_length="40" name="u_created_from_item_design" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Custom Completed Info" label="Custom Completed Info" max_length="40" name="u_custom_completed_info" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Custom Completed Subject" label="Custom Completed Subject" max_length="40" name="u_custom_completed_subject" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Custom Completed Additional Info" label="Custom Completed Additional Info" max_length="40" name="u_custom_compl_dditional_info" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Custom Opened Info" label="Custom Opened Info" max_length="40" name="u_custom_opened_info" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Custom Opened Subject" label="Custom Opened Subject" max_length="40" name="u_custom_opened_subject" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Custom Opened Additional Info" label="Custom Opened Additional Info" max_length="40" name="u_custom_opene_dditional_info" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Custom Signature" label="Custom Signature" max_length="40" name="u_custom_signature" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Custom Updated Info" label="Custom Updated Info" max_length="40" name="u_custom_updated_info" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Custom Updated Subject" label="Custom Updated Subject" max_length="40" name="u_custom_updated_subject" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Custom Updated Additional Info" label="Custom Updated Additional Info" max_length="40" name="u_custom_updat_dditional_info" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Delivery plan script" label="Delivery plan script" max_length="40" name="u_delivery_plan_script" type="string"/>
+        <element attributes="import_attribute_name=Delivery time" label="Delivery time" max_length="40" name="u_delivery_time" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Description" label="Description" max_length="2158" name="u_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Display name" label="Display name" max_length="46" name="u_display_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Display price property" label="Display price property" max_length="40" name="u_display_price_property" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Entitlement script" label="Entitlement script" max_length="40" name="u_entitlement_script" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Execution Plan" label="Execution Plan" max_length="40" name="u_execution_plan" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Expand help for all questions" label="Expand help for all questions" max_length="40" name="u_expand_help___all_questions" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Flow" label="Flow" max_length="40" name="u_flow" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Fulfillment automation level" label="Fulfillment automation level" max_length="40" name="u_fulfillment_automation_level" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Fulfillment group" label="Fulfillment group" max_length="40" name="u_fulfillment_group" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Hide Attachment" label="Hide Attachment" max_length="40" name="u_hide_attachment" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Hide Delivery time" label="Hide Delivery time" max_length="40" name="u_hide_delivery_time" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Hide on Service Portal" label="Hide on Service Portal" max_length="40" name="u_hide_on_service_portal" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Hide price (classic mobile listings)" label="Hide price (classic mobile listings)" max_length="40" name="u_hide_price___bile_listings_" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Hide Quantity" label="Hide Quantity" max_length="40" name="u_hide_quantity" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Hide 'Add to Cart'" label="Hide 'Add to Cart'" max_length="40" name="u_hide__add_to_cart_" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Hide 'Add to Wish List'" label="Hide 'Add to Wish List'" max_length="40" name="u_hide__add_to_wish_list_" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Icon" label="Icon" max_length="40" name="u_icon" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Ignore price" label="Ignore price" max_length="40" name="u_ignore_price" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Image" label="Image" max_length="40" name="u_image" type="string"/>
+        <element attributes="import_attribute_name=List Price" label="List Price" max_length="40" name="u_list_price" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Location" label="Location" max_length="40" name="u_location" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Mandatory Attachment" label="Mandatory Attachment" max_length="40" name="u_mandatory_attachment" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Meta" label="Meta" max_length="138" name="u_meta" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Model" label="Model" max_length="40" name="u_model" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Multiple Approval Condition" label="Multiple Approval Condition" max_length="40" name="u_multiple_approval_condition" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Multiple Approvers Under Same Conditions As Above" label="Multiple Approvers Under Same Conditions As Above" max_length="40" name="u_multiple_app_tions_as_above" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Name" label="Name" max_length="46" name="u_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=No cart" label="No cart" max_length="40" name="u_no_cart" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=No order" label="No order" max_length="40" name="u_no_order" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=No order now" label="No order now" max_length="40" name="u_no_order_now" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=No proceed checkout" label="No proceed checkout" max_length="40" name="u_no_proceed_checkout" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=No quantity" label="No quantity" max_length="40" name="u_no_quantity" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=No search" label="No search" max_length="40" name="u_no_search" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Omit price in cart" label="Omit price in cart" max_length="40" name="u_omit_price_in_cart" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Opened Additional Info" label="Opened Additional Info" max_length="40" name="u_opened_additional_info" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Opened Info" label="Opened Info" max_length="40" name="u_opened_info" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Opened Subject" label="Opened Subject" max_length="40" name="u_opened_subject" type="string"/>
+        <element attributes="import_attribute_name=Order" label="Order" max_length="40" name="u_order" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Ordered item link" label="Ordered item link" max_length="40" name="u_ordered_item_link" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Owner" label="Owner" max_length="40" name="u_owner" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Package" label="Package" max_length="40" name="u_package" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Picture" label="Picture" max_length="40" name="u_picture" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Preview link" label="Preview link" max_length="158" name="u_preview_link" type="string"/>
+        <element attributes="import_attribute_name=Price" label="Price" max_length="15" name="u_price" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Protection policy" label="Protection policy" max_length="40" name="u_protection_policy" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Published item" label="Published item" max_length="40" name="u_published_item" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Published version" label="Published version" max_length="40" name="u_published_version" type="string"/>
+        <element attributes="import_attribute_name=Recurring price" label="Recurring price" max_length="40" name="u_recurring_price" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Recurring price frequency" label="Recurring price frequency" max_length="40" name="u_recurring_price_frequency" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Request method" label="Request method" max_length="40" name="u_request_method" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Roles" label="Roles" max_length="40" name="u_roles" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Short description" label="Short description" max_length="82" name="u_short_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Signature" label="Signature" max_length="40" name="u_signature" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Start closed" label="Start closed" max_length="40" name="u_start_closed" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=State" label="State" max_length="40" name="u_state" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Table" label="Table" max_length="40" name="u_table" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Tags" label="Tags" max_length="40" name="u_tags" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Taxonomy topic" label="Taxonomy topic" max_length="40" name="u_taxonomy_topic" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Template" label="Template" max_length="40" name="u_template" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Type" label="Type" max_length="40" name="u_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Updated" label="Updated" max_length="40" name="u_updated" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Updated Additional Info" label="Updated Additional Info" max_length="40" name="u_updated_additional_info" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Updated by" label="Updated by" max_length="40" name="u_updated_by" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Updated Info" label="Updated Info" max_length="40" name="u_updated_info" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Updated Subject" label="Updated Subject" max_length="40" name="u_updated_subject" type="string"/>
+        <element attributes="import_attribute_name=Updates" label="Updates" max_length="40" name="u_updates" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Update name" label="Update name" max_length="44" name="u_update_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Use cart layout" label="Use cart layout" max_length="40" name="u_use_cart_layout" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Vendor" label="Vendor" max_length="40" name="u_vendor" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Visible elsewhere" label="Visible elsewhere" max_length="40" name="u_visible_elsewhere" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Visible on Bundles" label="Visible on Bundles" max_length="40" name="u_visible_on_bundles" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Visible on Guides" label="Visible on Guides" max_length="40" name="u_visible_on_guides" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Workflow" label="Workflow" max_length="40" name="u_workflow" type="string"/>
+    </element>
+</database>

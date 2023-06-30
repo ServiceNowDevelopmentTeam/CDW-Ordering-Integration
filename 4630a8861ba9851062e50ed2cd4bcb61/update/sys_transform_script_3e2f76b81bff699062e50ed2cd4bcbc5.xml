@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_script">
+    <sys_transform_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <map display_value="Cat Item to Hardware Product">3d258efc1b7b699062e50ed2cd4bcbb1</map>
+        <order>100</order>
+        <script><![CDATA[//Add CMDB product model if needed
+(function runTransformScript(source, map, log, target /*undefined onStart*/ ) {
+    var tableName = 'cmdb_hardware_product_model'; // The table for the product model
+    var referenceFieldName = 'name'; // The name field
+
+    // Try to find a matching record in the reference table
+    var gr = new GlideRecord(tableName);
+    gr.addQuery(referenceFieldName, source.u_name); // Replace 'u_model_name' with your source field name
+    gr.query();
+
+    if (!gr.next()) { 
+        // If there's no match, create a new record
+        gr.initialize();
+        gr.setValue(referenceFieldName, source.u_name); // Replace 'u_model_name' with your source field name
+        gr.insert();
+    }
+
+    // Update the model field in the target table to point to the existing or newly created record
+    target.model = gr.getValue('sys_id'); // Point the target model field to the matching or newly created record
+})(source, map, log, target);]]></script>
+        <sys_class_name>sys_transform_script</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-30 19:54:18</sys_created_on>
+        <sys_id>3e2f76b81bff699062e50ed2cd4bcbc5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>onBefore</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sys_transform_script_3e2f76b81bff699062e50ed2cd4bcbc5</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-30 20:13:40</sys_updated_on>
+        <when>onBefore</when>
+    </sys_transform_script>
+</record_update>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Cable - USB 2.0 Extension Cable">39d1c3701b33a99062e50ed2cd4bcb4e</sc_cat_item>
+        <sc_category display_value="Cables &amp; Adapters">ca60083d1b4bb41062e50ed2cd4bcb17</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-30 20:03:10</sys_created_on>
+        <sys_id>fdd1c3701b33a99062e50ed2cd4bcb54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cables &amp; Adapters.Cable - USB 2.0 Extension Cable</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sc_cat_item_category_fdd1c3701b33a99062e50ed2cd4bcb54</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-30 20:03:10</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</application>
+        <file_path/>
+        <instance_id>37412023db6dd890ad8dd7c8f49619a0</instance_id>
+        <instance_name>apigroupdev</instance_name>
+        <name>sc_cat_item_category_fdd1c3701b33a99062e50ed2cd4bcb54</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Cable - USB 2.0 Extension Cable">39d1c3701b33a99062e50ed2cd4bcb4e</sc_cat_item><sc_category display_value="Cables &amp; Adapters">ca60083d1b4bb41062e50ed2cd4bcb17</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>Terry.Lillo</sys_created_by><sys_created_on>2023-06-30 20:03:10</sys_created_on><sys_id>fdd1c3701b33a99062e50ed2cd4bcb54</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Cables &amp; Adapters.Cable - USB 2.0 Extension Cable</sys_name><sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package><sys_policy/><sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope><sys_update_name>sc_cat_item_category_fdd1c3701b33a99062e50ed2cd4bcb54</sys_update_name><sys_updated_by>Terry.Lillo</sys_updated_by><sys_updated_on>2023-06-30 20:03:10</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>1923372108</payload_hash>
+        <record_name>Cables &amp; Adapters.Cable - USB 2.0 Extension Cable</record_name>
+        <reverted_from/>
+        <source>9666aabc1beda1508c5143f3cc4bcb62</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-30 20:03:10</sys_created_on>
+        <sys_id>b9d1c3701b33a99062e50ed2cd4bcb70</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1890de703bd0000001</sys_recorded_at>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-30 20:03:10</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>b1d1c3703033a990c42d9e82b7319770</update_guid>
+        <update_guid_history>b1d1c3703033a990c42d9e82b7319770:1923372108</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Cables &amp; Adapters.Cable - USB 2.0 Extension Cable">ef630b341b33a99062e50ed2cd4bcbbd</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-30 20:10:07</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>af676165139b4749b1cecb43f46c7899</sys_id>
+        <sys_metadata>fdd1c3701b33a99062e50ed2cd4bcb54</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cables &amp; Adapters.Cable - USB 2.0 Extension Cable</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_scope_delete display_value="">1de550a9788c4602b4836958c30c66c9</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_fdd1c3701b33a99062e50ed2cd4bcb54</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_fdd1c3701b33a99062e50ed2cd4bcb54">b9d1c3701b33a99062e50ed2cd4bcb70</sys_update_version>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-30 20:10:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

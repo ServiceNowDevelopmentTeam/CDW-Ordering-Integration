@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="ThinkVision P27h-20">4bc14f301b33a99062e50ed2cd4bcbf0</sc_cat_item>
+        <sc_category display_value="Monitors">fdb61ce11b87741062e50ed2cd4bcb3b</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-30 20:02:59</sys_created_on>
+        <sys_id>03c14f301b33a99062e50ed2cd4bcbf7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Monitors.ThinkVision P27h-20</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sc_cat_item_category_03c14f301b33a99062e50ed2cd4bcbf7</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-30 20:02:59</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</application>
+        <file_path/>
+        <instance_id>37412023db6dd890ad8dd7c8f49619a0</instance_id>
+        <instance_name>apigroupdev</instance_name>
+        <name>sc_cat_item_category_03c14f301b33a99062e50ed2cd4bcbf7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="ThinkVision P27h-20">4bc14f301b33a99062e50ed2cd4bcbf0</sc_cat_item><sc_category display_value="Monitors">fdb61ce11b87741062e50ed2cd4bcb3b</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>Terry.Lillo</sys_created_by><sys_created_on>2023-06-30 20:02:59</sys_created_on><sys_id>03c14f301b33a99062e50ed2cd4bcbf7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Monitors.ThinkVision P27h-20</sys_name><sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package><sys_policy/><sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope><sys_update_name>sc_cat_item_category_03c14f301b33a99062e50ed2cd4bcbf7</sys_update_name><sys_updated_by>Terry.Lillo</sys_updated_by><sys_updated_on>2023-06-30 20:02:59</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>737456650</payload_hash>
+        <record_name>Monitors.ThinkVision P27h-20</record_name>
+        <reverted_from/>
+        <source>9666aabc1beda1508c5143f3cc4bcb62</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-30 20:02:59</sys_created_on>
+        <sys_id>4fc14f301b33a99062e50ed2cd4bcbf9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1890de6d86c0000001</sys_recorded_at>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-30 20:02:59</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>47c14f30e333a9900c6a795e375a19f9</update_guid>
+        <update_guid_history>47c14f30e333a9900c6a795e375a19f9:737456650</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Monitors.ThinkVision P27h-20">2c738b341b33a99062e50ed2cd4bcb05</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-30 20:10:11</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>21feb2f43aa04d00a12692b81b6cc900</sys_id>
+        <sys_metadata>03c14f301b33a99062e50ed2cd4bcbf7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Monitors.ThinkVision P27h-20</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_scope_delete display_value="">1de550a9788c4602b4836958c30c66c9</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_03c14f301b33a99062e50ed2cd4bcbf7</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_03c14f301b33a99062e50ed2cd4bcbf7">4fc14f301b33a99062e50ed2cd4bcbf9</sys_update_version>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-30 20:10:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

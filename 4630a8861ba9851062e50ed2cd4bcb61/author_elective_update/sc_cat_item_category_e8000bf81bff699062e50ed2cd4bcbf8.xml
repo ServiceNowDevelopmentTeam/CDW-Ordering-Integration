@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Display Adapter - DP to HDMI">24000bf81bff699062e50ed2cd4bcbf2</sc_cat_item>
+        <sc_category display_value="Cables &amp; Adapters">ca60083d1b4bb41062e50ed2cd4bcb17</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-30 19:55:10</sys_created_on>
+        <sys_id>e8000bf81bff699062e50ed2cd4bcbf8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cables &amp; Adapters.Display Adapter - DP to HDMI</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sc_cat_item_category_e8000bf81bff699062e50ed2cd4bcbf8</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-30 19:55:10</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</application>
+        <file_path/>
+        <instance_id>37412023db6dd890ad8dd7c8f49619a0</instance_id>
+        <instance_name>apigroupdev</instance_name>
+        <name>sc_cat_item_category_e8000bf81bff699062e50ed2cd4bcbf8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Display Adapter - DP to HDMI">24000bf81bff699062e50ed2cd4bcbf2</sc_cat_item><sc_category display_value="Cables &amp; Adapters">ca60083d1b4bb41062e50ed2cd4bcb17</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>Terry.Lillo</sys_created_by><sys_created_on>2023-06-30 19:55:10</sys_created_on><sys_id>e8000bf81bff699062e50ed2cd4bcbf8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Cables &amp; Adapters.Display Adapter - DP to HDMI</sys_name><sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package><sys_policy/><sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope><sys_update_name>sc_cat_item_category_e8000bf81bff699062e50ed2cd4bcbf8</sys_update_name><sys_updated_by>Terry.Lillo</sys_updated_by><sys_updated_on>2023-06-30 19:55:10</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>-306580430</payload_hash>
+        <record_name>Cables &amp; Adapters.Display Adapter - DP to HDMI</record_name>
+        <reverted_from/>
+        <source>9666aabc1beda1508c5143f3cc4bcb62</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-30 19:55:10</sys_created_on>
+        <sys_id>28000bf81bff699062e50ed2cd4bcbfb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1890ddfaf240000001</sys_recorded_at>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-30 19:55:10</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>20000bf8b4ff6990d45b79ad448795fb</update_guid>
+        <update_guid_history>20000bf8b4ff6990d45b79ad448795fb:-306580430</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Cables &amp; Adapters.Display Adapter - DP to HDMI">43c0877c1bff699062e50ed2cd4bcb8a</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-30 19:58:37</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>0a5545e21fa145728108c872bcddbad9</sys_id>
+        <sys_metadata>e8000bf81bff699062e50ed2cd4bcbf8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cables &amp; Adapters.Display Adapter - DP to HDMI</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_scope_delete display_value="">1de550a9788c4602b4836958c30c66c9</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_e8000bf81bff699062e50ed2cd4bcbf8</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_e8000bf81bff699062e50ed2cd4bcbf8">28000bf81bff699062e50ed2cd4bcbfb</sys_update_version>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-30 19:58:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

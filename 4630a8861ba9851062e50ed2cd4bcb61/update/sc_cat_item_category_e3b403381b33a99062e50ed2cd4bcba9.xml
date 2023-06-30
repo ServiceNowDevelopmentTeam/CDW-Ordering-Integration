@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Display Cable - DP to DP">23b403381b33a99062e50ed2cd4bcb71</sc_cat_item>
+        <sc_category display_value="Cables &amp; Adapters">ca60083d1b4bb41062e50ed2cd4bcb17</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-30 20:15:51</sys_created_on>
+        <sys_id>e3b403381b33a99062e50ed2cd4bcba9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cables &amp; Adapters.Display Cable - DP to DP</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sc_cat_item_category_e3b403381b33a99062e50ed2cd4bcba9</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-30 20:15:51</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_script">
+    <sys_transform_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <map display_value="Cat Item to Hardware Product">3d258efc1b7b699062e50ed2cd4bcbb1</map>
+        <order>100</order>
+        <script><![CDATA[//Add delivery info variable set
+(function runTransformScript(source, map, log, target /*undefined onStart*/ ) {
+
+    var variableSetSysId = '7eadc3b71b926d508c5143f3cc4bcb57'; // Delivery info variable set
+    var gr = new GlideRecord('io_set_item'); // table for variable set assignment
+
+    gr.initialize();
+    gr.variable_set = variableSetSysId;
+    gr.sc_cat_item = target.sys_id;
+    gr.insert();
+
+})(source, map, log, target);
+]]></script>
+        <sys_class_name>sys_transform_script</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-30 20:00:53</sys_created_on>
+        <sys_id>ec31037c1bff699062e50ed2cd4bcbf7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>onAfter</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sys_transform_script_ec31037c1bff699062e50ed2cd4bcbf7</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-30 20:13:14</sys_updated_on>
+        <when>onAfter</when>
+    </sys_transform_script>
+</record_update>
