@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition/>
+        <condition>current.u_cdw_order == true &amp;&amp; (gs.hasRole('CDW Item Manager') || gs.hasRole('admin'));</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_button_v2>false</form_button_v2>
@@ -51,7 +51,7 @@ glideAjax.getXML(function(response) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e9baa2601bd47d5062e50ed2cd4bcb4c</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Retrigger Order</sys_name>
         <sys_overrides/>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
@@ -59,7 +59,7 @@ glideAjax.getXML(function(response) {
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>sys_ui_action_e9baa2601bd47d5062e50ed2cd4bcb4c</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2023-07-24 20:27:53</sys_updated_on>
+        <sys_updated_on>2023-07-25 19:20:42</sys_updated_on>
         <table>sc_request</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
