@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_children">
+    <sc_cat_item_children action="INSERT_OR_UPDATE">
+        <child display_value="Windows Clean Image">80b8dff01b54fd5062e50ed2cd4bcb94</child>
+        <order>100</order>
+        <parent display_value="Lenovo ThinkPad X12 Tablet">ac41276b1b4c35508c5143f3cc4bcb6e</parent>
+        <quantity>1</quantity>
+        <sys_class_name>sc_cat_item_children</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-25 18:14:27</sys_created_on>
+        <sys_id>c1b813341b54fd5062e50ed2cd4bcb8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Windows Clean Image.Lenovo ThinkPad X12 Tablet</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sc_cat_item_children_c1b813341b54fd5062e50ed2cd4bcb8b</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-25 18:14:27</sys_updated_on>
+    </sc_cat_item_children>
+</record_update>

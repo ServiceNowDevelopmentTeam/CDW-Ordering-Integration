@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Power Strip - Surge Protector">8dd9e0cb1b48f15062e50ed2cd4bcb3f</sc_cat_item>
+        <sc_category display_value="Cables &amp; Adapters">ca60083d1b4bb41062e50ed2cd4bcb17</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-19 19:01:03</sys_created_on>
+        <sys_id>49d9e0cb1b48f15062e50ed2cd4bcb46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cables &amp; Adapters.Power Strip - Surge Protector</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sc_cat_item_category_49d9e0cb1b48f15062e50ed2cd4bcb46</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-19 19:01:03</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</application>
+        <file_path/>
+        <instance_id>37412023db6dd890ad8dd7c8f49619a0</instance_id>
+        <instance_name>apigroupdev</instance_name>
+        <name>sc_cat_item_category_49d9e0cb1b48f15062e50ed2cd4bcb46</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Power Strip - Surge Protector">8dd9e0cb1b48f15062e50ed2cd4bcb3f</sc_cat_item><sc_category display_value="Cables &amp; Adapters">ca60083d1b4bb41062e50ed2cd4bcb17</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>Terry.Lillo</sys_created_by><sys_created_on>2023-07-19 19:01:03</sys_created_on><sys_id>49d9e0cb1b48f15062e50ed2cd4bcb46</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Cables &amp; Adapters.Power Strip - Surge Protector</sys_name><sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package><sys_policy/><sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope><sys_update_name>sc_cat_item_category_49d9e0cb1b48f15062e50ed2cd4bcb46</sys_update_name><sys_updated_by>Terry.Lillo</sys_updated_by><sys_updated_on>2023-07-19 19:01:03</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>-304265736</payload_hash>
+        <record_name>Cables &amp; Adapters.Power Strip - Surge Protector</record_name>
+        <reverted_from/>
+        <source>9666aabc1beda1508c5143f3cc4bcb62</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-19 19:01:03</sys_created_on>
+        <sys_id>09d9e0cb1b48f15062e50ed2cd4bcb49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1896f86f78b0000001</sys_recorded_at>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-19 19:01:03</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>01d9e0cb1248f1500605e9f1789e4549</update_guid>
+        <update_guid_history>01d9e0cb1248f1500605e9f1789e4549:-304265736</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Cables &amp; Adapters.Power Strip - Surge Protector">f56fac071b88f15062e50ed2cd4bcba3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-19 19:25:24</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>2b801dea9e0f4160972aceb97c729910</sys_id>
+        <sys_metadata>49d9e0cb1b48f15062e50ed2cd4bcb46</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cables &amp; Adapters.Power Strip - Surge Protector</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_scope_delete display_value="">1de550a9788c4602b4836958c30c66c9</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_49d9e0cb1b48f15062e50ed2cd4bcb46</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_49d9e0cb1b48f15062e50ed2cd4bcb46">09d9e0cb1b48f15062e50ed2cd4bcb49</sys_update_version>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-19 19:25:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

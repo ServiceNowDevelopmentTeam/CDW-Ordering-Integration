@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="Lenovo ThinkVison P40w-20">d8b44ff41b33a99062e50ed2cd4bcb32</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-30 20:15:38</sys_created_on>
+        <sys_id>24b44ff41b33a99062e50ed2cd4bcb36</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Lenovo ThinkVison P40w-20</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_24b44ff41b33a99062e50ed2cd4bcb36</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-30 20:15:38</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</application>
+        <file_path/>
+        <instance_id>37412023db6dd890ad8dd7c8f49619a0</instance_id>
+        <instance_name>apigroupdev</instance_name>
+        <name>sc_cat_item_catalog_24b44ff41b33a99062e50ed2cd4bcb36</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="Lenovo ThinkVison P40w-20">d8b44ff41b33a99062e50ed2cd4bcb32</sc_cat_item><sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>Terry.Lillo</sys_created_by><sys_created_on>2023-06-30 20:15:38</sys_created_on><sys_id>24b44ff41b33a99062e50ed2cd4bcb36</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Service Catalog.Lenovo ThinkVison P40w-20</sys_name><sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package><sys_policy/><sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope><sys_update_name>sc_cat_item_catalog_24b44ff41b33a99062e50ed2cd4bcb36</sys_update_name><sys_updated_by>Terry.Lillo</sys_updated_by><sys_updated_on>2023-06-30 20:15:38</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>649596754</payload_hash>
+        <record_name>Service Catalog.Lenovo ThinkVison P40w-20</record_name>
+        <reverted_from/>
+        <source>9666aabc1beda1508c5143f3cc4bcb62</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-30 20:15:38</sys_created_on>
+        <sys_id>6cb44ff41b33a99062e50ed2cd4bcb38</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1890df26db60000001</sys_recorded_at>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-30 20:15:38</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>64b44ff42533a99008c60cf7c31e7d38</update_guid>
+        <update_guid_history>64b44ff42533a99008c60cf7c31e7d38:649596754</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Service Catalog.Lenovo ThinkVison P40w-20">eda378831bc8f15062e50ed2cd4bcb00</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-19 19:43:57</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>3c15ef5f04f4416f974e789ed2aabee1</sys_id>
+        <sys_metadata>24b44ff41b33a99062e50ed2cd4bcb36</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Lenovo ThinkVison P40w-20</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_parent display_value="">d8b44ff41b33a99062e50ed2cd4bcb32</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_scope_delete display_value="">1de550a9788c4602b4836958c30c66c9</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_24b44ff41b33a99062e50ed2cd4bcb36</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_24b44ff41b33a99062e50ed2cd4bcb36">6cb44ff41b33a99062e50ed2cd4bcb38</sys_update_version>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-19 19:43:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

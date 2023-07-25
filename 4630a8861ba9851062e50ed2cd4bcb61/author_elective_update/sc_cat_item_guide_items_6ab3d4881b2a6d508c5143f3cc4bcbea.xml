@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_guide_items">
+    <sc_cat_item_guide_items action="DELETE">
+        <condition>IO:69c2dcc41b2a6d508c5143f3cc4bcbb5=office^EQ</condition>
+        <guide display_value="Order Hardware">0a378f3f1b526d508c5143f3cc4bcbd2</guide>
+        <ignore_mandatory_eval>false</ignore_mandatory_eval>
+        <item display_value="Lenovo ThinkPad X12 Tablet">778f7fbb1b966d508c5143f3cc4bcbc5</item>
+        <order/>
+        <quantity>1</quantity>
+        <requested_by/>
+        <requested_for/>
+        <show_quantity>true</show_quantity>
+        <sys_class_name>sc_cat_item_guide_items</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-04-26 20:08:54</sys_created_on>
+        <sys_id>6ab3d4881b2a6d508c5143f3cc4bcbea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>778f7fbb1b966d508c5143f3cc4bcbc5</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sc_cat_item_guide_items_6ab3d4881b2a6d508c5143f3cc4bcbea</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-04-26 20:08:54</sys_updated_on>
+        <use_sc_layout>true</use_sc_layout>
+    </sc_cat_item_guide_items>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</application>
+        <file_path/>
+        <instance_id>37412023db6dd890ad8dd7c8f49619a0</instance_id>
+        <instance_name>apigroupdev</instance_name>
+        <name>sc_cat_item_guide_items_6ab3d4881b2a6d508c5143f3cc4bcbea</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_guide_items"><sc_cat_item_guide_items action="INSERT_OR_UPDATE"><condition>IO:69c2dcc41b2a6d508c5143f3cc4bcbb5=office^EQ</condition><guide display_value="Order Hardware">0a378f3f1b526d508c5143f3cc4bcbd2</guide><ignore_mandatory_eval>false</ignore_mandatory_eval><item display_value="Lenovo ThinkPad X12 Tablet">778f7fbb1b966d508c5143f3cc4bcbc5</item><order/><quantity>1</quantity><requested_by/><requested_for/><show_quantity>true</show_quantity><sys_class_name>sc_cat_item_guide_items</sys_class_name><sys_created_by>Terry.Lillo</sys_created_by><sys_created_on>2023-04-26 20:08:54</sys_created_on><sys_id>6ab3d4881b2a6d508c5143f3cc4bcbea</sys_id><sys_mod_count>0</sys_mod_count><sys_name>778f7fbb1b966d508c5143f3cc4bcbc5</sys_name><sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package><sys_policy/><sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope><sys_update_name>sc_cat_item_guide_items_6ab3d4881b2a6d508c5143f3cc4bcbea</sys_update_name><sys_updated_by>Terry.Lillo</sys_updated_by><sys_updated_on>2023-04-26 20:08:54</sys_updated_on><use_sc_layout>true</use_sc_layout></sc_cat_item_guide_items></record_update>]]></payload>
+        <payload_hash>-2082719487</payload_hash>
+        <record_name>778f7fbb1b966d508c5143f3cc4bcbc5</record_name>
+        <reverted_from/>
+        <source>9666aabc1beda1508c5143f3cc4bcb62</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-04-26 20:08:54</sys_created_on>
+        <sys_id>77c358881b2a6d508c5143f3cc4bcbdd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>187bf2ee4e20000001</sys_recorded_at>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-04-26 20:08:54</sys_updated_on>
+        <type>Rule</type>
+        <update_guid>7fc35888682a6d50a4bb7500a57977dc</update_guid>
+        <update_guid_history>7fc35888682a6d50a4bb7500a57977dc:-2082719487</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">55df53a71b4c35508c5143f3cc4bcbd4</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-21 21:33:13</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_guide_items">sc_cat_item_guide_items</sys_db_object>
+        <sys_id>b316f8051d554378a98acda517ce9c40</sys_id>
+        <sys_metadata>6ab3d4881b2a6d508c5143f3cc4bcbea</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>778f7fbb1b966d508c5143f3cc4bcbc5</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_scope_delete display_value="">1de550a9788c4602b4836958c30c66c9</sys_scope_delete>
+        <sys_update_name>sc_cat_item_guide_items_6ab3d4881b2a6d508c5143f3cc4bcbea</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_guide_items_6ab3d4881b2a6d508c5143f3cc4bcbea">77c358881b2a6d508c5143f3cc4bcbdd</sys_update_version>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-21 21:33:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

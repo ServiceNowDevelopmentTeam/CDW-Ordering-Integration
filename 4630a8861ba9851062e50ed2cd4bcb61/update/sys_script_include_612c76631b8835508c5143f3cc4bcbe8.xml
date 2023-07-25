@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>global.CDWPriceUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>CDWPriceUtils</name>
+        <script><![CDATA[var CDWPriceUtils = Class.create();
+CDWPriceUtils.prototype = {
+  initialize: function () {
+  },
+
+  //Function to get prices of child catalog items and current item
+  getPrice: function (documentId) {
+    var listPrice = 0;
+
+    //Add catalog item price
+    var itemGr = new GlideRecord('pc_product_cat_item');
+    if (itemGr.get(documentId)) {
+      listPrice += parseFloat(itemGr.list_price.toString());
+    }
+
+    //Get child catalog items and add their prices
+    var childGr = new GlideRecord("sc_cat_item_children");
+    childGr.addQuery("parent", documentId);
+    childGr.query();
+    while (childGr.next()) {
+      var childItemGr = new GlideRecord('pc_product_cat_item');
+      if (childItemGr.get(childGr.child)) {
+        listPrice += parseFloat(childItemGr.list_price.toString());
+      }
+    }
+
+    return listPrice;
+  },
+
+  getChildren: function (documentId) {
+    var children = [];
+    var childGr = new GlideRecord("sc_cat_item_children");
+    childGr.addQuery("parent", documentId);
+    childGr.query();
+    while (childGr.next()) {
+      children.push(childGr.child.sys_id.toString());
+    }
+    return children;
+  },
+
+
+  getParents: function (documentId) {
+    var parents = [];
+    var parentGr = new GlideRecord("sc_cat_item_children");
+    parentGr.addQuery("child", documentId);
+    parentGr.query();
+    while (parentGr.next()) {
+      parents.push(parentGr.parent.sys_id.toString());
+    }
+    return parents;
+  },
+
+  //Function to update the price of a catalog item using list price plus all child prices
+  updatePrice: function (documentId) {
+    var price = this.getPrice(documentId);
+    var itemGr = new GlideRecord('pc_product_cat_item');
+    if (itemGr.get(documentId)) {
+      if (itemGr.price != price) {
+      itemGr.price = price;
+        itemGr.update();
+      }
+    }
+
+    // If the documentId is a child, update all parents' prices
+    var parents = this.getParents(documentId);
+    for (var i = 0; i < parents.length; i++) {
+      this.updatePrice(parents[i]);
+    }
+  },
+
+  type: 'CDWPriceUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-21 18:58:05</sys_created_on>
+        <sys_id>612c76631b8835508c5143f3cc4bcbe8</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>CDWPriceUtils</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sys_script_include_612c76631b8835508c5143f3cc4bcbe8</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-21 21:30:47</sys_updated_on>
+    </sys_script_include>
+</record_update>

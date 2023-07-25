@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>global.CDWRetriggerTools</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>CDWRetriggerTools</name>
+        <script><![CDATA[var CDWRetriggerTools = Class.create();
+CDWRetriggerTools.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	retrigger: function() {
+		var documentId = this.getParameter('sysparm_document_id');
+		(function() {
+			var gr = new GlideRecord('sc_request');
+			gr.get(documentId);
+			try {
+				var inputs = {};
+				inputs['current'] = gr; // GlideRecord of table:  
+				//inputs['changed_fields'] = []; // Array.Object 
+				inputs['table_name'] = 'sc_request';
+				sn_fd.FlowAPI.getRunner().flow('global.reqf__cdw_noapproval_ordering__c').inBackground().withInputs(inputs).run();
+
+			} catch (ex) {
+				var message = ex.getMessage();
+				gs.error(message);
+			}
+
+		})();
+		return "Flow retriggered";
+	},
+	type: 'CDWRetriggerTools'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-24 20:14:25</sys_created_on>
+        <sys_id>312a26201bd47d5062e50ed2cd4bcb26</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>CDWRetriggerTools</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sys_script_include_312a26201bd47d5062e50ed2cd4bcb26</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-25 13:08:10</sys_updated_on>
+    </sys_script_include>
+</record_update>

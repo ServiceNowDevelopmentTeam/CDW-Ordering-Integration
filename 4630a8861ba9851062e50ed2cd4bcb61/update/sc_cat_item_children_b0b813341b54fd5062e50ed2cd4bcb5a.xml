@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_children">
+    <sc_cat_item_children action="INSERT_OR_UPDATE">
+        <child display_value="Lenovo ThinkPad Ethernet Extension Adapter">14b8dff01b54fd5062e50ed2cd4bcb9f</child>
+        <order>100</order>
+        <parent display_value="Lenovo ThinkPad X1 Yoga">6d41676b1b4c35508c5143f3cc4bcb77</parent>
+        <quantity>1</quantity>
+        <sys_class_name>sc_cat_item_children</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-25 18:14:26</sys_created_on>
+        <sys_id>b0b813341b54fd5062e50ed2cd4bcb5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Lenovo ThinkPad Ethernet Extension Adapter.Lenovo ThinkPad X1 Yoga</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sc_cat_item_children_b0b813341b54fd5062e50ed2cd4bcb5a</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-25 18:14:26</sys_updated_on>
+    </sc_cat_item_children>
+</record_update>

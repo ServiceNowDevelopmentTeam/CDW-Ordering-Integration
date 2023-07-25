@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="DELETE">
+        <order>100</order>
+        <sc_cat_item display_value="Power Adapter - Lenovo ThinkPad Slim AC">d463e8cf1b08f15062e50ed2cd4bcb3d</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-19 18:32:52</sys_created_on>
+        <sys_id>1063e8cf1b08f15062e50ed2cd4bcb4a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Delivery Information.Power Adapter - Lenovo ThinkPad Slim AC</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>io_set_item_1063e8cf1b08f15062e50ed2cd4bcb4a</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-19 18:32:52</sys_updated_on>
+        <variable_set display_value="Delivery Information">7eadc3b71b926d508c5143f3cc4bcb57</variable_set>
+    </io_set_item>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</application>
+        <file_path/>
+        <instance_id>37412023db6dd890ad8dd7c8f49619a0</instance_id>
+        <instance_name>apigroupdev</instance_name>
+        <name>io_set_item_1063e8cf1b08f15062e50ed2cd4bcb4a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item"><io_set_item action="INSERT_OR_UPDATE"><order>100</order><sc_cat_item display_value="Power Adapter - Lenovo ThinkPad Slim AC">d463e8cf1b08f15062e50ed2cd4bcb3d</sc_cat_item><sys_class_name>io_set_item</sys_class_name><sys_created_by>Terry.Lillo</sys_created_by><sys_created_on>2023-07-19 18:32:52</sys_created_on><sys_id>1063e8cf1b08f15062e50ed2cd4bcb4a</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Delivery Information.Power Adapter - Lenovo ThinkPad Slim AC</sys_name><sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package><sys_policy/><sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope><sys_update_name>io_set_item_1063e8cf1b08f15062e50ed2cd4bcb4a</sys_update_name><sys_updated_by>Terry.Lillo</sys_updated_by><sys_updated_on>2023-07-19 18:32:52</sys_updated_on><variable_set display_value="Delivery Information">7eadc3b71b926d508c5143f3cc4bcb57</variable_set></io_set_item></record_update>]]></payload>
+        <payload_hash>-415802587</payload_hash>
+        <record_name>d463e8cf1b08f15062e50ed2cd4bcb3d</record_name>
+        <reverted_from/>
+        <source>9666aabc1beda1508c5143f3cc4bcb62</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-19 18:32:52</sys_created_on>
+        <sys_id>1863e8cf1b08f15062e50ed2cd4bcb4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1896f6d2b4a0000001</sys_recorded_at>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-19 18:32:52</sys_updated_on>
+        <type>Catalog Variable Set</type>
+        <update_guid>1063e8cf4b08f1507781eb3ada37e74f</update_guid>
+        <update_guid_history>1063e8cf4b08f1507781eb3ada37e74f:-415802587</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">6cc0bc8b1b88f15062e50ed2cd4bcb68</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-19 19:31:19</sys_created_on>
+        <sys_db_object display_value="" name="io_set_item">io_set_item</sys_db_object>
+        <sys_id>29cd6f6c9775414ab8b3651463c7f7a1</sys_id>
+        <sys_metadata>1063e8cf1b08f15062e50ed2cd4bcb4a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Delivery Information.Power Adapter - Lenovo ThinkPad Slim AC</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_scope_delete display_value="">1de550a9788c4602b4836958c30c66c9</sys_scope_delete>
+        <sys_update_name>io_set_item_1063e8cf1b08f15062e50ed2cd4bcb4a</sys_update_name>
+        <sys_update_version display_value="io_set_item_1063e8cf1b08f15062e50ed2cd4bcb4a">1863e8cf1b08f15062e50ed2cd4bcb4f</sys_update_version>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-19 19:31:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

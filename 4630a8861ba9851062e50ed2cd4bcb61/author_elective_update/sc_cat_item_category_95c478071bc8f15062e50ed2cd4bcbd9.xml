@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Lenovo ThinkVison P40w-20">d9c478071bc8f15062e50ed2cd4bcbd2</sc_cat_item>
+        <sc_category display_value="Monitors">fdb61ce11b87741062e50ed2cd4bcb3b</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-19 19:48:51</sys_created_on>
+        <sys_id>95c478071bc8f15062e50ed2cd4bcbd9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Monitors.Lenovo ThinkVison P40w-20</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sc_cat_item_category_95c478071bc8f15062e50ed2cd4bcbd9</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-19 19:48:51</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</application>
+        <file_path/>
+        <instance_id>37412023db6dd890ad8dd7c8f49619a0</instance_id>
+        <instance_name>apigroupdev</instance_name>
+        <name>sc_cat_item_category_95c478071bc8f15062e50ed2cd4bcbd9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Lenovo ThinkVison P40w-20">d9c478071bc8f15062e50ed2cd4bcbd2</sc_cat_item><sc_category display_value="Monitors">fdb61ce11b87741062e50ed2cd4bcb3b</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>Terry.Lillo</sys_created_by><sys_created_on>2023-07-19 19:48:51</sys_created_on><sys_id>95c478071bc8f15062e50ed2cd4bcbd9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Monitors.Lenovo ThinkVison P40w-20</sys_name><sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package><sys_policy/><sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope><sys_update_name>sc_cat_item_category_95c478071bc8f15062e50ed2cd4bcbd9</sys_update_name><sys_updated_by>Terry.Lillo</sys_updated_by><sys_updated_on>2023-07-19 19:48:51</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>1236407741</payload_hash>
+        <record_name>Monitors.Lenovo ThinkVison P40w-20</record_name>
+        <reverted_from/>
+        <source>9666aabc1beda1508c5143f3cc4bcb62</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-19 19:48:51</sys_created_on>
+        <sys_id>55c478071bc8f15062e50ed2cd4bcbdc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1896fb2bb520000001</sys_recorded_at>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-19 19:48:51</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>5dc47807f3c8f15017086fe126d0b1db</update_guid>
+        <update_guid_history>5dc47807f3c8f15017086fe126d0b1db:1236407741</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Monitors.Lenovo ThinkVison P40w-20">87ff9fa71b4c35508c5143f3cc4bcb20</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-21 21:33:52</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>6ce1c42ee3de40d183b9bfa5a377af39</sys_id>
+        <sys_metadata>95c478071bc8f15062e50ed2cd4bcbd9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Monitors.Lenovo ThinkVison P40w-20</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_scope_delete display_value="">1de550a9788c4602b4836958c30c66c9</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_95c478071bc8f15062e50ed2cd4bcbd9</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_95c478071bc8f15062e50ed2cd4bcbd9">55c478071bc8f15062e50ed2cd4bcbdc</sys_update_version>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-21 21:33:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

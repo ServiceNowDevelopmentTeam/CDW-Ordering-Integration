@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Lenovo ThinkVision M14">b88364031b48f15062e50ed2cd4bcbb6</sc_cat_item>
+        <sc_category display_value="Monitors">fdb61ce11b87741062e50ed2cd4bcb3b</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-19 18:33:28</sys_created_on>
+        <sys_id>c18364031b48f15062e50ed2cd4bcbbd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Monitors.Lenovo ThinkVision M14</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sc_cat_item_category_c18364031b48f15062e50ed2cd4bcbbd</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-19 18:33:28</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</application>
+        <file_path/>
+        <instance_id>37412023db6dd890ad8dd7c8f49619a0</instance_id>
+        <instance_name>apigroupdev</instance_name>
+        <name>sc_cat_item_category_c18364031b48f15062e50ed2cd4bcbbd</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Lenovo ThinkVision M14">b88364031b48f15062e50ed2cd4bcbb6</sc_cat_item><sc_category display_value="Monitors">fdb61ce11b87741062e50ed2cd4bcb3b</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>Terry.Lillo</sys_created_by><sys_created_on>2023-07-19 18:33:28</sys_created_on><sys_id>c18364031b48f15062e50ed2cd4bcbbd</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Monitors.Lenovo ThinkVision M14</sys_name><sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package><sys_policy/><sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope><sys_update_name>sc_cat_item_category_c18364031b48f15062e50ed2cd4bcbbd</sys_update_name><sys_updated_by>Terry.Lillo</sys_updated_by><sys_updated_on>2023-07-19 18:33:28</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>968350068</payload_hash>
+        <record_name>Monitors.Lenovo ThinkVision M14</record_name>
+        <reverted_from/>
+        <source>9666aabc1beda1508c5143f3cc4bcb62</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-19 18:33:28</sys_created_on>
+        <sys_id>098364031b48f15062e50ed2cd4bcbcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1896f6db5ae0000001</sys_recorded_at>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-19 18:33:28</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>01836403e248f150c67a1dffa0ca65cc</update_guid>
+        <update_guid_history>01836403e248f150c67a1dffa0ca65cc:968350068</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Monitors.Lenovo ThinkVision M14">a0b0788b1b88f15062e50ed2cd4bcb51</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-19 19:31:03</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>d0d09ae5578b48da84bf482d65483d51</sys_id>
+        <sys_metadata>c18364031b48f15062e50ed2cd4bcbbd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Monitors.Lenovo ThinkVision M14</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_scope_delete display_value="">1de550a9788c4602b4836958c30c66c9</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_c18364031b48f15062e50ed2cd4bcbbd</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_c18364031b48f15062e50ed2cd4bcbbd">098364031b48f15062e50ed2cd4bcbcc</sys_update_version>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-19 19:31:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

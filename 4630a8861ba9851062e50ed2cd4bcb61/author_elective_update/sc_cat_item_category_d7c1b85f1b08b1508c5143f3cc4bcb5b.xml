@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Premier Support">2171381f1b08b1508c5143f3cc4bcb73</sc_cat_item>
+        <sc_category display_value="Computers &amp; Devices">6d01e0171bbfb4508c5143f3cc4bcbc5</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-20 14:14:22</sys_created_on>
+        <sys_id>d7c1b85f1b08b1508c5143f3cc4bcb5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Computers &amp; Devices.Premier Support</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sc_cat_item_category_d7c1b85f1b08b1508c5143f3cc4bcb5b</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-20 14:14:22</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</application>
+        <file_path/>
+        <instance_id>37412023db6dd890ad8dd7c8f49619a0</instance_id>
+        <instance_name>apigroupdev</instance_name>
+        <name>sc_cat_item_category_d7c1b85f1b08b1508c5143f3cc4bcb5b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Premier Support">2171381f1b08b1508c5143f3cc4bcb73</sc_cat_item><sc_category display_value="Computers &amp; Devices">6d01e0171bbfb4508c5143f3cc4bcbc5</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>Terry.Lillo</sys_created_by><sys_created_on>2023-07-20 14:14:22</sys_created_on><sys_id>d7c1b85f1b08b1508c5143f3cc4bcb5b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Computers &amp; Devices.Premier Support</sys_name><sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package><sys_policy/><sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope><sys_update_name>sc_cat_item_category_d7c1b85f1b08b1508c5143f3cc4bcb5b</sys_update_name><sys_updated_by>Terry.Lillo</sys_updated_by><sys_updated_on>2023-07-20 14:14:22</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>-935766398</payload_hash>
+        <record_name>Computers &amp; Devices.Premier Support</record_name>
+        <reverted_from/>
+        <source>9666aabc1beda1508c5143f3cc4bcb62</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-20 14:14:23</sys_created_on>
+        <sys_id>1fc1b85f1b08b1508c5143f3cc4bcb5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18973a6de960000001</sys_recorded_at>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-20 14:14:23</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>17c1b85fff08b1505de134b234809f5f</update_guid>
+        <update_guid_history>17c1b85fff08b1505de134b234809f5f:-935766398</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Computers &amp; Devices.Premier Support">3e3574d31b48b1508c5143f3cc4bcb6e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-20 14:29:22</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>817a078e0e54463488b64e26583669e4</sys_id>
+        <sys_metadata>d7c1b85f1b08b1508c5143f3cc4bcb5b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Computers &amp; Devices.Premier Support</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_scope_delete display_value="">1de550a9788c4602b4836958c30c66c9</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_d7c1b85f1b08b1508c5143f3cc4bcb5b</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_d7c1b85f1b08b1508c5143f3cc4bcb5b">1fc1b85f1b08b1508c5143f3cc4bcb5f</sys_update_version>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-20 14:29:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

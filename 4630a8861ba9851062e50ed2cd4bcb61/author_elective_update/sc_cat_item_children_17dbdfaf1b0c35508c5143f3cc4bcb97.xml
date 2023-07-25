@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_children">
+    <sc_cat_item_children action="DELETE">
+        <child display_value="">03db9faf1b0c35508c5143f3cc4bcb58</child>
+        <order>100</order>
+        <parent display_value="Lenovo ThinkPad E15">66b4b4071bc8f15062e50ed2cd4bcb98</parent>
+        <quantity>1</quantity>
+        <sys_class_name>sc_cat_item_children</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-21 21:15:52</sys_created_on>
+        <sys_id>17dbdfaf1b0c35508c5143f3cc4bcb97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Accidental Damage.Lenovo ThinkPad E15</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sc_cat_item_children_17dbdfaf1b0c35508c5143f3cc4bcb97</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-21 21:15:52</sys_updated_on>
+    </sc_cat_item_children>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</application>
+        <file_path/>
+        <instance_id>37412023db6dd890ad8dd7c8f49619a0</instance_id>
+        <instance_name>apigroupdev</instance_name>
+        <name>sc_cat_item_children_17dbdfaf1b0c35508c5143f3cc4bcb97</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_children"><sc_cat_item_children action="INSERT_OR_UPDATE"><child display_value="">03db9faf1b0c35508c5143f3cc4bcb58</child><order>100</order><parent display_value="Lenovo ThinkPad E15">66b4b4071bc8f15062e50ed2cd4bcb98</parent><quantity>1</quantity><sys_class_name>sc_cat_item_children</sys_class_name><sys_created_by>Terry.Lillo</sys_created_by><sys_created_on>2023-07-21 21:15:52</sys_created_on><sys_id>17dbdfaf1b0c35508c5143f3cc4bcb97</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Accidental Damage.Lenovo ThinkPad E15</sys_name><sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package><sys_policy/><sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope><sys_update_name>sc_cat_item_children_17dbdfaf1b0c35508c5143f3cc4bcb97</sys_update_name><sys_updated_by>Terry.Lillo</sys_updated_by><sys_updated_on>2023-07-21 21:15:52</sys_updated_on></sc_cat_item_children></record_update>]]></payload>
+        <payload_hash>1409359061</payload_hash>
+        <record_name>Accidental Damage.Lenovo ThinkPad E15</record_name>
+        <reverted_from/>
+        <source>9912f9331b33211062e50ed2cd4bcbec</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2023-07-09 21:56:29</sys_created_on>
+        <sys_id>979fdf271b4c35508c5143f3cc4bcbd6</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>1893ca7fac80000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Child</type>
+        <update_guid>579fdf27e84c35505528d5fdaf1867d6</update_guid>
+        <update_guid_history>579fdf27e84c35505528d5fdaf1867d6:1409359061</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Accidental Damage.Lenovo ThinkPad E15">9f9fdf271b4c35508c5143f3cc4bcbd7</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-21 21:32:15</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_children">sc_cat_item_children</sys_db_object>
+        <sys_id>58053f2793e941ad8ede9766d30897b1</sys_id>
+        <sys_metadata>17dbdfaf1b0c35508c5143f3cc4bcb97</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Accidental Damage.Lenovo ThinkPad E15</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_scope_delete display_value="">1de550a9788c4602b4836958c30c66c9</sys_scope_delete>
+        <sys_update_name>sc_cat_item_children_17dbdfaf1b0c35508c5143f3cc4bcb97</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_children_17dbdfaf1b0c35508c5143f3cc4bcb97">979fdf271b4c35508c5143f3cc4bcbd6</sys_update_version>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-21 21:32:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

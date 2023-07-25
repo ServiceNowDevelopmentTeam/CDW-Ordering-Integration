@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Logitech Bluetooth Mouse M310">a77324031b48f15062e50ed2cd4bcb27</sc_cat_item>
+        <sc_category display_value="Keyboards &amp; Mice">f7504cb91b4bb41062e50ed2cd4bcb6f</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-19 18:33:22</sys_created_on>
+        <sys_id>ef7324031b48f15062e50ed2cd4bcb2d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Keyboards &amp; Mice.Logitech Bluetooth Mouse M310</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sc_cat_item_category_ef7324031b48f15062e50ed2cd4bcb2d</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-19 18:33:22</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</application>
+        <file_path/>
+        <instance_id>37412023db6dd890ad8dd7c8f49619a0</instance_id>
+        <instance_name>apigroupdev</instance_name>
+        <name>sc_cat_item_category_ef7324031b48f15062e50ed2cd4bcb2d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Logitech Bluetooth Mouse M310">a77324031b48f15062e50ed2cd4bcb27</sc_cat_item><sc_category display_value="Keyboards &amp; Mice">f7504cb91b4bb41062e50ed2cd4bcb6f</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>Terry.Lillo</sys_created_by><sys_created_on>2023-07-19 18:33:22</sys_created_on><sys_id>ef7324031b48f15062e50ed2cd4bcb2d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Keyboards &amp; Mice.Logitech Bluetooth Mouse M310</sys_name><sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package><sys_policy/><sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope><sys_update_name>sc_cat_item_category_ef7324031b48f15062e50ed2cd4bcb2d</sys_update_name><sys_updated_by>Terry.Lillo</sys_updated_by><sys_updated_on>2023-07-19 18:33:22</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>778562803</payload_hash>
+        <record_name>Keyboards &amp; Mice.Logitech Bluetooth Mouse M310</record_name>
+        <reverted_from/>
+        <source>9666aabc1beda1508c5143f3cc4bcb62</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-19 18:33:22</sys_created_on>
+        <sys_id>6f7324031b48f15062e50ed2cd4bcb30</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1896f6d9dc30000001</sys_recorded_at>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-19 18:33:22</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>677324035548f1504b6f1ccaed3b6930</update_guid>
+        <update_guid_history>677324035548f1504b6f1ccaed3b6930:778562803</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Keyboards &amp; Mice.Logitech Bluetooth Mouse M310">76a0b48b1b88f15062e50ed2cd4bcb80</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-19 19:30:56</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>08669101f4584ff7828543529c60b981</sys_id>
+        <sys_metadata>ef7324031b48f15062e50ed2cd4bcb2d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Keyboards &amp; Mice.Logitech Bluetooth Mouse M310</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_scope_delete display_value="">1de550a9788c4602b4836958c30c66c9</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_ef7324031b48f15062e50ed2cd4bcb2d</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_ef7324031b48f15062e50ed2cd4bcb2d">6f7324031b48f15062e50ed2cd4bcb30</sys_update_version>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-19 19:30:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

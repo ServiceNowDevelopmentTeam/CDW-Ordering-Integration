@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_children">
+    <sc_cat_item_children action="DELETE">
+        <child display_value="Autopilot">728607ef1b8835508c5143f3cc4bcba1</child>
+        <order>100</order>
+        <parent display_value="Lenovo ThinkPad X1 Yoga">09d430471bc8f15062e50ed2cd4bcb33</parent>
+        <quantity>1</quantity>
+        <sys_class_name>sc_cat_item_children</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-21 19:42:44</sys_created_on>
+        <sys_id>078607ef1b8835508c5143f3cc4bcbff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Autopilot.Lenovo ThinkPad X1 Yoga</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sc_cat_item_children_078607ef1b8835508c5143f3cc4bcbff</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-21 19:42:44</sys_updated_on>
+    </sc_cat_item_children>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</application>
+        <file_path/>
+        <instance_id>37412023db6dd890ad8dd7c8f49619a0</instance_id>
+        <instance_name>apigroupdev</instance_name>
+        <name>sc_cat_item_children_078607ef1b8835508c5143f3cc4bcbff</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_children"><sc_cat_item_children action="INSERT_OR_UPDATE"><child display_value="Autopilot">728607ef1b8835508c5143f3cc4bcba1</child><order>100</order><parent display_value="Lenovo ThinkPad X1 Yoga">09d430471bc8f15062e50ed2cd4bcb33</parent><quantity>1</quantity><sys_class_name>sc_cat_item_children</sys_class_name><sys_created_by>Terry.Lillo</sys_created_by><sys_created_on>2023-07-21 19:42:44</sys_created_on><sys_id>078607ef1b8835508c5143f3cc4bcbff</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Autopilot.Lenovo ThinkPad X1 Yoga</sys_name><sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package><sys_policy/><sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope><sys_update_name>sc_cat_item_children_078607ef1b8835508c5143f3cc4bcbff</sys_update_name><sys_updated_by>Terry.Lillo</sys_updated_by><sys_updated_on>2023-07-21 19:42:44</sys_updated_on></sc_cat_item_children></record_update>]]></payload>
+        <payload_hash>124306457</payload_hash>
+        <record_name>Autopilot.Lenovo ThinkPad X1 Yoga</record_name>
+        <reverted_from/>
+        <source>9912f9331b33211062e50ed2cd4bcbec</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2023-07-09 21:56:29</sys_created_on>
+        <sys_id>046b53af1b0c35508c5143f3cc4bcb46</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>1893ca7fac80000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Child</type>
+        <update_guid>c06b53afc70c3550641378c729fd1546</update_guid>
+        <update_guid_history>c06b53afc70c3550641378c729fd1546:124306457</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Autopilot.Lenovo ThinkPad X1 Yoga">486b53af1b0c35508c5143f3cc4bcb47</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-21 21:13:44</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_children">sc_cat_item_children</sys_db_object>
+        <sys_id>0e914dedc32f446294cd99fc975d2481</sys_id>
+        <sys_metadata>078607ef1b8835508c5143f3cc4bcbff</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Autopilot.Lenovo ThinkPad X1 Yoga</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_scope_delete display_value="">1de550a9788c4602b4836958c30c66c9</sys_scope_delete>
+        <sys_update_name>sc_cat_item_children_078607ef1b8835508c5143f3cc4bcbff</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_children_078607ef1b8835508c5143f3cc4bcbff">046b53af1b0c35508c5143f3cc4bcb46</sys_update_version>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-21 21:13:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

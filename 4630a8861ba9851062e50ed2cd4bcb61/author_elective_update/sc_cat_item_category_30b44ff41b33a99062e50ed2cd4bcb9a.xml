@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="HP Thunderbolt Dock">b0b44ff41b33a99062e50ed2cd4bcb87</sc_cat_item>
+        <sc_category display_value="Docking Stations">1740043d1b4bb41062e50ed2cd4bcb7e</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-30 20:15:40</sys_created_on>
+        <sys_id>30b44ff41b33a99062e50ed2cd4bcb9a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Docking Stations.HP Thunderbolt Dock</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sc_cat_item_category_30b44ff41b33a99062e50ed2cd4bcb9a</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-30 20:15:40</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</application>
+        <file_path/>
+        <instance_id>37412023db6dd890ad8dd7c8f49619a0</instance_id>
+        <instance_name>apigroupdev</instance_name>
+        <name>sc_cat_item_category_30b44ff41b33a99062e50ed2cd4bcb9a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="HP Thunderbolt Dock">b0b44ff41b33a99062e50ed2cd4bcb87</sc_cat_item><sc_category display_value="Docking Stations">1740043d1b4bb41062e50ed2cd4bcb7e</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>Terry.Lillo</sys_created_by><sys_created_on>2023-06-30 20:15:40</sys_created_on><sys_id>30b44ff41b33a99062e50ed2cd4bcb9a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Docking Stations.HP Thunderbolt Dock</sys_name><sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package><sys_policy/><sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope><sys_update_name>sc_cat_item_category_30b44ff41b33a99062e50ed2cd4bcb9a</sys_update_name><sys_updated_by>Terry.Lillo</sys_updated_by><sys_updated_on>2023-06-30 20:15:40</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>-650272098</payload_hash>
+        <record_name>Docking Stations.HP Thunderbolt Dock</record_name>
+        <reverted_from/>
+        <source>9666aabc1beda1508c5143f3cc4bcb62</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-30 20:15:40</sys_created_on>
+        <sys_id>7cb44ff41b33a99062e50ed2cd4bcb9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1890df273ca0000001</sys_recorded_at>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-30 20:15:40</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>74b44ff4b933a990dc71710880a8039c</update_guid>
+        <update_guid_history>74b44ff4b933a990dc71710880a8039c:-650272098</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Docking Stations.HP Thunderbolt Dock">c39334831bc8f15062e50ed2cd4bcbe9</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-19 19:43:47</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>00ff2d85caa3401ea7dfa7ef47a4f411</sys_id>
+        <sys_metadata>30b44ff41b33a99062e50ed2cd4bcb9a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Docking Stations.HP Thunderbolt Dock</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_scope_delete display_value="">1de550a9788c4602b4836958c30c66c9</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_30b44ff41b33a99062e50ed2cd4bcb9a</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_30b44ff41b33a99062e50ed2cd4bcb9a">7cb44ff41b33a99062e50ed2cd4bcb9c</sys_update_version>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-19 19:43:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

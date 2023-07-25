@@ -37,7 +37,6 @@
 			var gr = new GlideRecord('cmn_location');
 			gr.get(g_scratchpad.location,function(){
 			g_form.setValue(location,g_scratchpad.location, gr.name);
-			console.log('Setting location from scratchpad to ' + gr.name)
 		});
 		}
 		// Clear the fields if no location is selected
@@ -54,7 +53,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4857422d1ba2a5908c5143f3cc4bcb9c</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>Set location info</sys_name>
         <sys_overrides/>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
@@ -62,7 +61,7 @@
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>catalog_script_client_4857422d1ba2a5908c5143f3cc4bcb9c</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2023-06-30 20:32:58</sys_updated_on>
+        <sys_updated_on>2023-07-19 15:27:16</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

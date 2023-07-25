@@ -18,21 +18,29 @@
         <name>Clear location/dept on company change</name>
         <order>100</order>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
-   if (isLoading || newValue == '') {
-      return;
-   }
-	g_form.setValue('department','');
-	g_form.setValue('location','');
-   //Type appropriate comment here, and begin script below
-   
-}]]></script>
+    if (isLoading || newValue == '') {
+        return;
+    }
+    if (g_scratchpad.isAutofilling) {
+		g_scratchpad.isAutofilling = false;
+        return;
+    }
+    // Only change department and location if company is actually changing
+    // and if the form is not in the autofilling process
+    if (newValue !== oldValue) {
+        g_form.setValue('department','');
+        g_form.setValue('location','');
+		console.log("Location and department cleared")
+    }
+}
+]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2023-06-30 20:36:33</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>14494fbc1b33a99062e50ed2cd4bcb3e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Clear location/dept on company change</sys_name>
         <sys_overrides/>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
@@ -40,7 +48,7 @@
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>catalog_script_client_14494fbc1b33a99062e50ed2cd4bcb3e</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2023-06-30 20:36:33</sys_updated_on>
+        <sys_updated_on>2023-07-19 15:41:26</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

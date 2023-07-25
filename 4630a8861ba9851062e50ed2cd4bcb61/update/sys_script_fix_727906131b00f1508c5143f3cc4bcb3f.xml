@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <before>false</before>
+        <description/>
+        <name>Auto add cdw child items and models</name>
+        <record_for_rollback>true</record_for_rollback>
+        <script><![CDATA[var items = {
+    "5406023": {
+        "Name": "Premier Support",
+        "Price": 75
+    },
+    "4208650": {
+        "Name": "Accidental Damage",
+        "Price": 66
+    },
+    "6154305": {
+        "Name": "Autopilot",
+        "Price": 5
+    },
+    "1369901": {
+        "Name": "Welcome Letter",
+        "Price": 5
+    },
+    "500817": {
+        "Name": "Asset Tag",
+        "Price": 10
+    },
+    "6794684": {
+        "Name": "Windows Clean Image",
+        "Price": 29
+    },
+    "3242416": {
+        "Name": "Accidental Damage",
+        "Price": 99
+    },
+    "4977471": {
+        "Name": "Lenovo ThinkPad Ethernet Extension Adapter",
+        "Price": 29
+    },
+    "2991688": {
+        "Name": "Accidental Damage",
+        "Price": 69
+    },
+    "5517943": {
+        "Name": "Accidental Damage",
+        "Price": 119
+    },
+    "1197180": {
+        "Name": "BIOS Customization",
+        "Price": 5
+    }
+};
+
+var computers = {
+    "Lenovo ThinkPad E15": ["5406023","4208650","6154305","1369901","500817","6794684"],
+    "Lenovo ThinkPad X1 Yoga": ["500817","3242416","6154305","1369901","6794684","4977471"],
+    "Lenovo ThinkPad X12 Tablet": ["500817","2991688","6154305","1369901","6794684","4977471"],
+    "Lenovo ThinkPad P16": ["5517943","6154305","500817","1369901","1197180","6794684"],
+    "Lenovo ThinkPad X1 Extreme Gen5": ["3242416","6154305","500817","1369901","1197180","6794684","4977471"],
+    "Lenovo ThinkCentre M70q": ["6154305","500817","1369901"]
+};
+
+var computerKeys = Object.keys(computers);
+var itemKeys = Object.keys(items);
+
+function createProductItem(item, UPC) {
+    var itemGr = new GlideRecord('pc_product_cat_item');
+    itemGr.initialize();
+    itemGr.name = item.Name;
+	itemGr.short_description = item.Name;
+    itemGr.upc = UPC;
+    itemGr.price = item.Price;
+	itemGr.list_price = item.Price;
+    itemGr.model = item.Model;
+	itemGr.hide_sp = true;
+	itemGr.vendor = '5bcd40401b2a6d508c5143f3cc4bcbb0';//CDW
+	itemGr.flow_designer_flow = '2b7e9bfc1b7634508c5143f3cc4bcbcd';//CDW RITM Request Flow
+    itemGr.insert();
+}
+
+function createOrFindProductModel(modelName) {
+    var modelGr = new GlideRecord('cmdb_service_product_model');
+    modelGr.addQuery('name', modelName);
+    modelGr.query();
+    if (modelGr.next()) {
+        return modelGr.sys_id.toString();
+    }
+    else {
+        var modelGr = new GlideRecord('cmdb_service_product_model');
+        modelGr.initialize();
+        modelGr.name = modelName;
+        modelGr.insert();
+        return modelGr.sys_id.toString();
+    }
+}
+
+function findItemByUPC(itemUPC) {
+    var itemGr = new GlideRecord('pc_product_cat_item');
+    itemGr.addQuery('upc', itemUPC);
+    itemGr.query();
+    if (itemGr.next()) {
+        return itemGr.sys_id.toString();
+    }
+    else {
+        return null
+    }
+}
+
+function findItemByName(itemName) {
+    var itemGr = new GlideRecord('pc_product_cat_item');
+    itemGr.addQuery('name', itemName);
+    itemGr.query();
+    if (itemGr.next()) {
+        return itemGr.sys_id.toString();
+    }
+    else {
+        return null
+    }
+}
+
+//Add items that don't exist in the catalog
+for(var key in itemKeys){
+    var itemUPC = itemKeys[key];
+    var item = items[itemUPC];
+    item.Model = createOrFindProductModel(item.Name); // using item's name as model
+    var itemId = findItemByUPC(itemUPC)
+
+    if (!itemId) {
+        createProductItem(item, itemUPC)
+    }
+}
+
+//Add relationship between computers and items
+for(var key in computerKeys){
+    var computerName = computerKeys[key];
+    var catItemId = findItemByName(computerName) // using computer's name
+    if (catItemId) {
+        var computer = computers[computerName];
+        for(var itemKey in computer){
+            var itemUPC = computer[itemKey];
+            var item = items[itemUPC];
+            var itemId = findItemByUPC(itemUPC)
+            if (itemId) {
+                var relGr = new GlideRecord('sc_cat_item_children');
+                relGr.addQuery('parent', catItemId);
+                relGr.addQuery('child', itemId);
+                relGr.query();
+                if (!relGr.next()) {
+                    var relGr = new GlideRecord('sc_cat_item_children');
+                    relGr.initialize();
+                    relGr.parent = catItemId;
+                    relGr.child = itemId;
+                    relGr.insert();
+                }
+            }
+        }
+    }
+}]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-20 20:38:04</sys_created_on>
+        <sys_id>727906131b00f1508c5143f3cc4bcb3f</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Auto add cdw child items and models</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sys_script_fix_727906131b00f1508c5143f3cc4bcb3f</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-25 18:14:10</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

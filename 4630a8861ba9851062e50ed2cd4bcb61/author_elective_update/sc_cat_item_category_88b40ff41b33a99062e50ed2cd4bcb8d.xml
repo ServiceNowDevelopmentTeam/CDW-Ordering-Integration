@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Lenovo ThinkVision P32p-20">c0b40ff41b33a99062e50ed2cd4bcb87</sc_cat_item>
+        <sc_category display_value="Monitors">fdb61ce11b87741062e50ed2cd4bcb3b</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-30 20:15:37</sys_created_on>
+        <sys_id>88b40ff41b33a99062e50ed2cd4bcb8d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Monitors.Lenovo ThinkVision P32p-20</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sc_cat_item_category_88b40ff41b33a99062e50ed2cd4bcb8d</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-30 20:15:37</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</application>
+        <file_path/>
+        <instance_id>37412023db6dd890ad8dd7c8f49619a0</instance_id>
+        <instance_name>apigroupdev</instance_name>
+        <name>sc_cat_item_category_88b40ff41b33a99062e50ed2cd4bcb8d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Lenovo ThinkVision P32p-20">c0b40ff41b33a99062e50ed2cd4bcb87</sc_cat_item><sc_category display_value="Monitors">fdb61ce11b87741062e50ed2cd4bcb3b</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>Terry.Lillo</sys_created_by><sys_created_on>2023-06-30 20:15:37</sys_created_on><sys_id>88b40ff41b33a99062e50ed2cd4bcb8d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Monitors.Lenovo ThinkVision P32p-20</sys_name><sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package><sys_policy/><sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope><sys_update_name>sc_cat_item_category_88b40ff41b33a99062e50ed2cd4bcb8d</sys_update_name><sys_updated_by>Terry.Lillo</sys_updated_by><sys_updated_on>2023-06-30 20:15:37</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>625612031</payload_hash>
+        <record_name>Monitors.Lenovo ThinkVision P32p-20</record_name>
+        <reverted_from/>
+        <source>9666aabc1beda1508c5143f3cc4bcb62</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-30 20:15:37</sys_created_on>
+        <sys_id>c4b40ff41b33a99062e50ed2cd4bcb90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1890df268b40000001</sys_recorded_at>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-30 20:15:37</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>ccb40ff48933a990d71d4fff53adaf8f</update_guid>
+        <update_guid_history>ccb40ff48933a990d71d4fff53adaf8f:625612031</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Monitors.Lenovo ThinkVision P32p-20">54a3b4831bc8f15062e50ed2cd4bcbac</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-19 19:43:52</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>095677081f584a5189a7c8188fca2ee9</sys_id>
+        <sys_metadata>88b40ff41b33a99062e50ed2cd4bcb8d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Monitors.Lenovo ThinkVision P32p-20</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_scope_delete display_value="">1de550a9788c4602b4836958c30c66c9</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_88b40ff41b33a99062e50ed2cd4bcb8d</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_88b40ff41b33a99062e50ed2cd4bcb8d">c4b40ff41b33a99062e50ed2cd4bcb90</sys_update_version>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-19 19:43:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
