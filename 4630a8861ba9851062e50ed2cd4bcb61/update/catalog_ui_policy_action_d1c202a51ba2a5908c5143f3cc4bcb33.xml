@@ -20,7 +20,7 @@
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-06-30 20:35:18</sys_updated_on>
         <table/>
-        <ui_policy display_value="Location/Department Visibility">a26246651ba2a5908c5143f3cc4bcb7e</ui_policy>
+        <ui_policy display_value="Location Visibility">a26246651ba2a5908c5143f3cc4bcb7e</ui_policy>
         <variable>location</variable>
         <variable_set display_value="Delivery Information">7eadc3b71b926d508c5143f3cc4bcb57</variable_set>
         <visible>true</visible>

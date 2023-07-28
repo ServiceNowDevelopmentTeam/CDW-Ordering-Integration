@@ -6,7 +6,7 @@
         <applies_sc_task>true</applies_sc_task>
         <applies_target_record>true</applies_target_record>
         <applies_to>set</applies_to>
-        <catalog_conditions>IO:c38b5c081b6a6d508c5143f3cc4bcbe2=true^IO:cf3f1f3f1bd26d508c5143f3cc4bcb45ANYTHING^IO:1cef9b7f1bd26d508c5143f3cc4bcb0dANYTHING^IO:a1f235211b62a5908c5143f3cc4bcbfbANYTHING^IO:e416805a1b2a69908c5143f3cc4bcb13ANYTHING^EQ</catalog_conditions>
+        <catalog_conditions>IO:c38b5c081b6a6d508c5143f3cc4bcbe2=true^IO:cf3f1f3f1bd26d508c5143f3cc4bcb45ANYTHING^IO:1cef9b7f1bd26d508c5143f3cc4bcb0dANYTHING^IO:a1f235211b62a5908c5143f3cc4bcbfbANYTHING^NQIO:c95067bf1bd26d508c5143f3cc4bcbd7=true^EQ</catalog_conditions>
         <catalog_item/>
         <conditions/>
         <description/>
@@ -16,7 +16,7 @@
         <model_id/>
         <model_table/>
         <on_load>true</on_load>
-        <order>100</order>
+        <order>120</order>
         <reverse_if_false>true</reverse_if_false>
         <run_scripts>false</run_scripts>
         <script_false><![CDATA[function onCondition() {
@@ -33,7 +33,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fb1ed80c1b6a6d508c5143f3cc4bcba7</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Address info visibility</sys_name>
         <sys_overrides/>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
@@ -41,7 +41,7 @@
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>catalog_ui_policy_fb1ed80c1b6a6d508c5143f3cc4bcba7</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2023-05-03 18:57:41</sys_updated_on>
+        <sys_updated_on>2023-07-28 14:19:34</sys_updated_on>
         <table/>
         <ui_type>0</ui_type>
         <variable_set display_value="Delivery Information">7eadc3b71b926d508c5143f3cc4bcb57</variable_set>

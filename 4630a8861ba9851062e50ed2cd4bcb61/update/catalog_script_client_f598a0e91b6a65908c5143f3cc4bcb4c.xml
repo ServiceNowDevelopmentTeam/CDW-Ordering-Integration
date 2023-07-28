@@ -19,78 +19,85 @@
         <order>0</order>
         <script><![CDATA[// Helper function to parse and filter cart items
 function parseAndFilterItems(response) {
-    var cartItemsWithVariables = JSON.parse(response);
-    var requiredVariables = ['company', 'location', 'department', 'phone_number', 'address_2', 'chargeback_and_configuration', 'city', 'address_1', 'state', 'zip_code', 'location_incorrect_or_not_found', 'requested_for'];
-    
-    return cartItemsWithVariables.filter(function(item) {
-        var itemVariableNames = item.variables.map(function(variable) {
-            return variable.name;
-        });
-        return requiredVariables.every(function(requiredVariable) {
-            return itemVariableNames.includes(requiredVariable);
-        });
-    });
+	var cartItemsWithVariables = JSON.parse(response);
+	var requiredVariables = ['company', 'location', 'department', 'phone_number', 'address_2', 'chargeback_and_configuration', 'city', 'address_1', 'state', 'zip_code', 'location_incorrect_or_not_found', 'requested_for'];
+
+	return cartItemsWithVariables.filter(function(item) {
+		var itemVariableNames = item.variables.map(function(variable) {
+			return variable.name;
+		});
+		return requiredVariables.every(function(requiredVariable) {
+			return itemVariableNames.includes(requiredVariable);
+		});
+	});
 }
 
 // Helper function to check if all items have the same variables as the reference item
 function checkItemsMatch(referenceItem, itemsWithRequiredVariables) {
-    return itemsWithRequiredVariables.every(function(item) {
-        return item.variables.every(function(variable) {
-            // If the variable is 'enabled', ignore it
-            if (variable.name === 'enabled') {
-                return true;
-            }
+	return itemsWithRequiredVariables.every(function(item) {
+		return item.variables.every(function(variable) {
+			// If the variable is 'enabled', ignore it
+			if (variable.name === 'enabled') {
+				return true;
+			}
 
-            // Find the corresponding variable in the reference item by name
-            var referenceVariable = referenceItem.variables.find(function(refVar) {
-                return refVar.name === variable.name;
-            });
+			// Find the corresponding variable in the reference item by name
+			var referenceVariable = referenceItem.variables.find(function(refVar) {
+				return refVar.name === variable.name;
+			});
 
-            // If the corresponding reference variable is found, compare their values
-            // If not found, return false
-            return referenceVariable ? variable.value === referenceVariable.value : false;
-        });
-    });
+			// If the corresponding reference variable is found, compare their values
+			// If not found, return false
+			return referenceVariable ? variable.value === referenceVariable.value : false;
+		});
+	});
 }
 
 // Helper function to set form fields based on reference item variables
 function setFormFields(referenceItem) {
-    referenceItem.variables.forEach(function(variable) {
-        g_form.setValue(variable.name, variable.value);
-        if(variable.name == 'location'){
-            g_scratchpad.location = variable.value;
-        }
-    });
-    g_form.setValue('enabled', false);
+	referenceItem.variables.forEach(function(variable) {
+		g_form.setValue(variable.name, variable.value);
+		if(variable.name == 'location'){
+			g_scratchpad.location = variable.value;
+		}
+	});
+	g_form.setValue('enabled', false);
 }
 
 // Function that executes upon loading the webpage
 function onLoad() {
-    g_scratchpad.isAutofilling = true;
+	var isMobile = g_form.getBooleanValue('is_mobile');
+	if(!isMobile){
+		g_scratchpad.isAutofilling = true;
 
-    var ga = new GlideAjax('global.CartItemVariables');
-    ga.addParam('sysparm_name', 'ajaxFunction_getVariablesForUserCart');
-    ga.addParam('sysparm_user_id', g_user.userID);
+		var ga = new GlideAjax('global.CartItemVariables');
+		ga.addParam('sysparm_name', 'ajaxFunction_getVariablesForUserCart');
+		ga.addParam('sysparm_user_id', g_user.userID);
 
-    ga.getXMLAnswer(function(response) {
-        g_form.setValue('enabled', true);
+		ga.getXMLAnswer(function(response) {
+			g_form.setValue('enabled', true);
 
-        var itemsWithRequiredVariables = parseAndFilterItems(response);
+			var itemsWithRequiredVariables = parseAndFilterItems(response);
 
-        if (itemsWithRequiredVariables.length > 0) {
-            var referenceItem = itemsWithRequiredVariables[0];
-            var itemsMatch = checkItemsMatch(referenceItem, itemsWithRequiredVariables);
-            if (itemsMatch) {
-                setFormFields(referenceItem);
-            } else {
-                g_form.setValue('enabled', true);
-            }
-        } else {
-            g_form.setValue('enabled', true);
-        }
-    });
+			if (itemsWithRequiredVariables.length > 0) {
+				var referenceItem = itemsWithRequiredVariables[0];
+				var itemsMatch = checkItemsMatch(referenceItem, itemsWithRequiredVariables);
+				if (itemsMatch) {
+					setFormFields(referenceItem);
+				} else {
+					g_form.setValue('enabled', true);
+				}
+			} else {
+				g_form.setValue('enabled', true);
+			}
+		});
 
-    var oldCompanyValue = g_form.getValue('company');
+		var oldCompanyValue = g_form.getValue('company');
+	}
+	else{
+		
+			g_form.setValue('enabled', true);
+	}
 }
 ]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
@@ -99,7 +106,7 @@ function onLoad() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f598a0e91b6a65908c5143f3cc4bcb4c</sys_id>
-        <sys_mod_count>60</sys_mod_count>
+        <sys_mod_count>62</sys_mod_count>
         <sys_name>Validate Cart On Load</sys_name>
         <sys_overrides/>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
@@ -107,7 +114,7 @@ function onLoad() {
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>catalog_script_client_f598a0e91b6a65908c5143f3cc4bcb4c</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2023-07-19 15:39:40</sys_updated_on>
+        <sys_updated_on>2023-07-28 13:45:05</sys_updated_on>
         <table/>
         <type>onLoad</type>
         <ui_type>10</ui_type>
