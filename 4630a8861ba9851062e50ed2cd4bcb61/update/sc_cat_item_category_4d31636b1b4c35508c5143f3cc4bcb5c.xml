@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
     <sc_cat_item_category action="INSERT_OR_UPDATE">
-        <sc_cat_item display_value="Cord - Computer Power">0531636b1b4c35508c5143f3cc4bcb4e</sc_cat_item>
+        <sc_cat_item display_value="">0531636b1b4c35508c5143f3cc4bcb4e</sc_cat_item>
         <sc_category display_value="Cables &amp; Adapters">ca60083d1b4bb41062e50ed2cd4bcb17</sc_category>
         <sys_class_name>sc_cat_item_category</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>

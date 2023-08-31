@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
     <sc_cat_item_category action="INSERT_OR_UPDATE">
-        <sc_cat_item display_value="Lenovo ThinkPad P16">4241a76b1b4c35508c5143f3cc4bcb0f</sc_cat_item>
+        <sc_cat_item display_value="">4241a76b1b4c35508c5143f3cc4bcb0f</sc_cat_item>
         <sc_category display_value="CAD Laptops">f1aea49c1b9230108c5143f3cc4bcbc5</sc_category>
         <sys_class_name>sc_cat_item_category</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>

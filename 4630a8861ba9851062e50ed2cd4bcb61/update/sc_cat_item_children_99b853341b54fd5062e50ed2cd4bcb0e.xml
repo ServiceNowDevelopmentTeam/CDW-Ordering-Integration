@@ -2,7 +2,7 @@
     <sc_cat_item_children action="INSERT_OR_UPDATE">
         <child display_value="BIOS Customization">dcb8dff01b54fd5062e50ed2cd4bcbaf</child>
         <order>100</order>
-        <parent display_value="Lenovo ThinkPad P16">4241a76b1b4c35508c5143f3cc4bcb0f</parent>
+        <parent display_value="">4241a76b1b4c35508c5143f3cc4bcb0f</parent>
         <quantity>1</quantity>
         <sys_class_name>sc_cat_item_children</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>

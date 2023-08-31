@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
     <sc_cat_item_category action="INSERT_OR_UPDATE">
-        <sc_cat_item display_value="Lenovo ThinkVision T24i-30">3ad4b0471bc8f15062e50ed2cd4bcb94</sc_cat_item>
+        <sc_cat_item display_value="">3ad4b0471bc8f15062e50ed2cd4bcb94</sc_cat_item>
         <sc_category display_value="Monitors">fdb61ce11b87741062e50ed2cd4bcb3b</sc_category>
         <sys_class_name>sc_cat_item_category</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>

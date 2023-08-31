@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_question">
+    <sys_decision_question action="DELETE">
+        <active>true</active>
+        <answer>ed2918571b6d6410e7004229bc4bcbf3</answer>
+        <condition table="var__m_sys_decision_input_accfdd041b3ec91062e50ed2cd4bcb8c">u_company_or_segment=dcb5d89f1b021050f5a3635bbc4bcbda^EQ<item display_table="core_company" display_value="Grunau Company Inc" endquery="false" field="u_company_or_segment" goto="false" newquery="false" operator="=" or="false" value="dcb5d89f1b021050f5a3635bbc4bcbda"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <decision_table display_value="Company and Segment CDW Approvers">accfdd041b3ec91062e50ed2cd4bcb8c</decision_table>
+        <default_answer>false</default_answer>
+        <input_table>var__m_sys_decision_input_accfdd041b3ec91062e50ed2cd4bcb8c</input_table>
+        <label>Company and Segment CDW Approvers_400</label>
+        <order>400</order>
+        <sys_class_name>sys_decision_question</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-04-06 19:38:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bda0a5c41b3ec91062e50ed2cd4bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-04-06 19:38:01</sys_updated_on>
+    </sys_decision_question>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</application>
+        <file_path/>
+        <instance_id>cb41202bdbe5d890601a11f8489619fb</instance_id>
+        <instance_name>apigroup</instance_name>
+        <name>sys_decision_question_bda0a5c41b3ec91062e50ed2cd4bcb16</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_question">
+    <sys_decision_question action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>ed2918571b6d6410e7004229bc4bcbf3</answer>
+        <condition table="var__m_sys_decision_input_accfdd041b3ec91062e50ed2cd4bcb8c">u_company_or_segment=dcb5d89f1b021050f5a3635bbc4bcbda^EQ<item display_table="core_company" display_value="Grunau Company Inc" endquery="false" field="u_company_or_segment" goto="false" newquery="false" operator="=" or="false" value="dcb5d89f1b021050f5a3635bbc4bcbda"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <decision_table display_value="Company and Segment CDW Approvers">accfdd041b3ec91062e50ed2cd4bcb8c</decision_table>
+        <default_answer>false</default_answer>
+        <input_table>var__m_sys_decision_input_accfdd041b3ec91062e50ed2cd4bcb8c</input_table>
+        <label>Company and Segment CDW Approvers_400</label>
+        <order>400</order>
+        <sys_class_name>sys_decision_question</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-04-06 19:38:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bda0a5c41b3ec91062e50ed2cd4bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-04-06 19:38:01</sys_updated_on>
+    </sys_decision_question>
+</record_update>]]></payload>
+        <payload_hash>335892909</payload_hash>
+        <record_name>Company and Segment CDW Approvers_400</record_name>
+        <reverted_from/>
+        <source>4630a8861ba9851062e50ed2cd4bcb61</source>
+        <source_table>sys_store_app</source_table>
+        <state>previous</state>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-28 16:32:44</sys_created_on>
+        <sys_id>143ed2f99758f9102e853cf3a253af0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1899d586b9f0000001</sys_recorded_at>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-28 16:32:44</sys_updated_on>
+        <type>Decision</type>
+        <update_guid>503ed2f9a758f910d5b7aa8cb059320e</update_guid>
+        <update_guid_history>503ed2f9a758f910d5b7aa8cb059320e:0,11c93dde45bda150f8ccf2187c992522:-1008946903,27719ed5ae792d102a3691d1ae17fc0a:0,4b45aac5a589e1901f46dc79ae28d54a:-1568792781,f53e7cff96b46d5067ae7700e4c833ff:0,ecff46fe8d2f15909950839281c2e364:-1568792781,28ff46fe092f159064c5f946a0057563:1698563125</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-31 14:10:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_decision_question">sys_decision_question</sys_db_object>
+        <sys_id>00d06afcaa974380823fe0c86c4a4000</sys_id>
+        <sys_metadata>bda0a5c41b3ec91062e50ed2cd4bcb16</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Company and Segment CDW Approvers_400</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_scope_delete display_value="">1de550a9788c4602b4836958c30c66c9</sys_scope_delete>
+        <sys_update_name>sys_decision_question_bda0a5c41b3ec91062e50ed2cd4bcb16</sys_update_name>
+        <sys_update_version display_value="sys_decision_question_bda0a5c41b3ec91062e50ed2cd4bcb16">143ed2f99758f9102e853cf3a253af0e</sys_update_version>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-31 14:10:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

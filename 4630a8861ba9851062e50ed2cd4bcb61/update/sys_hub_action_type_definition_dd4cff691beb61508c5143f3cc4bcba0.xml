@@ -27,7 +27,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>dd4cff691beb61508c5143f3cc4bcba0</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Add REST API Log</sys_name>
         <sys_overrides/>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
@@ -35,7 +35,7 @@
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_dd4cff691beb61508c5143f3cc4bcba0</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2023-06-20 22:02:35</sys_updated_on>
+        <sys_updated_on>2023-07-28 16:33:00</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -798,11 +798,11 @@
         <sys_created_on>2023-06-20 22:00:15</sys_created_on>
         <sys_id>4fbcffa91beb61508c5143f3cc4bcbda</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>HTTP Status Code</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_dd4cff691beb61508c5143f3cc4bcba0_http_status_code_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-06-20 22:00:15</sys_updated_on>
         <url/>
@@ -821,11 +821,11 @@
         <sys_created_on>2023-06-20 22:00:15</sys_created_on>
         <sys_id>87bcffa91beb61508c5143f3cc4bcbd6</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Direction</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_dd4cff691beb61508c5143f3cc4bcba0_direction_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-06-20 22:00:15</sys_updated_on>
         <url/>
@@ -844,11 +844,11 @@
         <sys_created_on>2023-06-20 22:00:15</sys_created_on>
         <sys_id>dfbcffa91beb61508c5143f3cc4bcbde</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>JSON Payload</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_dd4cff691beb61508c5143f3cc4bcba0_json_payload_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-06-20 22:00:15</sys_updated_on>
         <url/>
@@ -867,11 +867,11 @@
         <sys_created_on>2023-06-20 22:02:33</sys_created_on>
         <sys_id>f84d3f2d1beb61508c5143f3cc4bcb97</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Related Task</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_dd4cff691beb61508c5143f3cc4bcba0_related_task_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-06-20 22:02:33</sys_updated_on>
         <url/>
@@ -954,11 +954,11 @@
         <sys_created_on>2023-06-20 22:00:15</sys_created_on>
         <sys_id>17bc33e91beb61508c5143f3cc4bcb24</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Log Record</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_dd4cff691beb61508c5143f3cc4bcba0_log_record_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-06-20 22:00:15</sys_updated_on>
         <url/>
@@ -977,11 +977,11 @@
         <sys_created_on>2023-06-20 22:00:15</sys_created_on>
         <sys_id>5bbcffa91beb61508c5143f3cc4bcbf8</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_dd4cff691beb61508c5143f3cc4bcba0___action_status___en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-06-20 22:00:15</sys_updated_on>
         <url/>
@@ -1000,11 +1000,11 @@
         <sys_created_on>2023-06-20 22:00:16</sys_created_on>
         <sys_id>d3bc33e91beb61508c5143f3cc4bcb2a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_dd4cff691beb61508c5143f3cc4bcba0___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-06-20 22:00:16</sys_updated_on>
         <url/>
@@ -1823,11 +1823,11 @@
         <sys_created_on>2023-06-20 22:02:34</sys_created_on>
         <sys_id>114d3f2d1beb61508c5143f3cc4bcbe6</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Direction</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_814d3f2d1beb61508c5143f3cc4bcbdc_direction_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-06-20 22:02:34</sys_updated_on>
         <url/>
@@ -1846,11 +1846,11 @@
         <sys_created_on>2023-06-20 22:02:34</sys_created_on>
         <sys_id>1d4d3f2d1beb61508c5143f3cc4bcbec</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>JSON Payload</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_814d3f2d1beb61508c5143f3cc4bcbdc_json_payload_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-06-20 22:02:34</sys_updated_on>
         <url/>
@@ -1869,11 +1869,11 @@
         <sys_created_on>2023-06-20 22:02:34</sys_created_on>
         <sys_id>954d3f2d1beb61508c5143f3cc4bcbe9</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>HTTP Status Code</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_814d3f2d1beb61508c5143f3cc4bcbdc_http_status_code_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-06-20 22:02:34</sys_updated_on>
         <url/>
@@ -1892,11 +1892,11 @@
         <sys_created_on>2023-06-20 22:02:35</sys_created_on>
         <sys_id>d54d3f2d1beb61508c5143f3cc4bcbf1</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Related Task</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_814d3f2d1beb61508c5143f3cc4bcbdc_related_task_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-06-20 22:02:35</sys_updated_on>
         <url/>
@@ -1979,11 +1979,11 @@
         <sys_created_on>2023-06-20 22:02:35</sys_created_on>
         <sys_id>1d4d7f2d1beb61508c5143f3cc4bcb39</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_814d3f2d1beb61508c5143f3cc4bcbdc___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-06-20 22:02:35</sys_updated_on>
         <url/>
@@ -2002,11 +2002,11 @@
         <sys_created_on>2023-06-20 22:02:35</sys_created_on>
         <sys_id>914d7f2d1beb61508c5143f3cc4bcb03</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Log Record</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_814d3f2d1beb61508c5143f3cc4bcbdc_log_record_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-06-20 22:02:35</sys_updated_on>
         <url/>
@@ -2025,11 +2025,11 @@
         <sys_created_on>2023-06-20 22:02:35</sys_created_on>
         <sys_id>d54d3f2d1beb61508c5143f3cc4bcbfe</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_814d3f2d1beb61508c5143f3cc4bcbdc___action_status___en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-06-20 22:02:35</sys_updated_on>
         <url/>
@@ -2039,6 +2039,6 @@
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>dd4cff691beb61508c5143f3cc4bcba0</sys_id>
         <latest_snapshot>814d3f2d1beb61508c5143f3cc4bcbdc</latest_snapshot>
-        <compiler_build>glide-tokyo-07-08-2022__patch9-05-10-2023_05-25-2023_0925.zip</compiler_build>
+        <compiler_build>glide-tokyo-07-08-2022__patch9-hotfix2-06-07-2023_06-23-2023_1740.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>

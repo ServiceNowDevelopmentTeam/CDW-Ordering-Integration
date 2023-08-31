@@ -44,18 +44,4 @@
         <use_mutual_auth>false</use_mutual_auth>
         <user/>
     </oauth_entity>
-    <sys_claim action="INSERT_OR_UPDATE">
-        <claim_owner_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</claim_owner_scope>
-        <claim_timestamp>1801a373c440000001</claim_timestamp>
-        <metadata_update_name>oauth_entity_b12c56b01becbc90e7004229bc4bcb45</metadata_update_name>
-        <previous_claim_app_version>1.0.3</previous_claim_app_version>
-        <previous_claim_name>CDW Ordering Integration</previous_claim_name>
-        <previous_claim_scope>4630a8861ba9851062e50ed2cd4bcb61</previous_claim_scope>
-        <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2022-04-11 20:01:09</sys_created_on>
-        <sys_id>9de51be11bf2811062e50ed2cd4bcbde</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-10-13 13:40:57</sys_updated_on>
-    </sys_claim>
 </record_update>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
     <sc_cat_item_category action="INSERT_OR_UPDATE">
-        <sc_cat_item display_value="Troy M404N - Small Bundle">2521af2b1b4c35508c5143f3cc4bcb08</sc_cat_item>
+        <sc_cat_item display_value="">2521af2b1b4c35508c5143f3cc4bcb08</sc_cat_item>
         <sc_category display_value="Printers">68c291cc1b3f701062e50ed2cd4bcb89</sc_category>
         <sys_class_name>sc_cat_item_category</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>

@@ -38,7 +38,7 @@
         <label>Approval State</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="CDW Ordering">0a7c2ac91b6291108c5143f3cc4bcbba</model>
+        <model display_value="">0a7c2ac91b6291108c5143f3cc4bcbba</model>
         <model_id>0a7c2ac91b6291108c5143f3cc4bcbba</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_variable_0a7c2ac91b6291108c5143f3cc4bcbba</name>

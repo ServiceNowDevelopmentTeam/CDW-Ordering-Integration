@@ -26,7 +26,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>99af306b1be3a1908c5143f3cc4bcb00</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Copy Variables to Cart Item</sys_name>
         <sys_overrides/>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
@@ -34,7 +34,7 @@
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_99af306b1be3a1908c5143f3cc4bcb00</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2023-06-26 13:59:51</sys_updated_on>
+        <sys_updated_on>2023-07-28 16:32:54</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -141,30 +141,6 @@
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=c200c1ab1be3a1908c5143f3cc4bcbbb"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>c200c1ab1be3a1908c5143f3cc4bcbbb</id>
-        <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2023-06-26 13:23:38</sys_created_on>
-        <sys_id>c60005ab1be3a1908c5143f3cc4bcb05</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2023-06-26 13:23:38</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>c200c1ab1be3a1908c5143f3cc4bcbbb</id>
-        <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2023-06-26 13:23:39</sys_created_on>
-        <sys_id>8e0005ab1be3a1908c5143f3cc4bcb05</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2023-06-26 13:23:39</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>source</field>
         <id>c200c1ab1be3a1908c5143f3cc4bcbbb</id>
@@ -909,11 +885,11 @@
         <sys_created_on>2023-06-26 13:30:07</sys_created_on>
         <sys_id>4181452f1be3a1908c5143f3cc4bcb16</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Source Cart Item</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_99af306b1be3a1908c5143f3cc4bcb00_source_cart_item_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-06-26 13:30:07</sys_updated_on>
         <url/>
@@ -932,11 +908,11 @@
         <sys_created_on>2023-06-26 13:30:08</sys_created_on>
         <sys_id>d181452f1be3a1908c5143f3cc4bcb1e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Target Cart Item</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_99af306b1be3a1908c5143f3cc4bcb00_target_cart_item_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-06-26 13:30:08</sys_updated_on>
         <url/>
@@ -955,11 +931,11 @@
         <sys_created_on>2023-06-26 13:24:49</sys_created_on>
         <sys_id>db4049ab1be3a1908c5143f3cc4bcb89</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Variables to Copy</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_99af306b1be3a1908c5143f3cc4bcb00_Variables_to_Copy_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-06-26 13:24:49</sys_updated_on>
         <url/>
@@ -980,11 +956,11 @@
         <sys_created_on>2023-06-26 13:24:49</sys_created_on>
         <sys_id>1f4049ab1be3a1908c5143f3cc4bcba5</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_99af306b1be3a1908c5143f3cc4bcb00___action_status___en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-06-26 13:24:49</sys_updated_on>
         <url/>
@@ -1003,11 +979,11 @@
         <sys_created_on>2023-06-26 13:24:49</sys_created_on>
         <sys_id>534049ab1be3a1908c5143f3cc4bcbac</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_99af306b1be3a1908c5143f3cc4bcb00___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-06-26 13:24:49</sys_updated_on>
         <url/>
@@ -1169,30 +1145,6 @@
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=231189eb1be3a1908c5143f3cc4bcbff"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>231189eb1be3a1908c5143f3cc4bcbff</id>
-        <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2023-06-26 13:28:23</sys_created_on>
-        <sys_id>3311c9eb1be3a1908c5143f3cc4bcb1d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2023-06-26 13:28:23</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>231189eb1be3a1908c5143f3cc4bcbff</id>
-        <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2023-06-26 13:28:23</sys_created_on>
-        <sys_id>f311c9eb1be3a1908c5143f3cc4bcb1d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2023-06-26 13:28:23</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>source</field>
         <id>231189eb1be3a1908c5143f3cc4bcbff</id>
@@ -1937,11 +1889,11 @@
         <sys_created_on>2023-06-26 13:28:23</sys_created_on>
         <sys_id>2b1189eb1be3a1908c5143f3cc4bcbfc</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Variables to Copy</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_6f1189eb1be3a1908c5143f3cc4bcbda_Variables_to_Copy_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-06-26 13:28:23</sys_updated_on>
         <url/>
@@ -1960,11 +1912,11 @@
         <sys_created_on>2023-06-26 13:30:54</sys_created_on>
         <sys_id>64b1c92f1be3a1908c5143f3cc4bcb4a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Target Cart Item</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_6f1189eb1be3a1908c5143f3cc4bcbda_target_cart_item_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-06-26 13:30:54</sys_updated_on>
         <url/>
@@ -1983,11 +1935,11 @@
         <sys_created_on>2023-06-26 13:30:54</sys_created_on>
         <sys_id>d4b1c92f1be3a1908c5143f3cc4bcb42</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Source Cart Item</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_6f1189eb1be3a1908c5143f3cc4bcbda_source_cart_item_en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-06-26 13:30:54</sys_updated_on>
         <url/>
@@ -2008,11 +1960,11 @@
         <sys_created_on>2023-06-26 13:28:24</sys_created_on>
         <sys_id>7b11c9eb1be3a1908c5143f3cc4bcb25</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_6f1189eb1be3a1908c5143f3cc4bcbda___action_status___en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-06-26 13:28:24</sys_updated_on>
         <url/>
@@ -2031,11 +1983,11 @@
         <sys_created_on>2023-06-26 13:28:24</sys_created_on>
         <sys_id>7b11c9eb1be3a1908c5143f3cc4bcb2b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_6f1189eb1be3a1908c5143f3cc4bcbda___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-06-26 13:28:24</sys_updated_on>
         <url/>
@@ -2045,6 +1997,6 @@
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>99af306b1be3a1908c5143f3cc4bcb00</sys_id>
         <latest_snapshot>6f1189eb1be3a1908c5143f3cc4bcbda</latest_snapshot>
-        <compiler_build>glide-tokyo-07-08-2022__patch9-05-10-2023_05-25-2023_0925.zip</compiler_build>
+        <compiler_build>glide-tokyo-07-08-2022__patch9-hotfix2-06-07-2023_06-23-2023_1740.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>

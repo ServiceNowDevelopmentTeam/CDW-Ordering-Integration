@@ -27,7 +27,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fa2f3c521b42bc1062e50ed2cd4bcb55</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>CDW Ordering - Build Order Lines</sys_name>
         <sys_overrides/>
         <sys_package display_value="Global" source="global">global</sys_package>
@@ -35,7 +35,7 @@
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_fa2f3c521b42bc1062e50ed2cd4bcb55</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2023-07-25 14:04:07</sys_updated_on>
+        <sys_updated_on>2023-08-31 21:18:02</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -49,10 +49,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-04-19 14:57:21</sys_created_on>
         <sys_id>891d1b881bcb09508c5143f3cc4bcb90</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2023-07-25 13:49:44</sys_updated_on>
-        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FD811d1b88aacb0950ca210e7293d22569":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD811d1b88aacb0950ca210e7293d22569.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"b65018ba-cb2e-4fbe-8191-480a5da75ea5\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD811d1b88aacb0950ca210e7293d22569\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"3\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
+        <sys_updated_on>2023-08-31 21:16:18</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FD811d1b88aacb0950ca210e7293d22569":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD811d1b88aacb0950ca210e7293d22569.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"b65018ba-cb2e-4fbe-8191-480a5da75ea5\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD811d1b88aacb0950ca210e7293d22569\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"3\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">0d1d1b881bcb09508c5143f3cc4bcb78</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -722,10 +722,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2021-08-20 13:59:49</sys_created_on>
         <sys_id>cf2f3c521b42bc1062e50ed2cd4bcb81</sys_id>
-        <sys_mod_count>109</sys_mod_count>
+        <sys_mod_count>110</sys_mod_count>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2023-07-25 14:04:01</sys_updated_on>
+        <sys_updated_on>2023-08-31 21:16:18</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=cf2f3c521b42bc1062e50ed2cd4bcb81"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -750,116 +750,116 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2021-08-20 13:59:50</sys_created_on>
         <sys_id>832f3c521b42bc1062e50ed2cd4bcb99</sys_id>
-        <sys_mod_count>106</sys_mod_count>
+        <sys_mod_count>107</sys_mod_count>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2023-07-25 14:04:01</sys_updated_on>
+        <sys_updated_on>2023-08-31 21:16:18</sys_updated_on>
         <value>(function execute(inputs, outputs) {  
-    //reduce the length of strings to avoid API string length issues
-    function reduceStringSize(inString,length){
-      var outString = '';
-      if(inString.length &gt; length) {
-        outString = inString.substring(0,length);
-      }
-      else{
-        outString = inString;
-      }
-      return outString;
+  //reduce the length of strings to avoid API string length issues
+  function reduceStringSize(inString,length){
+    var outString = '';
+    if(inString.length &gt; length) {
+      outString = inString.substring(0,length);
     }
-  
-    //Initialize Vars
-    var orderLinesArr = [];
-    var htmlOrderLinesArr = [];
-    var orderLines = [];
-  
-    //Get Request
-    var reqGr = new GlideRecord('sc_request');
-    reqGr.get(inputs.request);
-  
-    //Get Ritms for request
-    var ritmGr = new GlideRecord('sc_req_item');
-    ritmGr.addQuery('request', reqGr.sys_id);
-    ritmGr.query();
-  
-    //Add ritm info to array for processing
-    while (ritmGr.next()) {
-      //If the order already exists, increment it
-      var cdwNumber = ritmGr.cat_item.upc ? ritmGr.cat_item.upc.toString() : null;
+    else{
+      outString = inString;
+    }
+    return outString;
+  }
 
-      // If the cdwNumber is null, skip this iteration
-      if(!cdwNumber) continue;
-      
-      var orderIndex = -1;
-      if(orderLines.length!=0){
-        for(var i=0; i&lt;orderLines.length; i++){
-          if(orderLines[i].cdw_item_number==cdwNumber)
-          {
-            orderIndex = i;
-            break;
-          }
+  //Initialize Vars
+  var orderLinesArr = [];
+  var htmlOrderLinesArr = [];
+  var orderLines = [];
+
+  //Get Request
+  var reqGr = new GlideRecord('sc_request');
+  reqGr.get(inputs.request);
+
+  //Get Ritms for request
+  var ritmGr = new GlideRecord('sc_req_item');
+  ritmGr.addQuery('request', reqGr.sys_id);
+  ritmGr.query();
+
+  //Add ritm info to array for processing
+  while (ritmGr.next()) {
+    //If the order already exists, increment it
+    var cdwNumber = ritmGr.cat_item.upc ? ritmGr.cat_item.upc.toString() : null;
+
+    // If the cdwNumber is null, skip this iteration
+    if(!cdwNumber) continue;
+    
+    var orderIndex = -1;
+    if(orderLines.length!=0){
+      for(var i=0; i&lt;orderLines.length; i++){
+        if(orderLines[i].cdw_item_number==cdwNumber)
+        {
+          orderIndex = i;
+          break;
         }
       }
-  
-      if(orderIndex == -1){
-        orderLines.push({ 
-          number: ritmGr.number.toString(), 
-          price: ritmGr.cat_item.list_price.getValue(), 
-          quantity: ritmGr.quantity.getValue(),
-          cdw_item_number: cdwNumber,
-          short_description: ritmGr.cat_item.short_description.getValue()
-        });
-      }
-      else{
-        orderLines[orderIndex].quantity=(parseInt(orderLines[orderIndex].quantity)+parseInt(ritmGr.quantity.toString())).toString();
-      }
     }
-  
-    //Build order line objects for the payload output and html in email
-    for (var i = 0; i &lt; orderLines.length; i++) {
-      objLine = orderLines[i];
-      if (orderLines[i].cdw_item_number) {
-        //Payload order line
-        var line = {
-          unitPrice: objLine.price.toString(),
-          manufacturerPartId: '',
-          quantity: parseInt(objLine.quantity),
-          cdwPartNumber: reduceStringSize(objLine.cdw_item_number,30),
-          manufacturerName: reduceStringSize(objLine.cat_item.manufacturer_name,30),
-          requestDeliverydate: '2022-04-26',
-          uom: 'EA',
-          contractId: '18496',
-          unspscCode: '',
-          itemDescription: reduceStringSize(objLine.short_description.replace('QTY:2',''),256),
-          lineNumber: (i + 1).toString(),
-          couponCode: ''
-        };
-        //HTML order line
-        var htmlLine = {
-          unitPrice: objLine.price.toString(),
-          manufacturerPartId: '',
-          quantity: parseInt(objLine.quantity),
-          cdwPartNumber: reduceStringSize(objLine.cdw_item_number,30),
-          manufacturerName: reduceStringSize(objLine.cat_item.manufacturer_name,30),
-          //requestDeliverydate: reqGr.u_requested_delivery_date.toString(),
-          requestDeliverydate: '2022-04-26',
-          uom: 'EA',
-          contractId: '18496',
-          unspscCode: '',
-          itemDescription: reduceStringSize(objLine.short_description.replace('QTY:2',''),256),
-          lineNumber: (i + 1).toString(),
-          couponCode: '',
-          ritmNumber: objLine.number
-        };
-        //Push order linse to array
-        orderLinesArr.push(line);
-        htmlOrderLinesArr.push(htmlLine);
-      }
+
+    if(orderIndex == -1){
+      orderLines.push({ 
+        number: ritmGr.number.toString(), 
+        price: ritmGr.cat_item.list_price.getValue(), 
+        quantity: ritmGr.quantity.getValue(),
+        cdw_item_number: cdwNumber,
+        short_description: ritmGr.cat_item.name.getValue()
+      });
     }
-  
-    //Set output vars as JSON strings
-    outputs.orderlines = JSON.stringify(orderLinesArr);
-    outputs.htmlorderlines = JSON.stringify(htmlOrderLinesArr);
-  })(inputs, outputs);
-  </value>
+    else{
+      orderLines[orderIndex].quantity=(parseInt(orderLines[orderIndex].quantity)+parseInt(ritmGr.quantity.toString())).toString();
+    }
+  }
+
+  //Build order line objects for the payload output and html in email
+  for (var i = 0; i &lt; orderLines.length; i++) {
+    objLine = orderLines[i];
+    if (orderLines[i].cdw_item_number) {
+      //Payload order line
+      var line = {
+        unitPrice: objLine.price.toString(),
+        manufacturerPartId: '',
+        quantity: parseInt(objLine.quantity),
+        cdwPartNumber: reduceStringSize(objLine.cdw_item_number,30),
+        manufacturerName: reduceStringSize(objLine.cat_item.manufacturer_name,30),
+        requestDeliverydate: '2022-04-26',
+        uom: 'EA',
+        contractId: '18496',
+        unspscCode: '',
+        itemDescription: reduceStringSize(objLine.short_description.replace('QTY:2',''),256),
+        lineNumber: (i + 1).toString(),
+        couponCode: ''
+      };
+      //HTML order line
+      var htmlLine = {
+        unitPrice: objLine.price.toString(),
+        manufacturerPartId: '',
+        quantity: parseInt(objLine.quantity),
+        cdwPartNumber: reduceStringSize(objLine.cdw_item_number,30),
+        manufacturerName: reduceStringSize(objLine.cat_item.manufacturer_name,30),
+        //requestDeliverydate: reqGr.u_requested_delivery_date.toString(),
+        requestDeliverydate: '2022-04-26',
+        uom: 'EA',
+        contractId: '18496',
+        unspscCode: '',
+        itemDescription: reduceStringSize(objLine.short_description.replace('QTY:2',''),256),
+        lineNumber: (i + 1).toString(),
+        couponCode: '',
+        ritmNumber: objLine.number
+      };
+      //Push order linse to array
+      orderLinesArr.push(line);
+      htmlOrderLinesArr.push(htmlLine);
+    }
+  }
+
+  //Set output vars as JSON strings
+  outputs.orderlines = JSON.stringify(orderLinesArr);
+  outputs.htmlorderlines = JSON.stringify(htmlOrderLinesArr);
+})(inputs, outputs);
+</value>
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -905,11 +905,11 @@
         <field>script</field>
         <id>cf2f3c521b42bc1062e50ed2cd4bcb81</id>
         <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2023-06-21 21:16:08</sys_created_on>
-        <sys_id>fa3cb04a1bebe15062e50ed2cd4bcb9d</sys_id>
+        <sys_created_on>2023-08-31 21:16:18</sys_created_on>
+        <sys_id>11256abc1b89b15062e50ed2cd4bcb60</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2023-06-21 21:16:08</sys_updated_on>
+        <sys_updated_on>2023-08-31 21:16:18</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
         <value/>
     </sys_element_mapping>
@@ -2250,17 +2250,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="CDW Ordering - Build Order Lines">fa2f3c521b42bc1062e50ed2cd4bcb55</action_id>
         <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"b496c5121b82bc1062e50ed2cd4bcb55","name":"plan","plan_signature":null}}</plan>
-        <snapshot>ca6f52b41b9cbd5062e50ed2cd4bcb15</snapshot>
+        <snapshot>ba85a6fc1b89b15062e50ed2cd4bcbca</snapshot>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2021-08-20 14:32:10</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b496c5121b82bc1062e50ed2cd4bcb55</sys_id>
-        <sys_mod_count>102</sys_mod_count>
+        <sys_mod_count>103</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2023-07-25 14:04:11</sys_updated_on>
+        <sys_updated_on>2023-08-31 21:18:05</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -2309,10 +2309,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2022-04-19 14:57:24</sys_created_on>
         <sys_id>0e1d5b881bcb09508c5143f3cc4bcb3f</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2023-07-25 13:49:48</sys_updated_on>
-        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDb91d5b8823cb0950101ca52710134f1a":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDb91d5b8823cb0950101ca52710134f1a.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"b65018ba-cb2e-4fbe-8191-480a5da75ea5\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDb91d5b8823cb0950101ca52710134f1a\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"3\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
+        <sys_updated_on>2023-08-31 21:18:02</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDb91d5b8823cb0950101ca52710134f1a":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDb91d5b8823cb0950101ca52710134f1a.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"b65018ba-cb2e-4fbe-8191-480a5da75ea5\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDb91d5b8823cb0950101ca52710134f1a\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"3\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">c21d5b881bcb09508c5143f3cc4bcb29</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -2968,10 +2968,10 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2021-08-20 14:32:08</sys_created_on>
         <sys_id>589685121b82bc1062e50ed2cd4bcb9e</sys_id>
-        <sys_mod_count>92</sys_mod_count>
+        <sys_mod_count>93</sys_mod_count>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2023-07-25 14:04:07</sys_updated_on>
+        <sys_updated_on>2023-08-31 21:18:02</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=589685121b82bc1062e50ed2cd4bcb9e"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -3010,116 +3010,116 @@
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2021-08-20 14:32:08</sys_created_on>
         <sys_id>ec9685121b82bc1062e50ed2cd4bcbb4</sys_id>
-        <sys_mod_count>89</sys_mod_count>
+        <sys_mod_count>90</sys_mod_count>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2023-07-25 14:04:07</sys_updated_on>
+        <sys_updated_on>2023-08-31 21:18:02</sys_updated_on>
         <value>(function execute(inputs, outputs) {  
-    //reduce the length of strings to avoid API string length issues
-    function reduceStringSize(inString,length){
-      var outString = '';
-      if(inString.length &gt; length) {
-        outString = inString.substring(0,length);
-      }
-      else{
-        outString = inString;
-      }
-      return outString;
+  //reduce the length of strings to avoid API string length issues
+  function reduceStringSize(inString,length){
+    var outString = '';
+    if(inString.length &gt; length) {
+      outString = inString.substring(0,length);
     }
-  
-    //Initialize Vars
-    var orderLinesArr = [];
-    var htmlOrderLinesArr = [];
-    var orderLines = [];
-  
-    //Get Request
-    var reqGr = new GlideRecord('sc_request');
-    reqGr.get(inputs.request);
-  
-    //Get Ritms for request
-    var ritmGr = new GlideRecord('sc_req_item');
-    ritmGr.addQuery('request', reqGr.sys_id);
-    ritmGr.query();
-  
-    //Add ritm info to array for processing
-    while (ritmGr.next()) {
-      //If the order already exists, increment it
-      var cdwNumber = ritmGr.cat_item.upc ? ritmGr.cat_item.upc.toString() : null;
+    else{
+      outString = inString;
+    }
+    return outString;
+  }
 
-      // If the cdwNumber is null, skip this iteration
-      if(!cdwNumber) continue;
-      
-      var orderIndex = -1;
-      if(orderLines.length!=0){
-        for(var i=0; i&lt;orderLines.length; i++){
-          if(orderLines[i].cdw_item_number==cdwNumber)
-          {
-            orderIndex = i;
-            break;
-          }
+  //Initialize Vars
+  var orderLinesArr = [];
+  var htmlOrderLinesArr = [];
+  var orderLines = [];
+
+  //Get Request
+  var reqGr = new GlideRecord('sc_request');
+  reqGr.get(inputs.request);
+
+  //Get Ritms for request
+  var ritmGr = new GlideRecord('sc_req_item');
+  ritmGr.addQuery('request', reqGr.sys_id);
+  ritmGr.query();
+
+  //Add ritm info to array for processing
+  while (ritmGr.next()) {
+    //If the order already exists, increment it
+    var cdwNumber = ritmGr.cat_item.upc ? ritmGr.cat_item.upc.toString() : null;
+
+    // If the cdwNumber is null, skip this iteration
+    if(!cdwNumber) continue;
+    
+    var orderIndex = -1;
+    if(orderLines.length!=0){
+      for(var i=0; i&lt;orderLines.length; i++){
+        if(orderLines[i].cdw_item_number==cdwNumber)
+        {
+          orderIndex = i;
+          break;
         }
       }
-  
-      if(orderIndex == -1){
-        orderLines.push({ 
-          number: ritmGr.number.toString(), 
-          price: ritmGr.cat_item.list_price.getValue(), 
-          quantity: ritmGr.quantity.getValue(),
-          cdw_item_number: cdwNumber,
-          short_description: ritmGr.cat_item.short_description.getValue()
-        });
-      }
-      else{
-        orderLines[orderIndex].quantity=(parseInt(orderLines[orderIndex].quantity)+parseInt(ritmGr.quantity.toString())).toString();
-      }
     }
-  
-    //Build order line objects for the payload output and html in email
-    for (var i = 0; i &lt; orderLines.length; i++) {
-      objLine = orderLines[i];
-      if (orderLines[i].cdw_item_number) {
-        //Payload order line
-        var line = {
-          unitPrice: objLine.price.toString(),
-          manufacturerPartId: '',
-          quantity: parseInt(objLine.quantity),
-          cdwPartNumber: reduceStringSize(objLine.cdw_item_number,30),
-          manufacturerName: reduceStringSize(objLine.cat_item.manufacturer_name,30),
-          requestDeliverydate: '2022-04-26',
-          uom: 'EA',
-          contractId: '18496',
-          unspscCode: '',
-          itemDescription: reduceStringSize(objLine.short_description.replace('QTY:2',''),256),
-          lineNumber: (i + 1).toString(),
-          couponCode: ''
-        };
-        //HTML order line
-        var htmlLine = {
-          unitPrice: objLine.price.toString(),
-          manufacturerPartId: '',
-          quantity: parseInt(objLine.quantity),
-          cdwPartNumber: reduceStringSize(objLine.cdw_item_number,30),
-          manufacturerName: reduceStringSize(objLine.cat_item.manufacturer_name,30),
-          //requestDeliverydate: reqGr.u_requested_delivery_date.toString(),
-          requestDeliverydate: '2022-04-26',
-          uom: 'EA',
-          contractId: '18496',
-          unspscCode: '',
-          itemDescription: reduceStringSize(objLine.short_description.replace('QTY:2',''),256),
-          lineNumber: (i + 1).toString(),
-          couponCode: '',
-          ritmNumber: objLine.number
-        };
-        //Push order linse to array
-        orderLinesArr.push(line);
-        htmlOrderLinesArr.push(htmlLine);
-      }
+
+    if(orderIndex == -1){
+      orderLines.push({ 
+        number: ritmGr.number.toString(), 
+        price: ritmGr.cat_item.list_price.getValue(), 
+        quantity: ritmGr.quantity.getValue(),
+        cdw_item_number: cdwNumber,
+        short_description: ritmGr.cat_item.name.getValue()
+      });
     }
-  
-    //Set output vars as JSON strings
-    outputs.orderlines = JSON.stringify(orderLinesArr);
-    outputs.htmlorderlines = JSON.stringify(htmlOrderLinesArr);
-  })(inputs, outputs);
-  </value>
+    else{
+      orderLines[orderIndex].quantity=(parseInt(orderLines[orderIndex].quantity)+parseInt(ritmGr.quantity.toString())).toString();
+    }
+  }
+
+  //Build order line objects for the payload output and html in email
+  for (var i = 0; i &lt; orderLines.length; i++) {
+    objLine = orderLines[i];
+    if (orderLines[i].cdw_item_number) {
+      //Payload order line
+      var line = {
+        unitPrice: objLine.price.toString(),
+        manufacturerPartId: '',
+        quantity: parseInt(objLine.quantity),
+        cdwPartNumber: reduceStringSize(objLine.cdw_item_number,30),
+        manufacturerName: reduceStringSize(objLine.cat_item.manufacturer_name,30),
+        requestDeliverydate: '2022-04-26',
+        uom: 'EA',
+        contractId: '18496',
+        unspscCode: '',
+        itemDescription: reduceStringSize(objLine.short_description.replace('QTY:2',''),256),
+        lineNumber: (i + 1).toString(),
+        couponCode: ''
+      };
+      //HTML order line
+      var htmlLine = {
+        unitPrice: objLine.price.toString(),
+        manufacturerPartId: '',
+        quantity: parseInt(objLine.quantity),
+        cdwPartNumber: reduceStringSize(objLine.cdw_item_number,30),
+        manufacturerName: reduceStringSize(objLine.cat_item.manufacturer_name,30),
+        //requestDeliverydate: reqGr.u_requested_delivery_date.toString(),
+        requestDeliverydate: '2022-04-26',
+        uom: 'EA',
+        contractId: '18496',
+        unspscCode: '',
+        itemDescription: reduceStringSize(objLine.short_description.replace('QTY:2',''),256),
+        lineNumber: (i + 1).toString(),
+        couponCode: '',
+        ritmNumber: objLine.number
+      };
+      //Push order linse to array
+      orderLinesArr.push(line);
+      htmlOrderLinesArr.push(htmlLine);
+    }
+  }
+
+  //Set output vars as JSON strings
+  outputs.orderlines = JSON.stringify(orderLinesArr);
+  outputs.htmlorderlines = JSON.stringify(htmlOrderLinesArr);
+})(inputs, outputs);
+</value>
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=589685121b82bc1062e50ed2cd4bcb9e"/>
@@ -3139,11 +3139,11 @@
         <field>script</field>
         <id>589685121b82bc1062e50ed2cd4bcb9e</id>
         <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2023-06-21 21:16:18</sys_created_on>
-        <sys_id>5d4c344a1bebe15062e50ed2cd4bcb96</sys_id>
+        <sys_created_on>2023-08-31 21:18:02</sys_created_on>
+        <sys_id>a685a6fc1b89b15062e50ed2cd4bcb98</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2023-06-21 21:16:18</sys_updated_on>
+        <sys_updated_on>2023-08-31 21:18:02</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
         <value/>
     </sys_element_mapping>
@@ -4483,6 +4483,6 @@
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>fa2f3c521b42bc1062e50ed2cd4bcb55</sys_id>
         <latest_snapshot>149685121b82bc1062e50ed2cd4bcb91</latest_snapshot>
-        <compiler_build>glide-tokyo-07-08-2022__patch9-hotfix2-06-07-2023_06-23-2023_1740.zip</compiler_build>
+        <compiler_build>glide-tokyo-07-08-2022__patch9-hotfix2a-06-26-2023_07-05-2023_1648.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>

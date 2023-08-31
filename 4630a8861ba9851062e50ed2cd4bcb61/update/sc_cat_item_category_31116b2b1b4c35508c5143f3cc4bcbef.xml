@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
     <sc_cat_item_category action="INSERT_OR_UPDATE">
-        <sc_cat_item display_value="iPad 11 OtterBox Defender Case">e5116b2b1b4c35508c5143f3cc4bcbe0</sc_cat_item>
+        <sc_cat_item display_value="">e5116b2b1b4c35508c5143f3cc4bcbe0</sc_cat_item>
         <sc_category display_value="Mobile Device Accessories">3ef8f23c1bbf699062e50ed2cd4bcbd4</sc_category>
         <sys_class_name>sc_cat_item_category</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><database>
-    <element attributes="update_synch=true" db_object_id="1631614647230200c3d5563dbb9a711d" extends="sys_metadata" label="Variable Set" max_length="40" name="item_option_new_set" type="collection">
-        <element attributes="edge_encryption_enabled=true" label="CDW Variables" max_length="40" name="u_cdw_variables" type="boolean"/>
-    </element>
-</database>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
     <sc_cat_item_category action="INSERT_OR_UPDATE">
-        <sc_cat_item display_value="Targus Spruce Backpack">f6b4b4071bc8f15062e50ed2cd4bcbd9</sc_cat_item>
+        <sc_cat_item display_value="">f6b4b4071bc8f15062e50ed2cd4bcbd9</sc_cat_item>
         <sc_category display_value="Backpack/Tote">9a197e3c1bbf699062e50ed2cd4bcbbd</sc_category>
         <sys_class_name>sc_cat_item_category</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>

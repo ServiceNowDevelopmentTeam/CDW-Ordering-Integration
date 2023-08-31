@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
     <sc_cat_item_category action="INSERT_OR_UPDATE">
-        <sc_cat_item display_value="Logitech MK120">3521af2b1b4c35508c5143f3cc4bcb54</sc_cat_item>
+        <sc_cat_item display_value="">3521af2b1b4c35508c5143f3cc4bcb54</sc_cat_item>
         <sc_category display_value="Keyboards &amp; Mice">f7504cb91b4bb41062e50ed2cd4bcb6f</sc_category>
         <sys_class_name>sc_cat_item_category</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>

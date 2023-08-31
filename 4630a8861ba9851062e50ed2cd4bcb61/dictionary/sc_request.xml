@@ -6,8 +6,6 @@
         <element label="Phone" max_length="12" name="u_address_phone" type="string"/>
         <element label="Address State" max_length="15" name="u_address_state" type="string"/>
         <element label="Address Zip" max_length="10" name="u_address_zip" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="CDW Order" max_length="40" name="u_cdw_order" type="boolean"/>
-        <element attributes="edge_encryption_enabled=true" label="CDW Order Flow Ran" max_length="40" name="u_cdw_order_flow_ran" type="boolean"/>
         <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Company" max_length="32" name="u_company" reference="core_company" type="reference"/>
         <element label="Department" max_length="30" name="u_department" type="string"/>
         <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Location" max_length="32" name="u_location" reference="cmn_location" type="reference"/>

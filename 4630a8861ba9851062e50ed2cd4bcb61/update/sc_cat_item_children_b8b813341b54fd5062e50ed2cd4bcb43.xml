@@ -2,7 +2,7 @@
     <sc_cat_item_children action="INSERT_OR_UPDATE">
         <child display_value="Autopilot">c4b8dff01b54fd5062e50ed2cd4bcb83</child>
         <order>100</order>
-        <parent display_value="Lenovo ThinkPad X1 Yoga">6d41676b1b4c35508c5143f3cc4bcb77</parent>
+        <parent display_value="">6d41676b1b4c35508c5143f3cc4bcb77</parent>
         <quantity>1</quantity>
         <sys_class_name>sc_cat_item_children</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>

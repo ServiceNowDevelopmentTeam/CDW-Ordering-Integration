@@ -2,7 +2,7 @@
     <sc_cat_item_children action="INSERT_OR_UPDATE">
         <child display_value="Lenovo ThinkPad Ethernet Extension Adapter">14b8dff01b54fd5062e50ed2cd4bcb9f</child>
         <order>100</order>
-        <parent display_value="Lenovo ThinkPad X12 Tablet">ac41276b1b4c35508c5143f3cc4bcb6e</parent>
+        <parent display_value="">ac41276b1b4c35508c5143f3cc4bcb6e</parent>
         <quantity>1</quantity>
         <sys_class_name>sc_cat_item_children</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>

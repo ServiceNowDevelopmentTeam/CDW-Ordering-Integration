@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="Variables_to_Copy" label="Variables to Copy" language="en" table="var__m_sys_hub_action_input_99af306b1be3a1908c5143f3cc4bcb00">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>Variables_to_Copy</element>
+            <help/>
+            <hint/>
+            <label>Variables to Copy</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_99af306b1be3a1908c5143f3cc4bcb00</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-26 13:24:49</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Variables to Copy</sys_name>
+            <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_action_input_99af306b1be3a1908c5143f3cc4bcb00_Variables_to_Copy_en</sys_update_name>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-26 13:24:49</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -20,7 +20,7 @@
         <script><![CDATA[// Helper function to parse and filter cart items
 function parseAndFilterItems(response) {
 	var cartItemsWithVariables = JSON.parse(response);
-	var requiredVariables = ['company', 'location', 'department', 'phone_number', 'address_2', 'chargeback_and_configuration', 'city', 'address_1', 'state', 'zip_code', 'location_incorrect_or_not_found', 'requested_for'];
+	var requiredVariables = ['company', 'location', 'phone_number', 'address_2', 'chargeback_and_configuration', 'city', 'address_1', 'state', 'zip_code', 'location_incorrect_or_not_found', 'requested_for'];
 
 	return cartItemsWithVariables.filter(function(item) {
 		var itemVariableNames = item.variables.map(function(variable) {
@@ -106,7 +106,7 @@ function onLoad() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f598a0e91b6a65908c5143f3cc4bcb4c</sys_id>
-        <sys_mod_count>62</sys_mod_count>
+        <sys_mod_count>63</sys_mod_count>
         <sys_name>Validate Cart On Load</sys_name>
         <sys_overrides/>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
@@ -114,7 +114,7 @@ function onLoad() {
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>catalog_script_client_f598a0e91b6a65908c5143f3cc4bcb4c</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2023-07-28 13:45:05</sys_updated_on>
+        <sys_updated_on>2023-07-31 16:58:25</sys_updated_on>
         <table/>
         <type>onLoad</type>
         <ui_type>10</ui_type>

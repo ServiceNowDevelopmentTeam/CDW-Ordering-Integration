@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_question">
+    <sys_decision_question action="DELETE">
+        <active>true</active>
+        <answer>b300a1131b84c1108c5143f3cc4bcb61</answer>
+        <condition table="var__m_sys_decision_input_accfdd041b3ec91062e50ed2cd4bcb8c">u_company_or_segment=563519641bc48110df31da49cc4bcb1e^EQ<item display_table="core_company" display_value="NAC Mechanical &amp; Electrical Services" endquery="false" field="u_company_or_segment" goto="false" newquery="false" operator="=" or="false" value="563519641bc48110df31da49cc4bcb1e"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <decision_table display_value="Company and Segment CDW Approvers">accfdd041b3ec91062e50ed2cd4bcb8c</decision_table>
+        <default_answer>false</default_answer>
+        <input_table>var__m_sys_decision_input_accfdd041b3ec91062e50ed2cd4bcb8c</input_table>
+        <label>Company and Segment CDW Approvers_1500</label>
+        <order>1600</order>
+        <sys_class_name>sys_decision_question</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-02 15:57:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>12b016161bbf09d062e50ed2cd4bcbda</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Company and Segment CDW Approvers_1500</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-10-21 15:39:59</sys_updated_on>
+    </sys_decision_question>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</application>
+        <file_path/>
+        <instance_id>cb41202bdbe5d890601a11f8489619fb</instance_id>
+        <instance_name>apigroup</instance_name>
+        <name>sys_decision_question_12b016161bbf09d062e50ed2cd4bcbda</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_question">
+    <sys_decision_question action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>b300a1131b84c1108c5143f3cc4bcb61</answer>
+        <condition table="var__m_sys_decision_input_accfdd041b3ec91062e50ed2cd4bcb8c">u_company_or_segment=563519641bc48110df31da49cc4bcb1e^EQ<item display_table="core_company" display_value="NAC Mechanical &amp; Electrical Services" endquery="false" field="u_company_or_segment" goto="false" newquery="false" operator="=" or="false" value="563519641bc48110df31da49cc4bcb1e"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <decision_table display_value="Company and Segment CDW Approvers">accfdd041b3ec91062e50ed2cd4bcb8c</decision_table>
+        <default_answer>false</default_answer>
+        <input_table>var__m_sys_decision_input_accfdd041b3ec91062e50ed2cd4bcb8c</input_table>
+        <label>Company and Segment CDW Approvers_1500</label>
+        <order>1600</order>
+        <sys_class_name>sys_decision_question</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2022-06-02 15:57:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>12b016161bbf09d062e50ed2cd4bcbda</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Company and Segment CDW Approvers_1500</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-10-21 15:39:59</sys_updated_on>
+    </sys_decision_question>
+</record_update>]]></payload>
+        <payload_hash>769614640</payload_hash>
+        <record_name>Company and Segment CDW Approvers_1500</record_name>
+        <reverted_from/>
+        <source>4630a8861ba9851062e50ed2cd4bcb61</source>
+        <source_table>sys_store_app</source_table>
+        <state>previous</state>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-28 16:32:42</sys_created_on>
+        <sys_id>6f2e52f99758f9102e853cf3a253afcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1899d5860ff0000001</sys_recorded_at>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-28 16:32:42</sys_updated_on>
+        <type>Decision</type>
+        <update_guid>ab2e52f9ad58f9100e348c5ae2418ecb</update_guid>
+        <update_guid_history>ab2e52f9ad58f9100e348c5ae2418ecb:0,70c9f9de9fbda1503aa95fd88013c071:-1672658672,d7715ed507792d10069156137453b35f:0,4745aac5cd89e190a1e4f9208ec9904d:-95587995,ed3e3cff05b46d50ff17833ab05b1afa:0,bfab6bfc742351507dee82a0188a4851:-95587995,7bab6bfc11235150a79e8ae9eb5a8050:640627588</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-31 14:10:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_decision_question">sys_decision_question</sys_db_object>
+        <sys_id>322eea95327d4b48a7b33f91b8e1a544</sys_id>
+        <sys_metadata>12b016161bbf09d062e50ed2cd4bcbda</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Company and Segment CDW Approvers_1500</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_scope_delete display_value="">1de550a9788c4602b4836958c30c66c9</sys_scope_delete>
+        <sys_update_name>sys_decision_question_12b016161bbf09d062e50ed2cd4bcbda</sys_update_name>
+        <sys_update_version display_value="sys_decision_question_12b016161bbf09d062e50ed2cd4bcbda">6f2e52f99758f9102e853cf3a253afcb</sys_update_version>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-31 14:10:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
