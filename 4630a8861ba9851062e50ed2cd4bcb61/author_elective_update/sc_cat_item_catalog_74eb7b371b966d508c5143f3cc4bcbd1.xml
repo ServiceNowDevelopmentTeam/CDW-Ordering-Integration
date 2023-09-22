@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="Order Hardware">0a378f3f1b526d508c5143f3cc4bcbd2</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-04-26 18:24:23</sys_created_on>
+        <sys_id>74eb7b371b966d508c5143f3cc4bcbd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Order Hardware</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_74eb7b371b966d508c5143f3cc4bcbd1</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-04-26 18:24:23</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</application>
+        <file_path/>
+        <instance_id>37412023db6dd890ad8dd7c8f49619a0</instance_id>
+        <instance_name>apigroupdev</instance_name>
+        <name>sc_cat_item_catalog_74eb7b371b966d508c5143f3cc4bcbd1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="Order Hardware">0a378f3f1b526d508c5143f3cc4bcbd2</sc_cat_item><sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>Terry.Lillo</sys_created_by><sys_created_on>2023-04-26 18:24:23</sys_created_on><sys_id>74eb7b371b966d508c5143f3cc4bcbd1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Service Catalog.Order Hardware</sys_name><sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package><sys_policy/><sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope><sys_update_name>sc_cat_item_catalog_74eb7b371b966d508c5143f3cc4bcbd1</sys_update_name><sys_updated_by>Terry.Lillo</sys_updated_by><sys_updated_on>2023-04-26 18:24:23</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>-1564738753</payload_hash>
+        <record_name>Service Catalog.Order Hardware</record_name>
+        <reverted_from/>
+        <source>02a46b211b01311062e50ed2cd4bcba5</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2023-09-03 09:49:13</sys_created_on>
+        <sys_id>f0cdc1951b11b5108c5143f3cc4bcb1e</sys_id>
+        <sys_mod_count/>
+        <sys_recorded_at>18a5a7245a80000000</sys_recorded_at>
+        <sys_updated_by/>
+        <sys_updated_on/>
+        <type>Catalog Items Catalog</type>
+        <update_guid>b0cdc1953a11b51052b913d06ce3f21e</update_guid>
+        <update_guid_history>b0cdc1953a11b51052b913d06ce3f21e:-1564738753</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Service Catalog.Order Hardware">76edc5951b11b5108c5143f3cc4bcb42</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-09-14 14:27:51</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>a9b1e807fbee43a78f10036b4f8cdb71</sys_id>
+        <sys_metadata>74eb7b371b966d508c5143f3cc4bcbd1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Order Hardware</sys_name>
+        <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
+        <sys_parent display_value="Order Hardware">0a378f3f1b526d508c5143f3cc4bcbd2</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
+        <sys_scope_delete display_value="">1de550a9788c4602b4836958c30c66c9</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_74eb7b371b966d508c5143f3cc4bcbd1</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_74eb7b371b966d508c5143f3cc4bcbd1">f0cdc1951b11b5108c5143f3cc4bcb1e</sys_update_version>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-09-14 14:27:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
