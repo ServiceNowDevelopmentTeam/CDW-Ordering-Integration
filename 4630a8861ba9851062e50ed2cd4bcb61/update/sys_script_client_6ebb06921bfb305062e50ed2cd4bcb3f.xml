@@ -16,7 +16,7 @@
 	var fields = ['u_requested_delivery_date','u_address_phone','u_location','u_department','u_address_state','u_address_city','u_company','u_address_zip','u_address_2','u_order_comment','u_address_1'];
 	
 	//If user is not admin then loop through fields list and set read only
-	if (!(g_user.hasRole('admin'))){
+	if (!(g_user.hasRole('admin')) && !(g_user.hasRole('CDW Item Manager'))){
 		for(var i = 0; i<fields.length; i++){
 			g_form.setReadOnly(fields[i],true);
 		}
@@ -29,7 +29,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6ebb06921bfb305062e50ed2cd4bcb3f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Read Only CDW Fields</sys_name>
         <sys_overrides/>
         <sys_package display_value="Global" source="global">global</sys_package>
@@ -37,7 +37,7 @@
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>sys_script_client_6ebb06921bfb305062e50ed2cd4bcb3f</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-10-13 13:40:57</sys_updated_on>
+        <sys_updated_on>2023-10-11 19:05:07</sys_updated_on>
         <table>sc_request</table>
         <type>onLoad</type>
         <ui_type>10</ui_type>
