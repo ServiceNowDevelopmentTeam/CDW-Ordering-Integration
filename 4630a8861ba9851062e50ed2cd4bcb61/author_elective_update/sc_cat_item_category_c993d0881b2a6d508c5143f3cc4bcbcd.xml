@@ -29,19 +29,19 @@
         <source>02a46b211b01311062e50ed2cd4bcba5</source>
         <source_table>sys_upgrade_history</source_table>
         <state>previous</state>
-        <sys_created_by/>
+        <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2023-09-03 09:49:13</sys_created_on>
         <sys_id>47cb8d911b11b5108c5143f3cc4bcbaf</sys_id>
-        <sys_mod_count/>
+        <sys_mod_count>0</sys_mod_count>
         <sys_recorded_at>18a5a7245a80000000</sys_recorded_at>
-        <sys_updated_by/>
-        <sys_updated_on/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-12-14 14:15:53</sys_updated_on>
         <type>Catalog Item Category</type>
         <update_guid>07cb8d919b11b510d2e3539b7f448daf</update_guid>
         <update_guid_history>07cb8d919b11b510d2e3539b7f448daf:-1235167703</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Test Category.Order Hardware">b2edc5951b11b5108c5143f3cc4bcb5b</sys_audit_delete>
+        <sys_audit_delete display_value="">b2edc5951b11b5108c5143f3cc4bcb5b</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2023-09-14 14:27:51</sys_created_on>

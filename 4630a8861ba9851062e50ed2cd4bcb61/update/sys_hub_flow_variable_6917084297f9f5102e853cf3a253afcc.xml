@@ -2,7 +2,7 @@
     <sys_hub_flow_variable action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=7aa73970-950b-4627-b890-8326cfa1fcce</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=7206eee9-00b7-45fc-9d1c-3ed9101f2372</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -26,7 +26,7 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>approvers</element>
+        <element>approval_state</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
@@ -35,13 +35,13 @@
         <help/>
         <hint/>
         <internal_type display_value="String">string</internal_type>
-        <label>Approver Query</label>
+        <label>Approval State</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="PROF - CDW Ordering - Get Approval">0a70fb751bbac5108c5143f3cc4bcb75</model>
-        <model_id>0a70fb751bbac5108c5143f3cc4bcb75</model_id>
-        <model_table>sys_hub_flow</model_table>
-        <name>var__m_sys_hub_flow_variable_0a70fb751bbac5108c5143f3cc4bcb75</name>
+        <model display_value="REQF - CDW Ordering - C">ed17084297f9f5102e853cf3a253afc0</model>
+        <model_id>ed17084297f9f5102e853cf3a253afc0</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_ed17084297f9f5102e853cf3a253afc0</name>
         <next_element/>
         <order>0</order>
         <primary>false</primary>
@@ -58,15 +58,15 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_flow_variable</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2022-04-12 18:48:26</sys_created_on>
-        <sys_id>4ede4c4a1bb209108c5143f3cc4bcb76</sys_id>
-        <sys_name>Approver Query</sys_name>
+        <sys_created_on>2023-10-11 13:45:12</sys_created_on>
+        <sys_id>6917084297f9f5102e853cf3a253afcc</sys_id>
+        <sys_name>Approval State</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_policy/>
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
-        <sys_update_name>sys_hub_flow_variable_4ede4c4a1bb209108c5143f3cc4bcb76</sys_update_name>
+        <sys_update_name>sys_hub_flow_variable_6917084297f9f5102e853cf3a253afcc</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-10-13 13:40:57</sys_updated_on>
+        <sys_updated_on>2023-10-11 13:45:12</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -74,7 +74,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
-        <virtual_type/>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>

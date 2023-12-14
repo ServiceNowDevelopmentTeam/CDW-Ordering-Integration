@@ -17,6 +17,7 @@
         <messages/>
         <name>Field Validation OnSubmit</name>
         <order>0</order>
+        <published_ref/>
         <script><![CDATA[// Name: Validate Catalog Form
 // UI Type: All
 // Type: onSubmit

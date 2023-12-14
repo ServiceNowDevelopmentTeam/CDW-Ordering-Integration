@@ -11,6 +11,9 @@
         <managed_publisher/>
         <name>ServiceNow Admin Dashboard</name>
         <no_tabs>false</no_tabs>
+        <notification_link_label/>
+        <notification_link_url/>
+        <notification_text/>
         <order/>
         <owner display_value="Terry Lillo">351171db1b75e95046b60ed5604bcbf4</owner>
         <restrict_to_roles>admin</restrict_to_roles>

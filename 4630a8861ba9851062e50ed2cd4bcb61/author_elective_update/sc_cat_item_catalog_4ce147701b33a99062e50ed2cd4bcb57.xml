@@ -29,19 +29,19 @@
         <source>02a46b211b01311062e50ed2cd4bcba5</source>
         <source_table>sys_upgrade_history</source_table>
         <state>previous</state>
-        <sys_created_by/>
+        <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2023-09-03 09:49:13</sys_created_on>
         <sys_id>50cd81951b11b5108c5143f3cc4bcba7</sys_id>
-        <sys_mod_count/>
+        <sys_mod_count>0</sys_mod_count>
         <sys_recorded_at>18a5a7245a80000000</sys_recorded_at>
-        <sys_updated_by/>
-        <sys_updated_on/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-12-14 14:15:52</sys_updated_on>
         <type>Catalog Items Catalog</type>
         <update_guid>10cd81957911b510dbba543cfcbcffa7</update_guid>
         <update_guid_history>10cd81957911b510dbba543cfcbcffa7:-1547102522</update_guid_history>
     </sys_update_version>
     <sys_metadata_delete action="INSERT_OR_UPDATE">
-        <sys_audit_delete display_value="Service Catalog.LG UltraGear 32">26ed85951b11b5108c5143f3cc4bcb75</sys_audit_delete>
+        <sys_audit_delete display_value="">26ed85951b11b5108c5143f3cc4bcb75</sys_audit_delete>
         <sys_class_name>sys_metadata_delete</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2023-09-14 14:27:50</sys_created_on>

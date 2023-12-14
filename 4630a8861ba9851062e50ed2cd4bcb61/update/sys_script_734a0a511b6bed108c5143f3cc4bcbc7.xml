@@ -42,7 +42,7 @@
 		{ "variable" : "state" , "field": "u_address_state", "required": true },
 		{ "variable" : "zip_code" , "field": "u_address_zip", "required": true },
 		{ "variable" : "company" , "field": "u_company", "required": true },
-		{ "variable" : "location" , "field": "u_location", "required": true },
+		{ "variable" : "location" , "field": "u_location", "required": false },
 		{ "variable" : "chargeback_and_configuration" , "field": "u_order_comment", "required": false }
 	];
 	
@@ -97,7 +97,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>734a0a511b6bed108c5143f3cc4bcbc7</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>CDW RITM Submitted</sys_name>
         <sys_overrides/>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
@@ -105,7 +105,7 @@
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>sys_script_734a0a511b6bed108c5143f3cc4bcbc7</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2023-08-02 16:04:33</sys_updated_on>
+        <sys_updated_on>2023-12-14 14:18:51</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

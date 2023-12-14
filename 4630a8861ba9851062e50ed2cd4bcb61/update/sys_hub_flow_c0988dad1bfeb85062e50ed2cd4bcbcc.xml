@@ -4,6 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
+        <attributes/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
@@ -37,7 +38,7 @@
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>sys_hub_flow_c0988dad1bfeb85062e50ed2cd4bcbcc</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2023-07-28 16:33:26</sys_updated_on>
+        <sys_updated_on>2023-12-14 14:15:26</sys_updated_on>
         <type>subflow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=c0988dad1bfeb85062e50ed2cd4bcbcc"/>
@@ -155,6 +156,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=24c98d611b32f85062e50ed2cd4bcbc6"/>
     <sys_hub_flow_output action="delete_multiple" query="model=c0988dad1bfeb85062e50ed2cd4bcbcc"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=c0988dad1bfeb85062e50ed2cd4bcbcc"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=c0988dad1bfeb85062e50ed2cd4bcbcc^sys_idNOT IN05ac5a561b7f305062e50ed2cd4bcbfd,0aa699531b1c49508c5143f3cc4bcbc2,1cac89e51b32f85062e50ed2cd4bcb06,98afc3c31bbef41062e50ed2cd4bcb8c,99ac9a561b7f305062e50ed2cd4bcb07"/>
@@ -163,6 +165,7 @@
         <action_inputs/>
         <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="CDW Order Data Return">c0988dad1bfeb85062e50ed2cd4bcbcc</flow>
@@ -225,6 +228,7 @@
         <action_inputs/>
         <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="CDW Order Data Return">c0988dad1bfeb85062e50ed2cd4bcbcc</flow>
@@ -287,6 +291,7 @@
         <action_inputs/>
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment>Look up request where REQ number is  the same as PO</comment>
         <display_text/>
         <flow display_value="CDW Order Data Return">c0988dad1bfeb85062e50ed2cd4bcbcc</flow>
@@ -375,6 +380,7 @@
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment>Comment Order Data on Request</comment>
         <display_text/>
         <flow display_value="CDW Order Data Return">c0988dad1bfeb85062e50ed2cd4bcbcc</flow>
@@ -463,6 +469,7 @@
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent/>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="CDW Order Data Return">c0988dad1bfeb85062e50ed2cd4bcbcc</flow>
@@ -549,6 +556,7 @@
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=99ac9a561b7f305062e50ed2cd4bcb07"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=c0988dad1bfeb85062e50ed2cd4bcbcc^sys_idNOT INdaa699531b1c49508c5143f3cc4bcbc5"/>
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="CDW Order Data Return">c0988dad1bfeb85062e50ed2cd4bcbcc</flow>
@@ -863,6 +871,7 @@
     </sys_hub_input_scripts>
     <sys_hub_flow_logic action="delete_multiple" query="flow=c0988dad1bfeb85062e50ed2cd4bcbcc^sys_idNOT IN50afc3c31bbef41062e50ed2cd4bcb91,81ac9a561b7f305062e50ed2cd4bcb01,9192b9a71bb73c14622b32ac0a4bcbdd,acac89e51b32f85062e50ed2cd4bcb0a,c10a45a11b32f85062e50ed2cd4bcbd2"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">5992b9a71bb73c14622b32ac0a4bcbec</block>
         <comment/>
         <connected_to/>
@@ -936,6 +945,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=50afc3c31bbef41062e50ed2cd4bcb91"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=50afc3c31bbef41062e50ed2cd4bcb91"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">1592b9a71bb73c14622b32ac0a4bcbf5</block>
         <comment/>
         <connected_to/>
@@ -983,6 +993,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=81ac9a561b7f305062e50ed2cd4bcb01"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=81ac9a561b7f305062e50ed2cd4bcb01"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">9d92b9a71bb73c14622b32ac0a4bcbdc</block>
         <comment/>
         <connected_to/>
@@ -1030,6 +1041,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=9192b9a71bb73c14622b32ac0a4bcbdd"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=9192b9a71bb73c14622b32ac0a4bcbdd"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">5992b9a71bb73c14622b32ac0a4bcbe5</block>
         <comment/>
         <connected_to/>
@@ -1103,6 +1115,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=acac89e51b32f85062e50ed2cd4bcb0a"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=acac89e51b32f85062e50ed2cd4bcb0a"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">5192b9a71bb73c14622b32ac0a4bcbd9</block>
         <comment/>
         <connected_to/>
@@ -1295,28 +1308,12 @@
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_c0988dad1bfeb85062e50ed2cd4bcbcc"/>
     <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_c0988dad1bfeb85062e50ed2cd4bcbcc"/>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_c0988dad1bfeb85062e50ed2cd4bcbcc"/>
-    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=c0988dad1bfeb85062e50ed2cd4bcbcc"/>
-    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=c0988dad1bfeb85062e50ed2cd4bcbcc^sys_idNOT IN950a85a11b32f85062e50ed2cd4bcb65"/>
-    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"950a85a11b32f85062e50ed2cd4bcb65","name":"plan","plan_signature":null}}</plan>
-        <plan_id display_value="CDW Order Data Return">c0988dad1bfeb85062e50ed2cd4bcbcc</plan_id>
-        <snapshot>cca86a7e87dc31506b4c21b9cebb35fd</snapshot>
-        <sys_created_by>Terry.Lillo</sys_created_by>
-        <sys_created_on>2021-09-24 13:38:53</sys_created_on>
-        <sys_domain>global</sys_domain>
-        <sys_domain_path>/</sys_domain_path>
-        <sys_id>950a85a11b32f85062e50ed2cd4bcb65</sys_id>
-        <sys_mod_count>15</sys_mod_count>
-        <sys_overrides/>
-        <sys_scope/>
-        <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2022-07-14 13:56:46</sys_updated_on>
-    </sys_flow_subflow_plan>
     <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
         <active>true</active>
         <annotation/>
+        <attributes/>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
@@ -1452,6 +1449,7 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=550a85a11b32f85062e50ed2cd4bcb09"/>
     <sys_hub_flow_output action="delete_multiple" query="model=5d0a85a11b32f85062e50ed2cd4bcb04"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=5d0a85a11b32f85062e50ed2cd4bcb04"/>
     <sys_hub_action_instance action="delete_multiple" query="flow=5d0a85a11b32f85062e50ed2cd4bcb04^sys_idNOT IN4aacda561b7f305062e50ed2cd4bcb61,74af07c31bbef41062e50ed2cd4bcbc7,ceacda561b7f305062e50ed2cd4bcb5a,d82d89291b32f85062e50ed2cd4bcb15,dbabd19f1b1c49508c5143f3cc4bcb1c"/>
@@ -1460,6 +1458,7 @@
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="CDW Order Data Return">5d0a85a11b32f85062e50ed2cd4bcb04</flow>
@@ -1549,6 +1548,7 @@
         <action_inputs/>
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
         <comment>Comment Order Data on Request</comment>
         <display_text/>
         <flow display_value="CDW Order Data Return">5d0a85a11b32f85062e50ed2cd4bcb04</flow>
@@ -1637,6 +1637,7 @@
         <action_inputs/>
         <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
         <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="CDW Order Data Return">5d0a85a11b32f85062e50ed2cd4bcb04</flow>
@@ -1699,6 +1700,7 @@
         <action_inputs/>
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
         <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
         <comment>Look up request where REQ number is  the same as PO</comment>
         <display_text/>
         <flow display_value="CDW Order Data Return">5d0a85a11b32f85062e50ed2cd4bcb04</flow>
@@ -1787,6 +1789,7 @@
         <action_inputs/>
         <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
         <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="CDW Order Data Return">5d0a85a11b32f85062e50ed2cd4bcb04</flow>
@@ -1846,6 +1849,7 @@
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=dbabd19f1b1c49508c5143f3cc4bcb1c"/>
     <sys_hub_sub_flow_instance action="delete_multiple" query="flow=5d0a85a11b32f85062e50ed2cd4bcb04^sys_idNOT IN1babd19f1b1c49508c5143f3cc4bcb50"/>
     <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <attributes/>
         <comment/>
         <display_text/>
         <flow display_value="CDW Order Data Return">5d0a85a11b32f85062e50ed2cd4bcb04</flow>
@@ -2160,6 +2164,7 @@
     </sys_hub_input_scripts>
     <sys_hub_flow_logic action="delete_multiple" query="flow=5d0a85a11b32f85062e50ed2cd4bcb04^sys_idNOT IN1c2d89291b32f85062e50ed2cd4bcb28,26923da71bb73c14622b32ac0a4bcbb7,81af07c31bbef41062e50ed2cd4bcbdb,950a85a11b32f85062e50ed2cd4bcb37,caacda561b7f305062e50ed2cd4bcb77"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">5992b9a71bb73c14622b32ac0a4bcbe5</block>
         <comment/>
         <connected_to/>
@@ -2233,6 +2238,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=1c2d89291b32f85062e50ed2cd4bcb28"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=1c2d89291b32f85062e50ed2cd4bcb28"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">9d92b9a71bb73c14622b32ac0a4bcbdc</block>
         <comment/>
         <connected_to/>
@@ -2280,6 +2286,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=26923da71bb73c14622b32ac0a4bcbb7"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=26923da71bb73c14622b32ac0a4bcbb7"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">5992b9a71bb73c14622b32ac0a4bcbec</block>
         <comment/>
         <connected_to/>
@@ -2353,6 +2360,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=81af07c31bbef41062e50ed2cd4bcbdb"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=81af07c31bbef41062e50ed2cd4bcbdb"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">5192b9a71bb73c14622b32ac0a4bcbd9</block>
         <comment/>
         <connected_to/>
@@ -2400,6 +2408,7 @@
     <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=950a85a11b32f85062e50ed2cd4bcb37"/>
     <sys_hub_input_scripts action="delete_multiple" query="instance=950a85a11b32f85062e50ed2cd4bcb37"/>
     <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
         <block display_value="">1592b9a71bb73c14622b32ac0a4bcbf5</block>
         <comment/>
         <connected_to/>
@@ -2597,4 +2606,21 @@
         <latest_snapshot>5d0a85a11b32f85062e50ed2cd4bcb04</latest_snapshot>
         <compiler_build>glide-tokyo-07-08-2022__patch9-hotfix2-06-07-2023_06-23-2023_1740.zip</compiler_build>
     </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=c0988dad1bfeb85062e50ed2cd4bcbcc"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=c0988dad1bfeb85062e50ed2cd4bcbcc^sys_idNOT IN950a85a11b32f85062e50ed2cd4bcb65"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"950a85a11b32f85062e50ed2cd4bcb65","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="CDW Order Data Return">c0988dad1bfeb85062e50ed2cd4bcbcc</plan_id>
+        <snapshot>cca86a7e87dc31506b4c21b9cebb35fd</snapshot>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-09-24 13:38:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>950a85a11b32f85062e50ed2cd4bcb65</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2022-07-14 13:56:46</sys_updated_on>
+    </sys_flow_subflow_plan>
 </record_update>

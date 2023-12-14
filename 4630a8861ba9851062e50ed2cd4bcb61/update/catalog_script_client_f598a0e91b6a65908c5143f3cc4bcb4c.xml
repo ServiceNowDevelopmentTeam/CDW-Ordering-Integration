@@ -17,6 +17,7 @@
         <messages/>
         <name>Validate Cart On Load</name>
         <order>0</order>
+        <published_ref/>
         <script><![CDATA[// Helper function to parse and filter cart items
 function parseAndFilterItems(response) {
 	var cartItemsWithVariables = JSON.parse(response);

@@ -17,6 +17,7 @@
         <messages/>
         <name>Set location info</name>
         <order>0</order>
+        <published_ref/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
 	if (isLoading || g_scratchpad.isAutofilling) {
 		return;

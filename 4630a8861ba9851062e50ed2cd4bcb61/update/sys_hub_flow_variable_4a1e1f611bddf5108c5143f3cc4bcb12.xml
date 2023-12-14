@@ -38,7 +38,7 @@
         <label>Order Recipient</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="REQF - CDW Ordering - C">821e1f611bddf5108c5143f3cc4bcb06</model>
+        <model display_value="">821e1f611bddf5108c5143f3cc4bcb06</model>
         <model_id>821e1f611bddf5108c5143f3cc4bcb06</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_variable_821e1f611bddf5108c5143f3cc4bcb06</name>
@@ -59,6 +59,7 @@
         <sys_class_name>sys_hub_flow_variable</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2023-09-15 19:36:15</sys_created_on>
+        <sys_id>4a1e1f611bddf5108c5143f3cc4bcb12</sys_id>
         <sys_name>Order Recipient</sys_name>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
         <sys_policy/>

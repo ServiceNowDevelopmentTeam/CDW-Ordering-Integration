@@ -59,6 +59,7 @@
         <sys_class_name>sys_hub_flow_variable</sys_class_name>
         <sys_created_by>Terry.Lillo</sys_created_by>
         <sys_created_on>2021-12-13 14:59:29</sys_created_on>
+        <sys_id>02abdd5f1b1c49508c5143f3cc4bcbe3</sys_id>
         <sys_name>Email More Info</sys_name>
         <sys_package display_value="Global" source="global">global</sys_package>
         <sys_policy/>

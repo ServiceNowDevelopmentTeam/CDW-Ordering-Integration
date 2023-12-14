@@ -14,7 +14,6 @@
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2022-10-13 13:40:57</sys_updated_on>
         <sys_user_role display_value="CDW Item Manager" name="CDW Item Manager">1d01b2391b9a70108c5143f3cc4bcb93</sys_user_role>
-        <transaction_id/>
     </sys_security_acl_role>
     <sys_claim action="INSERT_OR_UPDATE">
         <claim_owner_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</claim_owner_scope>

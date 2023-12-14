@@ -20,7 +20,7 @@
         <sys_updated_by>Terry.Lillo</sys_updated_by>
         <sys_updated_on>2023-11-15 20:38:19</sys_updated_on>
         <table/>
-        <ui_policy display_value="Location not found is true - s">cfdf7dfd1bdc359062e50ed2cd4bcbac</ui_policy>
+        <ui_policy display_value="Location not found is true">cfdf7dfd1bdc359062e50ed2cd4bcbac</ui_policy>
         <variable>location</variable>
         <variable_set display_value="Delivery Information">7eadc3b71b926d508c5143f3cc4bcb57</variable_set>
         <visible>false</visible>
