@@ -2043,6 +2043,6 @@
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>99af306b1be3a1908c5143f3cc4bcb00</sys_id>
         <latest_snapshot>6f1189eb1be3a1908c5143f3cc4bcbda</latest_snapshot>
-        <compiler_build>glide-tokyo-07-08-2022__patch9-hotfix2-06-07-2023_06-23-2023_1740.zip</compiler_build>
+        <compiler_build>glide-vancouver-07-06-2023__patch7-02-08-2024_02-19-2024_0243.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>

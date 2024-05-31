@@ -45,6 +45,7 @@
         <sys_updated_on>2023-07-28 14:12:46</sys_updated_on>
         <table/>
         <ui_type>0</ui_type>
+        <va_supported>true</va_supported>
         <variable_set display_value="Delivery Information">7eadc3b71b926d508c5143f3cc4bcb57</variable_set>
         <view/>
     </catalog_ui_policy>

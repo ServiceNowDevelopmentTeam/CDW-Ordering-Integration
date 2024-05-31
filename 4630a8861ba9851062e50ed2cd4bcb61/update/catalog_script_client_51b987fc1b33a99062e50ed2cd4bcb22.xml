@@ -45,6 +45,7 @@
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>
+        <va_supported>true</va_supported>
         <variable_set display_value="Delivery Information">7eadc3b71b926d508c5143f3cc4bcb57</variable_set>
         <view/>
     </catalog_script_client>
