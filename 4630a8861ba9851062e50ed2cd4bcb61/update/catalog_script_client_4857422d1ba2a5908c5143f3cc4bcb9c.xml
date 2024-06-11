@@ -19,9 +19,9 @@
         <order>0</order>
         <published_ref/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
-	if (isLoading || g_scratchpad.isAutofilling) {
+	/*if (isLoading || g_scratchpad.isAutofilling) {
 		return;
-	}
+	}*/
 	if (newValue) {
 		var locationGR = new GlideRecord('cmn_location');
 		locationGR.get(newValue,function() {
@@ -55,7 +55,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4857422d1ba2a5908c5143f3cc4bcb9c</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>24</sys_mod_count>
         <sys_name>Set location info</sys_name>
         <sys_overrides/>
         <sys_package display_value="CDW Ordering Integration" source="4630a8861ba9851062e50ed2cd4bcb61">4630a8861ba9851062e50ed2cd4bcb61</sys_package>
@@ -63,7 +63,7 @@
         <sys_scope display_value="CDW Ordering Integration">4630a8861ba9851062e50ed2cd4bcb61</sys_scope>
         <sys_update_name>catalog_script_client_4857422d1ba2a5908c5143f3cc4bcb9c</sys_update_name>
         <sys_updated_by>Terry.Lillo</sys_updated_by>
-        <sys_updated_on>2024-05-29 21:30:09</sys_updated_on>
+        <sys_updated_on>2024-06-11 19:25:33</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>
